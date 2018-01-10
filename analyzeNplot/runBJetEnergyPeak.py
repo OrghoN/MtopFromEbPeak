@@ -21,21 +21,22 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         'bjet_en':ROOT.TH1F('bjet_en',';Energy [GeV]; Jets',30,0,300),
         'bjet_en_ls':ROOT.TH1F('bjet_en_ls',';log(E);  1/E dN_{b jets}/dlog(E)',20,3.,7.),
 #########################################################################################
-        'bjet_pt_l':ROOT.TH1F('bjet_pt_loose',';pt [GeV]; Events',100,0,500),
-        'bjet_pt_m':ROOT.TH1F('bjet_pt_medium',';pt [GeV]; Events',100,0,500),
-        'bjet_pt_t':ROOT.TH1F('bjet_pt_tight',';pt [GeV]; Events',100,0,500),
-        'met_pt':ROOT.TH1F('met_pt',';pt [GeV]; Events',100,0,500),
-        'lepton_pt':ROOT.TH1F('lepton_pt',';pt [GeV]; Events',100,0,500),
-        'jet_pt':ROOT.TH1F('jet_pt',';pt [GeV]; Events',100,0,500),
-        'jet_gen_pt':ROOT.TH1F('jet_gen_pt',';pt [GeV]; Events',100,0,500),
+        'bjet_pt_loose':ROOT.TH1F('bjet_pt_loose',';pt [GeV]; Events',100,0,350),
+        'bjet_pt_medium':ROOT.TH1F('bjet_pt_medium',';pt [GeV]; Events',100,0,350),
+        'bjet_pt_tight':ROOT.TH1F('bjet_pt_tight',';pt [GeV]; Events',100,0,350),
+        'met_pt':ROOT.TH1F('met_pt',';pt [GeV]; Events',100,0,350),
+        'lepton_pt':ROOT.TH1F('lepton_pt',';pt [GeV]; Events',100,0,350),
+        'jet_pt':ROOT.TH1F('jet_pt',';pt [GeV]; Events',100,0,350),
+        'jet_gen_pt':ROOT.TH1F('jet_gen_pt',';pt [GeV]; Events',100,0,350),
 #########################################################################################
-        'jet_mass':ROOT.TH1F('jet_mass',';mass [GeV]; Events',100,0,500),
-        'dilepton_mass':ROOT.TH1F('dilepton_mass',';mass [GeV]; Events',100,0,150),
-        'invariant_top_mass':ROOT.TH1F('invariant_top_mass',';mass [GeV]; Events',100,0,150),
+        'jet_mass':ROOT.TH1F('jet_mass',';mass [GeV]; Events',100,0,100),
+        'bjet_mass':ROOT.TH1F('bjet_mass',';mass [GeV]; Events',100,0,100),
+        'dilepton_mass':ROOT.TH1F('dilepton_mass',';mass [GeV]; Events',100,0,100),
+        'invariant_top_mass':ROOT.TH1F('invariant_top_mass',';mass [GeV]; Events',100,0,200),
 ########################################################################################
         'csv_discriminator':ROOT.TH1F('csv_discriminator',';mass [GeV]; Events',6,-0.5,2.5),
         'cut_flow':ROOT.TH1F('cut_flow',';mass [GeV]; Events',5,0,1),
-        'nleptons':ROOT.TH1F('nLeptons',';Number of leptons; Events',10,0,4)
+        'nleptons':ROOT.TH1F('nleptons',';Number of leptons; Events',10,0,4)
         }
     for key in histos:
         histos[key].Sumw2()
@@ -89,7 +90,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         if nBtags!=1 and nBtags!=2 : continue
 
         # Create lepton four-vector which will be used to compute dilepton invariant mass 
-        leptons_p4 = 0
+        leptons_p4 = []       
 
         # Looping over LEPTONS
         for ij in xrange(0,tree.nLepton):
@@ -101,12 +102,12 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
             #count selected leptons
             nLeptons +=1
 
-            leptons_p4 += lp4
+            leptons_p4.append(lp4)
 
         if nLeptons<2 : continue
 
         # dilepton invariant mass
-        l2_mass = leptons_p4.M()
+        l2_mass = (leptons_p4[0]+leptons_p4[1]).M()
 
         #generator level weight only for MC
         evWgt=1.0
@@ -119,32 +120,32 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
         histos['dilepton_mass'].Fill(l2_mass,evWgt)
         histos['met_pt'].Fill(tree.MET_pt,evWgt)
-        histos['lepton_pt'].Fill(tree.Lepton_pt,evWgt)
-        histos['jet_pt'].Fill(tree.Jet_pt,evWgt)
-        histos['jet_gen_pt'].Fill(tree.Jet_genpt,evWgt)
-        histos['csv_discriminator'].Fill(btagID,evWgt)
-        histos['nlepton'].Fill(nLeptons,evWgt)
+        
+        for lepton in leptons_p4:
+            histos['lepton_pt'].Fill(lepton.Pt(),evWgt)
+
+        histos['nleptons'].Fill(nLeptons,evWgt)
 
         #use up to two leading b-tagged jets
         for ij in xrange(0,len(taggedJetsP4)):
             if ij>1 : break
-<<<<<<< HEAD
-            histos['bjeten'].Fill(taggedJetsP4[ij].E(),evWgt)
-            histos['bjetenls'].Fill(ROOT.TMath.Log(taggedJetsP4[ij].E()),evWgt/taggedJetsP4[ij].E())
+
+            histos['bjet_en'].Fill(taggedJetsP4[ij].E(),evWgt)
+            histos['bjet_en_ls'].Fill(ROOT.TMath.Log(taggedJetsP4[ij].E()),evWgt/taggedJetsP4[ij].E())
             histos['bjet_mass'].Fill(taggedJetsP4[ij].M(),evWgt)
-            histos['bjet_pt'].Fill(taggedJetsP4[ij].Pt())
+            histos['bjet_pt_medium'].Fill(taggedJetsP4[ij].Pt())
 
         for k in xrange(0,len(LootagJetsP4)):
             if k>1 : break
-            histos['bjet_pt_l'].Fill(LootagJetsP4[k].Pt(),evWgt)
-
-        for k in xrange(0,len(MedtagJetsP4)):
-            if k>1 : break
-            histos['bjet_pt_m'].Fill(MedtagJetsP4[k].Pt(),evWgt)
+            histos['bjet_pt_loose'].Fill(LootagJetsP4[k].Pt(),evWgt)
 
         for k in xrange(0,len(TigtagJetsP4)):
             if k>1 : break
-            histos['bjet_pt_t'].Fill(TigtagJetsP4[k].Pt(),evWgt)
+            histos['bjet_pt_tight'].Fill(TigtagJetsP4[k].Pt(),evWgt)
+        
+        for jet in JetsP4:
+            histos['jet_pt'].Fill(jet.Pt(),evWgt)
+            histos['jet_mass'].Fill(jet.M(),evWgt)
 
     fIn.Close()
 
