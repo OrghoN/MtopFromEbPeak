@@ -15,11 +15,28 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
     print '...analysing %s' % inFileURL
 
     #book some histograms
-    histos={ 
+    histos={
         'nvtx'  :ROOT.TH1F('nvtx',';Vertex multiplicity; Events',30,0,30),
         'nbtags':ROOT.TH1F('nbtags',';b-tag multiplicity; Events',5,0,5),
-        'bjeten':ROOT.TH1F('bjeten',';Energy [GeV]; Jets',30,0,300),
-        'bjetenls':ROOT.TH1F('bjetenls',';log(E);  1/E dN_{b jets}/dlog(E)',20,3.,7.),
+        'bjet_en':ROOT.TH1F('bjet_en',';Energy [GeV]; Jets',30,0,300),
+        'bjet_en_ls':ROOT.TH1F('bjet_en_ls',';log(E);  1/E dN_{b jets}/dlog(E)',20,3.,7.),
+#########################################################################################
+        'bjet_pt_i':ROOT.TH1F('bjetpt_i',';pt [GeV]; Events',100,0,500),
+        'bjet_pt_l':ROOT.TH1F('bjetpt_l',';pt [GeV]; Events',100,0,500),
+        'bjet_pt_m':ROOT.TH1F('bjetpt_m',';pt [GeV]; Events',100,0,500),
+        'bjet_pt_t':ROOT.TH1F('bjetpt_t',';pt [GeV]; Events',100,0,500),
+        'met_pt':ROOT.TH1F('met_pt',';pt [GeV]; Events',100,0,500),
+        'lepton_pt':ROOT.TH1F('lepton_pt',';pt [GeV]; Events',100,0,500),
+        'jet_pt':ROOT.TH1F('jet_pt',';pt [GeV]; Events',100,0,500),
+        'jet_gen_pt':ROOT.TH1F('jet_gen_pt',';pt [GeV]; Events',100,0,500),
+#########################################################################################
+        'jet_mass':ROOT.TH1F('jet_mass',';mass [GeV]; Events',100,0,500),
+        'dilepton_mass':ROOT.TH1F('jet_mass',';mass [GeV]; Events',100,0,150),
+        'invariant_top_mass':ROOT.TH1F('jet_mass',';mass [GeV]; Events',100,0,150),
+########################################################################################
+        'csv_discriminator':ROOT.TH1F('csv_discriminator',';mass [GeV]; Events',6,-0.5,2.5),
+        'cut_flow':ROOT.TH1F('cut_flow',';mass [GeV]; Events',5,0,1),
+        'nleptons':ROOT.TH1F('nLeptons',';Number of leptons; Events',10,0,4)
         }
     for key in histos:
         histos[key].Sumw2()
@@ -50,17 +67,17 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
             if tree.Jet_CombIVF[ij]>0.8484: # medium cut
                 nBtags+=1
                 taggedJetsP4.append(jp4)
-        
+
         if nJets<2 : continue
         if nBtags!=1 and nBtags!=2 : continue
 
         for ij in xrange(0,tree.nLepton):
-            #get the kinematics and select the lepton                       
+            #get the kinematics and select the lepton
             lp4=ROOT.TLorentzVector()
             lp4.SetPtEtaPhiM(tree.Lepton_pt[ij],tree.Lepton_eta[ij],tree.Lepton_phi[ij],0)
             if lp4.Pt()<20 or ROOT.TMath.Abs(lp4.Eta())>2.4 : continue
 
-            #count selected leptons                    
+            #count selected leptons
             nLeptons +=1
 
         if nLeptons<2 : continue
@@ -92,7 +109,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 Wrapper to be used when run in parallel
 """
 def runBJetEnergyPeakPacked(args):
-    
+
     try:
         return runBJetEnergyPeak(inFileURL=args[0],
                                  outFileURL=args[1],
@@ -126,13 +143,13 @@ def main():
     #prepare output
     if len(opt.outDir)==0    : opt.outDir='./'
     os.system('mkdir -p %s' % opt.outDir)
-        
+
     #create the analysis jobs
     taskList = []
-    for sample, sampleInfo in samplesList: 
+    for sample, sampleInfo in samplesList:
         inFileURL  = 'root://cmseos.fnal.gov//%s/%s.root' % (opt.inDir,sample)
         #if not os.path.isfile(inFileURL): continue
-        xsec=sampleInfo[0] if sampleInfo[1]==0 else None        
+        xsec=sampleInfo[0] if sampleInfo[1]==0 else None
         outFileURL = '%s/%s.root' % (opt.outDir,sample)
         taskList.append( (inFileURL,outFileURL,xsec) )
 
