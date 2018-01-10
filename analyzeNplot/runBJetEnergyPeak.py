@@ -21,7 +21,6 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         'bjet_en':ROOT.TH1F('bjet_en',';Energy [GeV]; Jets',30,0,300),
         'bjet_en_ls':ROOT.TH1F('bjet_en_ls',';log(E);  1/E dN_{b jets}/dlog(E)',20,3.,7.),
 #########################################################################################
-        'bjet_pt_i':ROOT.TH1F('bjet_pt_inclusive',';pt [GeV]; Events',100,0,500),
         'bjet_pt_l':ROOT.TH1F('bjet_pt_loose',';pt [GeV]; Events',100,0,500),
         'bjet_pt_m':ROOT.TH1F('bjet_pt_medium',';pt [GeV]; Events',100,0,500),
         'bjet_pt_t':ROOT.TH1F('bjet_pt_tight',';pt [GeV]; Events',100,0,500),
