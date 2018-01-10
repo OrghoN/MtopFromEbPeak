@@ -16,9 +16,9 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
     #book some histograms
     histos={
-        'nvtx'  :ROOT.TH1F('nvtx',';Vertex multiplicity; Events',30,0,30),
-        'nbtags':ROOT.TH1F('nbtags',';b-tag multiplicity; Events',5,0,5),
-        'bjet_en':ROOT.TH1F('bjet_en',';Energy [GeV]; Jets',30,0,300),
+        'nvtx'  :ROOT.TH1F('nvtx',';Vertex multiplicity; Events',40,0,40),
+        'nbtags':ROOT.TH1F('nbtags',';b-tag multiplicity; Events',2,0.5,2.5),
+        'bjet_en':ROOT.TH1F('bjet_en',';Energy [GeV]; Jets',100,0,400),
         'bjet_en_ls':ROOT.TH1F('bjet_en_ls',';log(E);  1/E dN_{b jets}/dlog(E)',20,3.,7.),
 #########################################################################################
         'bjet_pt_loose':ROOT.TH1F('bjet_pt_loose',';pt [GeV]; Events',100,0,350),
@@ -31,7 +31,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 #########################################################################################
         'jet_mass':ROOT.TH1F('jet_mass',';mass [GeV]; Events',100,0,100),
         'bjet_mass':ROOT.TH1F('bjet_mass',';mass [GeV]; Events',100,0,100),
-        'dilepton_mass':ROOT.TH1F('dilepton_mass',';mass [GeV]; Events',100,0,100),
+        'dilepton_mass':ROOT.TH1F('dilepton_mass',';mass [GeV]; Events',100,0,200),
         'invariant_top_mass':ROOT.TH1F('invariant_top_mass',';mass [GeV]; Events',100,0,200),
 ########################################################################################
         'csv_discriminator':ROOT.TH1F('csv_discriminator',';mass [GeV]; Events',6,-0.5,2.5),
@@ -85,12 +85,12 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
                     if tree.Jet_CombIVF[ij]>0.9535: # tight cut
                         TigtagJetsP4.append(jp4)
                         btagID = 2
-        
+
         if nJets<2 : continue
         if nBtags!=1 and nBtags!=2 : continue
 
-        # Create lepton four-vector which will be used to compute dilepton invariant mass 
-        leptons_p4 = []       
+        # Create lepton four-vector which will be used to compute dilepton invariant mass
+        leptons_p4 = []
 
         # Looping over LEPTONS
         for ij in xrange(0,tree.nLepton):
@@ -120,7 +120,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
         histos['dilepton_mass'].Fill(l2_mass,evWgt)
         histos['met_pt'].Fill(tree.MET_pt,evWgt)
-        
+
         for lepton in leptons_p4:
             histos['lepton_pt'].Fill(lepton.Pt(),evWgt)
 
@@ -142,7 +142,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         for k in xrange(0,len(TigtagJetsP4)):
             if k>1 : break
             histos['bjet_pt_tight'].Fill(TigtagJetsP4[k].Pt(),evWgt)
-        
+
         for jet in JetsP4:
             histos['jet_pt'].Fill(jet.Pt(),evWgt)
             histos['jet_mass'].Fill(jet.M(),evWgt)
