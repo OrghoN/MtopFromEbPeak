@@ -35,7 +35,14 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         if i%100==0 : sys.stdout.write('\r [ %d/100 ] done' %(int(float(100.*i)/float(totalEntries))) )
         #require at least two jets
         nJets, nBtags, nLeptons = 0, 0, 0
-        taggedJetsP4=[]
+
+        JetsP4=[]
+        taggedJetsP4=[]  # this is the Medium tag condition
+
+        LootagJetsP4=[]
+        TigtagJetsP4=[]
+
+        # Looping over JETS
         for ij in xrange(0,tree.nJet):
 
             #get the kinematics and select the jet
@@ -45,15 +52,30 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
             #count selected jet
             nJets +=1
+            JetsP4.append(jp4)
 
-            #save P4 for b-tagged jet
-            if tree.Jet_CombIVF[ij]>0.8484: # medium cut
-                nBtags+=1
-                taggedJetsP4.append(jp4)
+            # Take the Pt of bjets tagged as Loose cut
+            if (tree.Jet_CombIVF[ij] > 0.5426):
+                LootagJetsP4.append(jp4)
+                btagID = 0
+
+                #save P4 for b-tagged jet
+                if tree.Jet_CombIVF[ij]>0.8484: # medium cut
+                    nBtags+=1
+                    taggedJetsP4.append(jp4)
+                    btagID = 1
+
+                    if tree.Jet_CombIVF[ij]>0.9535: # tight cut
+                        TigtagJetsP4.append(jp4)
+                        btagID = 2
         
         if nJets<2 : continue
         if nBtags!=1 and nBtags!=2 : continue
 
+        # Create lepton four-vector which will be used to compute dilepton invariant mass 
+        leptons_p4 = 0
+
+        # Looping over LEPTONS
         for ij in xrange(0,tree.nLepton):
             #get the kinematics and select the lepton                       
             lp4=ROOT.TLorentzVector()
@@ -63,7 +85,12 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
             #count selected leptons                    
             nLeptons +=1
 
+            leptons_p4 += lp4
+
         if nLeptons<2 : continue
+
+        # dilepton invariant mass
+        l2_mass = leptons_p4.M()
 
         #generator level weight only for MC
         evWgt=1.0
@@ -74,11 +101,33 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         histos['nvtx'].Fill(tree.nPV,evWgt)
         histos['nbtags'].Fill(nBtags,evWgt)
 
+        histos['dilepton_mass'].Fill(l2_mass,evWgt)
+        histos['met_pt'].Fill(tree.MET_pt,evWgt)
+        histos['lepton_pt'].Fill(tree.Lepton_pt,evWgt)
+        histos['jet_pt'].Fill(tree.Jet_pt,evWgt)
+        histos['jet_gen_pt'].Fill(tree.Jet_genpt,evWgt)
+        histos['csv_discriminator'].Fill(btagID,evWgt)
+        histos['nlepton'].Fill(nLeptons,evWgt)
+
         #use up to two leading b-tagged jets
         for ij in xrange(0,len(taggedJetsP4)):
             if ij>1 : break
             histos['bjeten'].Fill(taggedJetsP4[ij].E(),evWgt)
             histos['bjetenls'].Fill(ROOT.TMath.Log(taggedJetsP4[ij].E()),evWgt/taggedJetsP4[ij].E())
+            histos['bjet_mass'].Fill(taggedJetsP4[ij].M(),evWgt)
+            histos['bjet_pt'].Fill(taggedJetsP4[ij].Pt())
+
+        for k in xrange(0,len(LootagJetsP4)):
+            if k>1 : break
+            histos['bjet_pt_l'].Fill(LootagJetsP4[k].Pt(),evWgt)
+
+        for k in xrange(0,len(MedtagJetsP4)):
+            if k>1 : break
+            histos['bjet_pt_m'].Fill(MedtagJetsP4[k].Pt(),evWgt)
+
+        for k in xrange(0,len(TigtagJetsP4)):
+            if k>1 : break
+            histos['bjet_pt_t'].Fill(TigtagJetsP4[k].Pt(),evWgt)
 
     fIn.Close()
 
