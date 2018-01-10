@@ -21,18 +21,18 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         'bjet_en':ROOT.TH1F('bjet_en',';Energy [GeV]; Jets',30,0,300),
         'bjet_en_ls':ROOT.TH1F('bjet_en_ls',';log(E);  1/E dN_{b jets}/dlog(E)',20,3.,7.),
 #########################################################################################
-        'bjet_pt_i':ROOT.TH1F('bjetpt_i',';pt [GeV]; Events',100,0,500),
-        'bjet_pt_l':ROOT.TH1F('bjetpt_l',';pt [GeV]; Events',100,0,500),
-        'bjet_pt_m':ROOT.TH1F('bjetpt_m',';pt [GeV]; Events',100,0,500),
-        'bjet_pt_t':ROOT.TH1F('bjetpt_t',';pt [GeV]; Events',100,0,500),
+        'bjet_pt_i':ROOT.TH1F('bjet_pt_inclusive',';pt [GeV]; Events',100,0,500),
+        'bjet_pt_l':ROOT.TH1F('bjet_pt_loose',';pt [GeV]; Events',100,0,500),
+        'bjet_pt_m':ROOT.TH1F('bjet_pt_medium',';pt [GeV]; Events',100,0,500),
+        'bjet_pt_t':ROOT.TH1F('bjet_pt_tight',';pt [GeV]; Events',100,0,500),
         'met_pt':ROOT.TH1F('met_pt',';pt [GeV]; Events',100,0,500),
         'lepton_pt':ROOT.TH1F('lepton_pt',';pt [GeV]; Events',100,0,500),
         'jet_pt':ROOT.TH1F('jet_pt',';pt [GeV]; Events',100,0,500),
         'jet_gen_pt':ROOT.TH1F('jet_gen_pt',';pt [GeV]; Events',100,0,500),
 #########################################################################################
         'jet_mass':ROOT.TH1F('jet_mass',';mass [GeV]; Events',100,0,500),
-        'dilepton_mass':ROOT.TH1F('jet_mass',';mass [GeV]; Events',100,0,150),
-        'invariant_top_mass':ROOT.TH1F('jet_mass',';mass [GeV]; Events',100,0,150),
+        'dilepton_mass':ROOT.TH1F('dilepton_mass',';mass [GeV]; Events',100,0,150),
+        'invariant_top_mass':ROOT.TH1F('invariant_top_mass',';mass [GeV]; Events',100,0,150),
 ########################################################################################
         'csv_discriminator':ROOT.TH1F('csv_discriminator',';mass [GeV]; Events',6,-0.5,2.5),
         'cut_flow':ROOT.TH1F('cut_flow',';mass [GeV]; Events',5,0,1),
@@ -94,8 +94,8 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         #use up to two leading b-tagged jets
         for ij in xrange(0,len(taggedJetsP4)):
             if ij>1 : break
-            histos['bjeten'].Fill(taggedJetsP4[ij].E(),evWgt)
-            histos['bjetenls'].Fill(ROOT.TMath.Log(taggedJetsP4[ij].E()),evWgt/taggedJetsP4[ij].E())
+            histos['bjet_en'].Fill(taggedJetsP4[ij].E(),evWgt)
+            histos['bjet_en_ls'].Fill(ROOT.TMath.Log(taggedJetsP4[ij].E()),evWgt/taggedJetsP4[ij].E())
 
     fIn.Close()
 
