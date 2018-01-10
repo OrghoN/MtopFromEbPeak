@@ -6,6 +6,7 @@ import json
 import pickle
 import ROOT
 from subprocess import Popen, PIPE
+from array import array
 
 """
 Perform the analysis on a single file
@@ -13,6 +14,8 @@ Perform the analysis on a single file
 def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
     print '...analysing %s' % inFileURL
+
+    csv_binedges = [0., 0.5426, 0.8484, 0.9535, 1.0]
 
     #book some histograms
     histos={
@@ -32,9 +35,9 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         'jet_mass':ROOT.TH1F('jet_mass',';mass [GeV]; Events',50,0,100),
         'bjet_mass':ROOT.TH1F('bjet_mass',';mass [GeV]; Events',50,0,100),
         'dilepton_mass':ROOT.TH1F('dilepton_mass',';mass [GeV]; Events',100,0,200),
-        'invariant_top_mass':ROOT.TH1F('invariant_top_mass',';mass [GeV]; Events',50,0,200),
+        'vis_top_mass':ROOT.TH1F('vis_top_mass',';mass [GeV]; Events',50,0,200),
 ########################################################################################
-        'csv_discriminator':ROOT.TH1F('csv_discriminator',';mass [GeV]; Events',6,-0.5,2.5),
+        'csv_discriminator':ROOT.TH1F('csv_discriminator',';mass [GeV]; Events',4, array('d',csv_binedges)),
         'cut_flow':ROOT.TH1F('cut_flow',';mass [GeV]; Events',5,0,1),
         'nleptons':ROOT.TH1F('nleptons',';Number of leptons; Events',10,0,4)
         }
@@ -109,6 +112,26 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         # dilepton invariant mass
         l2_mass = (leptons_p4[0]+leptons_p4[1]).M()
 
+        # construct vis_top_mass -> invariant mass of b and l (excluding neutrino)
+        m11 = ROOT.TLorentzVector()
+        m12 = ROOT.TLorentzVector()
+        m21 = ROOT.TLorentzVector()
+        m22 = ROOT.TLorentzVector()
+        vis_tmass = 0
+
+        if nBtags == 2:
+            m11 = (taggedJetsP4[0]+leptons_p4[0]).M()
+            m22 = (taggedJetsP4[1]+leptons_p4[1]).M()
+            m12 = (taggedJetsP4[0]+leptons_p4[1]).M()
+            m21 = (taggedJetsP4[1]+leptons_p4[0]).M()
+
+            vis_tmass = min(max(m11,m22), max(m12,m21))
+        elif nBtags == 1:
+            m11 = (taggedJetsP4[0]+leptons_p4[0]).M()
+            m12 = (taggedJetsP4[0]+leptons_p4[0]).M()
+
+            vis_tmass = min(m11,m12)
+
         #generator level weight only for MC
         evWgt=1.0
         if xsec              : evWgt  = xsec*tree.LepSelEffWeights[0]*tree.PUWeights[0]
@@ -120,6 +143,10 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
         histos['dilepton_mass'].Fill(l2_mass,evWgt)
         histos['met_pt'].Fill(tree.MET_pt,evWgt)
+        histos['vis_top_mass'].Fill(vis_tmass,evWgt)
+
+        for k in xrange(0,tree.nJet):
+            histos['csv_discriminator'].Fill(tree.Jet_CombIVF[k],evWgt)
 
         for lepton in leptons_p4:
             histos['lepton_pt'].Fill(lepton.Pt(),evWgt)
