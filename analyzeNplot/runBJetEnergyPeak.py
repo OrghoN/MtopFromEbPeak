@@ -51,6 +51,8 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
     totalEntries=tree.GetEntriesFast()
     for i in xrange(0,totalEntries):
 
+        histos['cut_flow'].Fill(1,evWgt)
+
         tree.GetEntry(i)
         if i%100==0 : sys.stdout.write('\r [ %d/100 ] done' %(int(float(100.*i)/float(totalEntries))) )
         #require at least two jets
@@ -90,7 +92,9 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
                         btagID = 2
 
         if nJets<2 : continue
+        histos['cut_flow'].Fill(2,evWgt)
         if nBtags!=1 and nBtags!=2 : continue
+        histos['cut_flow'].Fill(3,evWgt)
 
         # Create lepton four-vector which will be used to compute dilepton invariant mass
         leptons_p4 = []
@@ -108,6 +112,8 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
             leptons_p4.append(lp4)
 
         if nLeptons<2 : continue
+
+        histos['cut_flow'].Fill(4,evWgt)
 
         # dilepton invariant mass
         l2_mass = (leptons_p4[0]+leptons_p4[1]).M()
