@@ -42,7 +42,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         'vis_top_mass':ROOT.TH1F('vis_top_mass',';mass [GeV]; Events',50,0,200),
 ########################################################################################
         'csv_discriminator':ROOT.TH1F('csv_discriminator',';B-Tag Criterion; Events',4, array('d',csv_binedges)),
-        'cut_flow':ROOT.TH1F('cut_flow',';mass [GeV]; Events',5,0.5,5.5),
+        'cut_flow':ROOT.TH1F('cut_flow',';mass [GeV]; Events',4,0.5,4.5),
         'nleptons':ROOT.TH1F('nleptons',';Number of leptons; Events',10,0,4)
         }
     for key in histos:
@@ -158,7 +158,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         histos['vis_top_mass'].Fill(vis_tmass,evWgt)
 
         for k in xrange(0,tree.nJet):
-            histos['csv_discriminator'].Fill(tree.Jet_CombIVF[k])
+            histos['csv_discriminator'].Fill(tree.Jet_CombIVF[k],evWgt)
 
         for lepton in leptons_p4:
             histos['lepton_pt'].Fill(lepton.Pt(),evWgt)

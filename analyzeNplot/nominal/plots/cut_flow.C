@@ -1,7 +1,7 @@
 void cut_flow()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 09:29:24 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 10:19:42 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -20,7 +20,7 @@ void cut_flow()
    TPad *p1 = new TPad("p1", "p1",0,0,1,0.85);
    p1->Draw();
    p1->cd();
-   p1->Range(-0.7228916,-3.684345e+09,5.301205,2.701853e+10);
+   p1->Range(-0.2228916,-42329.04,5.801205,310413.8);
    p1->SetFillColor(0);
    p1->SetBorderMode(0);
    p1->SetBorderSize(2);
@@ -32,9 +32,9 @@ void cut_flow()
    p1->SetFrameBorderMode(0);
    p1->SetFrameBorderMode(0);
    
-   TH1F *frame__148 = new TH1F("frame__148","t#bar{t}",5,0,5);
+   TH1F *frame__148 = new TH1F("frame__148","t#bar{t}",5,0.5,5.5);
    frame__148->SetMinimum(0.1);
-   frame__148->SetMaximum(2.67115e+10);
+   frame__148->SetMaximum(306886.3);
    frame__148->SetEntries(1773475);
    frame__148->SetDirectory(0);
 
@@ -66,9 +66,9 @@ void cut_flow()
    mc->SetName("mc");
    mc->SetTitle("mc");
    
-   TH1F *mc_stack_22 = new TH1F("mc_stack_22","mc",5,0,5);
+   TH1F *mc_stack_22 = new TH1F("mc_stack_22","mc",5,0.5,5.5);
    mc_stack_22->SetMinimum(0);
-   mc_stack_22->SetMaximum(2.157468e+10);
+   mc_stack_22->SetMaximum(247869.7);
    mc_stack_22->SetDirectory(0);
    mc_stack_22->SetStats(0);
 
@@ -89,15 +89,15 @@ void cut_flow()
    mc->SetHistogram(mc_stack_22);
    
    
-   TH1F *cut_flow_t#bar{t}__149 = new TH1F("cut_flow_t#bar{t}__149","t#bar{t}",5,0,5);
-   cut_flow_t#bar{t}__149->SetBinContent(2,1.959195e+10);
-   cut_flow_t#bar{t}__149->SetBinContent(3,1.627289e+10);
-   cut_flow_t#bar{t}__149->SetBinContent(4,1.293009e+10);
-   cut_flow_t#bar{t}__149->SetBinContent(5,1.292134e+10);
-   cut_flow_t#bar{t}__149->SetBinError(2,2.650858e+07);
-   cut_flow_t#bar{t}__149->SetBinError(3,2.415905e+07);
-   cut_flow_t#bar{t}__149->SetBinError(4,2.153517e+07);
-   cut_flow_t#bar{t}__149->SetBinError(5,2.152788e+07);
+   TH1F *cut_flow_t#bar{t}__149 = new TH1F("cut_flow_t#bar{t}__149","t#bar{t}",5,0.5,5.5);
+   cut_flow_t#bar{t}__149->SetBinContent(1,208869.5);
+   cut_flow_t#bar{t}__149->SetBinContent(2,173497.6);
+   cut_flow_t#bar{t}__149->SetBinContent(3,137859.4);
+   cut_flow_t#bar{t}__149->SetBinContent(4,137767.4);
+   cut_flow_t#bar{t}__149->SetBinError(1,292.9197);
+   cut_flow_t#bar{t}__149->SetBinError(2,266.9722);
+   cut_flow_t#bar{t}__149->SetBinError(3,237.9584);
+   cut_flow_t#bar{t}__149->SetBinError(4,237.8798);
    cut_flow_t#bar{t}__149->SetEntries(1720698);
    cut_flow_t#bar{t}__149->SetDirectory(0);
 
@@ -122,15 +122,15 @@ void cut_flow()
    cut_flow_t#bar{t}__149->GetZaxis()->SetTitleFont(42);
    mc->Add(cut_flow_t#bar{t},"hist");
    
-   TH1F *cut_flow_Diboson__150 = new TH1F("cut_flow_Diboson__150","Diboson",5,0,5);
-   cut_flow_Diboson__150->SetBinContent(2,5.391886e+08);
-   cut_flow_Diboson__150->SetBinContent(3,2.594619e+08);
-   cut_flow_Diboson__150->SetBinContent(4,1.832804e+07);
-   cut_flow_Diboson__150->SetBinContent(5,1.832804e+07);
-   cut_flow_Diboson__150->SetBinError(2,4397622);
-   cut_flow_Diboson__150->SetBinError(3,3050593);
-   cut_flow_Diboson__150->SetBinError(4,810784.6);
-   cut_flow_Diboson__150->SetBinError(5,810784.6);
+   TH1F *cut_flow_Diboson__150 = new TH1F("cut_flow_Diboson__150","Diboson",5,0.5,5.5);
+   cut_flow_Diboson__150->SetBinContent(1,5347.222);
+   cut_flow_Diboson__150->SetBinContent(2,2579.448);
+   cut_flow_Diboson__150->SetBinContent(3,181.1088);
+   cut_flow_Diboson__150->SetBinContent(4,181.1088);
+   cut_flow_Diboson__150->SetBinError(1,45.58919);
+   cut_flow_Diboson__150->SetBinError(2,31.66543);
+   cut_flow_Diboson__150->SetBinError(3,8.38248);
+   cut_flow_Diboson__150->SetBinError(4,8.38248);
    cut_flow_Diboson__150->SetEntries(23289);
    cut_flow_Diboson__150->SetDirectory(0);
 
@@ -155,15 +155,15 @@ void cut_flow()
    cut_flow_Diboson__150->GetZaxis()->SetTitleFont(42);
    mc->Add(cut_flow_Diboson,"hist");
    
-   TH1F *cut_flow_DY__151 = new TH1F("cut_flow_DY__151","DY",5,0,5);
-   cut_flow_DY__151->SetBinContent(2,1.660642e+07);
-   cut_flow_DY__151->SetBinContent(3,6850597);
-   cut_flow_DY__151->SetBinContent(4,753207);
-   cut_flow_DY__151->SetBinContent(5,753207);
-   cut_flow_DY__151->SetBinError(2,771765.8);
-   cut_flow_DY__151->SetBinError(3,495691.8);
-   cut_flow_DY__151->SetBinError(4,164363.2);
-   cut_flow_DY__151->SetBinError(5,164363.2);
+   TH1F *cut_flow_DY__151 = new TH1F("cut_flow_DY__151","DY",5,0.5,5.5);
+   cut_flow_DY__151->SetBinContent(1,7085.233);
+   cut_flow_DY__151->SetBinContent(2,3011.9);
+   cut_flow_DY__151->SetBinContent(3,331.7063);
+   cut_flow_DY__151->SetBinContent(4,331.7063);
+   cut_flow_DY__151->SetBinError(1,345.4941);
+   cut_flow_DY__151->SetBinError(2,227.4528);
+   cut_flow_DY__151->SetBinError(3,75.73561);
+   cut_flow_DY__151->SetBinError(4,75.73561);
    cut_flow_DY__151->SetEntries(696);
    cut_flow_DY__151->SetDirectory(0);
 
@@ -188,11 +188,11 @@ void cut_flow()
    cut_flow_DY__151->GetZaxis()->SetTitleFont(42);
    mc->Add(cut_flow_DY,"hist");
    
-   TH1F *cut_flow_W__152 = new TH1F("cut_flow_W__152","W",5,0,5);
-   cut_flow_W__152->SetBinContent(2,538005);
-   cut_flow_W__152->SetBinContent(3,286936);
-   cut_flow_W__152->SetBinError(2,138912.3);
-   cut_flow_W__152->SetBinError(3,101447.2);
+   TH1F *cut_flow_W__152 = new TH1F("cut_flow_W__152","W",5,0.5,5.5);
+   cut_flow_W__152->SetBinContent(1,975.6682);
+   cut_flow_W__152->SetBinContent(2,620.6245);
+   cut_flow_W__152->SetBinError(1,288.476);
+   cut_flow_W__152->SetBinError(2,228.586);
    cut_flow_W__152->SetEntries(23);
    cut_flow_W__152->SetDirectory(0);
 
@@ -217,15 +217,15 @@ void cut_flow()
    cut_flow_W__152->GetZaxis()->SetTitleFont(42);
    mc->Add(cut_flow_W,"hist");
    
-   TH1F *cut_flow_SinglesPtop__153 = new TH1F("cut_flow_SinglesPtop__153","Single top",5,0,5);
-   cut_flow_SinglesPtop__153->SetBinContent(2,3.990204e+08);
-   cut_flow_SinglesPtop__153->SetBinContent(3,2.628334e+08);
-   cut_flow_SinglesPtop__153->SetBinContent(4,1.850737e+08);
-   cut_flow_SinglesPtop__153->SetBinContent(5,1.849303e+08);
-   cut_flow_SinglesPtop__153->SetBinError(2,3783076);
-   cut_flow_SinglesPtop__153->SetBinError(3,3070349);
-   cut_flow_SinglesPtop__153->SetBinError(4,2576439);
-   cut_flow_SinglesPtop__153->SetBinError(5,2575440);
+   TH1F *cut_flow_SinglesPtop__153 = new TH1F("cut_flow_SinglesPtop__153","Single top",5,0.5,5.5);
+   cut_flow_SinglesPtop__153->SetBinContent(1,13788.83);
+   cut_flow_SinglesPtop__153->SetBinContent(2,9081.609);
+   cut_flow_SinglesPtop__153->SetBinContent(3,6402.376);
+   cut_flow_SinglesPtop__153->SetBinContent(4,6396.946);
+   cut_flow_SinglesPtop__153->SetBinError(1,135.785);
+   cut_flow_SinglesPtop__153->SetBinError(2,110.2191);
+   cut_flow_SinglesPtop__153->SetBinError(3,92.54642);
+   cut_flow_SinglesPtop__153->SetBinError(4,92.50653);
    cut_flow_SinglesPtop__153->SetEntries(28769);
    cut_flow_SinglesPtop__153->SetDirectory(0);
 
@@ -252,18 +252,18 @@ void cut_flow()
    mc->Draw("hist same");
    
    Double_t Graph_from_cut_flow_fx3043[6] = {
-   0.5,
-   1.5,
-   2.5,
-   3.5,
-   4.5,
+   1,
+   2,
+   3,
+   4,
+   5,
    0};
    Double_t Graph_from_cut_flow_fy3043[6] = {
-   0,
    222631,
    176629,
    131175,
    131120,
+   0,
    0};
    Double_t Graph_from_cut_flow_felx3043[6] = {
    0.5,
@@ -273,11 +273,11 @@ void cut_flow()
    0.5,
    0};
    Double_t Graph_from_cut_flow_fely3043[6] = {
-   0,
    471.8379,
    420.2725,
    362.1809,
    362.105,
+   0,
    0};
    Double_t Graph_from_cut_flow_fehx3043[6] = {
    0.5,
@@ -287,11 +287,11 @@ void cut_flow()
    0.5,
    0};
    Double_t Graph_from_cut_flow_fehy3043[6] = {
-   1.841055,
    471.8379,
    420.2725,
    362.1809,
    362.105,
+   1.841055,
    1.841055};
    TGraphAsymmErrors *grae = new TGraphAsymmErrors(6,Graph_from_cut_flow_fx3043,Graph_from_cut_flow_fy3043,Graph_from_cut_flow_felx3043,Graph_from_cut_flow_fehx3043,Graph_from_cut_flow_fely3043,Graph_from_cut_flow_fehy3043);
    grae->SetName("Graph_from_cut_flow");
@@ -301,7 +301,7 @@ void cut_flow()
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_cut_flow3043 = new TH1F("Graph_Graph_from_cut_flow3043","Data",100,0,5.5);
+   TH1F *Graph_Graph_from_cut_flow3043 = new TH1F("Graph_Graph_from_cut_flow3043","Data",100,0,6.05);
    Graph_Graph_from_cut_flow3043->SetMinimum(0);
    Graph_Graph_from_cut_flow3043->SetMaximum(245413.1);
    Graph_Graph_from_cut_flow3043->SetDirectory(0);
@@ -417,7 +417,7 @@ tex->SetNDC();
    TPad *p2 = new TPad("p2", "p2",0,0.85,1,1);
    p2->Draw();
    p2->cd();
-   p2->Range(-0.7228916,0.4485106,5.301205,1.597447);
+   p2->Range(-0.2228916,0.4485106,5.801205,1.597447);
    p2->SetFillColor(0);
    p2->SetBorderMode(0);
    p2->SetBorderSize(2);
@@ -430,7 +430,7 @@ tex->SetNDC();
    p2->SetFrameBorderMode(0);
    p2->SetFrameBorderMode(0);
    
-   TH1F *ratioframe__154 = new TH1F("ratioframe__154","t#bar{t}",5,0,5);
+   TH1F *ratioframe__154 = new TH1F("ratioframe__154","t#bar{t}",5,0.5,5.5);
    ratioframe__154->SetMinimum(0.46);
    ratioframe__154->SetMaximum(1.54);
    ratioframe__154->SetEntries(1773475);
@@ -461,17 +461,17 @@ tex->SetNDC();
    ratioframe__154->Draw("");
    
    Double_t Graph_from_ratio_fx3044[5] = {
-   0.5,
-   1.5,
-   2.5,
-   3.5,
-   4.5};
+   1,
+   2,
+   3,
+   4,
+   5};
    Double_t Graph_from_ratio_fy3044[5] = {
-   0,
-   1.083504e-05,
-   1.051218e-05,
-   9.987251e-06,
-   9.989829e-06};
+   0.9430863,
+   0.9355787,
+   0.9060639,
+   0.9062935,
+   0};
    Double_t Graph_from_ratio_felx3044[5] = {
    0.5,
    0.5,
@@ -479,11 +479,11 @@ tex->SetNDC();
    0.5,
    0.5};
    Double_t Graph_from_ratio_fely3044[5] = {
-   0,
-   2.706011e-08,
-   2.935181e-08,
-   3.213693e-08,
-   3.215306e-08};
+   0.002987491,
+   0.00309559,
+   0.003006526,
+   0.003008055,
+   0};
    Double_t Graph_from_ratio_fehx3044[5] = {
    0.5,
    0.5,
@@ -491,11 +491,11 @@ tex->SetNDC();
    0.5,
    0.5};
    Double_t Graph_from_ratio_fehy3044[5] = {
-   0,
-   2.706011e-08,
-   2.935181e-08,
-   3.213693e-08,
-   3.215306e-08};
+   0.002987491,
+   0.00309559,
+   0.003006526,
+   0.003008055,
+   0};
    grae = new TGraphAsymmErrors(5,Graph_from_ratio_fx3044,Graph_from_ratio_fy3044,Graph_from_ratio_felx3044,Graph_from_ratio_fehx3044,Graph_from_ratio_fely3044,Graph_from_ratio_fehy3044);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
@@ -504,9 +504,9 @@ tex->SetNDC();
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_ratio3044 = new TH1F("Graph_Graph_from_ratio3044","Data",100,0,5.5);
+   TH1F *Graph_Graph_from_ratio3044 = new TH1F("Graph_Graph_from_ratio3044","Data",100,0,6);
    Graph_Graph_from_ratio3044->SetMinimum(0);
-   Graph_Graph_from_ratio3044->SetMaximum(1.194831e-05);
+   Graph_Graph_from_ratio3044->SetMaximum(1.040681);
    Graph_Graph_from_ratio3044->SetDirectory(0);
    Graph_Graph_from_ratio3044->SetStats(0);
 

@@ -1,7 +1,7 @@
 void nleptons()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 09:29:22 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 10:19:40 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -20,7 +20,7 @@ void nleptons()
    TPad *p1 = new TPad("p1", "p1",0,0,1,0.85);
    p1->Draw();
    p1->cd();
-   p1->Range(-0.5783133,-26010.87,4.240964,190747.2);
+   p1->Range(-0.5783133,-25942,4.240964,190242.2);
    p1->SetFillColor(0);
    p1->SetBorderMode(0);
    p1->SetBorderSize(2);
@@ -34,7 +34,7 @@ void nleptons()
    
    TH1F *frame__29 = new TH1F("frame__29","t#bar{t}",10,0,4);
    frame__29->SetMinimum(0.1);
-   frame__29->SetMaximum(188579.6);
+   frame__29->SetMaximum(188080.3);
    frame__29->SetEntries(365945);
    frame__29->SetDirectory(0);
 
@@ -68,7 +68,7 @@ void nleptons()
    
    TH1F *mc_stack_5 = new TH1F("mc_stack_5","mc",10,0,4);
    mc_stack_5->SetMinimum(0);
-   mc_stack_5->SetMaximum(152314.3);
+   mc_stack_5->SetMaximum(151911);
    mc_stack_5->SetDirectory(0);
    mc_stack_5->SetStats(0);
 
@@ -90,8 +90,8 @@ void nleptons()
    
    
    TH1F *nleptons_t#bar{t}__30 = new TH1F("nleptons_t#bar{t}__30","t#bar{t}",10,0,4);
-   nleptons_t#bar{t}__30->SetBinContent(6,138101.4);
-   nleptons_t#bar{t}__30->SetBinError(6,238.1928);
+   nleptons_t#bar{t}__30->SetBinContent(6,137767.4);
+   nleptons_t#bar{t}__30->SetBinError(6,237.8798);
    nleptons_t#bar{t}__30->SetEntries(360257);
    nleptons_t#bar{t}__30->SetDirectory(0);
 
@@ -117,8 +117,8 @@ void nleptons()
    mc->Add(nleptons_t#bar{t},"hist");
    
    TH1F *nleptons_Diboson__31 = new TH1F("nleptons_Diboson__31","Diboson",10,0,4);
-   nleptons_Diboson__31->SetBinContent(6,182.1511);
-   nleptons_Diboson__31->SetBinError(6,8.427531);
+   nleptons_Diboson__31->SetBinContent(6,181.1088);
+   nleptons_Diboson__31->SetBinError(6,8.38248);
    nleptons_Diboson__31->SetEntries(511);
    nleptons_Diboson__31->SetDirectory(0);
 
@@ -144,8 +144,8 @@ void nleptons()
    mc->Add(nleptons_Diboson,"hist");
    
    TH1F *nleptons_DY__32 = new TH1F("nleptons_DY__32","DY",10,0,4);
-   nleptons_DY__32->SetBinContent(6,339.3073);
-   nleptons_DY__32->SetBinError(6,76.46774);
+   nleptons_DY__32->SetBinContent(6,331.7063);
+   nleptons_DY__32->SetBinError(6,75.73561);
    nleptons_DY__32->SetEntries(21);
    nleptons_DY__32->SetDirectory(0);
 
@@ -195,8 +195,8 @@ void nleptons()
    mc->Add(nleptons_W,"hist");
    
    TH1F *nleptons_SinglesPtop__34 = new TH1F("nleptons_SinglesPtop__34","Single top",10,0,4);
-   nleptons_SinglesPtop__34->SetBinContent(6,6438.368);
-   nleptons_SinglesPtop__34->SetBinError(6,92.80948);
+   nleptons_SinglesPtop__34->SetBinContent(6,6396.946);
+   nleptons_SinglesPtop__34->SetBinError(6,92.50653);
    nleptons_SinglesPtop__34->SetEntries(5156);
    nleptons_SinglesPtop__34->SetDirectory(0);
 
@@ -478,7 +478,7 @@ tex->SetNDC();
    0,
    0,
    0,
-   0.9038941,
+   0.9062935,
    0,
    0,
    0,
@@ -500,7 +500,7 @@ tex->SetNDC();
    0,
    0,
    0,
-   0.002999704,
+   0.003008055,
    0,
    0,
    0,
@@ -522,7 +522,7 @@ tex->SetNDC();
    0,
    0,
    0,
-   0.002999704,
+   0.003008055,
    0,
    0,
    0,
@@ -537,7 +537,7 @@ tex->SetNDC();
    
    TH1F *Graph_Graph_from_ratio3010 = new TH1F("Graph_Graph_from_ratio3010","Data",100,0,4.4);
    Graph_Graph_from_ratio3010->SetMinimum(0);
-   Graph_Graph_from_ratio3010->SetMaximum(0.9975832);
+   Graph_Graph_from_ratio3010->SetMaximum(1.000232);
    Graph_Graph_from_ratio3010->SetDirectory(0);
    Graph_Graph_from_ratio3010->SetStats(0);
 

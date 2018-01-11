@@ -1,7 +1,7 @@
 void nvtx()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 09:29:23 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 10:19:40 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -20,7 +20,7 @@ void nvtx()
    TPad *p1 = new TPad("p1", "p1",0,0,1,0.85);
    p1->Draw();
    p1->cd();
-   p1->Range(-5.783133,-1664.091,42.40964,12204.17);
+   p1->Range(-5.783133,-1597.9,42.40964,11718.77);
    p1->SetFillColor(0);
    p1->SetBorderMode(0);
    p1->SetBorderSize(2);
@@ -34,7 +34,7 @@ void nvtx()
    
    TH1F *frame__71 = new TH1F("frame__71","t#bar{t}",40,0,40);
    frame__71->SetMinimum(0.1);
-   frame__71->SetMaximum(12065.49);
+   frame__71->SetMaximum(11585.6);
    frame__71->SetEntries(365945);
    frame__71->SetDirectory(0);
 
@@ -67,8 +67,8 @@ void nvtx()
    mc->SetTitle("mc");
    
    TH1F *mc_stack_11 = new TH1F("mc_stack_11","mc",40,0,40);
-   mc_stack_11->SetMinimum(-9.345868e-07);
-   mc_stack_11->SetMaximum(9745.201);
+   mc_stack_11->SetMinimum(-7.572143e-07);
+   mc_stack_11->SetMaximum(8954.422);
    mc_stack_11->SetDirectory(0);
    mc_stack_11->SetStats(0);
 
@@ -90,86 +90,86 @@ void nvtx()
    
    
    TH1F *nvtx_t#bar{t}__72 = new TH1F("nvtx_t#bar{t}__72","t#bar{t}",40,0,40);
-   nvtx_t#bar{t}__72->SetBinContent(2,2.562006);
-   nvtx_t#bar{t}__72->SetBinContent(3,10.0119);
-   nvtx_t#bar{t}__72->SetBinContent(4,25.13856);
-   nvtx_t#bar{t}__72->SetBinContent(5,68.96152);
-   nvtx_t#bar{t}__72->SetBinContent(6,155.562);
-   nvtx_t#bar{t}__72->SetBinContent(7,341.6103);
-   nvtx_t#bar{t}__72->SetBinContent(8,649.5957);
-   nvtx_t#bar{t}__72->SetBinContent(9,1179.327);
-   nvtx_t#bar{t}__72->SetBinContent(10,1871.554);
-   nvtx_t#bar{t}__72->SetBinContent(11,2762.877);
-   nvtx_t#bar{t}__72->SetBinContent(12,3750.854);
-   nvtx_t#bar{t}__72->SetBinContent(13,4813.021);
-   nvtx_t#bar{t}__72->SetBinContent(14,5909.667);
-   nvtx_t#bar{t}__72->SetBinContent(15,6853.557);
-   nvtx_t#bar{t}__72->SetBinContent(16,7678.413);
-   nvtx_t#bar{t}__72->SetBinContent(17,8273.009);
-   nvtx_t#bar{t}__72->SetBinContent(18,8742.105);
-   nvtx_t#bar{t}__72->SetBinContent(19,8830.601);
-   nvtx_t#bar{t}__72->SetBinContent(20,8846.322);
-   nvtx_t#bar{t}__72->SetBinContent(21,8532.307);
-   nvtx_t#bar{t}__72->SetBinContent(22,8186.598);
-   nvtx_t#bar{t}__72->SetBinContent(23,7518.168);
-   nvtx_t#bar{t}__72->SetBinContent(24,6920.785);
-   nvtx_t#bar{t}__72->SetBinContent(25,6148.84);
-   nvtx_t#bar{t}__72->SetBinContent(26,5457.532);
-   nvtx_t#bar{t}__72->SetBinContent(27,4732.139);
-   nvtx_t#bar{t}__72->SetBinContent(28,3926.77);
-   nvtx_t#bar{t}__72->SetBinContent(29,3297.779);
-   nvtx_t#bar{t}__72->SetBinContent(30,2698.574);
-   nvtx_t#bar{t}__72->SetBinContent(31,2231.021);
-   nvtx_t#bar{t}__72->SetBinContent(32,1780.446);
-   nvtx_t#bar{t}__72->SetBinContent(33,1404.175);
-   nvtx_t#bar{t}__72->SetBinContent(34,1110.572);
-   nvtx_t#bar{t}__72->SetBinContent(35,863.9863);
-   nvtx_t#bar{t}__72->SetBinContent(36,627.7006);
-   nvtx_t#bar{t}__72->SetBinContent(37,490.9953);
-   nvtx_t#bar{t}__72->SetBinContent(38,402.2416);
-   nvtx_t#bar{t}__72->SetBinContent(39,266.0336);
-   nvtx_t#bar{t}__72->SetBinContent(40,200.1754);
-   nvtx_t#bar{t}__72->SetBinContent(41,539.7565);
-   nvtx_t#bar{t}__72->SetBinError(2,0.7411694);
-   nvtx_t#bar{t}__72->SetBinError(3,1.584981);
-   nvtx_t#bar{t}__72->SetBinError(4,2.609561);
-   nvtx_t#bar{t}__72->SetBinError(5,4.438539);
-   nvtx_t#bar{t}__72->SetBinError(6,6.8606);
-   nvtx_t#bar{t}__72->SetBinError(7,10.44306);
-   nvtx_t#bar{t}__72->SetBinError(8,14.74589);
-   nvtx_t#bar{t}__72->SetBinError(9,20.32084);
-   nvtx_t#bar{t}__72->SetBinError(10,25.92133);
-   nvtx_t#bar{t}__72->SetBinError(11,32.0428);
-   nvtx_t#bar{t}__72->SetBinError(12,37.7285);
-   nvtx_t#bar{t}__72->SetBinError(13,43.14853);
-   nvtx_t#bar{t}__72->SetBinError(14,48.1949);
-   nvtx_t#bar{t}__72->SetBinError(15,52.2831);
-   nvtx_t#bar{t}__72->SetBinError(16,55.71614);
-   nvtx_t#bar{t}__72->SetBinError(17,58.14388);
-   nvtx_t#bar{t}__72->SetBinError(18,60.09102);
-   nvtx_t#bar{t}__72->SetBinError(19,60.73117);
-   nvtx_t#bar{t}__72->SetBinError(20,61.05951);
-   nvtx_t#bar{t}__72->SetBinError(21,60.27061);
-   nvtx_t#bar{t}__72->SetBinError(22,59.21454);
-   nvtx_t#bar{t}__72->SetBinError(23,56.98262);
-   nvtx_t#bar{t}__72->SetBinError(24,54.81125);
-   nvtx_t#bar{t}__72->SetBinError(25,51.6883);
-   nvtx_t#bar{t}__72->SetBinError(26,48.68847);
-   nvtx_t#bar{t}__72->SetBinError(27,45.22499);
-   nvtx_t#bar{t}__72->SetBinError(28,40.97046);
-   nvtx_t#bar{t}__72->SetBinError(29,37.37539);
-   nvtx_t#bar{t}__72->SetBinError(30,33.54333);
-   nvtx_t#bar{t}__72->SetBinError(31,30.25637);
-   nvtx_t#bar{t}__72->SetBinError(32,26.73853);
-   nvtx_t#bar{t}__72->SetBinError(33,23.32787);
-   nvtx_t#bar{t}__72->SetBinError(34,20.40331);
-   nvtx_t#bar{t}__72->SetBinError(35,17.83819);
-   nvtx_t#bar{t}__72->SetBinError(36,14.77329);
-   nvtx_t#bar{t}__72->SetBinError(37,12.83389);
-   nvtx_t#bar{t}__72->SetBinError(38,11.36984);
-   nvtx_t#bar{t}__72->SetBinError(39,9.112085);
-   nvtx_t#bar{t}__72->SetBinError(40,7.632594);
-   nvtx_t#bar{t}__72->SetBinError(41,11.23049);
+   nvtx_t#bar{t}__72->SetBinContent(2,5.003424);
+   nvtx_t#bar{t}__72->SetBinContent(3,16.73344);
+   nvtx_t#bar{t}__72->SetBinContent(4,39.5087);
+   nvtx_t#bar{t}__72->SetBinContent(5,109.3004);
+   nvtx_t#bar{t}__72->SetBinContent(6,220.4371);
+   nvtx_t#bar{t}__72->SetBinContent(7,454.3731);
+   nvtx_t#bar{t}__72->SetBinContent(8,795.9819);
+   nvtx_t#bar{t}__72->SetBinContent(9,1355.081);
+   nvtx_t#bar{t}__72->SetBinContent(10,2090.484);
+   nvtx_t#bar{t}__72->SetBinContent(11,2932.946);
+   nvtx_t#bar{t}__72->SetBinContent(12,3862.245);
+   nvtx_t#bar{t}__72->SetBinContent(13,4851.769);
+   nvtx_t#bar{t}__72->SetBinContent(14,5820.264);
+   nvtx_t#bar{t}__72->SetBinContent(15,6624.231);
+   nvtx_t#bar{t}__72->SetBinContent(16,7319.432);
+   nvtx_t#bar{t}__72->SetBinContent(17,7803.297);
+   nvtx_t#bar{t}__72->SetBinContent(18,8109.334);
+   nvtx_t#bar{t}__72->SetBinContent(19,8138.751);
+   nvtx_t#bar{t}__72->SetBinContent(20,8078.995);
+   nvtx_t#bar{t}__72->SetBinContent(21,7725.161);
+   nvtx_t#bar{t}__72->SetBinContent(22,7394.572);
+   nvtx_t#bar{t}__72->SetBinContent(23,6734.65);
+   nvtx_t#bar{t}__72->SetBinContent(24,6187.521);
+   nvtx_t#bar{t}__72->SetBinContent(25,5545.561);
+   nvtx_t#bar{t}__72->SetBinContent(26,4981.706);
+   nvtx_t#bar{t}__72->SetBinContent(27,4399.054);
+   nvtx_t#bar{t}__72->SetBinContent(28,3769.899);
+   nvtx_t#bar{t}__72->SetBinContent(29,3270.805);
+   nvtx_t#bar{t}__72->SetBinContent(30,2810.915);
+   nvtx_t#bar{t}__72->SetBinContent(31,2457.883);
+   nvtx_t#bar{t}__72->SetBinContent(32,2088.53);
+   nvtx_t#bar{t}__72->SetBinContent(33,1814.45);
+   nvtx_t#bar{t}__72->SetBinContent(34,1562.235);
+   nvtx_t#bar{t}__72->SetBinContent(35,1323.023);
+   nvtx_t#bar{t}__72->SetBinContent(36,1109.401);
+   nvtx_t#bar{t}__72->SetBinContent(37,943.7582);
+   nvtx_t#bar{t}__72->SetBinContent(38,860.016);
+   nvtx_t#bar{t}__72->SetBinContent(39,656.5605);
+   nvtx_t#bar{t}__72->SetBinContent(40,570.916);
+   nvtx_t#bar{t}__72->SetBinContent(41,2931.911);
+   nvtx_t#bar{t}__72->SetBinError(2,1.429886);
+   nvtx_t#bar{t}__72->SetBinError(3,2.617018);
+   nvtx_t#bar{t}__72->SetBinError(4,3.987468);
+   nvtx_t#bar{t}__72->SetBinError(5,6.75194);
+   nvtx_t#bar{t}__72->SetBinError(6,9.528565);
+   nvtx_t#bar{t}__72->SetBinError(7,13.69161);
+   nvtx_t#bar{t}__72->SetBinError(8,18.05689);
+   nvtx_t#bar{t}__72->SetBinError(9,23.58413);
+   nvtx_t#bar{t}__72->SetBinError(10,29.33092);
+   nvtx_t#bar{t}__72->SetBinError(11,34.70465);
+   nvtx_t#bar{t}__72->SetBinError(12,39.81707);
+   nvtx_t#bar{t}__72->SetBinError(13,44.68004);
+   nvtx_t#bar{t}__72->SetBinError(14,48.88062);
+   nvtx_t#bar{t}__72->SetBinError(15,52.12042);
+   nvtx_t#bar{t}__72->SetBinError(16,54.83997);
+   nvtx_t#bar{t}__72->SetBinError(17,56.60693);
+   nvtx_t#bar{t}__72->SetBinError(18,57.69474);
+   nvtx_t#bar{t}__72->SetBinError(19,57.86522);
+   nvtx_t#bar{t}__72->SetBinError(20,57.59885);
+   nvtx_t#bar{t}__72->SetBinError(21,56.32233);
+   nvtx_t#bar{t}__72->SetBinError(22,55.10764);
+   nvtx_t#bar{t}__72->SetBinError(23,52.61016);
+   nvtx_t#bar{t}__72->SetBinError(24,50.38513);
+   nvtx_t#bar{t}__72->SetBinError(25,47.73092);
+   nvtx_t#bar{t}__72->SetBinError(26,45.23398);
+   nvtx_t#bar{t}__72->SetBinError(27,42.49704);
+   nvtx_t#bar{t}__72->SetBinError(28,39.35728);
+   nvtx_t#bar{t}__72->SetBinError(29,36.61725);
+   nvtx_t#bar{t}__72->SetBinError(30,33.96458);
+   nvtx_t#bar{t}__72->SetBinError(31,31.77374);
+   nvtx_t#bar{t}__72->SetBinError(32,29.32089);
+   nvtx_t#bar{t}__72->SetBinError(33,27.33509);
+   nvtx_t#bar{t}__72->SetBinError(34,25.34353);
+   nvtx_t#bar{t}__72->SetBinError(35,23.31572);
+   nvtx_t#bar{t}__72->SetBinError(36,21.37062);
+   nvtx_t#bar{t}__72->SetBinError(37,19.70668);
+   nvtx_t#bar{t}__72->SetBinError(38,18.79252);
+   nvtx_t#bar{t}__72->SetBinError(39,16.39763);
+   nvtx_t#bar{t}__72->SetBinError(40,15.30065);
+   nvtx_t#bar{t}__72->SetBinError(41,34.70229);
    nvtx_t#bar{t}__72->SetEntries(360257);
    nvtx_t#bar{t}__72->SetDirectory(0);
 
@@ -195,78 +195,78 @@ void nvtx()
    mc->Add(nvtx_t#bar{t},"hist");
    
    TH1F *nvtx_Diboson__73 = new TH1F("nvtx_Diboson__73","Diboson",40,0,40);
-   nvtx_Diboson__73->SetBinContent(5,0.3669195);
-   nvtx_Diboson__73->SetBinContent(7,0.09181011);
-   nvtx_Diboson__73->SetBinContent(8,1.146145);
-   nvtx_Diboson__73->SetBinContent(9,1.543194);
-   nvtx_Diboson__73->SetBinContent(10,2.768166);
-   nvtx_Diboson__73->SetBinContent(11,5.098091);
-   nvtx_Diboson__73->SetBinContent(12,4.497828);
-   nvtx_Diboson__73->SetBinContent(13,4.938346);
-   nvtx_Diboson__73->SetBinContent(14,5.920607);
-   nvtx_Diboson__73->SetBinContent(15,8.456815);
-   nvtx_Diboson__73->SetBinContent(16,9.319703);
-   nvtx_Diboson__73->SetBinContent(17,10.07892);
-   nvtx_Diboson__73->SetBinContent(18,9.204708);
-   nvtx_Diboson__73->SetBinContent(19,10.14536);
-   nvtx_Diboson__73->SetBinContent(20,9.527121);
-   nvtx_Diboson__73->SetBinContent(21,13.44261);
-   nvtx_Diboson__73->SetBinContent(22,9.876287);
-   nvtx_Diboson__73->SetBinContent(23,11.63869);
-   nvtx_Diboson__73->SetBinContent(24,6.451887);
-   nvtx_Diboson__73->SetBinContent(25,10.72303);
-   nvtx_Diboson__73->SetBinContent(26,6.973422);
-   nvtx_Diboson__73->SetBinContent(27,7.719114);
-   nvtx_Diboson__73->SetBinContent(28,7.10872);
-   nvtx_Diboson__73->SetBinContent(29,4.093088);
-   nvtx_Diboson__73->SetBinContent(30,4.55119);
-   nvtx_Diboson__73->SetBinContent(31,1.732036);
-   nvtx_Diboson__73->SetBinContent(32,3.091868);
-   nvtx_Diboson__73->SetBinContent(33,3.079247);
-   nvtx_Diboson__73->SetBinContent(34,2.802826);
-   nvtx_Diboson__73->SetBinContent(35,1.436749);
-   nvtx_Diboson__73->SetBinContent(36,1.35002);
-   nvtx_Diboson__73->SetBinContent(37,0.6941931);
-   nvtx_Diboson__73->SetBinContent(38,0.09624204);
-   nvtx_Diboson__73->SetBinContent(39,1.112209);
-   nvtx_Diboson__73->SetBinContent(40,0.02195357);
-   nvtx_Diboson__73->SetBinContent(41,1.052072);
-   nvtx_Diboson__73->SetBinError(5,0.3669195);
-   nvtx_Diboson__73->SetBinError(7,0.09181012);
-   nvtx_Diboson__73->SetBinError(8,0.5971013);
-   nvtx_Diboson__73->SetBinError(9,0.6923629);
-   nvtx_Diboson__73->SetBinError(10,0.9869253);
-   nvtx_Diboson__73->SetBinError(11,1.334074);
-   nvtx_Diboson__73->SetBinError(12,1.263528);
-   nvtx_Diboson__73->SetBinError(13,1.373103);
-   nvtx_Diboson__73->SetBinError(14,1.490765);
-   nvtx_Diboson__73->SetBinError(15,1.776876);
-   nvtx_Diboson__73->SetBinError(16,1.90657);
-   nvtx_Diboson__73->SetBinError(17,1.980869);
-   nvtx_Diboson__73->SetBinError(18,1.923862);
-   nvtx_Diboson__73->SetBinError(19,1.996713);
-   nvtx_Diboson__73->SetBinError(20,1.949833);
-   nvtx_Diboson__73->SetBinError(21,2.350604);
-   nvtx_Diboson__73->SetBinError(22,2.022037);
-   nvtx_Diboson__73->SetBinError(23,2.17853);
-   nvtx_Diboson__73->SetBinError(24,1.591758);
-   nvtx_Diboson__73->SetBinError(25,2.106668);
-   nvtx_Diboson__73->SetBinError(26,1.708095);
-   nvtx_Diboson__73->SetBinError(27,1.772229);
-   nvtx_Diboson__73->SetBinError(28,1.74729);
-   nvtx_Diboson__73->SetBinError(29,1.248554);
-   nvtx_Diboson__73->SetBinError(30,1.311594);
-   nvtx_Diboson__73->SetBinError(31,0.8202787);
-   nvtx_Diboson__73->SetBinError(32,1.10039);
-   nvtx_Diboson__73->SetBinError(33,1.042974);
-   nvtx_Diboson__73->SetBinError(34,1.008988);
-   nvtx_Diboson__73->SetBinError(35,0.7336144);
-   nvtx_Diboson__73->SetBinError(36,0.6845534);
-   nvtx_Diboson__73->SetBinError(37,0.3930007);
-   nvtx_Diboson__73->SetBinError(38,0.07870088);
-   nvtx_Diboson__73->SetBinError(39,0.5869388);
-   nvtx_Diboson__73->SetBinError(40,0.0204632);
-   nvtx_Diboson__73->SetBinError(41,0.394902);
+   nvtx_Diboson__73->SetBinContent(5,0.3458666);
+   nvtx_Diboson__73->SetBinContent(7,0.4341311);
+   nvtx_Diboson__73->SetBinContent(8,1.540293);
+   nvtx_Diboson__73->SetBinContent(9,2.073714);
+   nvtx_Diboson__73->SetBinContent(10,3.200663);
+   nvtx_Diboson__73->SetBinContent(11,5.7331);
+   nvtx_Diboson__73->SetBinContent(12,4.378333);
+   nvtx_Diboson__73->SetBinContent(13,4.462409);
+   nvtx_Diboson__73->SetBinContent(14,5.729887);
+   nvtx_Diboson__73->SetBinContent(15,8.17416);
+   nvtx_Diboson__73->SetBinContent(16,8.262775);
+   nvtx_Diboson__73->SetBinContent(17,9.446387);
+   nvtx_Diboson__73->SetBinContent(18,8.873469);
+   nvtx_Diboson__73->SetBinContent(19,6.904152);
+   nvtx_Diboson__73->SetBinContent(20,8.424392);
+   nvtx_Diboson__73->SetBinContent(21,10.60277);
+   nvtx_Diboson__73->SetBinContent(22,8.900023);
+   nvtx_Diboson__73->SetBinContent(23,11.10779);
+   nvtx_Diboson__73->SetBinContent(24,7.209071);
+   nvtx_Diboson__73->SetBinContent(25,9.180158);
+   nvtx_Diboson__73->SetBinContent(26,5.970304);
+   nvtx_Diboson__73->SetBinContent(27,7.281801);
+   nvtx_Diboson__73->SetBinContent(28,5.937562);
+   nvtx_Diboson__73->SetBinContent(29,4.949276);
+   nvtx_Diboson__73->SetBinContent(30,5.061709);
+   nvtx_Diboson__73->SetBinContent(31,1.809576);
+   nvtx_Diboson__73->SetBinContent(32,3.410291);
+   nvtx_Diboson__73->SetBinContent(33,3.932836);
+   nvtx_Diboson__73->SetBinContent(34,2.994125);
+   nvtx_Diboson__73->SetBinContent(35,1.743477);
+   nvtx_Diboson__73->SetBinContent(36,2.015735);
+   nvtx_Diboson__73->SetBinContent(37,1.209946);
+   nvtx_Diboson__73->SetBinContent(38,0.8021368);
+   nvtx_Diboson__73->SetBinContent(39,1.920902);
+   nvtx_Diboson__73->SetBinContent(40,0.8037142);
+   nvtx_Diboson__73->SetBinContent(41,6.281992);
+   nvtx_Diboson__73->SetBinError(5,0.3458666);
+   nvtx_Diboson__73->SetBinError(7,0.4341312);
+   nvtx_Diboson__73->SetBinError(8,0.7721904);
+   nvtx_Diboson__73->SetBinError(9,0.9303489);
+   nvtx_Diboson__73->SetBinError(10,1.13432);
+   nvtx_Diboson__73->SetBinError(11,1.487459);
+   nvtx_Diboson__73->SetBinError(12,1.320199);
+   nvtx_Diboson__73->SetBinError(13,1.309422);
+   nvtx_Diboson__73->SetBinError(14,1.515861);
+   nvtx_Diboson__73->SetBinError(15,1.772246);
+   nvtx_Diboson__73->SetBinError(16,1.775844);
+   nvtx_Diboson__73->SetBinError(17,1.928752);
+   nvtx_Diboson__73->SetBinError(18,1.886167);
+   nvtx_Diboson__73->SetBinError(19,1.556927);
+   nvtx_Diboson__73->SetBinError(20,1.808415);
+   nvtx_Diboson__73->SetBinError(21,1.980794);
+   nvtx_Diboson__73->SetBinError(22,1.878721);
+   nvtx_Diboson__73->SetBinError(23,2.120653);
+   nvtx_Diboson__73->SetBinError(24,1.702971);
+   nvtx_Diboson__73->SetBinError(25,1.904716);
+   nvtx_Diboson__73->SetBinError(26,1.497112);
+   nvtx_Diboson__73->SetBinError(27,1.676912);
+   nvtx_Diboson__73->SetBinError(28,1.510425);
+   nvtx_Diboson__73->SetBinError(29,1.369896);
+   nvtx_Diboson__73->SetBinError(30,1.363266);
+   nvtx_Diboson__73->SetBinError(31,0.8206712);
+   nvtx_Diboson__73->SetBinError(32,1.144002);
+   nvtx_Diboson__73->SetBinError(33,1.245123);
+   nvtx_Diboson__73->SetBinError(34,1.067556);
+   nvtx_Diboson__73->SetBinError(35,0.8053047);
+   nvtx_Diboson__73->SetBinError(36,0.8989404);
+   nvtx_Diboson__73->SetBinError(37,0.6634141);
+   nvtx_Diboson__73->SetBinError(38,0.5687176);
+   nvtx_Diboson__73->SetBinError(39,0.8751835);
+   nvtx_Diboson__73->SetBinError(40,0.5692468);
+   nvtx_Diboson__73->SetBinError(41,1.563421);
    nvtx_Diboson__73->SetEntries(511);
    nvtx_Diboson__73->SetDirectory(0);
 
@@ -292,34 +292,34 @@ void nvtx()
    mc->Add(nvtx_Diboson,"hist");
    
    TH1F *nvtx_DY__74 = new TH1F("nvtx_DY__74","DY",40,0,40);
-   nvtx_DY__74->SetBinContent(13,33.40588);
-   nvtx_DY__74->SetBinContent(14,16.99263);
-   nvtx_DY__74->SetBinContent(15,50.66055);
-   nvtx_DY__74->SetBinContent(16,31.8248);
-   nvtx_DY__74->SetBinContent(18,17.70657);
-   nvtx_DY__74->SetBinContent(21,34.73302);
-   nvtx_DY__74->SetBinContent(22,20.71554);
-   nvtx_DY__74->SetBinContent(23,34.53849);
-   nvtx_DY__74->SetBinContent(26,16.98714);
-   nvtx_DY__74->SetBinContent(27,15.6875);
-   nvtx_DY__74->SetBinContent(30,20.7678);
-   nvtx_DY__74->SetBinContent(31,26.93724);
-   nvtx_DY__74->SetBinContent(34,17.97306);
-   nvtx_DY__74->SetBinContent(41,0.3771112);
-   nvtx_DY__74->SetBinError(13,23.62208);
-   nvtx_DY__74->SetBinError(14,16.99263);
-   nvtx_DY__74->SetBinError(15,29.26659);
-   nvtx_DY__74->SetBinError(16,22.52096);
-   nvtx_DY__74->SetBinError(18,17.70657);
-   nvtx_DY__74->SetBinError(21,24.61815);
-   nvtx_DY__74->SetBinError(22,20.71554);
-   nvtx_DY__74->SetBinError(23,24.43033);
-   nvtx_DY__74->SetBinError(26,16.98714);
-   nvtx_DY__74->SetBinError(27,15.6875);
-   nvtx_DY__74->SetBinError(30,20.7678);
-   nvtx_DY__74->SetBinError(31,20.05369);
-   nvtx_DY__74->SetBinError(34,17.97306);
-   nvtx_DY__74->SetBinError(41,0.3771112);
+   nvtx_DY__74->SetBinContent(13,38.66452);
+   nvtx_DY__74->SetBinContent(14,19.39491);
+   nvtx_DY__74->SetBinContent(15,33.82054);
+   nvtx_DY__74->SetBinContent(16,17.57083);
+   nvtx_DY__74->SetBinContent(18,16.29086);
+   nvtx_DY__74->SetBinContent(21,36.22921);
+   nvtx_DY__74->SetBinContent(22,14.39964);
+   nvtx_DY__74->SetBinContent(23,34.98171);
+   nvtx_DY__74->SetBinContent(26,15.96457);
+   nvtx_DY__74->SetBinContent(27,18.13515);
+   nvtx_DY__74->SetBinContent(30,19.12663);
+   nvtx_DY__74->SetBinContent(31,34.51785);
+   nvtx_DY__74->SetBinContent(34,16.99921);
+   nvtx_DY__74->SetBinContent(41,15.61073);
+   nvtx_DY__74->SetBinError(13,27.35422);
+   nvtx_DY__74->SetBinError(14,19.39491);
+   nvtx_DY__74->SetBinError(15,23.14632);
+   nvtx_DY__74->SetBinError(16,15.70766);
+   nvtx_DY__74->SetBinError(18,16.29087);
+   nvtx_DY__74->SetBinError(21,25.71461);
+   nvtx_DY__74->SetBinError(22,14.39964);
+   nvtx_DY__74->SetBinError(23,24.77869);
+   nvtx_DY__74->SetBinError(26,15.96457);
+   nvtx_DY__74->SetBinError(27,18.13515);
+   nvtx_DY__74->SetBinError(30,19.12663);
+   nvtx_DY__74->SetBinError(31,24.4698);
+   nvtx_DY__74->SetBinError(34,16.99921);
+   nvtx_DY__74->SetBinError(41,15.61073);
    nvtx_DY__74->SetEntries(21);
    nvtx_DY__74->SetDirectory(0);
 
@@ -369,84 +369,84 @@ void nvtx()
    mc->Add(nvtx_W,"hist");
    
    TH1F *nvtx_SinglesPtop__76 = new TH1F("nvtx_SinglesPtop__76","Single top",40,0,40);
-   nvtx_SinglesPtop__76->SetBinContent(2,0.599883);
-   nvtx_SinglesPtop__76->SetBinContent(3,0.6295625);
-   nvtx_SinglesPtop__76->SetBinContent(5,3.39625);
-   nvtx_SinglesPtop__76->SetBinContent(6,9.10181);
-   nvtx_SinglesPtop__76->SetBinContent(7,14.4647);
-   nvtx_SinglesPtop__76->SetBinContent(8,47.10493);
-   nvtx_SinglesPtop__76->SetBinContent(9,55.53765);
-   nvtx_SinglesPtop__76->SetBinContent(10,81.44025);
-   nvtx_SinglesPtop__76->SetBinContent(11,108.1657);
-   nvtx_SinglesPtop__76->SetBinContent(12,161.6067);
-   nvtx_SinglesPtop__76->SetBinContent(13,247.0246);
-   nvtx_SinglesPtop__76->SetBinContent(14,268.3194);
-   nvtx_SinglesPtop__76->SetBinContent(15,298.417);
-   nvtx_SinglesPtop__76->SetBinContent(16,376.8653);
-   nvtx_SinglesPtop__76->SetBinContent(17,365.1441);
-   nvtx_SinglesPtop__76->SetBinContent(18,436.1141);
-   nvtx_SinglesPtop__76->SetBinContent(19,404.8253);
-   nvtx_SinglesPtop__76->SetBinContent(20,425.2941);
-   nvtx_SinglesPtop__76->SetBinContent(21,394.7953);
-   nvtx_SinglesPtop__76->SetBinContent(22,361.4669);
-   nvtx_SinglesPtop__76->SetBinContent(23,331.4504);
-   nvtx_SinglesPtop__76->SetBinContent(24,296.874);
-   nvtx_SinglesPtop__76->SetBinContent(25,297.5699);
-   nvtx_SinglesPtop__76->SetBinContent(26,263.9673);
-   nvtx_SinglesPtop__76->SetBinContent(27,247.4348);
-   nvtx_SinglesPtop__76->SetBinContent(28,172.4242);
-   nvtx_SinglesPtop__76->SetBinContent(29,152.3854);
-   nvtx_SinglesPtop__76->SetBinContent(30,142.146);
-   nvtx_SinglesPtop__76->SetBinContent(31,121.1571);
-   nvtx_SinglesPtop__76->SetBinContent(32,82.86644);
-   nvtx_SinglesPtop__76->SetBinContent(33,67.37107);
-   nvtx_SinglesPtop__76->SetBinContent(34,52.68162);
-   nvtx_SinglesPtop__76->SetBinContent(35,38.19365);
-   nvtx_SinglesPtop__76->SetBinContent(36,30.36678);
-   nvtx_SinglesPtop__76->SetBinContent(37,17.04907);
-   nvtx_SinglesPtop__76->SetBinContent(38,20.12409);
-   nvtx_SinglesPtop__76->SetBinContent(39,11.87034);
-   nvtx_SinglesPtop__76->SetBinContent(40,7.838285);
-   nvtx_SinglesPtop__76->SetBinContent(41,24.28397);
-   nvtx_SinglesPtop__76->SetBinError(2,0.5998829);
-   nvtx_SinglesPtop__76->SetBinError(3,0.6295625);
-   nvtx_SinglesPtop__76->SetBinError(5,1.761843);
-   nvtx_SinglesPtop__76->SetBinError(6,3.168554);
-   nvtx_SinglesPtop__76->SetBinError(7,3.579887);
-   nvtx_SinglesPtop__76->SetBinError(8,7.167945);
-   nvtx_SinglesPtop__76->SetBinError(9,7.960236);
-   nvtx_SinglesPtop__76->SetBinError(10,9.581911);
-   nvtx_SinglesPtop__76->SetBinError(11,11.36632);
-   nvtx_SinglesPtop__76->SetBinError(12,14.12865);
-   nvtx_SinglesPtop__76->SetBinError(13,17.77617);
-   nvtx_SinglesPtop__76->SetBinError(14,18.58171);
-   nvtx_SinglesPtop__76->SetBinError(15,19.66219);
-   nvtx_SinglesPtop__76->SetBinError(16,22.31968);
-   nvtx_SinglesPtop__76->SetBinError(17,22.10865);
-   nvtx_SinglesPtop__76->SetBinError(18,24.29003);
-   nvtx_SinglesPtop__76->SetBinError(19,23.42982);
-   nvtx_SinglesPtop__76->SetBinError(20,24.12603);
-   nvtx_SinglesPtop__76->SetBinError(21,23.34488);
-   nvtx_SinglesPtop__76->SetBinError(22,22.5275);
-   nvtx_SinglesPtop__76->SetBinError(23,21.63856);
-   nvtx_SinglesPtop__76->SetBinError(24,20.43867);
-   nvtx_SinglesPtop__76->SetBinError(25,20.46513);
-   nvtx_SinglesPtop__76->SetBinError(26,19.30615);
-   nvtx_SinglesPtop__76->SetBinError(27,18.68835);
-   nvtx_SinglesPtop__76->SetBinError(28,15.6317);
-   nvtx_SinglesPtop__76->SetBinError(29,14.65401);
-   nvtx_SinglesPtop__76->SetBinError(30,13.87727);
-   nvtx_SinglesPtop__76->SetBinError(31,12.68941);
-   nvtx_SinglesPtop__76->SetBinError(32,10.38759);
-   nvtx_SinglesPtop__76->SetBinError(33,9.217772);
-   nvtx_SinglesPtop__76->SetBinError(34,7.885163);
-   nvtx_SinglesPtop__76->SetBinError(35,6.416066);
-   nvtx_SinglesPtop__76->SetBinError(36,5.6512);
-   nvtx_SinglesPtop__76->SetBinError(37,4.382412);
-   nvtx_SinglesPtop__76->SetBinError(38,4.686496);
-   nvtx_SinglesPtop__76->SetBinError(39,3.524281);
-   nvtx_SinglesPtop__76->SetBinError(40,2.479579);
-   nvtx_SinglesPtop__76->SetBinError(41,3.979522);
+   nvtx_SinglesPtop__76->SetBinContent(2,1.462832);
+   nvtx_SinglesPtop__76->SetBinContent(3,1.553983);
+   nvtx_SinglesPtop__76->SetBinContent(5,5.582844);
+   nvtx_SinglesPtop__76->SetBinContent(6,9.929082);
+   nvtx_SinglesPtop__76->SetBinContent(7,24.94729);
+   nvtx_SinglesPtop__76->SetBinContent(8,55.89536);
+   nvtx_SinglesPtop__76->SetBinContent(9,63.2588);
+   nvtx_SinglesPtop__76->SetBinContent(10,95.54023);
+   nvtx_SinglesPtop__76->SetBinContent(11,115.875);
+   nvtx_SinglesPtop__76->SetBinContent(12,173.1176);
+   nvtx_SinglesPtop__76->SetBinContent(13,239.1669);
+   nvtx_SinglesPtop__76->SetBinContent(14,261.2765);
+   nvtx_SinglesPtop__76->SetBinContent(15,295.5053);
+   nvtx_SinglesPtop__76->SetBinContent(16,358.7266);
+   nvtx_SinglesPtop__76->SetBinContent(17,345.403);
+   nvtx_SinglesPtop__76->SetBinContent(18,393.5217);
+   nvtx_SinglesPtop__76->SetBinContent(19,370.1881);
+   nvtx_SinglesPtop__76->SetBinContent(20,382.1055);
+   nvtx_SinglesPtop__76->SetBinContent(21,359.3303);
+   nvtx_SinglesPtop__76->SetBinContent(22,323.1664);
+   nvtx_SinglesPtop__76->SetBinContent(23,290.4366);
+   nvtx_SinglesPtop__76->SetBinContent(24,268.4556);
+   nvtx_SinglesPtop__76->SetBinContent(25,266.9888);
+   nvtx_SinglesPtop__76->SetBinContent(26,232.6319);
+   nvtx_SinglesPtop__76->SetBinContent(27,220.0368);
+   nvtx_SinglesPtop__76->SetBinContent(28,160.7997);
+   nvtx_SinglesPtop__76->SetBinContent(29,152.587);
+   nvtx_SinglesPtop__76->SetBinContent(30,156.9255);
+   nvtx_SinglesPtop__76->SetBinContent(31,128.4676);
+   nvtx_SinglesPtop__76->SetBinContent(32,103.2569);
+   nvtx_SinglesPtop__76->SetBinContent(33,80.50037);
+   nvtx_SinglesPtop__76->SetBinContent(34,78.3559);
+   nvtx_SinglesPtop__76->SetBinContent(35,63.84501);
+   nvtx_SinglesPtop__76->SetBinContent(36,57.05404);
+   nvtx_SinglesPtop__76->SetBinContent(37,40.99373);
+   nvtx_SinglesPtop__76->SetBinContent(38,40.44538);
+   nvtx_SinglesPtop__76->SetBinContent(39,23.87106);
+   nvtx_SinglesPtop__76->SetBinContent(40,25.82519);
+   nvtx_SinglesPtop__76->SetBinContent(41,129.9147);
+   nvtx_SinglesPtop__76->SetBinError(2,1.462832);
+   nvtx_SinglesPtop__76->SetBinError(3,1.553983);
+   nvtx_SinglesPtop__76->SetBinError(5,2.796876);
+   nvtx_SinglesPtop__76->SetBinError(6,3.517771);
+   nvtx_SinglesPtop__76->SetBinError(7,5.74149);
+   nvtx_SinglesPtop__76->SetBinError(8,8.633463);
+   nvtx_SinglesPtop__76->SetBinError(9,9.164872);
+   nvtx_SinglesPtop__76->SetBinError(10,11.40477);
+   nvtx_SinglesPtop__76->SetBinError(11,12.5095);
+   nvtx_SinglesPtop__76->SetBinError(12,15.31605);
+   nvtx_SinglesPtop__76->SetBinError(13,17.71468);
+   nvtx_SinglesPtop__76->SetBinError(14,18.69286);
+   nvtx_SinglesPtop__76->SetBinError(15,19.93559);
+   nvtx_SinglesPtop__76->SetBinError(16,21.95328);
+   nvtx_SinglesPtop__76->SetBinError(17,21.53316);
+   nvtx_SinglesPtop__76->SetBinError(18,22.93563);
+   nvtx_SinglesPtop__76->SetBinError(19,22.27692);
+   nvtx_SinglesPtop__76->SetBinError(20,22.56098);
+   nvtx_SinglesPtop__76->SetBinError(21,21.76174);
+   nvtx_SinglesPtop__76->SetBinError(22,20.84791);
+   nvtx_SinglesPtop__76->SetBinError(23,19.76736);
+   nvtx_SinglesPtop__76->SetBinError(24,18.99818);
+   nvtx_SinglesPtop__76->SetBinError(25,18.83691);
+   nvtx_SinglesPtop__76->SetBinError(26,17.51468);
+   nvtx_SinglesPtop__76->SetBinError(27,17.10138);
+   nvtx_SinglesPtop__76->SetBinError(28,14.69855);
+   nvtx_SinglesPtop__76->SetBinError(29,14.34931);
+   nvtx_SinglesPtop__76->SetBinError(30,14.52215);
+   nvtx_SinglesPtop__76->SetBinError(31,13.12954);
+   nvtx_SinglesPtop__76->SetBinError(32,11.79756);
+   nvtx_SinglesPtop__76->SetBinError(33,10.4098);
+   nvtx_SinglesPtop__76->SetBinError(34,10.30644);
+   nvtx_SinglesPtop__76->SetBinError(35,9.252273);
+   nvtx_SinglesPtop__76->SetBinError(36,8.670882);
+   nvtx_SinglesPtop__76->SetBinError(37,7.334421);
+   nvtx_SinglesPtop__76->SetBinError(38,7.418589);
+   nvtx_SinglesPtop__76->SetBinError(39,5.677711);
+   nvtx_SinglesPtop__76->SetBinError(40,5.977724);
+   nvtx_SinglesPtop__76->SetBinError(41,13.11344);
    nvtx_SinglesPtop__76->SetEntries(5156);
    nvtx_SinglesPtop__76->SetDirectory(0);
 
@@ -934,45 +934,45 @@ tex->SetNDC();
    39.5};
    Double_t Graph_from_ratio_fy3022[40] = {
    0,
-   2.8464,
-   1.503552,
-   1.869638,
-   1.567556,
-   1.773311,
-   1.721104,
-   1.560515,
-   1.537518,
-   1.436779,
-   1.322258,
-   1.29284,
-   1.218816,
-   1.182893,
-   1.128262,
-   1.065285,
-   1.021596,
-   0.9681556,
-   0.9114634,
-   0.8764006,
-   0.8355173,
-   0.7852045,
-   0.7620512,
-   0.7295015,
-   0.6992267,
-   0.6761861,
-   0.6420173,
-   0.6599611,
-   0.6505015,
-   0.6067607,
-   0.5708053,
-   0.6370538,
-   0.6035431,
-   0.6216061,
-   0.6418651,
-   0.6839371,
-   0.6604571,
-   0.6888194,
-   0.8064049,
-   0.7787126};
+   1.391841,
+   0.874918,
+   1.189611,
+   0.9893331,
+   1.267547,
+   1.277737,
+   1.276046,
+   1.338342,
+   1.283559,
+   1.245026,
+   1.253546,
+   1.210347,
+   1.201146,
+   1.168675,
+   1.11955,
+   1.082967,
+   1.045026,
+   0.9895672,
+   0.9603845,
+   0.9222361,
+   0.8701676,
+   0.8509192,
+   0.8153874,
+   0.7755427,
+   0.7419401,
+   0.6915695,
+   0.6884049,
+   0.6554189,
+   0.5812109,
+   0.5181726,
+   0.5416371,
+   0.4686965,
+   0.4432175,
+   0.4176834,
+   0.3859746,
+   0.340784,
+   0.3228801,
+   0.3297416,
+   0.2711093};
    Double_t Graph_from_ratio_felx3022[40] = {
    0.5,
    0.5,
@@ -1016,45 +1016,45 @@ tex->SetNDC();
    0.5};
    Double_t Graph_from_ratio_fely3022[40] = {
    0,
-   1.279464,
-   0.4464926,
-   0.3347253,
-   0.179478,
-   0.1318805,
-   0.08762628,
-   0.05985159,
-   0.04450644,
-   0.03387247,
-   0.02654095,
-   0.02251786,
-   0.01988756,
-   0.0172754,
-   0.0159339,
-   0.01424022,
-   0.01312167,
-   0.01245613,
-   0.01182384,
-   0.01152804,
-   0.01160142,
-   0.01134841,
-   0.01169291,
-   0.01165772,
-   0.01202411,
-   0.01263825,
-   0.01310971,
-   0.01450753,
-   0.01566939,
-   0.01703454,
-   0.01802159,
-   0.02091251,
-   0.02269055,
-   0.02731629,
-   0.02986512,
-   0.03615005,
-   0.04010551,
-   0.04508399,
-   0.06074833,
-   0.06815842};
+   0.6396228,
+   0.2627666,
+   0.2110101,
+   0.1119458,
+   0.0928751,
+   0.06502442,
+   0.04890949,
+   0.03887608,
+   0.0304499,
+   0.02518051,
+   0.02203892,
+   0.02014497,
+   0.01781276,
+   0.01645636,
+   0.0149762,
+   0.01405165,
+   0.01358167,
+   0.01296729,
+   0.01275295,
+   0.01299507,
+   0.01260713,
+   0.01322994,
+   0.0131284,
+   0.01341666,
+   0.01393171,
+   0.01424009,
+   0.01512997,
+   0.0157409,
+   0.01611258,
+   0.01634355,
+   0.01753936,
+   0.01729296,
+   0.01846333,
+   0.01891509,
+   0.01970912,
+   0.0199627,
+   0.02026534,
+   0.02353167,
+   0.02256809};
    Double_t Graph_from_ratio_fehx3022[40] = {
    0.5,
    0.5,
@@ -1098,45 +1098,45 @@ tex->SetNDC();
    0.5};
    Double_t Graph_from_ratio_fehy3022[40] = {
    0,
-   1.279464,
-   0.4464926,
-   0.3347253,
-   0.179478,
-   0.1318805,
-   0.08762628,
-   0.05985159,
-   0.04450644,
-   0.03387247,
-   0.02654095,
-   0.02251786,
-   0.01988756,
-   0.0172754,
-   0.0159339,
-   0.01424022,
-   0.01312167,
-   0.01245613,
-   0.01182384,
-   0.01152804,
-   0.01160142,
-   0.01134841,
-   0.01169291,
-   0.01165772,
-   0.01202411,
-   0.01263825,
-   0.01310971,
-   0.01450753,
-   0.01566939,
-   0.01703454,
-   0.01802159,
-   0.02091251,
-   0.02269055,
-   0.02731629,
-   0.02986512,
-   0.03615005,
-   0.04010551,
-   0.04508399,
-   0.06074833,
-   0.06815842};
+   0.6396228,
+   0.2627666,
+   0.2110101,
+   0.1119458,
+   0.0928751,
+   0.06502442,
+   0.04890949,
+   0.03887608,
+   0.0304499,
+   0.02518051,
+   0.02203892,
+   0.02014497,
+   0.01781276,
+   0.01645636,
+   0.0149762,
+   0.01405165,
+   0.01358167,
+   0.01296729,
+   0.01275295,
+   0.01299507,
+   0.01260713,
+   0.01322994,
+   0.0131284,
+   0.01341666,
+   0.01393171,
+   0.01424009,
+   0.01512997,
+   0.0157409,
+   0.01611258,
+   0.01634355,
+   0.01753936,
+   0.01729296,
+   0.01846333,
+   0.01891509,
+   0.01970912,
+   0.0199627,
+   0.02026534,
+   0.02353167,
+   0.02256809};
    grae = new TGraphAsymmErrors(40,Graph_from_ratio_fx3022,Graph_from_ratio_fy3022,Graph_from_ratio_felx3022,Graph_from_ratio_fehx3022,Graph_from_ratio_fely3022,Graph_from_ratio_fehy3022);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
@@ -1147,7 +1147,7 @@ tex->SetNDC();
    
    TH1F *Graph_Graph_from_ratio3022 = new TH1F("Graph_Graph_from_ratio3022","Data",100,0,44);
    Graph_Graph_from_ratio3022->SetMinimum(0);
-   Graph_Graph_from_ratio3022->SetMaximum(4.538451);
+   Graph_Graph_from_ratio3022->SetMaximum(2.23461);
    Graph_Graph_from_ratio3022->SetDirectory(0);
    Graph_Graph_from_ratio3022->SetStats(0);
 

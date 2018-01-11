@@ -1,7 +1,7 @@
 void nbtags()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 09:29:23 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 10:19:41 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -20,7 +20,7 @@ void nbtags()
    TPad *p1 = new TPad("p1", "p1",0,0,1,0.85);
    p1->Draw();
    p1->cd();
-   p1->Range(0.2108434,-16263.57,2.620482,119267);
+   p1->Range(0.2108434,-16234.55,2.620482,119054.2);
    p1->SetFillColor(0);
    p1->SetBorderMode(0);
    p1->SetBorderSize(2);
@@ -34,7 +34,7 @@ void nbtags()
    
    TH1F *frame__92 = new TH1F("frame__92","t#bar{t}",2,0.5,2.5);
    frame__92->SetMinimum(0.1);
-   frame__92->SetMaximum(117911.7);
+   frame__92->SetMaximum(117701.3);
    frame__92->SetEntries(365945);
    frame__92->SetDirectory(0);
 
@@ -68,7 +68,7 @@ void nbtags()
    
    TH1F *mc_stack_14 = new TH1F("mc_stack_14","mc",2,0.5,2.5);
    mc_stack_14->SetMinimum(0);
-   mc_stack_14->SetMaximum(95236.37);
+   mc_stack_14->SetMaximum(95066.44);
    mc_stack_14->SetDirectory(0);
    mc_stack_14->SetStats(0);
 
@@ -90,10 +90,10 @@ void nbtags()
    
    
    TH1F *nbtags_t#bar{t}__93 = new TH1F("nbtags_t#bar{t}__93","t#bar{t}",2,0.5,2.5);
-   nbtags_t#bar{t}__93->SetBinContent(1,85300.87);
-   nbtags_t#bar{t}__93->SetBinContent(2,52800.67);
-   nbtags_t#bar{t}__93->SetBinError(1,187.2514);
-   nbtags_t#bar{t}__93->SetBinError(2,147.2167);
+   nbtags_t#bar{t}__93->SetBinContent(1,85189.11);
+   nbtags_t#bar{t}__93->SetBinContent(2,52577.23);
+   nbtags_t#bar{t}__93->SetBinError(1,187.0562);
+   nbtags_t#bar{t}__93->SetBinError(2,146.9585);
    nbtags_t#bar{t}__93->SetEntries(360257);
    nbtags_t#bar{t}__93->SetDirectory(0);
 
@@ -119,10 +119,10 @@ void nbtags()
    mc->Add(nbtags_t#bar{t},"hist");
    
    TH1F *nbtags_Diboson__94 = new TH1F("nbtags_Diboson__94","Diboson",2,0.5,2.5);
-   nbtags_Diboson__94->SetBinContent(1,171.6413);
-   nbtags_Diboson__94->SetBinContent(2,10.50985);
-   nbtags_Diboson__94->SetBinError(1,8.188742);
-   nbtags_Diboson__94->SetBinError(2,1.991931);
+   nbtags_Diboson__94->SetBinContent(1,170.4882);
+   nbtags_Diboson__94->SetBinContent(2,10.62065);
+   nbtags_Diboson__94->SetBinError(1,8.136612);
+   nbtags_Diboson__94->SetBinError(2,2.01532);
    nbtags_Diboson__94->SetEntries(511);
    nbtags_Diboson__94->SetDirectory(0);
 
@@ -148,10 +148,10 @@ void nbtags()
    mc->Add(nbtags_Diboson,"hist");
    
    TH1F *nbtags_DY__95 = new TH1F("nbtags_DY__95","DY",2,0.5,2.5);
-   nbtags_DY__95->SetBinContent(1,283.7373);
-   nbtags_DY__95->SetBinContent(2,55.57008);
-   nbtags_DY__95->SetBinError(1,69.35243);
-   nbtags_DY__95->SetBinError(2,32.2111);
+   nbtags_DY__95->SetBinContent(1,277.0593);
+   nbtags_DY__95->SetBinContent(2,54.64707);
+   nbtags_DY__95->SetBinError(1,68.83347);
+   nbtags_DY__95->SetBinError(2,31.58856);
    nbtags_DY__95->SetEntries(21);
    nbtags_DY__95->SetDirectory(0);
 
@@ -201,10 +201,10 @@ void nbtags()
    mc->Add(nbtags_W,"hist");
    
    TH1F *nbtags_SinglesPtop__97 = new TH1F("nbtags_SinglesPtop__97","Single top",2,0.5,2.5);
-   nbtags_SinglesPtop__97->SetBinContent(1,4945.064);
-   nbtags_SinglesPtop__97->SetBinContent(2,1493.305);
-   nbtags_SinglesPtop__97->SetBinError(1,81.32827);
-   nbtags_SinglesPtop__97->SetBinError(2,44.71368);
+   nbtags_SinglesPtop__97->SetBinContent(1,4902.809);
+   nbtags_SinglesPtop__97->SetBinContent(2,1494.137);
+   nbtags_SinglesPtop__97->SetBinError(1,80.94604);
+   nbtags_SinglesPtop__97->SetBinError(2,44.77941);
    nbtags_SinglesPtop__97->SetEntries(5156);
    nbtags_SinglesPtop__97->SetDirectory(0);
 
@@ -425,20 +425,20 @@ tex->SetNDC();
    1,
    2};
    Double_t Graph_from_ratio_fy3028[2] = {
-   0.9232172,
-   0.8716511};
+   0.9248674,
+   0.8752483};
    Double_t Graph_from_ratio_felx3028[2] = {
    0.5,
    0.5};
    Double_t Graph_from_ratio_fely3028[2] = {
-   0.003873229,
-   0.004731699};
+   0.003879591,
+   0.004753785};
    Double_t Graph_from_ratio_fehx3028[2] = {
    0.5,
    0.5};
    Double_t Graph_from_ratio_fehy3028[2] = {
-   0.003873229,
-   0.004731699};
+   0.003879591,
+   0.004753785};
    grae = new TGraphAsymmErrors(2,Graph_from_ratio_fx3028,Graph_from_ratio_fy3028,Graph_from_ratio_felx3028,Graph_from_ratio_fehx3028,Graph_from_ratio_fely3028,Graph_from_ratio_fehy3028);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
@@ -448,8 +448,8 @@ tex->SetNDC();
    grae->SetMarkerSize(1.4);
    
    TH1F *Graph_Graph_from_ratio3028 = new TH1F("Graph_Graph_from_ratio3028","Data",100,0.3,2.7);
-   Graph_Graph_from_ratio3028->SetMinimum(0.8609022);
-   Graph_Graph_from_ratio3028->SetMaximum(0.9331075);
+   Graph_Graph_from_ratio3028->SetMinimum(0.8646693);
+   Graph_Graph_from_ratio3028->SetMaximum(0.9345722);
    Graph_Graph_from_ratio3028->SetDirectory(0);
    Graph_Graph_from_ratio3028->SetStats(0);
 

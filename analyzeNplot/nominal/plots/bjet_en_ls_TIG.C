@@ -1,7 +1,7 @@
 void bjet_en_ls_TIG()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 09:29:22 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 10:19:39 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -20,7 +20,7 @@ void bjet_en_ls_TIG()
    TPad *p1 = new TPad("p1", "p1",0,0,1,0.85);
    p1->Draw();
    p1->cd();
-   p1->Range(2.421687,-38.06194,7.240964,279.9542);
+   p1->Range(2.421687,-37.84899,7.240964,278.3926);
    p1->SetFillColor(0);
    p1->SetBorderMode(0);
    p1->SetBorderSize(2);
@@ -34,7 +34,7 @@ void bjet_en_ls_TIG()
    
    TH1F *frame__8 = new TH1F("frame__8","t#bar{t}",20,3,7);
    frame__8->SetMinimum(0.1);
-   frame__8->SetMaximum(276.774);
+   frame__8->SetMaximum(275.2302);
    frame__8->SetEntries(333832);
    frame__8->SetDirectory(0);
 
@@ -67,8 +67,8 @@ void bjet_en_ls_TIG()
    mc->SetTitle("mc");
    
    TH1F *mc_stack_2 = new TH1F("mc_stack_2","mc",20,3,7);
-   mc_stack_2->SetMinimum(-1.271617e-09);
-   mc_stack_2->SetMaximum(223.5483);
+   mc_stack_2->SetMinimum(-1.310485e-08);
+   mc_stack_2->SetMaximum(222.3013);
    mc_stack_2->SetDirectory(0);
    mc_stack_2->SetStats(0);
 
@@ -90,44 +90,44 @@ void bjet_en_ls_TIG()
    
    
    TH1F *bjet_en_ls_TIG_t#bar{t}__9 = new TH1F("bjet_en_ls_TIG_t#bar{t}__9","t#bar{t}",20,3,7);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(3,66.63194);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(4,145.116);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(5,188.8804);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(6,204.2468);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(7,201.0725);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(8,177.2129);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(9,143.8668);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(10,105.7758);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(11,72.0946);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(12,44.613);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(13,25.58489);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(14,13.96529);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(15,7.00219);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(16,3.218709);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(17,1.311421);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(18,0.4416588);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(19,0.146705);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(20,0.04342412);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(21,0.01070294);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(3,0.8952971);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(4,1.213002);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(5,1.25259);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(6,1.179394);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(7,1.059804);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(8,0.9006862);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(9,0.7354683);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(10,0.5710362);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(11,0.4268881);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(12,0.304281);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(13,0.2083699);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(14,0.1393548);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(15,0.08936858);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(16,0.05490712);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(17,0.03182035);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(18,0.01667547);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(19,0.008738911);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(20,0.004288161);
-   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(21,0.001881521);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(3,65.99333);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(4,144.407);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(5,188.6098);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(6,203.1306);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(7,199.9845);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(8,177.0693);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(9,143.2634);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(10,104.9732);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(11,71.80295);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(12,44.22754);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(13,25.46902);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(14,13.89376);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(15,6.912075);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(16,3.201992);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(17,1.287634);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(18,0.445149);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(19,0.1462911);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(20,0.04213619);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinContent(21,0.01077818);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(3,0.8910002);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(4,1.208126);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(5,1.252436);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(6,1.176181);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(7,1.056975);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(8,0.9009445);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(9,0.734168);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(10,0.5690024);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(11,0.42631);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(12,0.3024482);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(13,0.2079203);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(14,0.1389993);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(15,0.0886411);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(16,0.05471811);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(17,0.03145577);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(18,0.01676841);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(19,0.00867195);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(20,0.004194565);
+   bjet_en_ls_TIG_t#bar{t}__9->SetBinError(21,0.001842678);
    bjet_en_ls_TIG_t#bar{t}__9->SetEntries(329524);
    bjet_en_ls_TIG_t#bar{t}__9->SetDirectory(0);
 
@@ -153,42 +153,42 @@ void bjet_en_ls_TIG()
    mc->Add(bjet_en_ls_TIG_t#bar{t},"hist");
    
    TH1F *bjet_en_ls_TIG_Diboson__10 = new TH1F("bjet_en_ls_TIG_Diboson__10","Diboson",20,3,7);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(3,0.07097473);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(4,0.08839886);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(5,0.09466824);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(6,0.08616517);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(7,0.08828762);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(8,0.05470472);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(9,0.05101918);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(10,0.04253267);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(11,0.03022805);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(12,0.026906);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(13,0.01939414);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(14,0.004515364);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(15,0.009843149);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(16,0.005862821);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(17,0.001567069);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(18,0.001851905);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(19,0.0009863022);
-   bjet_en_ls_TIG_Diboson__10->SetBinContent(20,0.0004528819);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(3,0.02752502);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(4,0.0297722);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(5,0.02660772);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(6,0.02365785);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(7,0.02128822);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(8,0.01589381);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(9,0.01363023);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(10,0.0110697);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(11,0.008316089);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(12,0.007249803);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(13,0.005764641);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(14,0.002580497);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(15,0.003298103);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(16,0.002239682);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(17,0.001108439);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(18,0.001070007);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(19,0.0006978377);
-   bjet_en_ls_TIG_Diboson__10->SetBinError(20,0.0003955987);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(3,0.06954827);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(4,0.08990321);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(5,0.09221028);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(6,0.09293905);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(7,0.08951606);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(8,0.05107588);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(9,0.0507102);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(10,0.04068642);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(11,0.03316674);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(12,0.02743613);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(13,0.01943409);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(14,0.004152002);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(15,0.008227497);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(16,0.004841308);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(17,0.00155697);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(18,0.001768193);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(19,0.0009465906);
+   bjet_en_ls_TIG_Diboson__10->SetBinContent(20,0.0008023741);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(3,0.02747424);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(4,0.02999446);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(5,0.02775713);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(6,0.02486885);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(7,0.02135717);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(8,0.01506445);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(9,0.01359636);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(10,0.01106915);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(11,0.008929317);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(12,0.007251239);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(13,0.005671347);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(14,0.002145372);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(15,0.002927559);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(16,0.001983509);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(17,0.001100944);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(18,0.001026894);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(19,0.0006700679);
+   bjet_en_ls_TIG_Diboson__10->SetBinError(20,0.0005679436);
    bjet_en_ls_TIG_Diboson__10->SetEntries(176);
    bjet_en_ls_TIG_Diboson__10->SetDirectory(0);
 
@@ -214,22 +214,22 @@ void bjet_en_ls_TIG()
    mc->Add(bjet_en_ls_TIG_Diboson,"hist");
    
    TH1F *bjet_en_ls_TIG_DY__11 = new TH1F("bjet_en_ls_TIG_DY__11","DY",20,3,7);
-   bjet_en_ls_TIG_DY__11->SetBinContent(4,0.3716342);
-   bjet_en_ls_TIG_DY__11->SetBinContent(5,0.3266973);
-   bjet_en_ls_TIG_DY__11->SetBinContent(6,0.6099051);
-   bjet_en_ls_TIG_DY__11->SetBinContent(7,0.4398852);
-   bjet_en_ls_TIG_DY__11->SetBinContent(11,0.09528551);
-   bjet_en_ls_TIG_DY__11->SetBinContent(12,0.08875276);
-   bjet_en_ls_TIG_DY__11->SetBinContent(13,0.06326108);
-   bjet_en_ls_TIG_DY__11->SetBinContent(14,0.07642314);
-   bjet_en_ls_TIG_DY__11->SetBinError(4,0.3716342);
-   bjet_en_ls_TIG_DY__11->SetBinError(5,0.3266973);
-   bjet_en_ls_TIG_DY__11->SetBinError(6,0.4313827);
-   bjet_en_ls_TIG_DY__11->SetBinError(7,0.311372);
-   bjet_en_ls_TIG_DY__11->SetBinError(11,0.09528551);
-   bjet_en_ls_TIG_DY__11->SetBinError(12,0.08875276);
-   bjet_en_ls_TIG_DY__11->SetBinError(13,0.06326108);
-   bjet_en_ls_TIG_DY__11->SetBinError(14,0.07642314);
+   bjet_en_ls_TIG_DY__11->SetBinContent(4,0.3788093);
+   bjet_en_ls_TIG_DY__11->SetBinContent(5,0.3728831);
+   bjet_en_ls_TIG_DY__11->SetBinContent(6,0.5688182);
+   bjet_en_ls_TIG_DY__11->SetBinContent(7,0.4586417);
+   bjet_en_ls_TIG_DY__11->SetBinContent(11,0.1130757);
+   bjet_en_ls_TIG_DY__11->SetBinContent(12,0.01067735);
+   bjet_en_ls_TIG_DY__11->SetBinContent(13,0.06962138);
+   bjet_en_ls_TIG_DY__11->SetBinContent(14,0.07038381);
+   bjet_en_ls_TIG_DY__11->SetBinError(4,0.3788093);
+   bjet_en_ls_TIG_DY__11->SetBinError(5,0.3728831);
+   bjet_en_ls_TIG_DY__11->SetBinError(6,0.4022325);
+   bjet_en_ls_TIG_DY__11->SetBinError(7,0.324971);
+   bjet_en_ls_TIG_DY__11->SetBinError(11,0.1130757);
+   bjet_en_ls_TIG_DY__11->SetBinError(12,0.01067735);
+   bjet_en_ls_TIG_DY__11->SetBinError(13,0.06962138);
+   bjet_en_ls_TIG_DY__11->SetBinError(14,0.07038381);
    bjet_en_ls_TIG_DY__11->SetEntries(10);
    bjet_en_ls_TIG_DY__11->SetDirectory(0);
 
@@ -279,44 +279,44 @@ void bjet_en_ls_TIG()
    mc->Add(bjet_en_ls_TIG_W,"hist");
    
    TH1F *bjet_en_ls_TIG_SinglesPtop__13 = new TH1F("bjet_en_ls_TIG_SinglesPtop__13","Single top",20,3,7);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(3,3.182916);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(4,6.138379);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(5,7.901271);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(6,7.960227);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(7,7.884522);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(8,7.48569);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(9,5.132428);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(10,4.002085);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(11,2.842556);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(12,1.845783);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(13,1.087414);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(14,0.6470273);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(15,0.3560692);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(16,0.1909409);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(17,0.07404736);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(18,0.03498236);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(19,0.01584283);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(20,0.005581606);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(21,0.003219509);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(3,0.3535719);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(4,0.4478082);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(5,0.4651627);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(6,0.4192047);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(7,0.3794552);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(8,0.3353836);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(9,0.2498642);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(10,0.2004911);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(11,0.1532979);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(12,0.1121902);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(13,0.07724247);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(14,0.05363136);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(15,0.03630097);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(16,0.0240038);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(17,0.01366349);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(18,0.008239134);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(19,0.005305275);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(20,0.002609343);
-   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(21,0.001868235);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(3,2.932719);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(4,6.129784);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(5,7.734373);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(6,7.923146);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(7,8.052453);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(8,7.21225);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(9,5.109177);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(10,3.959138);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(11,2.721466);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(12,1.788332);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(13,1.149024);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(14,0.6489853);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(15,0.3655126);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(16,0.1851843);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(17,0.06771773);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(18,0.03556902);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(19,0.01265967);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(20,0.007155748);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinContent(21,0.001280273);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(3,0.3341647);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(4,0.4508285);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(5,0.4569167);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(6,0.4186445);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(7,0.3827209);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(8,0.3275835);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(9,0.2499633);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(10,0.1996586);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(11,0.1495021);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(12,0.1098796);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(13,0.07965398);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(14,0.05453915);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(15,0.03726222);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(16,0.02348732);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(17,0.0130062);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(18,0.008330686);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(19,0.004494154);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(20,0.003219575);
+   bjet_en_ls_TIG_SinglesPtop__13->SetBinError(21,0.0009437937);
    bjet_en_ls_TIG_SinglesPtop__13->SetEntries(4122);
    bjet_en_ls_TIG_SinglesPtop__13->SetDirectory(0);
 
@@ -665,24 +665,24 @@ tex->SetNDC();
    Double_t Graph_from_ratio_fy3004[20] = {
    0,
    0,
-   0.8382235,
-   0.8516212,
-   0.869764,
-   0.8984368,
-   0.8967372,
-   0.9019344,
-   0.9017609,
-   0.8988348,
-   0.8889335,
-   0.8555444,
-   0.8636708,
-   0.875902,
-   0.8590199,
-   0.8051805,
-   0.8558958,
-   0.8684798,
-   0.8443338,
-   0.7683119};
+   0.8490389,
+   0.8556192,
+   0.8715045,
+   0.9034765,
+   0.9006065,
+   0.9039928,
+   0.9055702,
+   0.9058241,
+   0.8936003,
+   0.8652129,
+   0.8652188,
+   0.8804547,
+   0.8687217,
+   0.8107576,
+   0.8748991,
+   0.8612922,
+   0.863538,
+   0.7585619};
    Double_t Graph_from_ratio_felx3004[20] = {
    0.1,
    0.1,
@@ -707,24 +707,24 @@ tex->SetNDC();
    Double_t Graph_from_ratio_fely3004[20] = {
    0,
    0,
-   0.02203804,
-   0.01396821,
-   0.01122671,
-   0.01006156,
-   0.009125441,
-   0.008747498,
-   0.008800281,
-   0.009273569,
-   0.01014832,
-   0.01143325,
-   0.01375178,
-   0.01737257,
-   0.02122124,
-   0.02713047,
-   0.04015555,
-   0.06264527,
-   0.09643228,
-   0.148718};
+   0.0223307,
+   0.01404886,
+   0.01127698,
+   0.0101065,
+   0.009181945,
+   0.008766736,
+   0.008844203,
+   0.009356693,
+   0.01023183,
+   0.01145705,
+   0.01382306,
+   0.01740052,
+   0.02150916,
+   0.0273215,
+   0.04110262,
+   0.06209391,
+   0.09795291,
+   0.1485951};
    Double_t Graph_from_ratio_fehx3004[20] = {
    0.1,
    0.1,
@@ -749,24 +749,24 @@ tex->SetNDC();
    Double_t Graph_from_ratio_fehy3004[20] = {
    0,
    0,
-   0.02203804,
-   0.01396821,
-   0.01122671,
-   0.01006156,
-   0.009125441,
-   0.008747498,
-   0.008800281,
-   0.009273569,
-   0.01014832,
-   0.01143325,
-   0.01375178,
-   0.01737257,
-   0.02122124,
-   0.02713047,
-   0.04015555,
-   0.06264527,
-   0.09643228,
-   0.148718};
+   0.0223307,
+   0.01404886,
+   0.01127698,
+   0.0101065,
+   0.009181945,
+   0.008766736,
+   0.008844203,
+   0.009356693,
+   0.01023183,
+   0.01145705,
+   0.01382306,
+   0.01740052,
+   0.02150916,
+   0.0273215,
+   0.04110262,
+   0.06209391,
+   0.09795291,
+   0.1485951};
    grae = new TGraphAsymmErrors(20,Graph_from_ratio_fx3004,Graph_from_ratio_fy3004,Graph_from_ratio_felx3004,Graph_from_ratio_fehx3004,Graph_from_ratio_fely3004,Graph_from_ratio_fehy3004);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
@@ -777,7 +777,7 @@ tex->SetNDC();
    
    TH1F *Graph_Graph_from_ratio3004 = new TH1F("Graph_Graph_from_ratio3004","Data",100,2.6,7.4);
    Graph_Graph_from_ratio3004->SetMinimum(0);
-   Graph_Graph_from_ratio3004->SetMaximum(1.034843);
+   Graph_Graph_from_ratio3004->SetMaximum(1.05764);
    Graph_Graph_from_ratio3004->SetDirectory(0);
    Graph_Graph_from_ratio3004->SetStats(0);
 
