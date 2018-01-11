@@ -90,7 +90,8 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
              #save P4 for b-tagged jet
             # if tree.Jet_CombIVF[ij]>0.8484: # medium cut
-            istagged = tree.Jet_CombIVF[ij]>0.8484   
+	    istagged = tree.Jet_CombIVF[ij]>0.5426
+           # istagged = tree.Jet_CombIVF[ij]>0.8484   
             heavySF = 1.0;
             heavySFerr = 0.0;
             heavySFup = 1.0;
@@ -107,8 +108,8 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
             ijetEta= jp4.Eta()
             
             if tree.Jet_flavour[ij] == 5:
-                heavySF   = GetBtagSF2016Medium_comb('central', ijetPt, ijetEta);
-                heavySFerr= GetBtagSF2016Medium_comb('uncert', ijetPt, ijetEta);
+                heavySF   = GetBtagSF2016Loose_comb('central', ijetPt, ijetEta);
+                heavySFerr= GetBtagSF2016Loose_comb('uncert', ijetPt, ijetEta);
                 if ijetPt>1000: heavySFerr *=2.0
                 heavySFup = heavySF + heavySFerr;
                 heavySFdn = heavySF - heavySFerr;
@@ -121,8 +122,8 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
                 isBtagged_lSFdn = applySF(istagged,heavySF,heavyEff);
                 
             elif tree.Jet_flavour[ij] == 4: # c-quarks
-                heavySF   = GetCtagSF2016Medium_comb('central', ijetPt, ijetEta);
-                heavySFerr= GetCtagSF2016Medium_comb('uncert', ijetPt, ijetEta);
+                heavySF   = GetCtagSF2016Loose_comb('central', ijetPt, ijetEta);
+                heavySFerr= GetCtagSF2016Loose_comb('uncert', ijetPt, ijetEta);
                 if ijetPt>1000: heavySFerr *=2.0;
                 heavySFup = heavySF + heavySFerr;
                 heavySFdn = heavySF - heavySFerr;
@@ -135,8 +136,8 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
                 isBtagged_lSFdn = applySF(istagged,heavySF,heavyEff);
                 
             else: # udsg-quarks
-                lightSF   = GetLFSF2016Medium('central', ijetPt, ijetEta);
-                lightSFerr= GetLFSF2016Medium('uncert', ijetPt, ijetEta);
+                lightSF   = GetLFSF2016Loose('central', ijetPt, ijetEta);
+                lightSFerr= GetLFSF2016Loose('uncert', ijetPt, ijetEta);
                 if ijetPt>1000: lightSFerr *=2.0;
                 lightSFup = lightSF + lightSFerr;
                 lightSFdn = lightSF - lightSFerr;
@@ -149,12 +150,12 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
                 isBtagged_lSFdn = applySF(istagged,lightSFdn,lightEff);
 	     
             # Take the Pt of bjets tagged as Loose cut
-            if (tree.Jet_CombIVF[ij] > 0.5426):
+            if (isBtagged == 1):
                 LootagJetsP4.append(jp4)
                 btagID = 0
+		nBtags+=1
 
-                if isBtagged == 1:
-                    nBtags+=1
+                if tree.Jet_CombIVF[ij]>0.8484:
                     MedtaggedJetsP4.append(jp4)
                     btagID = 1
 
@@ -200,15 +201,15 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         vis_tmass = 0
 
         if nBtags == 2:
-            m11 = (MedtaggedJetsP4[0]+leptons_p4[0]).M()
-            m22 = (MedtaggedJetsP4[1]+leptons_p4[1]).M()
-            m12 = (MedtaggedJetsP4[0]+leptons_p4[1]).M()
-            m21 = (MedtaggedJetsP4[1]+leptons_p4[0]).M()
+            m11 = (LootaggedJetsP4[0]+leptons_p4[0]).M()
+            m22 = (LootaggedJetsP4[1]+leptons_p4[1]).M()
+            m12 = (LootaggedJetsP4[0]+leptons_p4[1]).M()
+            m21 = (LootaggedJetsP4[1]+leptons_p4[0]).M()
 
             vis_tmass = min(max(m11,m22), max(m12,m21))
         elif nBtags == 1:
-            m11 = (MedtaggedJetsP4[0]+leptons_p4[0]).M()
-            m12 = (MedtaggedJetsP4[0]+leptons_p4[0]).M()
+            m11 = (LootaggedJetsP4[0]+leptons_p4[0]).M()
+            m12 = (LootaggedJetsP4[0]+leptons_p4[0]).M()
 
             vis_tmass = min(m11,m12)
 
