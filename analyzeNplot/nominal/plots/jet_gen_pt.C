@@ -1,7 +1,7 @@
 void jet_gen_pt()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Wed Jan 10 16:18:40 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 09:29:22 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -32,184 +32,184 @@ void jet_gen_pt()
    p1->SetFrameBorderMode(0);
    p1->SetFrameBorderMode(0);
    
-   TH1F *frame__64 = new TH1F("frame__64","t#bar{t}",50,0,350);
-   frame__64->SetMinimum(0.1);
-   frame__64->SetMaximum(0);
-   frame__64->SetDirectory(0);
+   TH1F *frame__22 = new TH1F("frame__22","t#bar{t}",50,0,350);
+   frame__22->SetMinimum(0.1);
+   frame__22->SetMaximum(0);
+   frame__22->SetDirectory(0);
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
    ci = TColor::GetColor("#cc0000");
-   frame__64->SetFillColor(ci);
+   frame__22->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   frame__64->SetMarkerColor(ci);
-   frame__64->GetXaxis()->SetTitle("pt [GeV]");
-   frame__64->GetXaxis()->SetLabelFont(42);
-   frame__64->GetXaxis()->SetLabelSize(0.035);
-   frame__64->GetXaxis()->SetTitleSize(0.035);
-   frame__64->GetXaxis()->SetTitleFont(42);
-   frame__64->GetYaxis()->SetTitle(" Events");
-   frame__64->GetYaxis()->SetNoExponent();
-   frame__64->GetYaxis()->SetLabelFont(42);
-   frame__64->GetYaxis()->SetTitleSize(0.045);
-   frame__64->GetYaxis()->SetTitleOffset(1.3);
-   frame__64->GetYaxis()->SetTitleFont(42);
-   frame__64->GetZaxis()->SetLabelFont(42);
-   frame__64->GetZaxis()->SetLabelSize(0.035);
-   frame__64->GetZaxis()->SetTitleSize(0.035);
-   frame__64->GetZaxis()->SetTitleFont(42);
-   frame__64->Draw("");
+   frame__22->SetMarkerColor(ci);
+   frame__22->GetXaxis()->SetTitle("pt [GeV]");
+   frame__22->GetXaxis()->SetLabelFont(42);
+   frame__22->GetXaxis()->SetLabelSize(0.035);
+   frame__22->GetXaxis()->SetTitleSize(0.035);
+   frame__22->GetXaxis()->SetTitleFont(42);
+   frame__22->GetYaxis()->SetTitle(" Events");
+   frame__22->GetYaxis()->SetNoExponent();
+   frame__22->GetYaxis()->SetLabelFont(42);
+   frame__22->GetYaxis()->SetTitleSize(0.045);
+   frame__22->GetYaxis()->SetTitleOffset(1.3);
+   frame__22->GetYaxis()->SetTitleFont(42);
+   frame__22->GetZaxis()->SetLabelFont(42);
+   frame__22->GetZaxis()->SetLabelSize(0.035);
+   frame__22->GetZaxis()->SetTitleSize(0.035);
+   frame__22->GetZaxis()->SetTitleFont(42);
+   frame__22->Draw("");
    
    THStack *mc = new THStack();
    mc->SetName("mc");
    mc->SetTitle("mc");
    
-   TH1F *mc_stack_10 = new TH1F("mc_stack_10","mc",50,0,350);
-   mc_stack_10->SetMinimum(0);
-   mc_stack_10->SetMaximum(0);
-   mc_stack_10->SetDirectory(0);
-   mc_stack_10->SetStats(0);
+   TH1F *mc_stack_4 = new TH1F("mc_stack_4","mc",50,0,350);
+   mc_stack_4->SetMinimum(0);
+   mc_stack_4->SetMaximum(0);
+   mc_stack_4->SetDirectory(0);
+   mc_stack_4->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   mc_stack_10->SetLineColor(ci);
-   mc_stack_10->GetXaxis()->SetLabelFont(42);
-   mc_stack_10->GetXaxis()->SetLabelSize(0.035);
-   mc_stack_10->GetXaxis()->SetTitleSize(0.035);
-   mc_stack_10->GetXaxis()->SetTitleFont(42);
-   mc_stack_10->GetYaxis()->SetLabelFont(42);
-   mc_stack_10->GetYaxis()->SetLabelSize(0.035);
-   mc_stack_10->GetYaxis()->SetTitleSize(0.035);
-   mc_stack_10->GetYaxis()->SetTitleFont(42);
-   mc_stack_10->GetZaxis()->SetLabelFont(42);
-   mc_stack_10->GetZaxis()->SetLabelSize(0.035);
-   mc_stack_10->GetZaxis()->SetTitleSize(0.035);
-   mc_stack_10->GetZaxis()->SetTitleFont(42);
-   mc->SetHistogram(mc_stack_10);
+   mc_stack_4->SetLineColor(ci);
+   mc_stack_4->GetXaxis()->SetLabelFont(42);
+   mc_stack_4->GetXaxis()->SetLabelSize(0.035);
+   mc_stack_4->GetXaxis()->SetTitleSize(0.035);
+   mc_stack_4->GetXaxis()->SetTitleFont(42);
+   mc_stack_4->GetYaxis()->SetLabelFont(42);
+   mc_stack_4->GetYaxis()->SetLabelSize(0.035);
+   mc_stack_4->GetYaxis()->SetTitleSize(0.035);
+   mc_stack_4->GetYaxis()->SetTitleFont(42);
+   mc_stack_4->GetZaxis()->SetLabelFont(42);
+   mc_stack_4->GetZaxis()->SetLabelSize(0.035);
+   mc_stack_4->GetZaxis()->SetTitleSize(0.035);
+   mc_stack_4->GetZaxis()->SetTitleFont(42);
+   mc->SetHistogram(mc_stack_4);
    
    
-   TH1F *jet_gen_pt_t#bar{t}__65 = new TH1F("jet_gen_pt_t#bar{t}__65","t#bar{t}",50,0,350);
-   jet_gen_pt_t#bar{t}__65->SetDirectory(0);
+   TH1F *jet_gen_pt_t#bar{t}__23 = new TH1F("jet_gen_pt_t#bar{t}__23","t#bar{t}",50,0,350);
+   jet_gen_pt_t#bar{t}__23->SetDirectory(0);
 
    ci = TColor::GetColor("#cc0000");
-   jet_gen_pt_t#bar{t}__65->SetFillColor(ci);
+   jet_gen_pt_t#bar{t}__23->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   jet_gen_pt_t#bar{t}__65->SetMarkerColor(ci);
-   jet_gen_pt_t#bar{t}__65->GetXaxis()->SetTitle("pt [GeV]");
-   jet_gen_pt_t#bar{t}__65->GetXaxis()->SetLabelFont(42);
-   jet_gen_pt_t#bar{t}__65->GetXaxis()->SetLabelSize(0.035);
-   jet_gen_pt_t#bar{t}__65->GetXaxis()->SetTitleSize(0.035);
-   jet_gen_pt_t#bar{t}__65->GetXaxis()->SetTitleFont(42);
-   jet_gen_pt_t#bar{t}__65->GetYaxis()->SetTitle(" Events");
-   jet_gen_pt_t#bar{t}__65->GetYaxis()->SetLabelFont(42);
-   jet_gen_pt_t#bar{t}__65->GetYaxis()->SetLabelSize(0.035);
-   jet_gen_pt_t#bar{t}__65->GetYaxis()->SetTitleSize(0.035);
-   jet_gen_pt_t#bar{t}__65->GetYaxis()->SetTitleFont(42);
-   jet_gen_pt_t#bar{t}__65->GetZaxis()->SetLabelFont(42);
-   jet_gen_pt_t#bar{t}__65->GetZaxis()->SetLabelSize(0.035);
-   jet_gen_pt_t#bar{t}__65->GetZaxis()->SetTitleSize(0.035);
-   jet_gen_pt_t#bar{t}__65->GetZaxis()->SetTitleFont(42);
+   jet_gen_pt_t#bar{t}__23->SetMarkerColor(ci);
+   jet_gen_pt_t#bar{t}__23->GetXaxis()->SetTitle("pt [GeV]");
+   jet_gen_pt_t#bar{t}__23->GetXaxis()->SetLabelFont(42);
+   jet_gen_pt_t#bar{t}__23->GetXaxis()->SetLabelSize(0.035);
+   jet_gen_pt_t#bar{t}__23->GetXaxis()->SetTitleSize(0.035);
+   jet_gen_pt_t#bar{t}__23->GetXaxis()->SetTitleFont(42);
+   jet_gen_pt_t#bar{t}__23->GetYaxis()->SetTitle(" Events");
+   jet_gen_pt_t#bar{t}__23->GetYaxis()->SetLabelFont(42);
+   jet_gen_pt_t#bar{t}__23->GetYaxis()->SetLabelSize(0.035);
+   jet_gen_pt_t#bar{t}__23->GetYaxis()->SetTitleSize(0.035);
+   jet_gen_pt_t#bar{t}__23->GetYaxis()->SetTitleFont(42);
+   jet_gen_pt_t#bar{t}__23->GetZaxis()->SetLabelFont(42);
+   jet_gen_pt_t#bar{t}__23->GetZaxis()->SetLabelSize(0.035);
+   jet_gen_pt_t#bar{t}__23->GetZaxis()->SetTitleSize(0.035);
+   jet_gen_pt_t#bar{t}__23->GetZaxis()->SetTitleFont(42);
    mc->Add(jet_gen_pt_t#bar{t},"hist");
    
-   TH1F *jet_gen_pt_Diboson__66 = new TH1F("jet_gen_pt_Diboson__66","Diboson",50,0,350);
-   jet_gen_pt_Diboson__66->SetDirectory(0);
+   TH1F *jet_gen_pt_Diboson__24 = new TH1F("jet_gen_pt_Diboson__24","Diboson",50,0,350);
+   jet_gen_pt_Diboson__24->SetDirectory(0);
 
    ci = TColor::GetColor("#ffff00");
-   jet_gen_pt_Diboson__66->SetFillColor(ci);
+   jet_gen_pt_Diboson__24->SetFillColor(ci);
 
    ci = TColor::GetColor("#ffff00");
-   jet_gen_pt_Diboson__66->SetMarkerColor(ci);
-   jet_gen_pt_Diboson__66->GetXaxis()->SetTitle("pt [GeV]");
-   jet_gen_pt_Diboson__66->GetXaxis()->SetLabelFont(42);
-   jet_gen_pt_Diboson__66->GetXaxis()->SetLabelSize(0.035);
-   jet_gen_pt_Diboson__66->GetXaxis()->SetTitleSize(0.035);
-   jet_gen_pt_Diboson__66->GetXaxis()->SetTitleFont(42);
-   jet_gen_pt_Diboson__66->GetYaxis()->SetTitle(" Events");
-   jet_gen_pt_Diboson__66->GetYaxis()->SetLabelFont(42);
-   jet_gen_pt_Diboson__66->GetYaxis()->SetLabelSize(0.035);
-   jet_gen_pt_Diboson__66->GetYaxis()->SetTitleSize(0.035);
-   jet_gen_pt_Diboson__66->GetYaxis()->SetTitleFont(42);
-   jet_gen_pt_Diboson__66->GetZaxis()->SetLabelFont(42);
-   jet_gen_pt_Diboson__66->GetZaxis()->SetLabelSize(0.035);
-   jet_gen_pt_Diboson__66->GetZaxis()->SetTitleSize(0.035);
-   jet_gen_pt_Diboson__66->GetZaxis()->SetTitleFont(42);
+   jet_gen_pt_Diboson__24->SetMarkerColor(ci);
+   jet_gen_pt_Diboson__24->GetXaxis()->SetTitle("pt [GeV]");
+   jet_gen_pt_Diboson__24->GetXaxis()->SetLabelFont(42);
+   jet_gen_pt_Diboson__24->GetXaxis()->SetLabelSize(0.035);
+   jet_gen_pt_Diboson__24->GetXaxis()->SetTitleSize(0.035);
+   jet_gen_pt_Diboson__24->GetXaxis()->SetTitleFont(42);
+   jet_gen_pt_Diboson__24->GetYaxis()->SetTitle(" Events");
+   jet_gen_pt_Diboson__24->GetYaxis()->SetLabelFont(42);
+   jet_gen_pt_Diboson__24->GetYaxis()->SetLabelSize(0.035);
+   jet_gen_pt_Diboson__24->GetYaxis()->SetTitleSize(0.035);
+   jet_gen_pt_Diboson__24->GetYaxis()->SetTitleFont(42);
+   jet_gen_pt_Diboson__24->GetZaxis()->SetLabelFont(42);
+   jet_gen_pt_Diboson__24->GetZaxis()->SetLabelSize(0.035);
+   jet_gen_pt_Diboson__24->GetZaxis()->SetTitleSize(0.035);
+   jet_gen_pt_Diboson__24->GetZaxis()->SetTitleFont(42);
    mc->Add(jet_gen_pt_Diboson,"hist");
    
-   TH1F *jet_gen_pt_DY__67 = new TH1F("jet_gen_pt_DY__67","DY",50,0,350);
-   jet_gen_pt_DY__67->SetDirectory(0);
+   TH1F *jet_gen_pt_DY__25 = new TH1F("jet_gen_pt_DY__25","DY",50,0,350);
+   jet_gen_pt_DY__25->SetDirectory(0);
 
    ci = TColor::GetColor("#33ccff");
-   jet_gen_pt_DY__67->SetFillColor(ci);
+   jet_gen_pt_DY__25->SetFillColor(ci);
 
    ci = TColor::GetColor("#33ccff");
-   jet_gen_pt_DY__67->SetMarkerColor(ci);
-   jet_gen_pt_DY__67->GetXaxis()->SetTitle("pt [GeV]");
-   jet_gen_pt_DY__67->GetXaxis()->SetLabelFont(42);
-   jet_gen_pt_DY__67->GetXaxis()->SetLabelSize(0.035);
-   jet_gen_pt_DY__67->GetXaxis()->SetTitleSize(0.035);
-   jet_gen_pt_DY__67->GetXaxis()->SetTitleFont(42);
-   jet_gen_pt_DY__67->GetYaxis()->SetTitle(" Events");
-   jet_gen_pt_DY__67->GetYaxis()->SetLabelFont(42);
-   jet_gen_pt_DY__67->GetYaxis()->SetLabelSize(0.035);
-   jet_gen_pt_DY__67->GetYaxis()->SetTitleSize(0.035);
-   jet_gen_pt_DY__67->GetYaxis()->SetTitleFont(42);
-   jet_gen_pt_DY__67->GetZaxis()->SetLabelFont(42);
-   jet_gen_pt_DY__67->GetZaxis()->SetLabelSize(0.035);
-   jet_gen_pt_DY__67->GetZaxis()->SetTitleSize(0.035);
-   jet_gen_pt_DY__67->GetZaxis()->SetTitleFont(42);
+   jet_gen_pt_DY__25->SetMarkerColor(ci);
+   jet_gen_pt_DY__25->GetXaxis()->SetTitle("pt [GeV]");
+   jet_gen_pt_DY__25->GetXaxis()->SetLabelFont(42);
+   jet_gen_pt_DY__25->GetXaxis()->SetLabelSize(0.035);
+   jet_gen_pt_DY__25->GetXaxis()->SetTitleSize(0.035);
+   jet_gen_pt_DY__25->GetXaxis()->SetTitleFont(42);
+   jet_gen_pt_DY__25->GetYaxis()->SetTitle(" Events");
+   jet_gen_pt_DY__25->GetYaxis()->SetLabelFont(42);
+   jet_gen_pt_DY__25->GetYaxis()->SetLabelSize(0.035);
+   jet_gen_pt_DY__25->GetYaxis()->SetTitleSize(0.035);
+   jet_gen_pt_DY__25->GetYaxis()->SetTitleFont(42);
+   jet_gen_pt_DY__25->GetZaxis()->SetLabelFont(42);
+   jet_gen_pt_DY__25->GetZaxis()->SetLabelSize(0.035);
+   jet_gen_pt_DY__25->GetZaxis()->SetTitleSize(0.035);
+   jet_gen_pt_DY__25->GetZaxis()->SetTitleFont(42);
    mc->Add(jet_gen_pt_DY,"hist");
    
-   TH1F *jet_gen_pt_W__68 = new TH1F("jet_gen_pt_W__68","W",50,0,350);
-   jet_gen_pt_W__68->SetDirectory(0);
+   TH1F *jet_gen_pt_W__26 = new TH1F("jet_gen_pt_W__26","W",50,0,350);
+   jet_gen_pt_W__26->SetDirectory(0);
 
    ci = TColor::GetColor("#3366ff");
-   jet_gen_pt_W__68->SetFillColor(ci);
+   jet_gen_pt_W__26->SetFillColor(ci);
 
    ci = TColor::GetColor("#3366ff");
-   jet_gen_pt_W__68->SetMarkerColor(ci);
-   jet_gen_pt_W__68->GetXaxis()->SetTitle("pt [GeV]");
-   jet_gen_pt_W__68->GetXaxis()->SetLabelFont(42);
-   jet_gen_pt_W__68->GetXaxis()->SetLabelSize(0.035);
-   jet_gen_pt_W__68->GetXaxis()->SetTitleSize(0.035);
-   jet_gen_pt_W__68->GetXaxis()->SetTitleFont(42);
-   jet_gen_pt_W__68->GetYaxis()->SetTitle(" Events");
-   jet_gen_pt_W__68->GetYaxis()->SetLabelFont(42);
-   jet_gen_pt_W__68->GetYaxis()->SetLabelSize(0.035);
-   jet_gen_pt_W__68->GetYaxis()->SetTitleSize(0.035);
-   jet_gen_pt_W__68->GetYaxis()->SetTitleFont(42);
-   jet_gen_pt_W__68->GetZaxis()->SetLabelFont(42);
-   jet_gen_pt_W__68->GetZaxis()->SetLabelSize(0.035);
-   jet_gen_pt_W__68->GetZaxis()->SetTitleSize(0.035);
-   jet_gen_pt_W__68->GetZaxis()->SetTitleFont(42);
+   jet_gen_pt_W__26->SetMarkerColor(ci);
+   jet_gen_pt_W__26->GetXaxis()->SetTitle("pt [GeV]");
+   jet_gen_pt_W__26->GetXaxis()->SetLabelFont(42);
+   jet_gen_pt_W__26->GetXaxis()->SetLabelSize(0.035);
+   jet_gen_pt_W__26->GetXaxis()->SetTitleSize(0.035);
+   jet_gen_pt_W__26->GetXaxis()->SetTitleFont(42);
+   jet_gen_pt_W__26->GetYaxis()->SetTitle(" Events");
+   jet_gen_pt_W__26->GetYaxis()->SetLabelFont(42);
+   jet_gen_pt_W__26->GetYaxis()->SetLabelSize(0.035);
+   jet_gen_pt_W__26->GetYaxis()->SetTitleSize(0.035);
+   jet_gen_pt_W__26->GetYaxis()->SetTitleFont(42);
+   jet_gen_pt_W__26->GetZaxis()->SetLabelFont(42);
+   jet_gen_pt_W__26->GetZaxis()->SetLabelSize(0.035);
+   jet_gen_pt_W__26->GetZaxis()->SetTitleSize(0.035);
+   jet_gen_pt_W__26->GetZaxis()->SetTitleFont(42);
    mc->Add(jet_gen_pt_W,"hist");
    
-   TH1F *jet_gen_pt_SinglesPtop__69 = new TH1F("jet_gen_pt_SinglesPtop__69","Single top",50,0,350);
-   jet_gen_pt_SinglesPtop__69->SetDirectory(0);
+   TH1F *jet_gen_pt_SinglesPtop__27 = new TH1F("jet_gen_pt_SinglesPtop__27","Single top",50,0,350);
+   jet_gen_pt_SinglesPtop__27->SetDirectory(0);
 
    ci = TColor::GetColor("#990099");
-   jet_gen_pt_SinglesPtop__69->SetFillColor(ci);
+   jet_gen_pt_SinglesPtop__27->SetFillColor(ci);
 
    ci = TColor::GetColor("#990099");
-   jet_gen_pt_SinglesPtop__69->SetMarkerColor(ci);
-   jet_gen_pt_SinglesPtop__69->GetXaxis()->SetTitle("pt [GeV]");
-   jet_gen_pt_SinglesPtop__69->GetXaxis()->SetLabelFont(42);
-   jet_gen_pt_SinglesPtop__69->GetXaxis()->SetLabelSize(0.035);
-   jet_gen_pt_SinglesPtop__69->GetXaxis()->SetTitleSize(0.035);
-   jet_gen_pt_SinglesPtop__69->GetXaxis()->SetTitleFont(42);
-   jet_gen_pt_SinglesPtop__69->GetYaxis()->SetTitle(" Events");
-   jet_gen_pt_SinglesPtop__69->GetYaxis()->SetLabelFont(42);
-   jet_gen_pt_SinglesPtop__69->GetYaxis()->SetLabelSize(0.035);
-   jet_gen_pt_SinglesPtop__69->GetYaxis()->SetTitleSize(0.035);
-   jet_gen_pt_SinglesPtop__69->GetYaxis()->SetTitleFont(42);
-   jet_gen_pt_SinglesPtop__69->GetZaxis()->SetLabelFont(42);
-   jet_gen_pt_SinglesPtop__69->GetZaxis()->SetLabelSize(0.035);
-   jet_gen_pt_SinglesPtop__69->GetZaxis()->SetTitleSize(0.035);
-   jet_gen_pt_SinglesPtop__69->GetZaxis()->SetTitleFont(42);
+   jet_gen_pt_SinglesPtop__27->SetMarkerColor(ci);
+   jet_gen_pt_SinglesPtop__27->GetXaxis()->SetTitle("pt [GeV]");
+   jet_gen_pt_SinglesPtop__27->GetXaxis()->SetLabelFont(42);
+   jet_gen_pt_SinglesPtop__27->GetXaxis()->SetLabelSize(0.035);
+   jet_gen_pt_SinglesPtop__27->GetXaxis()->SetTitleSize(0.035);
+   jet_gen_pt_SinglesPtop__27->GetXaxis()->SetTitleFont(42);
+   jet_gen_pt_SinglesPtop__27->GetYaxis()->SetTitle(" Events");
+   jet_gen_pt_SinglesPtop__27->GetYaxis()->SetLabelFont(42);
+   jet_gen_pt_SinglesPtop__27->GetYaxis()->SetLabelSize(0.035);
+   jet_gen_pt_SinglesPtop__27->GetYaxis()->SetTitleSize(0.035);
+   jet_gen_pt_SinglesPtop__27->GetYaxis()->SetTitleFont(42);
+   jet_gen_pt_SinglesPtop__27->GetZaxis()->SetLabelFont(42);
+   jet_gen_pt_SinglesPtop__27->GetZaxis()->SetLabelSize(0.035);
+   jet_gen_pt_SinglesPtop__27->GetZaxis()->SetTitleSize(0.035);
+   jet_gen_pt_SinglesPtop__27->GetZaxis()->SetTitleFont(42);
    mc->Add(jet_gen_pt_Single top,"hist");
    mc->Draw("hist same");
    
-   Double_t Graph_from_jet_gen_pt_fx3019[51] = {
+   Double_t Graph_from_jet_gen_pt_fx3007[51] = {
    3.5,
    10.5,
    17.5,
@@ -261,7 +261,7 @@ void jet_gen_pt()
    339.5,
    346.5,
    0};
-   Double_t Graph_from_jet_gen_pt_fy3019[51] = {
+   Double_t Graph_from_jet_gen_pt_fy3007[51] = {
    0,
    0,
    0,
@@ -313,7 +313,7 @@ void jet_gen_pt()
    0,
    0,
    0};
-   Double_t Graph_from_jet_gen_pt_felx3019[51] = {
+   Double_t Graph_from_jet_gen_pt_felx3007[51] = {
    3.5,
    3.5,
    3.5,
@@ -365,7 +365,7 @@ void jet_gen_pt()
    3.5,
    3.5,
    0};
-   Double_t Graph_from_jet_gen_pt_fely3019[51] = {
+   Double_t Graph_from_jet_gen_pt_fely3007[51] = {
    0,
    0,
    0,
@@ -417,7 +417,7 @@ void jet_gen_pt()
    0,
    0,
    0};
-   Double_t Graph_from_jet_gen_pt_fehx3019[51] = {
+   Double_t Graph_from_jet_gen_pt_fehx3007[51] = {
    3.5,
    3.5,
    3.5,
@@ -469,7 +469,7 @@ void jet_gen_pt()
    3.5,
    3.5,
    0};
-   Double_t Graph_from_jet_gen_pt_fehy3019[51] = {
+   Double_t Graph_from_jet_gen_pt_fehy3007[51] = {
    1.841055,
    1.841055,
    1.841055,
@@ -521,7 +521,7 @@ void jet_gen_pt()
    1.841055,
    1.841055,
    1.841055};
-   TGraphAsymmErrors *grae = new TGraphAsymmErrors(51,Graph_from_jet_gen_pt_fx3019,Graph_from_jet_gen_pt_fy3019,Graph_from_jet_gen_pt_felx3019,Graph_from_jet_gen_pt_fehx3019,Graph_from_jet_gen_pt_fely3019,Graph_from_jet_gen_pt_fehy3019);
+   TGraphAsymmErrors *grae = new TGraphAsymmErrors(51,Graph_from_jet_gen_pt_fx3007,Graph_from_jet_gen_pt_fy3007,Graph_from_jet_gen_pt_felx3007,Graph_from_jet_gen_pt_fehx3007,Graph_from_jet_gen_pt_fely3007,Graph_from_jet_gen_pt_fehy3007);
    grae->SetName("Graph_from_jet_gen_pt");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -529,27 +529,27 @@ void jet_gen_pt()
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_jet_gen_pt3019 = new TH1F("Graph_Graph_from_jet_gen_pt3019","Data",100,0,385);
-   Graph_Graph_from_jet_gen_pt3019->SetMinimum(0);
-   Graph_Graph_from_jet_gen_pt3019->SetMaximum(2.02516);
-   Graph_Graph_from_jet_gen_pt3019->SetDirectory(0);
-   Graph_Graph_from_jet_gen_pt3019->SetStats(0);
+   TH1F *Graph_Graph_from_jet_gen_pt3007 = new TH1F("Graph_Graph_from_jet_gen_pt3007","Data",100,0,385);
+   Graph_Graph_from_jet_gen_pt3007->SetMinimum(0);
+   Graph_Graph_from_jet_gen_pt3007->SetMaximum(2.02516);
+   Graph_Graph_from_jet_gen_pt3007->SetDirectory(0);
+   Graph_Graph_from_jet_gen_pt3007->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_jet_gen_pt3019->SetLineColor(ci);
-   Graph_Graph_from_jet_gen_pt3019->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_jet_gen_pt3019->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_jet_gen_pt3019->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_jet_gen_pt3019->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_jet_gen_pt3019->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_jet_gen_pt3019->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_jet_gen_pt3019->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_jet_gen_pt3019->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_jet_gen_pt3019->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_jet_gen_pt3019->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_jet_gen_pt3019->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_jet_gen_pt3019->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_jet_gen_pt3019);
+   Graph_Graph_from_jet_gen_pt3007->SetLineColor(ci);
+   Graph_Graph_from_jet_gen_pt3007->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_jet_gen_pt3007->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_jet_gen_pt3007->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_jet_gen_pt3007->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_jet_gen_pt3007->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_jet_gen_pt3007->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_jet_gen_pt3007->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_jet_gen_pt3007->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_jet_gen_pt3007->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_jet_gen_pt3007->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_jet_gen_pt3007->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_jet_gen_pt3007->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_jet_gen_pt3007);
    
    grae->Draw("p");
    
@@ -658,36 +658,36 @@ tex->SetNDC();
    p2->SetFrameBorderMode(0);
    p2->SetFrameBorderMode(0);
    
-   TH1F *ratioframe__70 = new TH1F("ratioframe__70","t#bar{t}",50,0,350);
-   ratioframe__70->SetMinimum(0.46);
-   ratioframe__70->SetMaximum(1.54);
+   TH1F *ratioframe__28 = new TH1F("ratioframe__28","t#bar{t}",50,0,350);
+   ratioframe__28->SetMinimum(0.46);
+   ratioframe__28->SetMaximum(1.54);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__70->SetFillColor(ci);
+   ratioframe__28->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__70->SetMarkerColor(ci);
-   ratioframe__70->GetXaxis()->SetTitle("pt [GeV]");
-   ratioframe__70->GetXaxis()->SetLabelFont(42);
-   ratioframe__70->GetXaxis()->SetLabelSize(0);
-   ratioframe__70->GetXaxis()->SetTitleSize(0);
-   ratioframe__70->GetXaxis()->SetTitleOffset(0);
-   ratioframe__70->GetXaxis()->SetTitleFont(42);
-   ratioframe__70->GetYaxis()->SetTitle("Data/MC");
-   ratioframe__70->GetYaxis()->SetNoExponent();
-   ratioframe__70->GetYaxis()->SetNdivisions(5);
-   ratioframe__70->GetYaxis()->SetLabelFont(42);
-   ratioframe__70->GetYaxis()->SetLabelSize(0.18);
-   ratioframe__70->GetYaxis()->SetTitleSize(0.2);
-   ratioframe__70->GetYaxis()->SetTitleOffset(0.2);
-   ratioframe__70->GetYaxis()->SetTitleFont(42);
-   ratioframe__70->GetZaxis()->SetLabelFont(42);
-   ratioframe__70->GetZaxis()->SetLabelSize(0.035);
-   ratioframe__70->GetZaxis()->SetTitleSize(0.035);
-   ratioframe__70->GetZaxis()->SetTitleFont(42);
-   ratioframe__70->Draw("");
+   ratioframe__28->SetMarkerColor(ci);
+   ratioframe__28->GetXaxis()->SetTitle("pt [GeV]");
+   ratioframe__28->GetXaxis()->SetLabelFont(42);
+   ratioframe__28->GetXaxis()->SetLabelSize(0);
+   ratioframe__28->GetXaxis()->SetTitleSize(0);
+   ratioframe__28->GetXaxis()->SetTitleOffset(0);
+   ratioframe__28->GetXaxis()->SetTitleFont(42);
+   ratioframe__28->GetYaxis()->SetTitle("Data/MC");
+   ratioframe__28->GetYaxis()->SetNoExponent();
+   ratioframe__28->GetYaxis()->SetNdivisions(5);
+   ratioframe__28->GetYaxis()->SetLabelFont(42);
+   ratioframe__28->GetYaxis()->SetLabelSize(0.18);
+   ratioframe__28->GetYaxis()->SetTitleSize(0.2);
+   ratioframe__28->GetYaxis()->SetTitleOffset(0.2);
+   ratioframe__28->GetYaxis()->SetTitleFont(42);
+   ratioframe__28->GetZaxis()->SetLabelFont(42);
+   ratioframe__28->GetZaxis()->SetLabelSize(0.035);
+   ratioframe__28->GetZaxis()->SetTitleSize(0.035);
+   ratioframe__28->GetZaxis()->SetTitleFont(42);
+   ratioframe__28->Draw("");
    
-   Double_t Graph_from_ratio_fx3020[50] = {
+   Double_t Graph_from_ratio_fx3008[50] = {
    3.5,
    10.5,
    17.5,
@@ -738,7 +738,7 @@ tex->SetNDC();
    332.5,
    339.5,
    346.5};
-   Double_t Graph_from_ratio_fy3020[50] = {
+   Double_t Graph_from_ratio_fy3008[50] = {
    0,
    0,
    0,
@@ -789,7 +789,7 @@ tex->SetNDC();
    0,
    0,
    0};
-   Double_t Graph_from_ratio_felx3020[50] = {
+   Double_t Graph_from_ratio_felx3008[50] = {
    3.5,
    3.5,
    3.5,
@@ -840,7 +840,7 @@ tex->SetNDC();
    3.5,
    3.5,
    3.5};
-   Double_t Graph_from_ratio_fely3020[50] = {
+   Double_t Graph_from_ratio_fely3008[50] = {
    0,
    0,
    0,
@@ -891,7 +891,7 @@ tex->SetNDC();
    0,
    0,
    0};
-   Double_t Graph_from_ratio_fehx3020[50] = {
+   Double_t Graph_from_ratio_fehx3008[50] = {
    3.5,
    3.5,
    3.5,
@@ -942,7 +942,7 @@ tex->SetNDC();
    3.5,
    3.5,
    3.5};
-   Double_t Graph_from_ratio_fehy3020[50] = {
+   Double_t Graph_from_ratio_fehy3008[50] = {
    0,
    0,
    0,
@@ -993,7 +993,7 @@ tex->SetNDC();
    0,
    0,
    0};
-   grae = new TGraphAsymmErrors(50,Graph_from_ratio_fx3020,Graph_from_ratio_fy3020,Graph_from_ratio_felx3020,Graph_from_ratio_fehx3020,Graph_from_ratio_fely3020,Graph_from_ratio_fehy3020);
+   grae = new TGraphAsymmErrors(50,Graph_from_ratio_fx3008,Graph_from_ratio_fy3008,Graph_from_ratio_felx3008,Graph_from_ratio_fehx3008,Graph_from_ratio_fely3008,Graph_from_ratio_fehy3008);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -1001,27 +1001,27 @@ tex->SetNDC();
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_ratio3020 = new TH1F("Graph_Graph_from_ratio3020","Data",100,0,385);
-   Graph_Graph_from_ratio3020->SetMinimum(0);
-   Graph_Graph_from_ratio3020->SetMaximum(1.1);
-   Graph_Graph_from_ratio3020->SetDirectory(0);
-   Graph_Graph_from_ratio3020->SetStats(0);
+   TH1F *Graph_Graph_from_ratio3008 = new TH1F("Graph_Graph_from_ratio3008","Data",100,0,385);
+   Graph_Graph_from_ratio3008->SetMinimum(0);
+   Graph_Graph_from_ratio3008->SetMaximum(1.1);
+   Graph_Graph_from_ratio3008->SetDirectory(0);
+   Graph_Graph_from_ratio3008->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_ratio3020->SetLineColor(ci);
-   Graph_Graph_from_ratio3020->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3020->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3020->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3020->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3020->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3020->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3020->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3020->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3020->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3020->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3020->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3020->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_ratio3020);
+   Graph_Graph_from_ratio3008->SetLineColor(ci);
+   Graph_Graph_from_ratio3008->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3008->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3008->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3008->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3008->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3008->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3008->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3008->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3008->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3008->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3008->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3008->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_ratio3008);
    
    grae->Draw("p");
    p2->Modified();

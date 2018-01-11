@@ -1,7 +1,7 @@
 void nbtags()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Wed Jan 10 16:18:40 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 09:29:23 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -32,229 +32,229 @@ void nbtags()
    p1->SetFrameBorderMode(0);
    p1->SetFrameBorderMode(0);
    
-   TH1F *frame__36 = new TH1F("frame__36","t#bar{t}",2,0.5,2.5);
-   frame__36->SetMinimum(0.1);
-   frame__36->SetMaximum(117911.7);
-   frame__36->SetEntries(365945);
-   frame__36->SetDirectory(0);
+   TH1F *frame__92 = new TH1F("frame__92","t#bar{t}",2,0.5,2.5);
+   frame__92->SetMinimum(0.1);
+   frame__92->SetMaximum(117911.7);
+   frame__92->SetEntries(365945);
+   frame__92->SetDirectory(0);
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
    ci = TColor::GetColor("#cc0000");
-   frame__36->SetFillColor(ci);
+   frame__92->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   frame__36->SetMarkerColor(ci);
-   frame__36->GetXaxis()->SetTitle("b-tag multiplicity");
-   frame__36->GetXaxis()->SetLabelFont(42);
-   frame__36->GetXaxis()->SetLabelSize(0.035);
-   frame__36->GetXaxis()->SetTitleSize(0.035);
-   frame__36->GetXaxis()->SetTitleFont(42);
-   frame__36->GetYaxis()->SetTitle(" Events");
-   frame__36->GetYaxis()->SetNoExponent();
-   frame__36->GetYaxis()->SetLabelFont(42);
-   frame__36->GetYaxis()->SetTitleSize(0.045);
-   frame__36->GetYaxis()->SetTitleOffset(1.3);
-   frame__36->GetYaxis()->SetTitleFont(42);
-   frame__36->GetZaxis()->SetLabelFont(42);
-   frame__36->GetZaxis()->SetLabelSize(0.035);
-   frame__36->GetZaxis()->SetTitleSize(0.035);
-   frame__36->GetZaxis()->SetTitleFont(42);
-   frame__36->Draw("");
+   frame__92->SetMarkerColor(ci);
+   frame__92->GetXaxis()->SetTitle("b-tag multiplicity");
+   frame__92->GetXaxis()->SetLabelFont(42);
+   frame__92->GetXaxis()->SetLabelSize(0.035);
+   frame__92->GetXaxis()->SetTitleSize(0.035);
+   frame__92->GetXaxis()->SetTitleFont(42);
+   frame__92->GetYaxis()->SetTitle(" Events");
+   frame__92->GetYaxis()->SetNoExponent();
+   frame__92->GetYaxis()->SetLabelFont(42);
+   frame__92->GetYaxis()->SetTitleSize(0.045);
+   frame__92->GetYaxis()->SetTitleOffset(1.3);
+   frame__92->GetYaxis()->SetTitleFont(42);
+   frame__92->GetZaxis()->SetLabelFont(42);
+   frame__92->GetZaxis()->SetLabelSize(0.035);
+   frame__92->GetZaxis()->SetTitleSize(0.035);
+   frame__92->GetZaxis()->SetTitleFont(42);
+   frame__92->Draw("");
    
    THStack *mc = new THStack();
    mc->SetName("mc");
    mc->SetTitle("mc");
    
-   TH1F *mc_stack_6 = new TH1F("mc_stack_6","mc",2,0.5,2.5);
-   mc_stack_6->SetMinimum(0);
-   mc_stack_6->SetMaximum(95236.37);
-   mc_stack_6->SetDirectory(0);
-   mc_stack_6->SetStats(0);
+   TH1F *mc_stack_14 = new TH1F("mc_stack_14","mc",2,0.5,2.5);
+   mc_stack_14->SetMinimum(0);
+   mc_stack_14->SetMaximum(95236.37);
+   mc_stack_14->SetDirectory(0);
+   mc_stack_14->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   mc_stack_6->SetLineColor(ci);
-   mc_stack_6->GetXaxis()->SetLabelFont(42);
-   mc_stack_6->GetXaxis()->SetLabelSize(0.035);
-   mc_stack_6->GetXaxis()->SetTitleSize(0.035);
-   mc_stack_6->GetXaxis()->SetTitleFont(42);
-   mc_stack_6->GetYaxis()->SetLabelFont(42);
-   mc_stack_6->GetYaxis()->SetLabelSize(0.035);
-   mc_stack_6->GetYaxis()->SetTitleSize(0.035);
-   mc_stack_6->GetYaxis()->SetTitleFont(42);
-   mc_stack_6->GetZaxis()->SetLabelFont(42);
-   mc_stack_6->GetZaxis()->SetLabelSize(0.035);
-   mc_stack_6->GetZaxis()->SetTitleSize(0.035);
-   mc_stack_6->GetZaxis()->SetTitleFont(42);
-   mc->SetHistogram(mc_stack_6);
+   mc_stack_14->SetLineColor(ci);
+   mc_stack_14->GetXaxis()->SetLabelFont(42);
+   mc_stack_14->GetXaxis()->SetLabelSize(0.035);
+   mc_stack_14->GetXaxis()->SetTitleSize(0.035);
+   mc_stack_14->GetXaxis()->SetTitleFont(42);
+   mc_stack_14->GetYaxis()->SetLabelFont(42);
+   mc_stack_14->GetYaxis()->SetLabelSize(0.035);
+   mc_stack_14->GetYaxis()->SetTitleSize(0.035);
+   mc_stack_14->GetYaxis()->SetTitleFont(42);
+   mc_stack_14->GetZaxis()->SetLabelFont(42);
+   mc_stack_14->GetZaxis()->SetLabelSize(0.035);
+   mc_stack_14->GetZaxis()->SetTitleSize(0.035);
+   mc_stack_14->GetZaxis()->SetTitleFont(42);
+   mc->SetHistogram(mc_stack_14);
    
    
-   TH1F *nbtags_t#bar{t}__37 = new TH1F("nbtags_t#bar{t}__37","t#bar{t}",2,0.5,2.5);
-   nbtags_t#bar{t}__37->SetBinContent(1,85300.87);
-   nbtags_t#bar{t}__37->SetBinContent(2,52800.67);
-   nbtags_t#bar{t}__37->SetBinError(1,187.2514);
-   nbtags_t#bar{t}__37->SetBinError(2,147.2167);
-   nbtags_t#bar{t}__37->SetEntries(360257);
-   nbtags_t#bar{t}__37->SetDirectory(0);
+   TH1F *nbtags_t#bar{t}__93 = new TH1F("nbtags_t#bar{t}__93","t#bar{t}",2,0.5,2.5);
+   nbtags_t#bar{t}__93->SetBinContent(1,85300.87);
+   nbtags_t#bar{t}__93->SetBinContent(2,52800.67);
+   nbtags_t#bar{t}__93->SetBinError(1,187.2514);
+   nbtags_t#bar{t}__93->SetBinError(2,147.2167);
+   nbtags_t#bar{t}__93->SetEntries(360257);
+   nbtags_t#bar{t}__93->SetDirectory(0);
 
    ci = TColor::GetColor("#cc0000");
-   nbtags_t#bar{t}__37->SetFillColor(ci);
+   nbtags_t#bar{t}__93->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   nbtags_t#bar{t}__37->SetMarkerColor(ci);
-   nbtags_t#bar{t}__37->GetXaxis()->SetTitle("b-tag multiplicity");
-   nbtags_t#bar{t}__37->GetXaxis()->SetLabelFont(42);
-   nbtags_t#bar{t}__37->GetXaxis()->SetLabelSize(0.035);
-   nbtags_t#bar{t}__37->GetXaxis()->SetTitleSize(0.035);
-   nbtags_t#bar{t}__37->GetXaxis()->SetTitleFont(42);
-   nbtags_t#bar{t}__37->GetYaxis()->SetTitle(" Events");
-   nbtags_t#bar{t}__37->GetYaxis()->SetLabelFont(42);
-   nbtags_t#bar{t}__37->GetYaxis()->SetLabelSize(0.035);
-   nbtags_t#bar{t}__37->GetYaxis()->SetTitleSize(0.035);
-   nbtags_t#bar{t}__37->GetYaxis()->SetTitleFont(42);
-   nbtags_t#bar{t}__37->GetZaxis()->SetLabelFont(42);
-   nbtags_t#bar{t}__37->GetZaxis()->SetLabelSize(0.035);
-   nbtags_t#bar{t}__37->GetZaxis()->SetTitleSize(0.035);
-   nbtags_t#bar{t}__37->GetZaxis()->SetTitleFont(42);
+   nbtags_t#bar{t}__93->SetMarkerColor(ci);
+   nbtags_t#bar{t}__93->GetXaxis()->SetTitle("b-tag multiplicity");
+   nbtags_t#bar{t}__93->GetXaxis()->SetLabelFont(42);
+   nbtags_t#bar{t}__93->GetXaxis()->SetLabelSize(0.035);
+   nbtags_t#bar{t}__93->GetXaxis()->SetTitleSize(0.035);
+   nbtags_t#bar{t}__93->GetXaxis()->SetTitleFont(42);
+   nbtags_t#bar{t}__93->GetYaxis()->SetTitle(" Events");
+   nbtags_t#bar{t}__93->GetYaxis()->SetLabelFont(42);
+   nbtags_t#bar{t}__93->GetYaxis()->SetLabelSize(0.035);
+   nbtags_t#bar{t}__93->GetYaxis()->SetTitleSize(0.035);
+   nbtags_t#bar{t}__93->GetYaxis()->SetTitleFont(42);
+   nbtags_t#bar{t}__93->GetZaxis()->SetLabelFont(42);
+   nbtags_t#bar{t}__93->GetZaxis()->SetLabelSize(0.035);
+   nbtags_t#bar{t}__93->GetZaxis()->SetTitleSize(0.035);
+   nbtags_t#bar{t}__93->GetZaxis()->SetTitleFont(42);
    mc->Add(nbtags_t#bar{t},"hist");
    
-   TH1F *nbtags_Diboson__38 = new TH1F("nbtags_Diboson__38","Diboson",2,0.5,2.5);
-   nbtags_Diboson__38->SetBinContent(1,171.6413);
-   nbtags_Diboson__38->SetBinContent(2,10.50985);
-   nbtags_Diboson__38->SetBinError(1,8.188742);
-   nbtags_Diboson__38->SetBinError(2,1.991931);
-   nbtags_Diboson__38->SetEntries(511);
-   nbtags_Diboson__38->SetDirectory(0);
+   TH1F *nbtags_Diboson__94 = new TH1F("nbtags_Diboson__94","Diboson",2,0.5,2.5);
+   nbtags_Diboson__94->SetBinContent(1,171.6413);
+   nbtags_Diboson__94->SetBinContent(2,10.50985);
+   nbtags_Diboson__94->SetBinError(1,8.188742);
+   nbtags_Diboson__94->SetBinError(2,1.991931);
+   nbtags_Diboson__94->SetEntries(511);
+   nbtags_Diboson__94->SetDirectory(0);
 
    ci = TColor::GetColor("#ffff00");
-   nbtags_Diboson__38->SetFillColor(ci);
+   nbtags_Diboson__94->SetFillColor(ci);
 
    ci = TColor::GetColor("#ffff00");
-   nbtags_Diboson__38->SetMarkerColor(ci);
-   nbtags_Diboson__38->GetXaxis()->SetTitle("b-tag multiplicity");
-   nbtags_Diboson__38->GetXaxis()->SetLabelFont(42);
-   nbtags_Diboson__38->GetXaxis()->SetLabelSize(0.035);
-   nbtags_Diboson__38->GetXaxis()->SetTitleSize(0.035);
-   nbtags_Diboson__38->GetXaxis()->SetTitleFont(42);
-   nbtags_Diboson__38->GetYaxis()->SetTitle(" Events");
-   nbtags_Diboson__38->GetYaxis()->SetLabelFont(42);
-   nbtags_Diboson__38->GetYaxis()->SetLabelSize(0.035);
-   nbtags_Diboson__38->GetYaxis()->SetTitleSize(0.035);
-   nbtags_Diboson__38->GetYaxis()->SetTitleFont(42);
-   nbtags_Diboson__38->GetZaxis()->SetLabelFont(42);
-   nbtags_Diboson__38->GetZaxis()->SetLabelSize(0.035);
-   nbtags_Diboson__38->GetZaxis()->SetTitleSize(0.035);
-   nbtags_Diboson__38->GetZaxis()->SetTitleFont(42);
+   nbtags_Diboson__94->SetMarkerColor(ci);
+   nbtags_Diboson__94->GetXaxis()->SetTitle("b-tag multiplicity");
+   nbtags_Diboson__94->GetXaxis()->SetLabelFont(42);
+   nbtags_Diboson__94->GetXaxis()->SetLabelSize(0.035);
+   nbtags_Diboson__94->GetXaxis()->SetTitleSize(0.035);
+   nbtags_Diboson__94->GetXaxis()->SetTitleFont(42);
+   nbtags_Diboson__94->GetYaxis()->SetTitle(" Events");
+   nbtags_Diboson__94->GetYaxis()->SetLabelFont(42);
+   nbtags_Diboson__94->GetYaxis()->SetLabelSize(0.035);
+   nbtags_Diboson__94->GetYaxis()->SetTitleSize(0.035);
+   nbtags_Diboson__94->GetYaxis()->SetTitleFont(42);
+   nbtags_Diboson__94->GetZaxis()->SetLabelFont(42);
+   nbtags_Diboson__94->GetZaxis()->SetLabelSize(0.035);
+   nbtags_Diboson__94->GetZaxis()->SetTitleSize(0.035);
+   nbtags_Diboson__94->GetZaxis()->SetTitleFont(42);
    mc->Add(nbtags_Diboson,"hist");
    
-   TH1F *nbtags_DY__39 = new TH1F("nbtags_DY__39","DY",2,0.5,2.5);
-   nbtags_DY__39->SetBinContent(1,283.7373);
-   nbtags_DY__39->SetBinContent(2,55.57008);
-   nbtags_DY__39->SetBinError(1,69.35243);
-   nbtags_DY__39->SetBinError(2,32.2111);
-   nbtags_DY__39->SetEntries(21);
-   nbtags_DY__39->SetDirectory(0);
+   TH1F *nbtags_DY__95 = new TH1F("nbtags_DY__95","DY",2,0.5,2.5);
+   nbtags_DY__95->SetBinContent(1,283.7373);
+   nbtags_DY__95->SetBinContent(2,55.57008);
+   nbtags_DY__95->SetBinError(1,69.35243);
+   nbtags_DY__95->SetBinError(2,32.2111);
+   nbtags_DY__95->SetEntries(21);
+   nbtags_DY__95->SetDirectory(0);
 
    ci = TColor::GetColor("#33ccff");
-   nbtags_DY__39->SetFillColor(ci);
+   nbtags_DY__95->SetFillColor(ci);
 
    ci = TColor::GetColor("#33ccff");
-   nbtags_DY__39->SetMarkerColor(ci);
-   nbtags_DY__39->GetXaxis()->SetTitle("b-tag multiplicity");
-   nbtags_DY__39->GetXaxis()->SetLabelFont(42);
-   nbtags_DY__39->GetXaxis()->SetLabelSize(0.035);
-   nbtags_DY__39->GetXaxis()->SetTitleSize(0.035);
-   nbtags_DY__39->GetXaxis()->SetTitleFont(42);
-   nbtags_DY__39->GetYaxis()->SetTitle(" Events");
-   nbtags_DY__39->GetYaxis()->SetLabelFont(42);
-   nbtags_DY__39->GetYaxis()->SetLabelSize(0.035);
-   nbtags_DY__39->GetYaxis()->SetTitleSize(0.035);
-   nbtags_DY__39->GetYaxis()->SetTitleFont(42);
-   nbtags_DY__39->GetZaxis()->SetLabelFont(42);
-   nbtags_DY__39->GetZaxis()->SetLabelSize(0.035);
-   nbtags_DY__39->GetZaxis()->SetTitleSize(0.035);
-   nbtags_DY__39->GetZaxis()->SetTitleFont(42);
+   nbtags_DY__95->SetMarkerColor(ci);
+   nbtags_DY__95->GetXaxis()->SetTitle("b-tag multiplicity");
+   nbtags_DY__95->GetXaxis()->SetLabelFont(42);
+   nbtags_DY__95->GetXaxis()->SetLabelSize(0.035);
+   nbtags_DY__95->GetXaxis()->SetTitleSize(0.035);
+   nbtags_DY__95->GetXaxis()->SetTitleFont(42);
+   nbtags_DY__95->GetYaxis()->SetTitle(" Events");
+   nbtags_DY__95->GetYaxis()->SetLabelFont(42);
+   nbtags_DY__95->GetYaxis()->SetLabelSize(0.035);
+   nbtags_DY__95->GetYaxis()->SetTitleSize(0.035);
+   nbtags_DY__95->GetYaxis()->SetTitleFont(42);
+   nbtags_DY__95->GetZaxis()->SetLabelFont(42);
+   nbtags_DY__95->GetZaxis()->SetLabelSize(0.035);
+   nbtags_DY__95->GetZaxis()->SetTitleSize(0.035);
+   nbtags_DY__95->GetZaxis()->SetTitleFont(42);
    mc->Add(nbtags_DY,"hist");
    
-   TH1F *nbtags_W__40 = new TH1F("nbtags_W__40","W",2,0.5,2.5);
-   nbtags_W__40->SetDirectory(0);
+   TH1F *nbtags_W__96 = new TH1F("nbtags_W__96","W",2,0.5,2.5);
+   nbtags_W__96->SetDirectory(0);
 
    ci = TColor::GetColor("#3366ff");
-   nbtags_W__40->SetFillColor(ci);
+   nbtags_W__96->SetFillColor(ci);
 
    ci = TColor::GetColor("#3366ff");
-   nbtags_W__40->SetMarkerColor(ci);
-   nbtags_W__40->GetXaxis()->SetTitle("b-tag multiplicity");
-   nbtags_W__40->GetXaxis()->SetLabelFont(42);
-   nbtags_W__40->GetXaxis()->SetLabelSize(0.035);
-   nbtags_W__40->GetXaxis()->SetTitleSize(0.035);
-   nbtags_W__40->GetXaxis()->SetTitleFont(42);
-   nbtags_W__40->GetYaxis()->SetTitle(" Events");
-   nbtags_W__40->GetYaxis()->SetLabelFont(42);
-   nbtags_W__40->GetYaxis()->SetLabelSize(0.035);
-   nbtags_W__40->GetYaxis()->SetTitleSize(0.035);
-   nbtags_W__40->GetYaxis()->SetTitleFont(42);
-   nbtags_W__40->GetZaxis()->SetLabelFont(42);
-   nbtags_W__40->GetZaxis()->SetLabelSize(0.035);
-   nbtags_W__40->GetZaxis()->SetTitleSize(0.035);
-   nbtags_W__40->GetZaxis()->SetTitleFont(42);
+   nbtags_W__96->SetMarkerColor(ci);
+   nbtags_W__96->GetXaxis()->SetTitle("b-tag multiplicity");
+   nbtags_W__96->GetXaxis()->SetLabelFont(42);
+   nbtags_W__96->GetXaxis()->SetLabelSize(0.035);
+   nbtags_W__96->GetXaxis()->SetTitleSize(0.035);
+   nbtags_W__96->GetXaxis()->SetTitleFont(42);
+   nbtags_W__96->GetYaxis()->SetTitle(" Events");
+   nbtags_W__96->GetYaxis()->SetLabelFont(42);
+   nbtags_W__96->GetYaxis()->SetLabelSize(0.035);
+   nbtags_W__96->GetYaxis()->SetTitleSize(0.035);
+   nbtags_W__96->GetYaxis()->SetTitleFont(42);
+   nbtags_W__96->GetZaxis()->SetLabelFont(42);
+   nbtags_W__96->GetZaxis()->SetLabelSize(0.035);
+   nbtags_W__96->GetZaxis()->SetTitleSize(0.035);
+   nbtags_W__96->GetZaxis()->SetTitleFont(42);
    mc->Add(nbtags_W,"hist");
    
-   TH1F *nbtags_SinglesPtop__41 = new TH1F("nbtags_SinglesPtop__41","Single top",2,0.5,2.5);
-   nbtags_SinglesPtop__41->SetBinContent(1,4945.064);
-   nbtags_SinglesPtop__41->SetBinContent(2,1493.305);
-   nbtags_SinglesPtop__41->SetBinError(1,81.32827);
-   nbtags_SinglesPtop__41->SetBinError(2,44.71368);
-   nbtags_SinglesPtop__41->SetEntries(5156);
-   nbtags_SinglesPtop__41->SetDirectory(0);
+   TH1F *nbtags_SinglesPtop__97 = new TH1F("nbtags_SinglesPtop__97","Single top",2,0.5,2.5);
+   nbtags_SinglesPtop__97->SetBinContent(1,4945.064);
+   nbtags_SinglesPtop__97->SetBinContent(2,1493.305);
+   nbtags_SinglesPtop__97->SetBinError(1,81.32827);
+   nbtags_SinglesPtop__97->SetBinError(2,44.71368);
+   nbtags_SinglesPtop__97->SetEntries(5156);
+   nbtags_SinglesPtop__97->SetDirectory(0);
 
    ci = TColor::GetColor("#990099");
-   nbtags_SinglesPtop__41->SetFillColor(ci);
+   nbtags_SinglesPtop__97->SetFillColor(ci);
 
    ci = TColor::GetColor("#990099");
-   nbtags_SinglesPtop__41->SetMarkerColor(ci);
-   nbtags_SinglesPtop__41->GetXaxis()->SetTitle("b-tag multiplicity");
-   nbtags_SinglesPtop__41->GetXaxis()->SetLabelFont(42);
-   nbtags_SinglesPtop__41->GetXaxis()->SetLabelSize(0.035);
-   nbtags_SinglesPtop__41->GetXaxis()->SetTitleSize(0.035);
-   nbtags_SinglesPtop__41->GetXaxis()->SetTitleFont(42);
-   nbtags_SinglesPtop__41->GetYaxis()->SetTitle(" Events");
-   nbtags_SinglesPtop__41->GetYaxis()->SetLabelFont(42);
-   nbtags_SinglesPtop__41->GetYaxis()->SetLabelSize(0.035);
-   nbtags_SinglesPtop__41->GetYaxis()->SetTitleSize(0.035);
-   nbtags_SinglesPtop__41->GetYaxis()->SetTitleFont(42);
-   nbtags_SinglesPtop__41->GetZaxis()->SetLabelFont(42);
-   nbtags_SinglesPtop__41->GetZaxis()->SetLabelSize(0.035);
-   nbtags_SinglesPtop__41->GetZaxis()->SetTitleSize(0.035);
-   nbtags_SinglesPtop__41->GetZaxis()->SetTitleFont(42);
+   nbtags_SinglesPtop__97->SetMarkerColor(ci);
+   nbtags_SinglesPtop__97->GetXaxis()->SetTitle("b-tag multiplicity");
+   nbtags_SinglesPtop__97->GetXaxis()->SetLabelFont(42);
+   nbtags_SinglesPtop__97->GetXaxis()->SetLabelSize(0.035);
+   nbtags_SinglesPtop__97->GetXaxis()->SetTitleSize(0.035);
+   nbtags_SinglesPtop__97->GetXaxis()->SetTitleFont(42);
+   nbtags_SinglesPtop__97->GetYaxis()->SetTitle(" Events");
+   nbtags_SinglesPtop__97->GetYaxis()->SetLabelFont(42);
+   nbtags_SinglesPtop__97->GetYaxis()->SetLabelSize(0.035);
+   nbtags_SinglesPtop__97->GetYaxis()->SetTitleSize(0.035);
+   nbtags_SinglesPtop__97->GetYaxis()->SetTitleFont(42);
+   nbtags_SinglesPtop__97->GetZaxis()->SetLabelFont(42);
+   nbtags_SinglesPtop__97->GetZaxis()->SetLabelSize(0.035);
+   nbtags_SinglesPtop__97->GetZaxis()->SetTitleSize(0.035);
+   nbtags_SinglesPtop__97->GetZaxis()->SetTitleFont(42);
    mc->Add(nbtags_Single top,"hist");
    mc->Draw("hist same");
    
-   Double_t Graph_from_nbtags_fx3011[3] = {
+   Double_t Graph_from_nbtags_fx3027[3] = {
    1,
    2,
    0};
-   Double_t Graph_from_nbtags_fy3011[3] = {
+   Double_t Graph_from_nbtags_fy3027[3] = {
    83737,
    47383,
    0};
-   Double_t Graph_from_nbtags_felx3011[3] = {
+   Double_t Graph_from_nbtags_felx3027[3] = {
    0.5,
    0.5,
    0};
-   Double_t Graph_from_nbtags_fely3011[3] = {
+   Double_t Graph_from_nbtags_fely3027[3] = {
    289.3735,
    217.6764,
    0};
-   Double_t Graph_from_nbtags_fehx3011[3] = {
+   Double_t Graph_from_nbtags_fehx3027[3] = {
    0.5,
    0.5,
    0};
-   Double_t Graph_from_nbtags_fehy3011[3] = {
+   Double_t Graph_from_nbtags_fehy3027[3] = {
    289.3735,
    217.6764,
    1.841055};
-   TGraphAsymmErrors *grae = new TGraphAsymmErrors(3,Graph_from_nbtags_fx3011,Graph_from_nbtags_fy3011,Graph_from_nbtags_felx3011,Graph_from_nbtags_fehx3011,Graph_from_nbtags_fely3011,Graph_from_nbtags_fehy3011);
+   TGraphAsymmErrors *grae = new TGraphAsymmErrors(3,Graph_from_nbtags_fx3027,Graph_from_nbtags_fy3027,Graph_from_nbtags_felx3027,Graph_from_nbtags_fehx3027,Graph_from_nbtags_fely3027,Graph_from_nbtags_fehy3027);
    grae->SetName("Graph_from_nbtags");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -262,27 +262,27 @@ void nbtags()
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_nbtags3011 = new TH1F("Graph_Graph_from_nbtags3011","Data",100,0,2.75);
-   Graph_Graph_from_nbtags3011->SetMinimum(0);
-   Graph_Graph_from_nbtags3011->SetMaximum(92429.01);
-   Graph_Graph_from_nbtags3011->SetDirectory(0);
-   Graph_Graph_from_nbtags3011->SetStats(0);
+   TH1F *Graph_Graph_from_nbtags3027 = new TH1F("Graph_Graph_from_nbtags3027","Data",100,0,2.75);
+   Graph_Graph_from_nbtags3027->SetMinimum(0);
+   Graph_Graph_from_nbtags3027->SetMaximum(92429.01);
+   Graph_Graph_from_nbtags3027->SetDirectory(0);
+   Graph_Graph_from_nbtags3027->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_nbtags3011->SetLineColor(ci);
-   Graph_Graph_from_nbtags3011->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_nbtags3011->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_nbtags3011->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_nbtags3011->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_nbtags3011->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_nbtags3011->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_nbtags3011->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_nbtags3011->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_nbtags3011->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_nbtags3011->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_nbtags3011->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_nbtags3011->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_nbtags3011);
+   Graph_Graph_from_nbtags3027->SetLineColor(ci);
+   Graph_Graph_from_nbtags3027->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_nbtags3027->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_nbtags3027->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_nbtags3027->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_nbtags3027->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_nbtags3027->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_nbtags3027->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_nbtags3027->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_nbtags3027->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_nbtags3027->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_nbtags3027->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_nbtags3027->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_nbtags3027);
    
    grae->Draw("p");
    
@@ -391,55 +391,55 @@ tex->SetNDC();
    p2->SetFrameBorderMode(0);
    p2->SetFrameBorderMode(0);
    
-   TH1F *ratioframe__42 = new TH1F("ratioframe__42","t#bar{t}",2,0.5,2.5);
-   ratioframe__42->SetMinimum(0.46);
-   ratioframe__42->SetMaximum(1.54);
-   ratioframe__42->SetEntries(365945);
+   TH1F *ratioframe__98 = new TH1F("ratioframe__98","t#bar{t}",2,0.5,2.5);
+   ratioframe__98->SetMinimum(0.46);
+   ratioframe__98->SetMaximum(1.54);
+   ratioframe__98->SetEntries(365945);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__42->SetFillColor(ci);
+   ratioframe__98->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__42->SetMarkerColor(ci);
-   ratioframe__42->GetXaxis()->SetTitle("b-tag multiplicity");
-   ratioframe__42->GetXaxis()->SetLabelFont(42);
-   ratioframe__42->GetXaxis()->SetLabelSize(0);
-   ratioframe__42->GetXaxis()->SetTitleSize(0);
-   ratioframe__42->GetXaxis()->SetTitleOffset(0);
-   ratioframe__42->GetXaxis()->SetTitleFont(42);
-   ratioframe__42->GetYaxis()->SetTitle("Data/MC");
-   ratioframe__42->GetYaxis()->SetNoExponent();
-   ratioframe__42->GetYaxis()->SetNdivisions(5);
-   ratioframe__42->GetYaxis()->SetLabelFont(42);
-   ratioframe__42->GetYaxis()->SetLabelSize(0.18);
-   ratioframe__42->GetYaxis()->SetTitleSize(0.2);
-   ratioframe__42->GetYaxis()->SetTitleOffset(0.2);
-   ratioframe__42->GetYaxis()->SetTitleFont(42);
-   ratioframe__42->GetZaxis()->SetLabelFont(42);
-   ratioframe__42->GetZaxis()->SetLabelSize(0.035);
-   ratioframe__42->GetZaxis()->SetTitleSize(0.035);
-   ratioframe__42->GetZaxis()->SetTitleFont(42);
-   ratioframe__42->Draw("");
+   ratioframe__98->SetMarkerColor(ci);
+   ratioframe__98->GetXaxis()->SetTitle("b-tag multiplicity");
+   ratioframe__98->GetXaxis()->SetLabelFont(42);
+   ratioframe__98->GetXaxis()->SetLabelSize(0);
+   ratioframe__98->GetXaxis()->SetTitleSize(0);
+   ratioframe__98->GetXaxis()->SetTitleOffset(0);
+   ratioframe__98->GetXaxis()->SetTitleFont(42);
+   ratioframe__98->GetYaxis()->SetTitle("Data/MC");
+   ratioframe__98->GetYaxis()->SetNoExponent();
+   ratioframe__98->GetYaxis()->SetNdivisions(5);
+   ratioframe__98->GetYaxis()->SetLabelFont(42);
+   ratioframe__98->GetYaxis()->SetLabelSize(0.18);
+   ratioframe__98->GetYaxis()->SetTitleSize(0.2);
+   ratioframe__98->GetYaxis()->SetTitleOffset(0.2);
+   ratioframe__98->GetYaxis()->SetTitleFont(42);
+   ratioframe__98->GetZaxis()->SetLabelFont(42);
+   ratioframe__98->GetZaxis()->SetLabelSize(0.035);
+   ratioframe__98->GetZaxis()->SetTitleSize(0.035);
+   ratioframe__98->GetZaxis()->SetTitleFont(42);
+   ratioframe__98->Draw("");
    
-   Double_t Graph_from_ratio_fx3012[2] = {
+   Double_t Graph_from_ratio_fx3028[2] = {
    1,
    2};
-   Double_t Graph_from_ratio_fy3012[2] = {
+   Double_t Graph_from_ratio_fy3028[2] = {
    0.9232172,
    0.8716511};
-   Double_t Graph_from_ratio_felx3012[2] = {
+   Double_t Graph_from_ratio_felx3028[2] = {
    0.5,
    0.5};
-   Double_t Graph_from_ratio_fely3012[2] = {
+   Double_t Graph_from_ratio_fely3028[2] = {
    0.003873229,
    0.004731699};
-   Double_t Graph_from_ratio_fehx3012[2] = {
+   Double_t Graph_from_ratio_fehx3028[2] = {
    0.5,
    0.5};
-   Double_t Graph_from_ratio_fehy3012[2] = {
+   Double_t Graph_from_ratio_fehy3028[2] = {
    0.003873229,
    0.004731699};
-   grae = new TGraphAsymmErrors(2,Graph_from_ratio_fx3012,Graph_from_ratio_fy3012,Graph_from_ratio_felx3012,Graph_from_ratio_fehx3012,Graph_from_ratio_fely3012,Graph_from_ratio_fehy3012);
+   grae = new TGraphAsymmErrors(2,Graph_from_ratio_fx3028,Graph_from_ratio_fy3028,Graph_from_ratio_felx3028,Graph_from_ratio_fehx3028,Graph_from_ratio_fely3028,Graph_from_ratio_fehy3028);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -447,27 +447,27 @@ tex->SetNDC();
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_ratio3012 = new TH1F("Graph_Graph_from_ratio3012","Data",100,0.3,2.7);
-   Graph_Graph_from_ratio3012->SetMinimum(0.8609022);
-   Graph_Graph_from_ratio3012->SetMaximum(0.9331075);
-   Graph_Graph_from_ratio3012->SetDirectory(0);
-   Graph_Graph_from_ratio3012->SetStats(0);
+   TH1F *Graph_Graph_from_ratio3028 = new TH1F("Graph_Graph_from_ratio3028","Data",100,0.3,2.7);
+   Graph_Graph_from_ratio3028->SetMinimum(0.8609022);
+   Graph_Graph_from_ratio3028->SetMaximum(0.9331075);
+   Graph_Graph_from_ratio3028->SetDirectory(0);
+   Graph_Graph_from_ratio3028->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_ratio3012->SetLineColor(ci);
-   Graph_Graph_from_ratio3012->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3012->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3012->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3012->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3012->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3012->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3012->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3012->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3012->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3012->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3012->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3012->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_ratio3012);
+   Graph_Graph_from_ratio3028->SetLineColor(ci);
+   Graph_Graph_from_ratio3028->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3028->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3028->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3028->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3028->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3028->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3028->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3028->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3028->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3028->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3028->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3028->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_ratio3028);
    
    grae->Draw("p");
    p2->Modified();
