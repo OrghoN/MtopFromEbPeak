@@ -41,8 +41,8 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         'dilepton_mass':ROOT.TH1F('dilepton_mass',';mass [GeV]; Events',100,0,200),
         'vis_top_mass':ROOT.TH1F('vis_top_mass',';mass [GeV]; Events',50,0,200),
 ########################################################################################
-        'csv_discriminator':ROOT.TH1F('csv_discriminator',';B-Tag Criterion; Events',4, array('d',csv_binedges)),
-        'cut_flow':ROOT.TH1F('cut_flow',';mass [GeV]; Events',4,0.5,4.5),
+        'csv_discriminator':ROOT.TH1F('csv_discriminator',';CSV_discriminator; Events',4, array('d',csv_binedges)),
+        'cut_flow':ROOT.TH1F('cut_flow',';mass [GeV]; Events',5,0,5),
         'nleptons':ROOT.TH1F('nleptons',';Number of leptons; Events',10,0,4)
         }
     for key in histos:
@@ -55,12 +55,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
     totalEntries=tree.GetEntriesFast()
     for i in xrange(0,totalEntries):
 
-        #generator level weight only for MC
-        evWgt=1.0
-        if xsec              : evWgt  = xsec*tree.LepSelEffWeights[0]*tree.PUWeights[0]
-        if tree.nGenWeight>0 : evWgt *= tree.GenWeights[0]
-
-        histos['cut_flow'].Fill(1, evWgt)
+        histos['cut_flow'].Fill(1)
 
         tree.GetEntry(i)
         if i%100==0 : sys.stdout.write('\r [ %d/100 ] done' %(int(float(100.*i)/float(totalEntries))) )
@@ -101,9 +96,9 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
                         btagID = 2
 
         if nJets<2 : continue
-        histos['cut_flow'].Fill(2,evWgt)
+        histos['cut_flow'].Fill(2)
         if nBtags!=1 and nBtags!=2 : continue
-        histos['cut_flow'].Fill(3,evWgt)
+        histos['cut_flow'].Fill(3)
 
         # Create lepton four-vector which will be used to compute dilepton invariant mass
         leptons_p4 = []
@@ -122,7 +117,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
         if nLeptons<2 : continue
 
-        histos['cut_flow'].Fill(4, evWgt)
+        histos['cut_flow'].Fill(4)
 
         # dilepton invariant mass
         l2_mass = (leptons_p4[0]+leptons_p4[1]).M()
@@ -147,7 +142,10 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
             vis_tmass = min(m11,m12)
 
-
+        #generator level weight only for MC
+        evWgt=1.0
+        if xsec              : evWgt  = xsec*tree.LepSelEffWeights[0]*tree.PUWeights[0]
+        if tree.nGenWeight>0 : evWgt *= tree.GenWeights[0]
 
         #ready to fill the histograms
         histos['nvtx'].Fill(tree.nPV,evWgt)
@@ -158,7 +156,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         histos['vis_top_mass'].Fill(vis_tmass,evWgt)
 
         for k in xrange(0,tree.nJet):
-            histos['csv_discriminator'].Fill(tree.Jet_CombIVF[k],evWgt)
+            histos['csv_discriminator'].Fill(tree.Jet_CombIVF[k])
 
         for lepton in leptons_p4:
             histos['lepton_pt'].Fill(lepton.Pt(),evWgt)
