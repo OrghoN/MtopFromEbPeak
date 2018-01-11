@@ -72,7 +72,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         JetsP4=[]
         MedtaggedJetsP4=[]  # this is the Medium tag condition
 
-        LootagJetsP4=[]
+        LootaggedJetsP4=[]
         TigtagJetsP4=[]
 
         # Looping over JETS
@@ -151,7 +151,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 	     
             # Take the Pt of bjets tagged as Loose cut
             if (isBtagged == 1):
-                LootagJetsP4.append(jp4)
+                LootaggedJetsP4.append(jp4)
                 btagID = 0
 		nBtags+=1
 
@@ -240,11 +240,11 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
             histos['bjet_mass'].Fill(MedtaggedJetsP4[ij].M(),evWgt)
             histos['bjet_pt_medium'].Fill(MedtaggedJetsP4[ij].Pt(),evWgt)
 
-        for k in xrange(0,len(LootagJetsP4)):
+        for k in xrange(0,len(LootaggedJetsP4)):
             if k>1 : break
-            histos['bjet_pt_loose'].Fill(LootagJetsP4[k].Pt(),evWgt)
-            histos['bjet_en_LOO'].Fill(LootagJetsP4[k].E(),evWgt)
-            histos['bjet_en_ls_LOO'].Fill(ROOT.TMath.Log(LootagJetsP4[k].E()),evWgt/LootagJetsP4[k].E())
+            histos['bjet_pt_loose'].Fill(LootaggedJetsP4[k].Pt(),evWgt)
+            histos['bjet_en_LOO'].Fill(LootaggedJetsP4[k].E(),evWgt)
+            histos['bjet_en_ls_LOO'].Fill(ROOT.TMath.Log(LootaggedJetsP4[k].E()),evWgt/LootaggedJetsP4[k].E())
 
         for k in xrange(0,len(TigtagJetsP4)):
             if k>1 : break
