@@ -168,7 +168,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
         if nJets<2 : continue
         histos['cut_flow'].Fill(2,evWgt)
-        if nBtags < 1 : continue
+        if (nBtags != 1) and (nBtags != 2) : continue
         histos['cut_flow'].Fill(3,evWgt)
 
         # Create lepton four-vector which will be used to compute dilepton invariant mass
