@@ -1,7 +1,7 @@
 void csv_discriminator()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 10:49:17 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 10:19:42 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -20,7 +20,7 @@ void csv_discriminator()
    TPad *p1 = new TPad("p1", "p1",0,0,1,0.85);
    p1->Draw();
    p1->cd();
-   p1->Range(-0.1445783,-35953.27,1.060241,263658.1);
+   p1->Range(-0.1445783,-3.268116e+09,1.060241,2.396618e+10);
    p1->SetFillColor(0);
    p1->SetBorderMode(0);
    p1->SetBorderSize(2);
@@ -33,273 +33,273 @@ void csv_discriminator()
    p1->SetFrameBorderMode(0);
    Double_t xAxis1[5] = {0, 0.5426, 0.8484, 0.9535, 1}; 
    
-   TH1F *frame__127 = new TH1F("frame__127","t#bar{t}",4, xAxis1);
-   frame__127->SetMinimum(0.1);
-   frame__127->SetMaximum(260662);
-   frame__127->SetEntries(1193516);
-   frame__127->SetDirectory(0);
+   TH1F *frame__113 = new TH1F("frame__113","t#bar{t}",4, xAxis1);
+   frame__113->SetMinimum(0.1);
+   frame__113->SetMaximum(2.369384e+10);
+   frame__113->SetEntries(1193516);
+   frame__113->SetDirectory(0);
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
    ci = TColor::GetColor("#cc0000");
-   frame__127->SetFillColor(ci);
+   frame__113->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   frame__127->SetMarkerColor(ci);
-   frame__127->GetXaxis()->SetTitle("B-Tag Criterion");
-   frame__127->GetXaxis()->SetLabelFont(42);
-   frame__127->GetXaxis()->SetLabelSize(0.035);
-   frame__127->GetXaxis()->SetTitleSize(0.035);
-   frame__127->GetXaxis()->SetTitleFont(42);
-   frame__127->GetYaxis()->SetTitle(" Events");
-   frame__127->GetYaxis()->SetNoExponent();
-   frame__127->GetYaxis()->SetLabelFont(42);
-   frame__127->GetYaxis()->SetTitleSize(0.045);
-   frame__127->GetYaxis()->SetTitleOffset(1.3);
-   frame__127->GetYaxis()->SetTitleFont(42);
-   frame__127->GetZaxis()->SetLabelFont(42);
-   frame__127->GetZaxis()->SetLabelSize(0.035);
-   frame__127->GetZaxis()->SetTitleSize(0.035);
-   frame__127->GetZaxis()->SetTitleFont(42);
-   frame__127->Draw("");
+   frame__113->SetMarkerColor(ci);
+   frame__113->GetXaxis()->SetTitle("B-Tag Criterion");
+   frame__113->GetXaxis()->SetLabelFont(42);
+   frame__113->GetXaxis()->SetLabelSize(0.035);
+   frame__113->GetXaxis()->SetTitleSize(0.035);
+   frame__113->GetXaxis()->SetTitleFont(42);
+   frame__113->GetYaxis()->SetTitle(" Events");
+   frame__113->GetYaxis()->SetNoExponent();
+   frame__113->GetYaxis()->SetLabelFont(42);
+   frame__113->GetYaxis()->SetTitleSize(0.045);
+   frame__113->GetYaxis()->SetTitleOffset(1.3);
+   frame__113->GetYaxis()->SetTitleFont(42);
+   frame__113->GetZaxis()->SetLabelFont(42);
+   frame__113->GetZaxis()->SetLabelSize(0.035);
+   frame__113->GetZaxis()->SetTitleSize(0.035);
+   frame__113->GetZaxis()->SetTitleFont(42);
+   frame__113->Draw("");
    
    THStack *mc = new THStack();
    mc->SetName("mc");
    mc->SetTitle("mc");
    Double_t xAxis2[5] = {0, 0.5426, 0.8484, 0.9535, 1}; 
    
-   TH1F *mc_stack_19 = new TH1F("mc_stack_19","mc",4, xAxis2);
-   mc_stack_19->SetMinimum(0);
-   mc_stack_19->SetMaximum(210534.7);
-   mc_stack_19->SetDirectory(0);
-   mc_stack_19->SetStats(0);
+   TH1F *mc_stack_17 = new TH1F("mc_stack_17","mc",4, xAxis2);
+   mc_stack_17->SetMinimum(0);
+   mc_stack_17->SetMaximum(1.913733e+10);
+   mc_stack_17->SetDirectory(0);
+   mc_stack_17->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   mc_stack_19->SetLineColor(ci);
-   mc_stack_19->GetXaxis()->SetLabelFont(42);
-   mc_stack_19->GetXaxis()->SetLabelSize(0.035);
-   mc_stack_19->GetXaxis()->SetTitleSize(0.035);
-   mc_stack_19->GetXaxis()->SetTitleFont(42);
-   mc_stack_19->GetYaxis()->SetLabelFont(42);
-   mc_stack_19->GetYaxis()->SetLabelSize(0.035);
-   mc_stack_19->GetYaxis()->SetTitleSize(0.035);
-   mc_stack_19->GetYaxis()->SetTitleFont(42);
-   mc_stack_19->GetZaxis()->SetLabelFont(42);
-   mc_stack_19->GetZaxis()->SetLabelSize(0.035);
-   mc_stack_19->GetZaxis()->SetTitleSize(0.035);
-   mc_stack_19->GetZaxis()->SetTitleFont(42);
-   mc->SetHistogram(mc_stack_19);
+   mc_stack_17->SetLineColor(ci);
+   mc_stack_17->GetXaxis()->SetLabelFont(42);
+   mc_stack_17->GetXaxis()->SetLabelSize(0.035);
+   mc_stack_17->GetXaxis()->SetTitleSize(0.035);
+   mc_stack_17->GetXaxis()->SetTitleFont(42);
+   mc_stack_17->GetYaxis()->SetLabelFont(42);
+   mc_stack_17->GetYaxis()->SetLabelSize(0.035);
+   mc_stack_17->GetYaxis()->SetTitleSize(0.035);
+   mc_stack_17->GetYaxis()->SetTitleFont(42);
+   mc_stack_17->GetZaxis()->SetLabelFont(42);
+   mc_stack_17->GetZaxis()->SetLabelSize(0.035);
+   mc_stack_17->GetZaxis()->SetTitleSize(0.035);
+   mc_stack_17->GetZaxis()->SetTitleFont(42);
+   mc->SetHistogram(mc_stack_17);
    
    Double_t xAxis3[5] = {0, 0.5426, 0.8484, 0.9535, 1}; 
    
-   TH1F *csv_discriminator_t#bar{t}__128 = new TH1F("csv_discriminator_t#bar{t}__128","t#bar{t}",4, xAxis3);
-   csv_discriminator_t#bar{t}__128->SetBinContent(0,6364.504);
-   csv_discriminator_t#bar{t}__128->SetBinContent(1,191348.5);
-   csv_discriminator_t#bar{t}__128->SetBinContent(2,55150.5);
-   csv_discriminator_t#bar{t}__128->SetBinContent(3,67450.71);
-   csv_discriminator_t#bar{t}__128->SetBinContent(4,129539.7);
-   csv_discriminator_t#bar{t}__128->SetBinContent(5,0.815666);
-   csv_discriminator_t#bar{t}__128->SetBinError(0,51.13153);
-   csv_discriminator_t#bar{t}__128->SetBinError(1,280.3422);
-   csv_discriminator_t#bar{t}__128->SetBinError(2,150.4951);
-   csv_discriminator_t#bar{t}__128->SetBinError(3,166.4265);
-   csv_discriminator_t#bar{t}__128->SetBinError(4,230.6777);
-   csv_discriminator_t#bar{t}__128->SetBinError(5,0.509084);
-   csv_discriminator_t#bar{t}__128->SetEntries(1176595);
-   csv_discriminator_t#bar{t}__128->SetDirectory(0);
+   TH1F *csv_discriminator_t#bar{t}__114 = new TH1F("csv_discriminator_t#bar{t}__114","t#bar{t}",4, xAxis3);
+   csv_discriminator_t#bar{t}__114->SetBinContent(0,5.959661e+08);
+   csv_discriminator_t#bar{t}__114->SetBinContent(1,1.795143e+10);
+   csv_discriminator_t#bar{t}__114->SetBinContent(2,5.173958e+09);
+   csv_discriminator_t#bar{t}__114->SetBinContent(3,6.333682e+09);
+   csv_discriminator_t#bar{t}__114->SetBinContent(4,1.214579e+10);
+   csv_discriminator_t#bar{t}__114->SetBinContent(5,107601);
+   csv_discriminator_t#bar{t}__114->SetBinError(0,4623366);
+   csv_discriminator_t#bar{t}__114->SetBinError(1,2.537448e+07);
+   csv_discriminator_t#bar{t}__114->SetBinError(2,1.362257e+07);
+   csv_discriminator_t#bar{t}__114->SetBinError(3,1.507217e+07);
+   csv_discriminator_t#bar{t}__114->SetBinError(4,2.087182e+07);
+   csv_discriminator_t#bar{t}__114->SetBinError(5,62123.47);
+   csv_discriminator_t#bar{t}__114->SetEntries(1176595);
+   csv_discriminator_t#bar{t}__114->SetDirectory(0);
 
    ci = TColor::GetColor("#cc0000");
-   csv_discriminator_t#bar{t}__128->SetFillColor(ci);
+   csv_discriminator_t#bar{t}__114->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   csv_discriminator_t#bar{t}__128->SetMarkerColor(ci);
-   csv_discriminator_t#bar{t}__128->GetXaxis()->SetTitle("B-Tag Criterion");
-   csv_discriminator_t#bar{t}__128->GetXaxis()->SetLabelFont(42);
-   csv_discriminator_t#bar{t}__128->GetXaxis()->SetLabelSize(0.035);
-   csv_discriminator_t#bar{t}__128->GetXaxis()->SetTitleSize(0.035);
-   csv_discriminator_t#bar{t}__128->GetXaxis()->SetTitleFont(42);
-   csv_discriminator_t#bar{t}__128->GetYaxis()->SetTitle(" Events");
-   csv_discriminator_t#bar{t}__128->GetYaxis()->SetLabelFont(42);
-   csv_discriminator_t#bar{t}__128->GetYaxis()->SetLabelSize(0.035);
-   csv_discriminator_t#bar{t}__128->GetYaxis()->SetTitleSize(0.035);
-   csv_discriminator_t#bar{t}__128->GetYaxis()->SetTitleFont(42);
-   csv_discriminator_t#bar{t}__128->GetZaxis()->SetLabelFont(42);
-   csv_discriminator_t#bar{t}__128->GetZaxis()->SetLabelSize(0.035);
-   csv_discriminator_t#bar{t}__128->GetZaxis()->SetTitleSize(0.035);
-   csv_discriminator_t#bar{t}__128->GetZaxis()->SetTitleFont(42);
+   csv_discriminator_t#bar{t}__114->SetMarkerColor(ci);
+   csv_discriminator_t#bar{t}__114->GetXaxis()->SetTitle("B-Tag Criterion");
+   csv_discriminator_t#bar{t}__114->GetXaxis()->SetLabelFont(42);
+   csv_discriminator_t#bar{t}__114->GetXaxis()->SetLabelSize(0.035);
+   csv_discriminator_t#bar{t}__114->GetXaxis()->SetTitleSize(0.035);
+   csv_discriminator_t#bar{t}__114->GetXaxis()->SetTitleFont(42);
+   csv_discriminator_t#bar{t}__114->GetYaxis()->SetTitle(" Events");
+   csv_discriminator_t#bar{t}__114->GetYaxis()->SetLabelFont(42);
+   csv_discriminator_t#bar{t}__114->GetYaxis()->SetLabelSize(0.035);
+   csv_discriminator_t#bar{t}__114->GetYaxis()->SetTitleSize(0.035);
+   csv_discriminator_t#bar{t}__114->GetYaxis()->SetTitleFont(42);
+   csv_discriminator_t#bar{t}__114->GetZaxis()->SetLabelFont(42);
+   csv_discriminator_t#bar{t}__114->GetZaxis()->SetLabelSize(0.035);
+   csv_discriminator_t#bar{t}__114->GetZaxis()->SetTitleSize(0.035);
+   csv_discriminator_t#bar{t}__114->GetZaxis()->SetTitleFont(42);
    mc->Add(csv_discriminator_t#bar{t},"hist");
    Double_t xAxis4[5] = {0, 0.5426, 0.8484, 0.9535, 1}; 
    
-   TH1F *csv_discriminator_Diboson__129 = new TH1F("csv_discriminator_Diboson__129","Diboson",4, xAxis4);
-   csv_discriminator_Diboson__129->SetBinContent(0,12.31027);
-   csv_discriminator_Diboson__129->SetBinContent(1,279.3778);
-   csv_discriminator_Diboson__129->SetBinContent(2,58.9299);
-   csv_discriminator_Diboson__129->SetBinContent(3,129.5679);
-   csv_discriminator_Diboson__129->SetBinContent(4,66.73421);
-   csv_discriminator_Diboson__129->SetBinError(0,2.18606);
-   csv_discriminator_Diboson__129->SetBinError(1,10.40676);
-   csv_discriminator_Diboson__129->SetBinError(2,4.797228);
-   csv_discriminator_Diboson__129->SetBinError(3,7.080239);
-   csv_discriminator_Diboson__129->SetBinError(4,5.096629);
-   csv_discriminator_Diboson__129->SetEntries(1539);
-   csv_discriminator_Diboson__129->SetDirectory(0);
+   TH1F *csv_discriminator_Diboson__115 = new TH1F("csv_discriminator_Diboson__115","Diboson",4, xAxis4);
+   csv_discriminator_Diboson__115->SetBinContent(0,1255345);
+   csv_discriminator_Diboson__115->SetBinContent(1,2.829906e+07);
+   csv_discriminator_Diboson__115->SetBinContent(2,5846321);
+   csv_discriminator_Diboson__115->SetBinContent(3,1.319906e+07);
+   csv_discriminator_Diboson__115->SetBinContent(4,6599528);
+   csv_discriminator_Diboson__115->SetBinError(0,212192);
+   csv_discriminator_Diboson__115->SetBinError(1,1007473);
+   csv_discriminator_Diboson__115->SetBinError(2,457919.2);
+   csv_discriminator_Diboson__115->SetBinError(3,688048.4);
+   csv_discriminator_Diboson__115->SetBinError(4,486523.7);
+   csv_discriminator_Diboson__115->SetEntries(1539);
+   csv_discriminator_Diboson__115->SetDirectory(0);
 
    ci = TColor::GetColor("#ffff00");
-   csv_discriminator_Diboson__129->SetFillColor(ci);
+   csv_discriminator_Diboson__115->SetFillColor(ci);
 
    ci = TColor::GetColor("#ffff00");
-   csv_discriminator_Diboson__129->SetMarkerColor(ci);
-   csv_discriminator_Diboson__129->GetXaxis()->SetTitle("B-Tag Criterion");
-   csv_discriminator_Diboson__129->GetXaxis()->SetLabelFont(42);
-   csv_discriminator_Diboson__129->GetXaxis()->SetLabelSize(0.035);
-   csv_discriminator_Diboson__129->GetXaxis()->SetTitleSize(0.035);
-   csv_discriminator_Diboson__129->GetXaxis()->SetTitleFont(42);
-   csv_discriminator_Diboson__129->GetYaxis()->SetTitle(" Events");
-   csv_discriminator_Diboson__129->GetYaxis()->SetLabelFont(42);
-   csv_discriminator_Diboson__129->GetYaxis()->SetLabelSize(0.035);
-   csv_discriminator_Diboson__129->GetYaxis()->SetTitleSize(0.035);
-   csv_discriminator_Diboson__129->GetYaxis()->SetTitleFont(42);
-   csv_discriminator_Diboson__129->GetZaxis()->SetLabelFont(42);
-   csv_discriminator_Diboson__129->GetZaxis()->SetLabelSize(0.035);
-   csv_discriminator_Diboson__129->GetZaxis()->SetTitleSize(0.035);
-   csv_discriminator_Diboson__129->GetZaxis()->SetTitleFont(42);
+   csv_discriminator_Diboson__115->SetMarkerColor(ci);
+   csv_discriminator_Diboson__115->GetXaxis()->SetTitle("B-Tag Criterion");
+   csv_discriminator_Diboson__115->GetXaxis()->SetLabelFont(42);
+   csv_discriminator_Diboson__115->GetXaxis()->SetLabelSize(0.035);
+   csv_discriminator_Diboson__115->GetXaxis()->SetTitleSize(0.035);
+   csv_discriminator_Diboson__115->GetXaxis()->SetTitleFont(42);
+   csv_discriminator_Diboson__115->GetYaxis()->SetTitle(" Events");
+   csv_discriminator_Diboson__115->GetYaxis()->SetLabelFont(42);
+   csv_discriminator_Diboson__115->GetYaxis()->SetLabelSize(0.035);
+   csv_discriminator_Diboson__115->GetYaxis()->SetTitleSize(0.035);
+   csv_discriminator_Diboson__115->GetYaxis()->SetTitleFont(42);
+   csv_discriminator_Diboson__115->GetZaxis()->SetLabelFont(42);
+   csv_discriminator_Diboson__115->GetZaxis()->SetLabelSize(0.035);
+   csv_discriminator_Diboson__115->GetZaxis()->SetTitleSize(0.035);
+   csv_discriminator_Diboson__115->GetZaxis()->SetTitleFont(42);
    mc->Add(csv_discriminator_Diboson,"hist");
    Double_t xAxis5[5] = {0, 0.5426, 0.8484, 0.9535, 1}; 
    
-   TH1F *csv_discriminator_DY__130 = new TH1F("csv_discriminator_DY__130","DY",4, xAxis5);
-   csv_discriminator_DY__130->SetBinContent(0,50.51452);
-   csv_discriminator_DY__130->SetBinContent(1,405.9186);
-   csv_discriminator_DY__130->SetBinContent(2,50.00715);
-   csv_discriminator_DY__130->SetBinContent(3,260.9279);
-   csv_discriminator_DY__130->SetBinContent(4,164.09);
-   csv_discriminator_DY__130->SetBinError(0,29.43275);
-   csv_discriminator_DY__130->SetBinError(1,83.64881);
-   csv_discriminator_DY__130->SetBinError(2,28.93178);
-   csv_discriminator_DY__130->SetBinError(3,67.35224);
-   csv_discriminator_DY__130->SetBinError(4,54.27384);
-   csv_discriminator_DY__130->SetEntries(59);
-   csv_discriminator_DY__130->SetDirectory(0);
+   TH1F *csv_discriminator_DY__116 = new TH1F("csv_discriminator_DY__116","DY",4, xAxis5);
+   csv_discriminator_DY__116->SetBinContent(0,107601);
+   csv_discriminator_DY__116->SetBinContent(1,968409);
+   csv_discriminator_DY__116->SetBinContent(2,107601);
+   csv_discriminator_DY__116->SetBinContent(3,573872);
+   csv_discriminator_DY__116->SetBinContent(4,358670);
+   csv_discriminator_DY__116->SetBinError(0,62123.47);
+   csv_discriminator_DY__116->SetBinError(1,186370.4);
+   csv_discriminator_DY__116->SetBinError(2,62123.47);
+   csv_discriminator_DY__116->SetBinError(3,143468);
+   csv_discriminator_DY__116->SetBinError(4,113421.4);
+   csv_discriminator_DY__116->SetEntries(59);
+   csv_discriminator_DY__116->SetDirectory(0);
 
    ci = TColor::GetColor("#33ccff");
-   csv_discriminator_DY__130->SetFillColor(ci);
+   csv_discriminator_DY__116->SetFillColor(ci);
 
    ci = TColor::GetColor("#33ccff");
-   csv_discriminator_DY__130->SetMarkerColor(ci);
-   csv_discriminator_DY__130->GetXaxis()->SetTitle("B-Tag Criterion");
-   csv_discriminator_DY__130->GetXaxis()->SetLabelFont(42);
-   csv_discriminator_DY__130->GetXaxis()->SetLabelSize(0.035);
-   csv_discriminator_DY__130->GetXaxis()->SetTitleSize(0.035);
-   csv_discriminator_DY__130->GetXaxis()->SetTitleFont(42);
-   csv_discriminator_DY__130->GetYaxis()->SetTitle(" Events");
-   csv_discriminator_DY__130->GetYaxis()->SetLabelFont(42);
-   csv_discriminator_DY__130->GetYaxis()->SetLabelSize(0.035);
-   csv_discriminator_DY__130->GetYaxis()->SetTitleSize(0.035);
-   csv_discriminator_DY__130->GetYaxis()->SetTitleFont(42);
-   csv_discriminator_DY__130->GetZaxis()->SetLabelFont(42);
-   csv_discriminator_DY__130->GetZaxis()->SetLabelSize(0.035);
-   csv_discriminator_DY__130->GetZaxis()->SetTitleSize(0.035);
-   csv_discriminator_DY__130->GetZaxis()->SetTitleFont(42);
+   csv_discriminator_DY__116->SetMarkerColor(ci);
+   csv_discriminator_DY__116->GetXaxis()->SetTitle("B-Tag Criterion");
+   csv_discriminator_DY__116->GetXaxis()->SetLabelFont(42);
+   csv_discriminator_DY__116->GetXaxis()->SetLabelSize(0.035);
+   csv_discriminator_DY__116->GetXaxis()->SetTitleSize(0.035);
+   csv_discriminator_DY__116->GetXaxis()->SetTitleFont(42);
+   csv_discriminator_DY__116->GetYaxis()->SetTitle(" Events");
+   csv_discriminator_DY__116->GetYaxis()->SetLabelFont(42);
+   csv_discriminator_DY__116->GetYaxis()->SetLabelSize(0.035);
+   csv_discriminator_DY__116->GetYaxis()->SetTitleSize(0.035);
+   csv_discriminator_DY__116->GetYaxis()->SetTitleFont(42);
+   csv_discriminator_DY__116->GetZaxis()->SetLabelFont(42);
+   csv_discriminator_DY__116->GetZaxis()->SetLabelSize(0.035);
+   csv_discriminator_DY__116->GetZaxis()->SetTitleSize(0.035);
+   csv_discriminator_DY__116->GetZaxis()->SetTitleFont(42);
    mc->Add(csv_discriminator_DY,"hist");
    Double_t xAxis6[5] = {0, 0.5426, 0.8484, 0.9535, 1}; 
    
-   TH1F *csv_discriminator_W__131 = new TH1F("csv_discriminator_W__131","W",4, xAxis6);
-   csv_discriminator_W__131->SetDirectory(0);
+   TH1F *csv_discriminator_W__117 = new TH1F("csv_discriminator_W__117","W",4, xAxis6);
+   csv_discriminator_W__117->SetDirectory(0);
 
    ci = TColor::GetColor("#3366ff");
-   csv_discriminator_W__131->SetFillColor(ci);
+   csv_discriminator_W__117->SetFillColor(ci);
 
    ci = TColor::GetColor("#3366ff");
-   csv_discriminator_W__131->SetMarkerColor(ci);
-   csv_discriminator_W__131->GetXaxis()->SetTitle("B-Tag Criterion");
-   csv_discriminator_W__131->GetXaxis()->SetLabelFont(42);
-   csv_discriminator_W__131->GetXaxis()->SetLabelSize(0.035);
-   csv_discriminator_W__131->GetXaxis()->SetTitleSize(0.035);
-   csv_discriminator_W__131->GetXaxis()->SetTitleFont(42);
-   csv_discriminator_W__131->GetYaxis()->SetTitle(" Events");
-   csv_discriminator_W__131->GetYaxis()->SetLabelFont(42);
-   csv_discriminator_W__131->GetYaxis()->SetLabelSize(0.035);
-   csv_discriminator_W__131->GetYaxis()->SetTitleSize(0.035);
-   csv_discriminator_W__131->GetYaxis()->SetTitleFont(42);
-   csv_discriminator_W__131->GetZaxis()->SetLabelFont(42);
-   csv_discriminator_W__131->GetZaxis()->SetLabelSize(0.035);
-   csv_discriminator_W__131->GetZaxis()->SetTitleSize(0.035);
-   csv_discriminator_W__131->GetZaxis()->SetTitleFont(42);
+   csv_discriminator_W__117->SetMarkerColor(ci);
+   csv_discriminator_W__117->GetXaxis()->SetTitle("B-Tag Criterion");
+   csv_discriminator_W__117->GetXaxis()->SetLabelFont(42);
+   csv_discriminator_W__117->GetXaxis()->SetLabelSize(0.035);
+   csv_discriminator_W__117->GetXaxis()->SetTitleSize(0.035);
+   csv_discriminator_W__117->GetXaxis()->SetTitleFont(42);
+   csv_discriminator_W__117->GetYaxis()->SetTitle(" Events");
+   csv_discriminator_W__117->GetYaxis()->SetLabelFont(42);
+   csv_discriminator_W__117->GetYaxis()->SetLabelSize(0.035);
+   csv_discriminator_W__117->GetYaxis()->SetTitleSize(0.035);
+   csv_discriminator_W__117->GetYaxis()->SetTitleFont(42);
+   csv_discriminator_W__117->GetZaxis()->SetLabelFont(42);
+   csv_discriminator_W__117->GetZaxis()->SetLabelSize(0.035);
+   csv_discriminator_W__117->GetZaxis()->SetTitleSize(0.035);
+   csv_discriminator_W__117->GetZaxis()->SetTitleFont(42);
    mc->Add(csv_discriminator_W,"hist");
    Double_t xAxis7[5] = {0, 0.5426, 0.8484, 0.9535, 1}; 
    
-   TH1F *csv_discriminator_SinglesPtop__132 = new TH1F("csv_discriminator_SinglesPtop__132","Single top",4, xAxis7);
-   csv_discriminator_SinglesPtop__132->SetBinContent(0,284.4315);
-   csv_discriminator_SinglesPtop__132->SetBinContent(1,8475.438);
-   csv_discriminator_SinglesPtop__132->SetBinContent(2,2159.924);
-   csv_discriminator_SinglesPtop__132->SetBinContent(3,2872.103);
-   csv_discriminator_SinglesPtop__132->SetBinContent(4,5211.137);
-   csv_discriminator_SinglesPtop__132->SetBinError(0,19.70751);
-   csv_discriminator_SinglesPtop__132->SetBinError(1,106.4394);
-   csv_discriminator_SinglesPtop__132->SetBinError(2,53.76695);
-   csv_discriminator_SinglesPtop__132->SetBinError(3,62.083);
-   csv_discriminator_SinglesPtop__132->SetBinError(4,83.46794);
-   csv_discriminator_SinglesPtop__132->SetEntries(15323);
-   csv_discriminator_SinglesPtop__132->SetDirectory(0);
+   TH1F *csv_discriminator_SinglesPtop__118 = new TH1F("csv_discriminator_SinglesPtop__118","Single top",4, xAxis7);
+   csv_discriminator_SinglesPtop__118->SetBinContent(0,8034208);
+   csv_discriminator_SinglesPtop__118->SetBinContent(1,2.453303e+08);
+   csv_discriminator_SinglesPtop__118->SetBinContent(2,6.265965e+07);
+   csv_discriminator_SinglesPtop__118->SetBinContent(3,8.278104e+07);
+   csv_discriminator_SinglesPtop__118->SetBinContent(4,1.507849e+08);
+   csv_discriminator_SinglesPtop__118->SetBinError(0,536808.1);
+   csv_discriminator_SinglesPtop__118->SetBinError(1,2966355);
+   csv_discriminator_SinglesPtop__118->SetBinError(2,1499138);
+   csv_discriminator_SinglesPtop__118->SetBinError(3,1723110);
+   csv_discriminator_SinglesPtop__118->SetBinError(4,2325554);
+   csv_discriminator_SinglesPtop__118->SetEntries(15323);
+   csv_discriminator_SinglesPtop__118->SetDirectory(0);
 
    ci = TColor::GetColor("#990099");
-   csv_discriminator_SinglesPtop__132->SetFillColor(ci);
+   csv_discriminator_SinglesPtop__118->SetFillColor(ci);
 
    ci = TColor::GetColor("#990099");
-   csv_discriminator_SinglesPtop__132->SetMarkerColor(ci);
-   csv_discriminator_SinglesPtop__132->GetXaxis()->SetTitle("B-Tag Criterion");
-   csv_discriminator_SinglesPtop__132->GetXaxis()->SetLabelFont(42);
-   csv_discriminator_SinglesPtop__132->GetXaxis()->SetLabelSize(0.035);
-   csv_discriminator_SinglesPtop__132->GetXaxis()->SetTitleSize(0.035);
-   csv_discriminator_SinglesPtop__132->GetXaxis()->SetTitleFont(42);
-   csv_discriminator_SinglesPtop__132->GetYaxis()->SetTitle(" Events");
-   csv_discriminator_SinglesPtop__132->GetYaxis()->SetLabelFont(42);
-   csv_discriminator_SinglesPtop__132->GetYaxis()->SetLabelSize(0.035);
-   csv_discriminator_SinglesPtop__132->GetYaxis()->SetTitleSize(0.035);
-   csv_discriminator_SinglesPtop__132->GetYaxis()->SetTitleFont(42);
-   csv_discriminator_SinglesPtop__132->GetZaxis()->SetLabelFont(42);
-   csv_discriminator_SinglesPtop__132->GetZaxis()->SetLabelSize(0.035);
-   csv_discriminator_SinglesPtop__132->GetZaxis()->SetTitleSize(0.035);
-   csv_discriminator_SinglesPtop__132->GetZaxis()->SetTitleFont(42);
+   csv_discriminator_SinglesPtop__118->SetMarkerColor(ci);
+   csv_discriminator_SinglesPtop__118->GetXaxis()->SetTitle("B-Tag Criterion");
+   csv_discriminator_SinglesPtop__118->GetXaxis()->SetLabelFont(42);
+   csv_discriminator_SinglesPtop__118->GetXaxis()->SetLabelSize(0.035);
+   csv_discriminator_SinglesPtop__118->GetXaxis()->SetTitleSize(0.035);
+   csv_discriminator_SinglesPtop__118->GetXaxis()->SetTitleFont(42);
+   csv_discriminator_SinglesPtop__118->GetYaxis()->SetTitle(" Events");
+   csv_discriminator_SinglesPtop__118->GetYaxis()->SetLabelFont(42);
+   csv_discriminator_SinglesPtop__118->GetYaxis()->SetLabelSize(0.035);
+   csv_discriminator_SinglesPtop__118->GetYaxis()->SetTitleSize(0.035);
+   csv_discriminator_SinglesPtop__118->GetYaxis()->SetTitleFont(42);
+   csv_discriminator_SinglesPtop__118->GetZaxis()->SetLabelFont(42);
+   csv_discriminator_SinglesPtop__118->GetZaxis()->SetLabelSize(0.035);
+   csv_discriminator_SinglesPtop__118->GetZaxis()->SetTitleSize(0.035);
+   csv_discriminator_SinglesPtop__118->GetZaxis()->SetTitleFont(42);
    mc->Add(csv_discriminator_Single top,"hist");
    mc->Draw("hist same");
    
-   Double_t Graph_from_csv_discriminator_fx3037[5] = {
+   Double_t Graph_from_csv_discriminator_fx3033[5] = {
    0.2713,
    0.6955,
    0.90095,
    0.97675,
    0};
-   Double_t Graph_from_csv_discriminator_fy3037[5] = {
+   Double_t Graph_from_csv_discriminator_fy3033[5] = {
    182113,
    52844,
    64495,
    119791,
    0};
-   Double_t Graph_from_csv_discriminator_felx3037[5] = {
+   Double_t Graph_from_csv_discriminator_felx3033[5] = {
    0.2713,
    0.1529,
    0.05255,
    0.02325,
    0};
-   Double_t Graph_from_csv_discriminator_fely3037[5] = {
+   Double_t Graph_from_csv_discriminator_fely3033[5] = {
    426.747,
    229.8782,
    253.9587,
    346.1084,
    0};
-   Double_t Graph_from_csv_discriminator_fehx3037[5] = {
+   Double_t Graph_from_csv_discriminator_fehx3033[5] = {
    0.2713,
    0.1529,
    0.05255,
    0.02325,
    0};
-   Double_t Graph_from_csv_discriminator_fehy3037[5] = {
+   Double_t Graph_from_csv_discriminator_fehy3033[5] = {
    426.747,
    229.8782,
    253.9587,
    346.1084,
    1.841055};
-   TGraphAsymmErrors *grae = new TGraphAsymmErrors(5,Graph_from_csv_discriminator_fx3037,Graph_from_csv_discriminator_fy3037,Graph_from_csv_discriminator_felx3037,Graph_from_csv_discriminator_fehx3037,Graph_from_csv_discriminator_fely3037,Graph_from_csv_discriminator_fehy3037);
+   TGraphAsymmErrors *grae = new TGraphAsymmErrors(5,Graph_from_csv_discriminator_fx3033,Graph_from_csv_discriminator_fy3033,Graph_from_csv_discriminator_felx3033,Graph_from_csv_discriminator_fehx3033,Graph_from_csv_discriminator_fely3033,Graph_from_csv_discriminator_fehy3033);
    grae->SetName("Graph_from_csv_discriminator");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -307,27 +307,27 @@ void csv_discriminator()
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_csv_discriminator3037 = new TH1F("Graph_Graph_from_csv_discriminator3037","Data",100,0,1.1);
-   Graph_Graph_from_csv_discriminator3037->SetMinimum(0);
-   Graph_Graph_from_csv_discriminator3037->SetMaximum(200793.7);
-   Graph_Graph_from_csv_discriminator3037->SetDirectory(0);
-   Graph_Graph_from_csv_discriminator3037->SetStats(0);
+   TH1F *Graph_Graph_from_csv_discriminator3033 = new TH1F("Graph_Graph_from_csv_discriminator3033","Data",100,0,1.1);
+   Graph_Graph_from_csv_discriminator3033->SetMinimum(0);
+   Graph_Graph_from_csv_discriminator3033->SetMaximum(200793.7);
+   Graph_Graph_from_csv_discriminator3033->SetDirectory(0);
+   Graph_Graph_from_csv_discriminator3033->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_csv_discriminator3037->SetLineColor(ci);
-   Graph_Graph_from_csv_discriminator3037->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_csv_discriminator3037->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_csv_discriminator3037->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_csv_discriminator3037->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_csv_discriminator3037->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_csv_discriminator3037->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_csv_discriminator3037->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_csv_discriminator3037->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_csv_discriminator3037->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_csv_discriminator3037->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_csv_discriminator3037->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_csv_discriminator3037->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_csv_discriminator3037);
+   Graph_Graph_from_csv_discriminator3033->SetLineColor(ci);
+   Graph_Graph_from_csv_discriminator3033->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_csv_discriminator3033->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_csv_discriminator3033->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_csv_discriminator3033->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_csv_discriminator3033->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_csv_discriminator3033->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_csv_discriminator3033->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_csv_discriminator3033->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_csv_discriminator3033->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_csv_discriminator3033->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_csv_discriminator3033->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_csv_discriminator3033->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_csv_discriminator3033);
    
    grae->Draw("p");
    
@@ -437,67 +437,67 @@ tex->SetNDC();
    p2->SetFrameBorderMode(0);
    Double_t xAxis8[5] = {0, 0.5426, 0.8484, 0.9535, 1}; 
    
-   TH1F *ratioframe__133 = new TH1F("ratioframe__133","t#bar{t}",4, xAxis8);
-   ratioframe__133->SetMinimum(0.46);
-   ratioframe__133->SetMaximum(1.54);
-   ratioframe__133->SetEntries(1193516);
+   TH1F *ratioframe__119 = new TH1F("ratioframe__119","t#bar{t}",4, xAxis8);
+   ratioframe__119->SetMinimum(0.46);
+   ratioframe__119->SetMaximum(1.54);
+   ratioframe__119->SetEntries(1193516);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__133->SetFillColor(ci);
+   ratioframe__119->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__133->SetMarkerColor(ci);
-   ratioframe__133->GetXaxis()->SetTitle("B-Tag Criterion");
-   ratioframe__133->GetXaxis()->SetLabelFont(42);
-   ratioframe__133->GetXaxis()->SetLabelSize(0);
-   ratioframe__133->GetXaxis()->SetTitleSize(0);
-   ratioframe__133->GetXaxis()->SetTitleOffset(0);
-   ratioframe__133->GetXaxis()->SetTitleFont(42);
-   ratioframe__133->GetYaxis()->SetTitle("Data/MC");
-   ratioframe__133->GetYaxis()->SetNoExponent();
-   ratioframe__133->GetYaxis()->SetNdivisions(5);
-   ratioframe__133->GetYaxis()->SetLabelFont(42);
-   ratioframe__133->GetYaxis()->SetLabelSize(0.18);
-   ratioframe__133->GetYaxis()->SetTitleSize(0.2);
-   ratioframe__133->GetYaxis()->SetTitleOffset(0.2);
-   ratioframe__133->GetYaxis()->SetTitleFont(42);
-   ratioframe__133->GetZaxis()->SetLabelFont(42);
-   ratioframe__133->GetZaxis()->SetLabelSize(0.035);
-   ratioframe__133->GetZaxis()->SetTitleSize(0.035);
-   ratioframe__133->GetZaxis()->SetTitleFont(42);
-   ratioframe__133->Draw("");
+   ratioframe__119->SetMarkerColor(ci);
+   ratioframe__119->GetXaxis()->SetTitle("B-Tag Criterion");
+   ratioframe__119->GetXaxis()->SetLabelFont(42);
+   ratioframe__119->GetXaxis()->SetLabelSize(0);
+   ratioframe__119->GetXaxis()->SetTitleSize(0);
+   ratioframe__119->GetXaxis()->SetTitleOffset(0);
+   ratioframe__119->GetXaxis()->SetTitleFont(42);
+   ratioframe__119->GetYaxis()->SetTitle("Data/MC");
+   ratioframe__119->GetYaxis()->SetNoExponent();
+   ratioframe__119->GetYaxis()->SetNdivisions(5);
+   ratioframe__119->GetYaxis()->SetLabelFont(42);
+   ratioframe__119->GetYaxis()->SetLabelSize(0.18);
+   ratioframe__119->GetYaxis()->SetTitleSize(0.2);
+   ratioframe__119->GetYaxis()->SetTitleOffset(0.2);
+   ratioframe__119->GetYaxis()->SetTitleFont(42);
+   ratioframe__119->GetZaxis()->SetLabelFont(42);
+   ratioframe__119->GetZaxis()->SetLabelSize(0.035);
+   ratioframe__119->GetZaxis()->SetTitleSize(0.035);
+   ratioframe__119->GetZaxis()->SetTitleFont(42);
+   ratioframe__119->Draw("");
    
-   Double_t Graph_from_ratio_fx3038[4] = {
+   Double_t Graph_from_ratio_fx3034[4] = {
    0.2713,
    0.6955,
    0.90095,
    0.97675};
-   Double_t Graph_from_ratio_fy3038[4] = {
-   0.9082524,
-   0.9203167,
-   0.9120631,
-   0.887461};
-   Double_t Graph_from_ratio_felx3038[4] = {
+   Double_t Graph_from_ratio_fy3034[4] = {
+   9.991918e-06,
+   1.007979e-05,
+   1.002996e-05,
+   9.736313e-06};
+   Double_t Graph_from_ratio_felx3034[4] = {
    0.2713,
    0.1529,
    0.05255,
    0.02325};
-   Double_t Graph_from_ratio_fely3038[4] = {
-   0.002553539,
-   0.004775979,
-   0.004348566,
-   0.00305032};
-   Double_t Graph_from_ratio_fehx3038[4] = {
+   Double_t Graph_from_ratio_fely3034[4] = {
+   2.728909e-08,
+   5.116433e-08,
+   4.605373e-08,
+   3.267552e-08};
+   Double_t Graph_from_ratio_fehx3034[4] = {
    0.2713,
    0.1529,
    0.05255,
    0.02325};
-   Double_t Graph_from_ratio_fehy3038[4] = {
-   0.002553539,
-   0.004775979,
-   0.004348566,
-   0.00305032};
-   grae = new TGraphAsymmErrors(4,Graph_from_ratio_fx3038,Graph_from_ratio_fy3038,Graph_from_ratio_felx3038,Graph_from_ratio_fehx3038,Graph_from_ratio_fely3038,Graph_from_ratio_fehy3038);
+   Double_t Graph_from_ratio_fehy3034[4] = {
+   2.728909e-08,
+   5.116433e-08,
+   4.605373e-08,
+   3.267552e-08};
+   grae = new TGraphAsymmErrors(4,Graph_from_ratio_fx3034,Graph_from_ratio_fy3034,Graph_from_ratio_felx3034,Graph_from_ratio_fehx3034,Graph_from_ratio_fely3034,Graph_from_ratio_fehy3034);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -505,27 +505,27 @@ tex->SetNDC();
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_ratio3038 = new TH1F("Graph_Graph_from_ratio3038","Data",100,0,1.1);
-   Graph_Graph_from_ratio3038->SetMinimum(0.8803425);
-   Graph_Graph_from_ratio3038->SetMaximum(0.9291609);
-   Graph_Graph_from_ratio3038->SetDirectory(0);
-   Graph_Graph_from_ratio3038->SetStats(0);
+   TH1F *Graph_Graph_from_ratio3034 = new TH1F("Graph_Graph_from_ratio3034","Data",100,0,1.1);
+   Graph_Graph_from_ratio3034->SetMinimum(9.660906e-06);
+   Graph_Graph_from_ratio3034->SetMaximum(1.017368e-05);
+   Graph_Graph_from_ratio3034->SetDirectory(0);
+   Graph_Graph_from_ratio3034->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_ratio3038->SetLineColor(ci);
-   Graph_Graph_from_ratio3038->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3038->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3038->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3038->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3038->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3038->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3038->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3038->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3038->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3038->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3038->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3038->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_ratio3038);
+   Graph_Graph_from_ratio3034->SetLineColor(ci);
+   Graph_Graph_from_ratio3034->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3034->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3034->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3034->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3034->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3034->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3034->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3034->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3034->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3034->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3034->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3034->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_ratio3034);
    
    grae->Draw("p");
    p2->Modified();
