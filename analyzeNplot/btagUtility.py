@@ -58,19 +58,19 @@ def GetBtagSF2016Loose_comb(Shift,pt,eta):
       else: return 0.02186630479991436
     else: return   0.887973*((1.+(0.0523821*pt))/(1.+(0.0460876*pt)));
 
-def GetCtagsSF2016Loose_comb(shift, pt, eta):
+def GetCtagSF2016Loose_comb(Shift, pt, eta):
   if pt > 1000.: pt = 1000.;
   if abs(eta) > 2.4 or pt<20.: return 1.0; 
   if Shift == 'uncert':
-    return 2.5 * GetBtagSF2016Loose_comb(uncert, pt, eta)
-  return GetBtagSF2016Loose_comb(central, pt, eta);
+    return 2.5 * GetBtagSF2016Loose_comb('uncert', pt, eta)
+  return GetBtagSF2016Loose_comb('central', pt, eta);
     
-def GetCtagsSF2016Medium_comb(shift, pt, eta):
+def GetCtagSF2016Medium_comb(Shift, pt, eta):
   if pt > 1000.: pt = 1000.;
   if abs(eta) > 2.4 or pt<20.: return 1.0; 
   if Shift == 'uncert':
-    return 3.0 * GetBtagSF2016Medium_comb(uncert, pt, eta)
-  return GetBtagSF2016Medium_comb(central, pt, eta);
+    return 3.0 * GetBtagSF2016Medium_comb('uncert', pt, eta)
+  return GetBtagSF2016Medium_comb('central', pt, eta);
 
 def GetLFSF2016Medium(Shift, pt, eta):
     if pt > 1000.: pt = 1000.;
