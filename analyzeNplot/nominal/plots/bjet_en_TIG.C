@@ -1,7 +1,7 @@
 void bjet_en_TIG()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 10:19:42 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 10:49:14 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -32,483 +32,483 @@ void bjet_en_TIG()
    p1->SetFrameBorderMode(0);
    p1->SetFrameBorderMode(0);
    
-   TH1F *frame__127 = new TH1F("frame__127","t#bar{t}",50,0,400);
-   frame__127->SetMinimum(0.1);
-   frame__127->SetMaximum(11118.06);
-   frame__127->SetEntries(333832);
-   frame__127->SetDirectory(0);
+   TH1F *frame__1 = new TH1F("frame__1","t#bar{t}",50,0,400);
+   frame__1->SetMinimum(0.1);
+   frame__1->SetMaximum(11118.06);
+   frame__1->SetEntries(333832);
+   frame__1->SetDirectory(0);
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
    ci = TColor::GetColor("#cc0000");
-   frame__127->SetFillColor(ci);
+   frame__1->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   frame__127->SetMarkerColor(ci);
-   frame__127->GetXaxis()->SetTitle("Energy [GeV]");
-   frame__127->GetXaxis()->SetLabelFont(42);
-   frame__127->GetXaxis()->SetLabelSize(0.035);
-   frame__127->GetXaxis()->SetTitleSize(0.035);
-   frame__127->GetXaxis()->SetTitleFont(42);
-   frame__127->GetYaxis()->SetTitle(" Jets");
-   frame__127->GetYaxis()->SetNoExponent();
-   frame__127->GetYaxis()->SetLabelFont(42);
-   frame__127->GetYaxis()->SetTitleSize(0.045);
-   frame__127->GetYaxis()->SetTitleOffset(1.3);
-   frame__127->GetYaxis()->SetTitleFont(42);
-   frame__127->GetZaxis()->SetLabelFont(42);
-   frame__127->GetZaxis()->SetLabelSize(0.035);
-   frame__127->GetZaxis()->SetTitleSize(0.035);
-   frame__127->GetZaxis()->SetTitleFont(42);
-   frame__127->Draw("");
+   frame__1->SetMarkerColor(ci);
+   frame__1->GetXaxis()->SetTitle("Energy [GeV]");
+   frame__1->GetXaxis()->SetLabelFont(42);
+   frame__1->GetXaxis()->SetLabelSize(0.035);
+   frame__1->GetXaxis()->SetTitleSize(0.035);
+   frame__1->GetXaxis()->SetTitleFont(42);
+   frame__1->GetYaxis()->SetTitle(" Jets");
+   frame__1->GetYaxis()->SetNoExponent();
+   frame__1->GetYaxis()->SetLabelFont(42);
+   frame__1->GetYaxis()->SetTitleSize(0.045);
+   frame__1->GetYaxis()->SetTitleOffset(1.3);
+   frame__1->GetYaxis()->SetTitleFont(42);
+   frame__1->GetZaxis()->SetLabelFont(42);
+   frame__1->GetZaxis()->SetLabelSize(0.035);
+   frame__1->GetZaxis()->SetTitleSize(0.035);
+   frame__1->GetZaxis()->SetTitleFont(42);
+   frame__1->Draw("");
    
    THStack *mc = new THStack();
    mc->SetName("mc");
    mc->SetTitle("mc");
    
-   TH1F *mc_stack_19 = new TH1F("mc_stack_19","mc",50,0,400);
-   mc_stack_19->SetMinimum(-7.327249e-07);
-   mc_stack_19->SetMaximum(8979.974);
-   mc_stack_19->SetDirectory(0);
-   mc_stack_19->SetStats(0);
+   TH1F *mc_stack_1 = new TH1F("mc_stack_1","mc",50,0,400);
+   mc_stack_1->SetMinimum(-7.327249e-07);
+   mc_stack_1->SetMaximum(8979.974);
+   mc_stack_1->SetDirectory(0);
+   mc_stack_1->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   mc_stack_19->SetLineColor(ci);
-   mc_stack_19->GetXaxis()->SetLabelFont(42);
-   mc_stack_19->GetXaxis()->SetLabelSize(0.035);
-   mc_stack_19->GetXaxis()->SetTitleSize(0.035);
-   mc_stack_19->GetXaxis()->SetTitleFont(42);
-   mc_stack_19->GetYaxis()->SetLabelFont(42);
-   mc_stack_19->GetYaxis()->SetLabelSize(0.035);
-   mc_stack_19->GetYaxis()->SetTitleSize(0.035);
-   mc_stack_19->GetYaxis()->SetTitleFont(42);
-   mc_stack_19->GetZaxis()->SetLabelFont(42);
-   mc_stack_19->GetZaxis()->SetLabelSize(0.035);
-   mc_stack_19->GetZaxis()->SetTitleSize(0.035);
-   mc_stack_19->GetZaxis()->SetTitleFont(42);
-   mc->SetHistogram(mc_stack_19);
+   mc_stack_1->SetLineColor(ci);
+   mc_stack_1->GetXaxis()->SetLabelFont(42);
+   mc_stack_1->GetXaxis()->SetLabelSize(0.035);
+   mc_stack_1->GetXaxis()->SetTitleSize(0.035);
+   mc_stack_1->GetXaxis()->SetTitleFont(42);
+   mc_stack_1->GetYaxis()->SetLabelFont(42);
+   mc_stack_1->GetYaxis()->SetLabelSize(0.035);
+   mc_stack_1->GetYaxis()->SetTitleSize(0.035);
+   mc_stack_1->GetYaxis()->SetTitleFont(42);
+   mc_stack_1->GetZaxis()->SetLabelFont(42);
+   mc_stack_1->GetZaxis()->SetLabelSize(0.035);
+   mc_stack_1->GetZaxis()->SetTitleSize(0.035);
+   mc_stack_1->GetZaxis()->SetTitleFont(42);
+   mc->SetHistogram(mc_stack_1);
    
    
-   TH1F *bjet_en_TIG_t#bar{t}__128 = new TH1F("bjet_en_TIG_t#bar{t}__128","t#bar{t}",50,0,400);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(4,225.5171);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(5,4285.692);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(6,6566.456);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(7,7805.391);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(8,8134.812);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(9,8213.331);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(10,7912.871);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(11,7422.041);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(12,7011.243);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(13,6461.743);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(14,5869.081);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(15,5281.121);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(16,4826.004);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(17,4336.019);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(18,3846.271);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(19,3558.586);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(20,3205.805);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(21,2812.748);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(22,2588.868);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(23,2299.501);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(24,2072.68);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(25,1871.812);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(26,1646.813);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(27,1508.4);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(28,1336.619);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(29,1239.553);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(30,1144.102);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(31,1024.994);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(32,917.3655);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(33,842.4178);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(34,748.6371);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(35,704.5418);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(36,631.0986);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(37,588.4221);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(38,544.2958);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(39,488.4545);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(40,468.412);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(41,436.5573);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(42,366.6542);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(43,340.3126);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(44,323.8545);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(45,304.6196);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(46,257.6093);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(47,263.0627);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(48,238.6762);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(49,228.9727);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(50,209.4515);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(51,2642.588);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(4,9.600347);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(5,41.94278);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(6,51.92968);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(7,56.65255);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(8,57.78378);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(9,58.0426);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(10,57.00388);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(11,55.23302);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(12,53.67002);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(13,51.53036);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(14,49.13284);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(15,46.58919);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(16,44.54819);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(17,42.21043);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(18,39.75308);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(19,38.26522);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(20,36.30178);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(21,34.01723);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(22,32.6734);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(23,30.7175);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(24,29.16698);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(25,27.68993);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(26,25.98527);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(27,24.88249);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(28,23.36986);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(29,22.55095);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(30,21.68603);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(31,20.49648);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(32,19.4119);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(33,18.62693);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(34,17.55726);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(35,17.03085);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(36,16.09858);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(37,15.5388);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(38,14.92975);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(39,14.16899);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(40,13.8716);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(41,13.40041);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(42,12.25029);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(43,11.78285);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(44,11.52601);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(45,11.19122);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(46,10.27724);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(47,10.42185);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(48,9.868263);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(49,9.676954);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(50,9.256675);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(51,32.92799);
-   bjet_en_TIG_t#bar{t}__128->SetEntries(329524);
-   bjet_en_TIG_t#bar{t}__128->SetDirectory(0);
+   TH1F *bjet_en_TIG_t#bar{t}__2 = new TH1F("bjet_en_TIG_t#bar{t}__2","t#bar{t}",50,0,400);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(4,225.5171);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(5,4285.692);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(6,6566.456);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(7,7805.391);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(8,8134.812);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(9,8213.331);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(10,7912.871);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(11,7422.041);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(12,7011.243);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(13,6461.743);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(14,5869.081);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(15,5281.121);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(16,4826.004);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(17,4336.019);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(18,3846.271);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(19,3558.586);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(20,3205.805);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(21,2812.748);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(22,2588.868);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(23,2299.501);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(24,2072.68);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(25,1871.812);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(26,1646.813);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(27,1508.4);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(28,1336.619);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(29,1239.553);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(30,1144.102);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(31,1024.994);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(32,917.3655);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(33,842.4178);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(34,748.6371);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(35,704.5418);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(36,631.0986);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(37,588.4221);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(38,544.2958);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(39,488.4545);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(40,468.412);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(41,436.5573);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(42,366.6542);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(43,340.3126);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(44,323.8545);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(45,304.6196);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(46,257.6093);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(47,263.0627);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(48,238.6762);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(49,228.9727);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(50,209.4515);
+   bjet_en_TIG_t#bar{t}__2->SetBinContent(51,2642.588);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(4,9.600347);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(5,41.94278);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(6,51.92968);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(7,56.65255);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(8,57.78378);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(9,58.0426);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(10,57.00388);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(11,55.23302);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(12,53.67002);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(13,51.53036);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(14,49.13284);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(15,46.58919);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(16,44.54819);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(17,42.21043);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(18,39.75308);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(19,38.26522);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(20,36.30178);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(21,34.01723);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(22,32.6734);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(23,30.7175);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(24,29.16698);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(25,27.68993);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(26,25.98527);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(27,24.88249);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(28,23.36986);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(29,22.55095);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(30,21.68603);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(31,20.49648);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(32,19.4119);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(33,18.62693);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(34,17.55726);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(35,17.03085);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(36,16.09858);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(37,15.5388);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(38,14.92975);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(39,14.16899);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(40,13.8716);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(41,13.40041);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(42,12.25029);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(43,11.78285);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(44,11.52601);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(45,11.19122);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(46,10.27724);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(47,10.42185);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(48,9.868263);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(49,9.676954);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(50,9.256675);
+   bjet_en_TIG_t#bar{t}__2->SetBinError(51,32.92799);
+   bjet_en_TIG_t#bar{t}__2->SetEntries(329524);
+   bjet_en_TIG_t#bar{t}__2->SetDirectory(0);
 
    ci = TColor::GetColor("#cc0000");
-   bjet_en_TIG_t#bar{t}__128->SetFillColor(ci);
+   bjet_en_TIG_t#bar{t}__2->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   bjet_en_TIG_t#bar{t}__128->SetMarkerColor(ci);
-   bjet_en_TIG_t#bar{t}__128->GetXaxis()->SetTitle("Energy [GeV]");
-   bjet_en_TIG_t#bar{t}__128->GetXaxis()->SetLabelFont(42);
-   bjet_en_TIG_t#bar{t}__128->GetXaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_t#bar{t}__128->GetXaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_t#bar{t}__128->GetXaxis()->SetTitleFont(42);
-   bjet_en_TIG_t#bar{t}__128->GetYaxis()->SetTitle(" Jets");
-   bjet_en_TIG_t#bar{t}__128->GetYaxis()->SetLabelFont(42);
-   bjet_en_TIG_t#bar{t}__128->GetYaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_t#bar{t}__128->GetYaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_t#bar{t}__128->GetYaxis()->SetTitleFont(42);
-   bjet_en_TIG_t#bar{t}__128->GetZaxis()->SetLabelFont(42);
-   bjet_en_TIG_t#bar{t}__128->GetZaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_t#bar{t}__128->GetZaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_t#bar{t}__128->GetZaxis()->SetTitleFont(42);
+   bjet_en_TIG_t#bar{t}__2->SetMarkerColor(ci);
+   bjet_en_TIG_t#bar{t}__2->GetXaxis()->SetTitle("Energy [GeV]");
+   bjet_en_TIG_t#bar{t}__2->GetXaxis()->SetLabelFont(42);
+   bjet_en_TIG_t#bar{t}__2->GetXaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_t#bar{t}__2->GetXaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_t#bar{t}__2->GetXaxis()->SetTitleFont(42);
+   bjet_en_TIG_t#bar{t}__2->GetYaxis()->SetTitle(" Jets");
+   bjet_en_TIG_t#bar{t}__2->GetYaxis()->SetLabelFont(42);
+   bjet_en_TIG_t#bar{t}__2->GetYaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_t#bar{t}__2->GetYaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_t#bar{t}__2->GetYaxis()->SetTitleFont(42);
+   bjet_en_TIG_t#bar{t}__2->GetZaxis()->SetLabelFont(42);
+   bjet_en_TIG_t#bar{t}__2->GetZaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_t#bar{t}__2->GetZaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_t#bar{t}__2->GetZaxis()->SetTitleFont(42);
    mc->Add(bjet_en_TIG_t#bar{t},"hist");
    
-   TH1F *bjet_en_TIG_Diboson__129 = new TH1F("bjet_en_TIG_Diboson__129","Diboson",50,0,400);
-   bjet_en_TIG_Diboson__129->SetBinContent(4,0.8218468);
-   bjet_en_TIG_Diboson__129->SetBinContent(5,3.466633);
-   bjet_en_TIG_Diboson__129->SetBinContent(6,3.322516);
-   bjet_en_TIG_Diboson__129->SetBinContent(7,3.739981);
-   bjet_en_TIG_Diboson__129->SetBinContent(8,3.461666);
-   bjet_en_TIG_Diboson__129->SetBinContent(9,2.282029);
-   bjet_en_TIG_Diboson__129->SetBinContent(10,4.894811);
-   bjet_en_TIG_Diboson__129->SetBinContent(11,3.458039);
-   bjet_en_TIG_Diboson__129->SetBinContent(12,1.452015);
-   bjet_en_TIG_Diboson__129->SetBinContent(13,1.598905);
-   bjet_en_TIG_Diboson__129->SetBinContent(14,1.870811);
-   bjet_en_TIG_Diboson__129->SetBinContent(15,2.046748);
-   bjet_en_TIG_Diboson__129->SetBinContent(16,1.176215);
-   bjet_en_TIG_Diboson__129->SetBinContent(17,2.541805);
-   bjet_en_TIG_Diboson__129->SetBinContent(18,1.281912);
-   bjet_en_TIG_Diboson__129->SetBinContent(19,1.876603);
-   bjet_en_TIG_Diboson__129->SetBinContent(20,1.161368);
-   bjet_en_TIG_Diboson__129->SetBinContent(21,2.400327);
-   bjet_en_TIG_Diboson__129->SetBinContent(22,0.3683522);
-   bjet_en_TIG_Diboson__129->SetBinContent(23,0.3809738);
-   bjet_en_TIG_Diboson__129->SetBinContent(24,0.7696521);
-   bjet_en_TIG_Diboson__129->SetBinContent(25,1.602304);
-   bjet_en_TIG_Diboson__129->SetBinContent(26,0.831868);
-   bjet_en_TIG_Diboson__129->SetBinContent(27,1.584014);
-   bjet_en_TIG_Diboson__129->SetBinContent(28,2.021076);
-   bjet_en_TIG_Diboson__129->SetBinContent(29,0.7546439);
-   bjet_en_TIG_Diboson__129->SetBinContent(30,1.275855);
-   bjet_en_TIG_Diboson__129->SetBinContent(31,0.3768083);
-   bjet_en_TIG_Diboson__129->SetBinContent(32,0.01934317);
-   bjet_en_TIG_Diboson__129->SetBinContent(33,0.5836506);
-   bjet_en_TIG_Diboson__129->SetBinContent(34,0.3824083);
-   bjet_en_TIG_Diboson__129->SetBinContent(35,0.4100716);
-   bjet_en_TIG_Diboson__129->SetBinContent(38,0.1253565);
-   bjet_en_TIG_Diboson__129->SetBinContent(39,0.2859605);
-   bjet_en_TIG_Diboson__129->SetBinContent(40,0.4144138);
-   bjet_en_TIG_Diboson__129->SetBinContent(42,0.004752933);
-   bjet_en_TIG_Diboson__129->SetBinContent(43,0.325893);
-   bjet_en_TIG_Diboson__129->SetBinContent(44,0.803543);
-   bjet_en_TIG_Diboson__129->SetBinContent(46,0.3739505);
-   bjet_en_TIG_Diboson__129->SetBinContent(48,0.3785551);
-   bjet_en_TIG_Diboson__129->SetBinContent(49,0.2853125);
-   bjet_en_TIG_Diboson__129->SetBinContent(50,0.4303074);
-   bjet_en_TIG_Diboson__129->SetBinContent(51,6.078356);
-   bjet_en_TIG_Diboson__129->SetBinError(4,0.5287828);
-   bjet_en_TIG_Diboson__129->SetBinError(5,1.155683);
-   bjet_en_TIG_Diboson__129->SetBinError(6,1.175927);
-   bjet_en_TIG_Diboson__129->SetBinError(7,1.23987);
-   bjet_en_TIG_Diboson__129->SetBinError(8,1.147633);
-   bjet_en_TIG_Diboson__129->SetBinError(9,0.9489772);
-   bjet_en_TIG_Diboson__129->SetBinError(10,1.369908);
-   bjet_en_TIG_Diboson__129->SetBinError(11,1.170743);
-   bjet_en_TIG_Diboson__129->SetBinError(12,0.7402137);
-   bjet_en_TIG_Diboson__129->SetBinError(13,0.8007275);
-   bjet_en_TIG_Diboson__129->SetBinError(14,0.8343805);
-   bjet_en_TIG_Diboson__129->SetBinError(15,0.9168256);
-   bjet_en_TIG_Diboson__129->SetBinError(16,0.6790984);
-   bjet_en_TIG_Diboson__129->SetBinError(17,1.039039);
-   bjet_en_TIG_Diboson__129->SetBinError(18,0.6899421);
-   bjet_en_TIG_Diboson__129->SetBinError(19,0.8331758);
-   bjet_en_TIG_Diboson__129->SetBinError(20,0.6705739);
-   bjet_en_TIG_Diboson__129->SetBinError(21,0.9814451);
-   bjet_en_TIG_Diboson__129->SetBinError(22,0.3683522);
-   bjet_en_TIG_Diboson__129->SetBinError(23,0.3809738);
-   bjet_en_TIG_Diboson__129->SetBinError(24,0.5445439);
-   bjet_en_TIG_Diboson__129->SetBinError(25,0.8032859);
-   bjet_en_TIG_Diboson__129->SetBinError(26,0.5280141);
-   bjet_en_TIG_Diboson__129->SetBinError(27,0.7968396);
-   bjet_en_TIG_Diboson__129->SetBinError(28,0.9055197);
-   bjet_en_TIG_Diboson__129->SetBinError(29,0.5336169);
-   bjet_en_TIG_Diboson__129->SetBinError(30,0.7389499);
-   bjet_en_TIG_Diboson__129->SetBinError(31,0.3768083);
-   bjet_en_TIG_Diboson__129->SetBinError(32,0.01934317);
-   bjet_en_TIG_Diboson__129->SetBinError(33,0.4185992);
-   bjet_en_TIG_Diboson__129->SetBinError(34,0.3824083);
-   bjet_en_TIG_Diboson__129->SetBinError(35,0.3722823);
-   bjet_en_TIG_Diboson__129->SetBinError(38,0.1253565);
-   bjet_en_TIG_Diboson__129->SetBinError(39,0.2859605);
-   bjet_en_TIG_Diboson__129->SetBinError(40,0.4144138);
-   bjet_en_TIG_Diboson__129->SetBinError(42,0.004752933);
-   bjet_en_TIG_Diboson__129->SetBinError(43,0.325893);
-   bjet_en_TIG_Diboson__129->SetBinError(44,0.5694124);
-   bjet_en_TIG_Diboson__129->SetBinError(46,0.3739505);
-   bjet_en_TIG_Diboson__129->SetBinError(48,0.3785551);
-   bjet_en_TIG_Diboson__129->SetBinError(49,0.2853125);
-   bjet_en_TIG_Diboson__129->SetBinError(50,0.4303074);
-   bjet_en_TIG_Diboson__129->SetBinError(51,1.525072);
-   bjet_en_TIG_Diboson__129->SetEntries(176);
-   bjet_en_TIG_Diboson__129->SetDirectory(0);
+   TH1F *bjet_en_TIG_Diboson__3 = new TH1F("bjet_en_TIG_Diboson__3","Diboson",50,0,400);
+   bjet_en_TIG_Diboson__3->SetBinContent(4,0.8218468);
+   bjet_en_TIG_Diboson__3->SetBinContent(5,3.466633);
+   bjet_en_TIG_Diboson__3->SetBinContent(6,3.322516);
+   bjet_en_TIG_Diboson__3->SetBinContent(7,3.739981);
+   bjet_en_TIG_Diboson__3->SetBinContent(8,3.461666);
+   bjet_en_TIG_Diboson__3->SetBinContent(9,2.282029);
+   bjet_en_TIG_Diboson__3->SetBinContent(10,4.894811);
+   bjet_en_TIG_Diboson__3->SetBinContent(11,3.458039);
+   bjet_en_TIG_Diboson__3->SetBinContent(12,1.452015);
+   bjet_en_TIG_Diboson__3->SetBinContent(13,1.598905);
+   bjet_en_TIG_Diboson__3->SetBinContent(14,1.870811);
+   bjet_en_TIG_Diboson__3->SetBinContent(15,2.046748);
+   bjet_en_TIG_Diboson__3->SetBinContent(16,1.176215);
+   bjet_en_TIG_Diboson__3->SetBinContent(17,2.541805);
+   bjet_en_TIG_Diboson__3->SetBinContent(18,1.281912);
+   bjet_en_TIG_Diboson__3->SetBinContent(19,1.876603);
+   bjet_en_TIG_Diboson__3->SetBinContent(20,1.161368);
+   bjet_en_TIG_Diboson__3->SetBinContent(21,2.400327);
+   bjet_en_TIG_Diboson__3->SetBinContent(22,0.3683522);
+   bjet_en_TIG_Diboson__3->SetBinContent(23,0.3809738);
+   bjet_en_TIG_Diboson__3->SetBinContent(24,0.7696521);
+   bjet_en_TIG_Diboson__3->SetBinContent(25,1.602304);
+   bjet_en_TIG_Diboson__3->SetBinContent(26,0.831868);
+   bjet_en_TIG_Diboson__3->SetBinContent(27,1.584014);
+   bjet_en_TIG_Diboson__3->SetBinContent(28,2.021076);
+   bjet_en_TIG_Diboson__3->SetBinContent(29,0.7546439);
+   bjet_en_TIG_Diboson__3->SetBinContent(30,1.275855);
+   bjet_en_TIG_Diboson__3->SetBinContent(31,0.3768083);
+   bjet_en_TIG_Diboson__3->SetBinContent(32,0.01934317);
+   bjet_en_TIG_Diboson__3->SetBinContent(33,0.5836506);
+   bjet_en_TIG_Diboson__3->SetBinContent(34,0.3824083);
+   bjet_en_TIG_Diboson__3->SetBinContent(35,0.4100716);
+   bjet_en_TIG_Diboson__3->SetBinContent(38,0.1253565);
+   bjet_en_TIG_Diboson__3->SetBinContent(39,0.2859605);
+   bjet_en_TIG_Diboson__3->SetBinContent(40,0.4144138);
+   bjet_en_TIG_Diboson__3->SetBinContent(42,0.004752933);
+   bjet_en_TIG_Diboson__3->SetBinContent(43,0.325893);
+   bjet_en_TIG_Diboson__3->SetBinContent(44,0.803543);
+   bjet_en_TIG_Diboson__3->SetBinContent(46,0.3739505);
+   bjet_en_TIG_Diboson__3->SetBinContent(48,0.3785551);
+   bjet_en_TIG_Diboson__3->SetBinContent(49,0.2853125);
+   bjet_en_TIG_Diboson__3->SetBinContent(50,0.4303074);
+   bjet_en_TIG_Diboson__3->SetBinContent(51,6.078356);
+   bjet_en_TIG_Diboson__3->SetBinError(4,0.5287828);
+   bjet_en_TIG_Diboson__3->SetBinError(5,1.155683);
+   bjet_en_TIG_Diboson__3->SetBinError(6,1.175927);
+   bjet_en_TIG_Diboson__3->SetBinError(7,1.23987);
+   bjet_en_TIG_Diboson__3->SetBinError(8,1.147633);
+   bjet_en_TIG_Diboson__3->SetBinError(9,0.9489772);
+   bjet_en_TIG_Diboson__3->SetBinError(10,1.369908);
+   bjet_en_TIG_Diboson__3->SetBinError(11,1.170743);
+   bjet_en_TIG_Diboson__3->SetBinError(12,0.7402137);
+   bjet_en_TIG_Diboson__3->SetBinError(13,0.8007275);
+   bjet_en_TIG_Diboson__3->SetBinError(14,0.8343805);
+   bjet_en_TIG_Diboson__3->SetBinError(15,0.9168256);
+   bjet_en_TIG_Diboson__3->SetBinError(16,0.6790984);
+   bjet_en_TIG_Diboson__3->SetBinError(17,1.039039);
+   bjet_en_TIG_Diboson__3->SetBinError(18,0.6899421);
+   bjet_en_TIG_Diboson__3->SetBinError(19,0.8331758);
+   bjet_en_TIG_Diboson__3->SetBinError(20,0.6705739);
+   bjet_en_TIG_Diboson__3->SetBinError(21,0.9814451);
+   bjet_en_TIG_Diboson__3->SetBinError(22,0.3683522);
+   bjet_en_TIG_Diboson__3->SetBinError(23,0.3809738);
+   bjet_en_TIG_Diboson__3->SetBinError(24,0.5445439);
+   bjet_en_TIG_Diboson__3->SetBinError(25,0.8032859);
+   bjet_en_TIG_Diboson__3->SetBinError(26,0.5280141);
+   bjet_en_TIG_Diboson__3->SetBinError(27,0.7968396);
+   bjet_en_TIG_Diboson__3->SetBinError(28,0.9055197);
+   bjet_en_TIG_Diboson__3->SetBinError(29,0.5336169);
+   bjet_en_TIG_Diboson__3->SetBinError(30,0.7389499);
+   bjet_en_TIG_Diboson__3->SetBinError(31,0.3768083);
+   bjet_en_TIG_Diboson__3->SetBinError(32,0.01934317);
+   bjet_en_TIG_Diboson__3->SetBinError(33,0.4185992);
+   bjet_en_TIG_Diboson__3->SetBinError(34,0.3824083);
+   bjet_en_TIG_Diboson__3->SetBinError(35,0.3722823);
+   bjet_en_TIG_Diboson__3->SetBinError(38,0.1253565);
+   bjet_en_TIG_Diboson__3->SetBinError(39,0.2859605);
+   bjet_en_TIG_Diboson__3->SetBinError(40,0.4144138);
+   bjet_en_TIG_Diboson__3->SetBinError(42,0.004752933);
+   bjet_en_TIG_Diboson__3->SetBinError(43,0.325893);
+   bjet_en_TIG_Diboson__3->SetBinError(44,0.5694124);
+   bjet_en_TIG_Diboson__3->SetBinError(46,0.3739505);
+   bjet_en_TIG_Diboson__3->SetBinError(48,0.3785551);
+   bjet_en_TIG_Diboson__3->SetBinError(49,0.2853125);
+   bjet_en_TIG_Diboson__3->SetBinError(50,0.4303074);
+   bjet_en_TIG_Diboson__3->SetBinError(51,1.525072);
+   bjet_en_TIG_Diboson__3->SetEntries(176);
+   bjet_en_TIG_Diboson__3->SetDirectory(0);
 
    ci = TColor::GetColor("#ffff00");
-   bjet_en_TIG_Diboson__129->SetFillColor(ci);
+   bjet_en_TIG_Diboson__3->SetFillColor(ci);
 
    ci = TColor::GetColor("#ffff00");
-   bjet_en_TIG_Diboson__129->SetMarkerColor(ci);
-   bjet_en_TIG_Diboson__129->GetXaxis()->SetTitle("Energy [GeV]");
-   bjet_en_TIG_Diboson__129->GetXaxis()->SetLabelFont(42);
-   bjet_en_TIG_Diboson__129->GetXaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_Diboson__129->GetXaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_Diboson__129->GetXaxis()->SetTitleFont(42);
-   bjet_en_TIG_Diboson__129->GetYaxis()->SetTitle(" Jets");
-   bjet_en_TIG_Diboson__129->GetYaxis()->SetLabelFont(42);
-   bjet_en_TIG_Diboson__129->GetYaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_Diboson__129->GetYaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_Diboson__129->GetYaxis()->SetTitleFont(42);
-   bjet_en_TIG_Diboson__129->GetZaxis()->SetLabelFont(42);
-   bjet_en_TIG_Diboson__129->GetZaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_Diboson__129->GetZaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_Diboson__129->GetZaxis()->SetTitleFont(42);
+   bjet_en_TIG_Diboson__3->SetMarkerColor(ci);
+   bjet_en_TIG_Diboson__3->GetXaxis()->SetTitle("Energy [GeV]");
+   bjet_en_TIG_Diboson__3->GetXaxis()->SetLabelFont(42);
+   bjet_en_TIG_Diboson__3->GetXaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_Diboson__3->GetXaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_Diboson__3->GetXaxis()->SetTitleFont(42);
+   bjet_en_TIG_Diboson__3->GetYaxis()->SetTitle(" Jets");
+   bjet_en_TIG_Diboson__3->GetYaxis()->SetLabelFont(42);
+   bjet_en_TIG_Diboson__3->GetYaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_Diboson__3->GetYaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_Diboson__3->GetYaxis()->SetTitleFont(42);
+   bjet_en_TIG_Diboson__3->GetZaxis()->SetLabelFont(42);
+   bjet_en_TIG_Diboson__3->GetZaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_Diboson__3->GetZaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_Diboson__3->GetZaxis()->SetTitleFont(42);
    mc->Add(bjet_en_TIG_Diboson,"hist");
    
-   TH1F *bjet_en_TIG_DY__130 = new TH1F("bjet_en_TIG_DY__130","DY",50,0,400);
-   bjet_en_TIG_DY__130->SetBinContent(6,15.58114);
-   bjet_en_TIG_DY__130->SetBinContent(7,19.39491);
-   bjet_en_TIG_DY__130->SetBinContent(8,33.29007);
-   bjet_en_TIG_DY__130->SetBinContent(10,16.5393);
-   bjet_en_TIG_DY__130->SetBinContent(11,19.68991);
-   bjet_en_TIG_DY__130->SetBinContent(23,19.95711);
-   bjet_en_TIG_DY__130->SetBinContent(24,1.98969);
-   bjet_en_TIG_DY__130->SetBinContent(34,37.64787);
-   bjet_en_TIG_DY__130->SetBinError(6,15.58114);
-   bjet_en_TIG_DY__130->SetBinError(7,19.39491);
-   bjet_en_TIG_DY__130->SetBinError(8,23.54496);
-   bjet_en_TIG_DY__130->SetBinError(10,16.5393);
-   bjet_en_TIG_DY__130->SetBinError(11,19.68991);
-   bjet_en_TIG_DY__130->SetBinError(23,19.95711);
-   bjet_en_TIG_DY__130->SetBinError(24,1.98969);
-   bjet_en_TIG_DY__130->SetBinError(34,26.6245);
-   bjet_en_TIG_DY__130->SetEntries(10);
-   bjet_en_TIG_DY__130->SetDirectory(0);
+   TH1F *bjet_en_TIG_DY__4 = new TH1F("bjet_en_TIG_DY__4","DY",50,0,400);
+   bjet_en_TIG_DY__4->SetBinContent(6,15.58114);
+   bjet_en_TIG_DY__4->SetBinContent(7,19.39491);
+   bjet_en_TIG_DY__4->SetBinContent(8,33.29007);
+   bjet_en_TIG_DY__4->SetBinContent(10,16.5393);
+   bjet_en_TIG_DY__4->SetBinContent(11,19.68991);
+   bjet_en_TIG_DY__4->SetBinContent(23,19.95711);
+   bjet_en_TIG_DY__4->SetBinContent(24,1.98969);
+   bjet_en_TIG_DY__4->SetBinContent(34,37.64787);
+   bjet_en_TIG_DY__4->SetBinError(6,15.58114);
+   bjet_en_TIG_DY__4->SetBinError(7,19.39491);
+   bjet_en_TIG_DY__4->SetBinError(8,23.54496);
+   bjet_en_TIG_DY__4->SetBinError(10,16.5393);
+   bjet_en_TIG_DY__4->SetBinError(11,19.68991);
+   bjet_en_TIG_DY__4->SetBinError(23,19.95711);
+   bjet_en_TIG_DY__4->SetBinError(24,1.98969);
+   bjet_en_TIG_DY__4->SetBinError(34,26.6245);
+   bjet_en_TIG_DY__4->SetEntries(10);
+   bjet_en_TIG_DY__4->SetDirectory(0);
 
    ci = TColor::GetColor("#33ccff");
-   bjet_en_TIG_DY__130->SetFillColor(ci);
+   bjet_en_TIG_DY__4->SetFillColor(ci);
 
    ci = TColor::GetColor("#33ccff");
-   bjet_en_TIG_DY__130->SetMarkerColor(ci);
-   bjet_en_TIG_DY__130->GetXaxis()->SetTitle("Energy [GeV]");
-   bjet_en_TIG_DY__130->GetXaxis()->SetLabelFont(42);
-   bjet_en_TIG_DY__130->GetXaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_DY__130->GetXaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_DY__130->GetXaxis()->SetTitleFont(42);
-   bjet_en_TIG_DY__130->GetYaxis()->SetTitle(" Jets");
-   bjet_en_TIG_DY__130->GetYaxis()->SetLabelFont(42);
-   bjet_en_TIG_DY__130->GetYaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_DY__130->GetYaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_DY__130->GetYaxis()->SetTitleFont(42);
-   bjet_en_TIG_DY__130->GetZaxis()->SetLabelFont(42);
-   bjet_en_TIG_DY__130->GetZaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_DY__130->GetZaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_DY__130->GetZaxis()->SetTitleFont(42);
+   bjet_en_TIG_DY__4->SetMarkerColor(ci);
+   bjet_en_TIG_DY__4->GetXaxis()->SetTitle("Energy [GeV]");
+   bjet_en_TIG_DY__4->GetXaxis()->SetLabelFont(42);
+   bjet_en_TIG_DY__4->GetXaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_DY__4->GetXaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_DY__4->GetXaxis()->SetTitleFont(42);
+   bjet_en_TIG_DY__4->GetYaxis()->SetTitle(" Jets");
+   bjet_en_TIG_DY__4->GetYaxis()->SetLabelFont(42);
+   bjet_en_TIG_DY__4->GetYaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_DY__4->GetYaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_DY__4->GetYaxis()->SetTitleFont(42);
+   bjet_en_TIG_DY__4->GetZaxis()->SetLabelFont(42);
+   bjet_en_TIG_DY__4->GetZaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_DY__4->GetZaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_DY__4->GetZaxis()->SetTitleFont(42);
    mc->Add(bjet_en_TIG_DY,"hist");
    
-   TH1F *bjet_en_TIG_W__131 = new TH1F("bjet_en_TIG_W__131","W",50,0,400);
-   bjet_en_TIG_W__131->SetDirectory(0);
+   TH1F *bjet_en_TIG_W__5 = new TH1F("bjet_en_TIG_W__5","W",50,0,400);
+   bjet_en_TIG_W__5->SetDirectory(0);
 
    ci = TColor::GetColor("#3366ff");
-   bjet_en_TIG_W__131->SetFillColor(ci);
+   bjet_en_TIG_W__5->SetFillColor(ci);
 
    ci = TColor::GetColor("#3366ff");
-   bjet_en_TIG_W__131->SetMarkerColor(ci);
-   bjet_en_TIG_W__131->GetXaxis()->SetTitle("Energy [GeV]");
-   bjet_en_TIG_W__131->GetXaxis()->SetLabelFont(42);
-   bjet_en_TIG_W__131->GetXaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_W__131->GetXaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_W__131->GetXaxis()->SetTitleFont(42);
-   bjet_en_TIG_W__131->GetYaxis()->SetTitle(" Jets");
-   bjet_en_TIG_W__131->GetYaxis()->SetLabelFont(42);
-   bjet_en_TIG_W__131->GetYaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_W__131->GetYaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_W__131->GetYaxis()->SetTitleFont(42);
-   bjet_en_TIG_W__131->GetZaxis()->SetLabelFont(42);
-   bjet_en_TIG_W__131->GetZaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_W__131->GetZaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_W__131->GetZaxis()->SetTitleFont(42);
+   bjet_en_TIG_W__5->SetMarkerColor(ci);
+   bjet_en_TIG_W__5->GetXaxis()->SetTitle("Energy [GeV]");
+   bjet_en_TIG_W__5->GetXaxis()->SetLabelFont(42);
+   bjet_en_TIG_W__5->GetXaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_W__5->GetXaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_W__5->GetXaxis()->SetTitleFont(42);
+   bjet_en_TIG_W__5->GetYaxis()->SetTitle(" Jets");
+   bjet_en_TIG_W__5->GetYaxis()->SetLabelFont(42);
+   bjet_en_TIG_W__5->GetYaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_W__5->GetYaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_W__5->GetYaxis()->SetTitleFont(42);
+   bjet_en_TIG_W__5->GetZaxis()->SetLabelFont(42);
+   bjet_en_TIG_W__5->GetZaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_W__5->GetZaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_W__5->GetZaxis()->SetTitleFont(42);
    mc->Add(bjet_en_TIG_W,"hist");
    
-   TH1F *bjet_en_TIG_SinglesPtop__132 = new TH1F("bjet_en_TIG_SinglesPtop__132","Single top",50,0,400);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(4,9.929756);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(5,191.2684);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(6,278.2299);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(7,297.0582);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(8,317.5478);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(9,336.7433);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(10,327.4926);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(11,308.3459);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(12,249.69);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(13,253.0736);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(14,212.3767);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(15,191.5198);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(16,170.4171);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(17,157.7326);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(18,162.8541);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(19,148.4133);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(20,120.6999);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(21,98.9528);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(22,101.0202);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(23,94.45667);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(24,82.22153);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(25,80.20557);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(26,63.12709);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(27,55.99412);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(28,46.85061);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(29,54.06937);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(30,68.56168);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(31,29.97206);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(32,49.83773);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(33,41.92521);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(34,30.67563);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(35,32.62916);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(36,24.29041);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(37,27.7519);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(38,18.48041);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(39,31.06469);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(40,21.08326);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(41,20.09508);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(42,17.4996);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(43,25.4841);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(44,21.69494);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(45,12.33794);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(46,9.578507);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(47,20.96131);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(48,13.57896);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(49,6.899704);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(50,9.308773);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(51,164.8683);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(4,3.499541);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(5,15.926);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(6,19.23852);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(7,19.87933);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(8,20.67415);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(9,21.11177);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(10,20.95262);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(11,20.24807);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(12,18.24551);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(13,18.48545);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(14,16.86875);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(15,15.98294);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(16,15.18176);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(17,14.58238);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(18,14.79893);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(19,14.11517);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(20,12.67822);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(21,11.38153);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(22,11.62977);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(23,11.33259);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(24,10.46443);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(25,10.29942);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(26,9.074423);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(27,8.739115);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(28,7.854669);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(29,8.420353);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(30,9.685765);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(31,6.375124);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(32,8.108219);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(33,7.358641);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(34,6.539693);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(35,6.737126);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(36,5.825646);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(37,6.059551);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(38,4.917326);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(39,6.507108);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(40,5.25521);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(41,5.19806);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(42,4.872407);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(43,6.037017);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(44,5.44562);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(45,4.000581);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(46,3.485758);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(47,5.456754);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(48,4.205486);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(49,3.08852);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(50,3.50655);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(51,14.72572);
-   bjet_en_TIG_SinglesPtop__132->SetEntries(4122);
-   bjet_en_TIG_SinglesPtop__132->SetDirectory(0);
+   TH1F *bjet_en_TIG_SinglesPtop__6 = new TH1F("bjet_en_TIG_SinglesPtop__6","Single top",50,0,400);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(4,9.929756);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(5,191.2684);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(6,278.2299);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(7,297.0582);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(8,317.5478);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(9,336.7433);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(10,327.4926);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(11,308.3459);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(12,249.69);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(13,253.0736);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(14,212.3767);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(15,191.5198);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(16,170.4171);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(17,157.7326);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(18,162.8541);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(19,148.4133);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(20,120.6999);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(21,98.9528);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(22,101.0202);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(23,94.45667);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(24,82.22153);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(25,80.20557);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(26,63.12709);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(27,55.99412);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(28,46.85061);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(29,54.06937);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(30,68.56168);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(31,29.97206);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(32,49.83773);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(33,41.92521);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(34,30.67563);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(35,32.62916);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(36,24.29041);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(37,27.7519);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(38,18.48041);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(39,31.06469);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(40,21.08326);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(41,20.09508);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(42,17.4996);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(43,25.4841);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(44,21.69494);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(45,12.33794);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(46,9.578507);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(47,20.96131);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(48,13.57896);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(49,6.899704);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(50,9.308773);
+   bjet_en_TIG_SinglesPtop__6->SetBinContent(51,164.8683);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(4,3.499541);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(5,15.926);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(6,19.23852);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(7,19.87933);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(8,20.67415);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(9,21.11177);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(10,20.95262);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(11,20.24807);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(12,18.24551);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(13,18.48545);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(14,16.86875);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(15,15.98294);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(16,15.18176);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(17,14.58238);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(18,14.79893);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(19,14.11517);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(20,12.67822);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(21,11.38153);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(22,11.62977);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(23,11.33259);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(24,10.46443);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(25,10.29942);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(26,9.074423);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(27,8.739115);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(28,7.854669);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(29,8.420353);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(30,9.685765);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(31,6.375124);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(32,8.108219);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(33,7.358641);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(34,6.539693);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(35,6.737126);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(36,5.825646);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(37,6.059551);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(38,4.917326);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(39,6.507108);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(40,5.25521);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(41,5.19806);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(42,4.872407);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(43,6.037017);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(44,5.44562);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(45,4.000581);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(46,3.485758);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(47,5.456754);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(48,4.205486);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(49,3.08852);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(50,3.50655);
+   bjet_en_TIG_SinglesPtop__6->SetBinError(51,14.72572);
+   bjet_en_TIG_SinglesPtop__6->SetEntries(4122);
+   bjet_en_TIG_SinglesPtop__6->SetDirectory(0);
 
    ci = TColor::GetColor("#990099");
-   bjet_en_TIG_SinglesPtop__132->SetFillColor(ci);
+   bjet_en_TIG_SinglesPtop__6->SetFillColor(ci);
 
    ci = TColor::GetColor("#990099");
-   bjet_en_TIG_SinglesPtop__132->SetMarkerColor(ci);
-   bjet_en_TIG_SinglesPtop__132->GetXaxis()->SetTitle("Energy [GeV]");
-   bjet_en_TIG_SinglesPtop__132->GetXaxis()->SetLabelFont(42);
-   bjet_en_TIG_SinglesPtop__132->GetXaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_SinglesPtop__132->GetXaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_SinglesPtop__132->GetXaxis()->SetTitleFont(42);
-   bjet_en_TIG_SinglesPtop__132->GetYaxis()->SetTitle(" Jets");
-   bjet_en_TIG_SinglesPtop__132->GetYaxis()->SetLabelFont(42);
-   bjet_en_TIG_SinglesPtop__132->GetYaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_SinglesPtop__132->GetYaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_SinglesPtop__132->GetYaxis()->SetTitleFont(42);
-   bjet_en_TIG_SinglesPtop__132->GetZaxis()->SetLabelFont(42);
-   bjet_en_TIG_SinglesPtop__132->GetZaxis()->SetLabelSize(0.035);
-   bjet_en_TIG_SinglesPtop__132->GetZaxis()->SetTitleSize(0.035);
-   bjet_en_TIG_SinglesPtop__132->GetZaxis()->SetTitleFont(42);
+   bjet_en_TIG_SinglesPtop__6->SetMarkerColor(ci);
+   bjet_en_TIG_SinglesPtop__6->GetXaxis()->SetTitle("Energy [GeV]");
+   bjet_en_TIG_SinglesPtop__6->GetXaxis()->SetLabelFont(42);
+   bjet_en_TIG_SinglesPtop__6->GetXaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_SinglesPtop__6->GetXaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_SinglesPtop__6->GetXaxis()->SetTitleFont(42);
+   bjet_en_TIG_SinglesPtop__6->GetYaxis()->SetTitle(" Jets");
+   bjet_en_TIG_SinglesPtop__6->GetYaxis()->SetLabelFont(42);
+   bjet_en_TIG_SinglesPtop__6->GetYaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_SinglesPtop__6->GetYaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_SinglesPtop__6->GetYaxis()->SetTitleFont(42);
+   bjet_en_TIG_SinglesPtop__6->GetZaxis()->SetLabelFont(42);
+   bjet_en_TIG_SinglesPtop__6->GetZaxis()->SetLabelSize(0.035);
+   bjet_en_TIG_SinglesPtop__6->GetZaxis()->SetTitleSize(0.035);
+   bjet_en_TIG_SinglesPtop__6->GetZaxis()->SetTitleFont(42);
    mc->Add(bjet_en_TIG_Single top,"hist");
    mc->Draw("hist same");
    
-   Double_t Graph_from_bjet_en_TIG_fx3037[51] = {
+   Double_t Graph_from_bjet_en_TIG_fx3001[51] = {
    4,
    12,
    20,
@@ -560,7 +560,7 @@ void bjet_en_TIG()
    388,
    396,
    0};
-   Double_t Graph_from_bjet_en_TIG_fy3037[51] = {
+   Double_t Graph_from_bjet_en_TIG_fy3001[51] = {
    0,
    0,
    0,
@@ -612,7 +612,7 @@ void bjet_en_TIG()
    219,
    183,
    0};
-   Double_t Graph_from_bjet_en_TIG_felx3037[51] = {
+   Double_t Graph_from_bjet_en_TIG_felx3001[51] = {
    4,
    4,
    4,
@@ -664,7 +664,7 @@ void bjet_en_TIG()
    4,
    4,
    0};
-   Double_t Graph_from_bjet_en_TIG_fely3037[51] = {
+   Double_t Graph_from_bjet_en_TIG_fely3001[51] = {
    0,
    0,
    0,
@@ -716,7 +716,7 @@ void bjet_en_TIG()
    14.79865,
    13.51567,
    0};
-   Double_t Graph_from_bjet_en_TIG_fehx3037[51] = {
+   Double_t Graph_from_bjet_en_TIG_fehx3001[51] = {
    4,
    4,
    4,
@@ -768,7 +768,7 @@ void bjet_en_TIG()
    4,
    4,
    0};
-   Double_t Graph_from_bjet_en_TIG_fehy3037[51] = {
+   Double_t Graph_from_bjet_en_TIG_fehy3001[51] = {
    1.841055,
    1.841055,
    1.841055,
@@ -820,7 +820,7 @@ void bjet_en_TIG()
    14.79865,
    14.55272,
    1.841055};
-   TGraphAsymmErrors *grae = new TGraphAsymmErrors(51,Graph_from_bjet_en_TIG_fx3037,Graph_from_bjet_en_TIG_fy3037,Graph_from_bjet_en_TIG_felx3037,Graph_from_bjet_en_TIG_fehx3037,Graph_from_bjet_en_TIG_fely3037,Graph_from_bjet_en_TIG_fehy3037);
+   TGraphAsymmErrors *grae = new TGraphAsymmErrors(51,Graph_from_bjet_en_TIG_fx3001,Graph_from_bjet_en_TIG_fy3001,Graph_from_bjet_en_TIG_felx3001,Graph_from_bjet_en_TIG_fehx3001,Graph_from_bjet_en_TIG_fely3001,Graph_from_bjet_en_TIG_fehy3001);
    grae->SetName("Graph_from_bjet_en_TIG");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -828,27 +828,27 @@ void bjet_en_TIG()
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_bjet_en_TIG3037 = new TH1F("Graph_Graph_from_bjet_en_TIG3037","Data",100,0,440);
-   Graph_Graph_from_bjet_en_TIG3037->SetMinimum(0);
-   Graph_Graph_from_bjet_en_TIG3037->SetMaximum(8631.794);
-   Graph_Graph_from_bjet_en_TIG3037->SetDirectory(0);
-   Graph_Graph_from_bjet_en_TIG3037->SetStats(0);
+   TH1F *Graph_Graph_from_bjet_en_TIG3001 = new TH1F("Graph_Graph_from_bjet_en_TIG3001","Data",100,0,440);
+   Graph_Graph_from_bjet_en_TIG3001->SetMinimum(0);
+   Graph_Graph_from_bjet_en_TIG3001->SetMaximum(8631.794);
+   Graph_Graph_from_bjet_en_TIG3001->SetDirectory(0);
+   Graph_Graph_from_bjet_en_TIG3001->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_bjet_en_TIG3037->SetLineColor(ci);
-   Graph_Graph_from_bjet_en_TIG3037->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_bjet_en_TIG3037->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_bjet_en_TIG3037->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_bjet_en_TIG3037->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_bjet_en_TIG3037->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_bjet_en_TIG3037->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_bjet_en_TIG3037->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_bjet_en_TIG3037->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_bjet_en_TIG3037->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_bjet_en_TIG3037->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_bjet_en_TIG3037->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_bjet_en_TIG3037->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_bjet_en_TIG3037);
+   Graph_Graph_from_bjet_en_TIG3001->SetLineColor(ci);
+   Graph_Graph_from_bjet_en_TIG3001->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_bjet_en_TIG3001->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_bjet_en_TIG3001->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_bjet_en_TIG3001->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_bjet_en_TIG3001->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_bjet_en_TIG3001->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_bjet_en_TIG3001->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_bjet_en_TIG3001->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_bjet_en_TIG3001->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_bjet_en_TIG3001->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_bjet_en_TIG3001->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_bjet_en_TIG3001->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_bjet_en_TIG3001);
    
    grae->Draw("p");
    
@@ -957,37 +957,37 @@ tex->SetNDC();
    p2->SetFrameBorderMode(0);
    p2->SetFrameBorderMode(0);
    
-   TH1F *ratioframe__133 = new TH1F("ratioframe__133","t#bar{t}",50,0,400);
-   ratioframe__133->SetMinimum(0.46);
-   ratioframe__133->SetMaximum(1.54);
-   ratioframe__133->SetEntries(333832);
+   TH1F *ratioframe__7 = new TH1F("ratioframe__7","t#bar{t}",50,0,400);
+   ratioframe__7->SetMinimum(0.46);
+   ratioframe__7->SetMaximum(1.54);
+   ratioframe__7->SetEntries(333832);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__133->SetFillColor(ci);
+   ratioframe__7->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__133->SetMarkerColor(ci);
-   ratioframe__133->GetXaxis()->SetTitle("Energy [GeV]");
-   ratioframe__133->GetXaxis()->SetLabelFont(42);
-   ratioframe__133->GetXaxis()->SetLabelSize(0);
-   ratioframe__133->GetXaxis()->SetTitleSize(0);
-   ratioframe__133->GetXaxis()->SetTitleOffset(0);
-   ratioframe__133->GetXaxis()->SetTitleFont(42);
-   ratioframe__133->GetYaxis()->SetTitle("Data/MC");
-   ratioframe__133->GetYaxis()->SetNoExponent();
-   ratioframe__133->GetYaxis()->SetNdivisions(5);
-   ratioframe__133->GetYaxis()->SetLabelFont(42);
-   ratioframe__133->GetYaxis()->SetLabelSize(0.18);
-   ratioframe__133->GetYaxis()->SetTitleSize(0.2);
-   ratioframe__133->GetYaxis()->SetTitleOffset(0.2);
-   ratioframe__133->GetYaxis()->SetTitleFont(42);
-   ratioframe__133->GetZaxis()->SetLabelFont(42);
-   ratioframe__133->GetZaxis()->SetLabelSize(0.035);
-   ratioframe__133->GetZaxis()->SetTitleSize(0.035);
-   ratioframe__133->GetZaxis()->SetTitleFont(42);
-   ratioframe__133->Draw("");
+   ratioframe__7->SetMarkerColor(ci);
+   ratioframe__7->GetXaxis()->SetTitle("Energy [GeV]");
+   ratioframe__7->GetXaxis()->SetLabelFont(42);
+   ratioframe__7->GetXaxis()->SetLabelSize(0);
+   ratioframe__7->GetXaxis()->SetTitleSize(0);
+   ratioframe__7->GetXaxis()->SetTitleOffset(0);
+   ratioframe__7->GetXaxis()->SetTitleFont(42);
+   ratioframe__7->GetYaxis()->SetTitle("Data/MC");
+   ratioframe__7->GetYaxis()->SetNoExponent();
+   ratioframe__7->GetYaxis()->SetNdivisions(5);
+   ratioframe__7->GetYaxis()->SetLabelFont(42);
+   ratioframe__7->GetYaxis()->SetLabelSize(0.18);
+   ratioframe__7->GetYaxis()->SetTitleSize(0.2);
+   ratioframe__7->GetYaxis()->SetTitleOffset(0.2);
+   ratioframe__7->GetYaxis()->SetTitleFont(42);
+   ratioframe__7->GetZaxis()->SetLabelFont(42);
+   ratioframe__7->GetZaxis()->SetLabelSize(0.035);
+   ratioframe__7->GetZaxis()->SetTitleSize(0.035);
+   ratioframe__7->GetZaxis()->SetTitleFont(42);
+   ratioframe__7->Draw("");
    
-   Double_t Graph_from_ratio_fx3038[50] = {
+   Double_t Graph_from_ratio_fx3002[50] = {
    4,
    12,
    20,
@@ -1038,7 +1038,7 @@ tex->SetNDC();
    380,
    388,
    396};
-   Double_t Graph_from_ratio_fy3038[50] = {
+   Double_t Graph_from_ratio_fy3002[50] = {
    0,
    0,
    0,
@@ -1089,7 +1089,7 @@ tex->SetNDC();
    0.8985339,
    0.9273464,
    0.8348899};
-   Double_t Graph_from_ratio_felx3038[50] = {
+   Double_t Graph_from_ratio_felx3002[50] = {
    4,
    4,
    4,
@@ -1140,7 +1140,7 @@ tex->SetNDC();
    4,
    4,
    4};
-   Double_t Graph_from_ratio_fely3038[50] = {
+   Double_t Graph_from_ratio_fely3002[50] = {
    0,
    0,
    0,
@@ -1191,7 +1191,7 @@ tex->SetNDC();
    0.0708102,
    0.07429079,
    0.07234086};
-   Double_t Graph_from_ratio_fehx3038[50] = {
+   Double_t Graph_from_ratio_fehx3002[50] = {
    4,
    4,
    4,
@@ -1242,7 +1242,7 @@ tex->SetNDC();
    4,
    4,
    4};
-   Double_t Graph_from_ratio_fehy3038[50] = {
+   Double_t Graph_from_ratio_fehy3002[50] = {
    0,
    0,
    0,
@@ -1293,7 +1293,7 @@ tex->SetNDC();
    0.0708102,
    0.07429079,
    0.07234086};
-   grae = new TGraphAsymmErrors(50,Graph_from_ratio_fx3038,Graph_from_ratio_fy3038,Graph_from_ratio_felx3038,Graph_from_ratio_fehx3038,Graph_from_ratio_fely3038,Graph_from_ratio_fehy3038);
+   grae = new TGraphAsymmErrors(50,Graph_from_ratio_fx3002,Graph_from_ratio_fy3002,Graph_from_ratio_felx3002,Graph_from_ratio_fehx3002,Graph_from_ratio_fely3002,Graph_from_ratio_fehy3002);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -1301,27 +1301,27 @@ tex->SetNDC();
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_ratio3038 = new TH1F("Graph_Graph_from_ratio3038","Data",100,0,440);
-   Graph_Graph_from_ratio3038->SetMinimum(0);
-   Graph_Graph_from_ratio3038->SetMaximum(1.106332);
-   Graph_Graph_from_ratio3038->SetDirectory(0);
-   Graph_Graph_from_ratio3038->SetStats(0);
+   TH1F *Graph_Graph_from_ratio3002 = new TH1F("Graph_Graph_from_ratio3002","Data",100,0,440);
+   Graph_Graph_from_ratio3002->SetMinimum(0);
+   Graph_Graph_from_ratio3002->SetMaximum(1.106332);
+   Graph_Graph_from_ratio3002->SetDirectory(0);
+   Graph_Graph_from_ratio3002->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_ratio3038->SetLineColor(ci);
-   Graph_Graph_from_ratio3038->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3038->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3038->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3038->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3038->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3038->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3038->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3038->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3038->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3038->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3038->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3038->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_ratio3038);
+   Graph_Graph_from_ratio3002->SetLineColor(ci);
+   Graph_Graph_from_ratio3002->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3002->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3002->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3002->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3002->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3002->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3002->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3002->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3002->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3002->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3002->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3002->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_ratio3002);
    
    grae->Draw("p");
    p2->Modified();

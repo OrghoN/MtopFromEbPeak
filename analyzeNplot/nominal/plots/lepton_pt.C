@@ -1,7 +1,7 @@
 void lepton_pt()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 10:19:42 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 10:49:15 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -32,499 +32,499 @@ void lepton_pt()
    p1->SetFrameBorderMode(0);
    p1->SetFrameBorderMode(0);
    
-   TH1F *frame__134 = new TH1F("frame__134","t#bar{t}",50,0,350);
-   frame__134->SetMinimum(0.1);
-   frame__134->SetMaximum(47337.17);
-   frame__134->SetEntries(731890);
-   frame__134->SetDirectory(0);
+   TH1F *frame__43 = new TH1F("frame__43","t#bar{t}",50,0,350);
+   frame__43->SetMinimum(0.1);
+   frame__43->SetMaximum(47337.17);
+   frame__43->SetEntries(731890);
+   frame__43->SetDirectory(0);
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
    ci = TColor::GetColor("#cc0000");
-   frame__134->SetFillColor(ci);
+   frame__43->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   frame__134->SetMarkerColor(ci);
-   frame__134->GetXaxis()->SetTitle("pt [GeV]");
-   frame__134->GetXaxis()->SetLabelFont(42);
-   frame__134->GetXaxis()->SetLabelSize(0.035);
-   frame__134->GetXaxis()->SetTitleSize(0.035);
-   frame__134->GetXaxis()->SetTitleFont(42);
-   frame__134->GetYaxis()->SetTitle(" Events");
-   frame__134->GetYaxis()->SetNoExponent();
-   frame__134->GetYaxis()->SetLabelFont(42);
-   frame__134->GetYaxis()->SetTitleSize(0.045);
-   frame__134->GetYaxis()->SetTitleOffset(1.3);
-   frame__134->GetYaxis()->SetTitleFont(42);
-   frame__134->GetZaxis()->SetLabelFont(42);
-   frame__134->GetZaxis()->SetLabelSize(0.035);
-   frame__134->GetZaxis()->SetTitleSize(0.035);
-   frame__134->GetZaxis()->SetTitleFont(42);
-   frame__134->Draw("");
+   frame__43->SetMarkerColor(ci);
+   frame__43->GetXaxis()->SetTitle("pt [GeV]");
+   frame__43->GetXaxis()->SetLabelFont(42);
+   frame__43->GetXaxis()->SetLabelSize(0.035);
+   frame__43->GetXaxis()->SetTitleSize(0.035);
+   frame__43->GetXaxis()->SetTitleFont(42);
+   frame__43->GetYaxis()->SetTitle(" Events");
+   frame__43->GetYaxis()->SetNoExponent();
+   frame__43->GetYaxis()->SetLabelFont(42);
+   frame__43->GetYaxis()->SetTitleSize(0.045);
+   frame__43->GetYaxis()->SetTitleOffset(1.3);
+   frame__43->GetYaxis()->SetTitleFont(42);
+   frame__43->GetZaxis()->SetLabelFont(42);
+   frame__43->GetZaxis()->SetLabelSize(0.035);
+   frame__43->GetZaxis()->SetTitleSize(0.035);
+   frame__43->GetZaxis()->SetTitleFont(42);
+   frame__43->Draw("");
    
    THStack *mc = new THStack();
    mc->SetName("mc");
    mc->SetTitle("mc");
    
-   TH1F *mc_stack_20 = new TH1F("mc_stack_20","mc",50,0,350);
-   mc_stack_20->SetMinimum(-3.71988e-07);
-   mc_stack_20->SetMaximum(38233.87);
-   mc_stack_20->SetDirectory(0);
-   mc_stack_20->SetStats(0);
+   TH1F *mc_stack_7 = new TH1F("mc_stack_7","mc",50,0,350);
+   mc_stack_7->SetMinimum(-3.71988e-07);
+   mc_stack_7->SetMaximum(38233.87);
+   mc_stack_7->SetDirectory(0);
+   mc_stack_7->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   mc_stack_20->SetLineColor(ci);
-   mc_stack_20->GetXaxis()->SetLabelFont(42);
-   mc_stack_20->GetXaxis()->SetLabelSize(0.035);
-   mc_stack_20->GetXaxis()->SetTitleSize(0.035);
-   mc_stack_20->GetXaxis()->SetTitleFont(42);
-   mc_stack_20->GetYaxis()->SetLabelFont(42);
-   mc_stack_20->GetYaxis()->SetLabelSize(0.035);
-   mc_stack_20->GetYaxis()->SetTitleSize(0.035);
-   mc_stack_20->GetYaxis()->SetTitleFont(42);
-   mc_stack_20->GetZaxis()->SetLabelFont(42);
-   mc_stack_20->GetZaxis()->SetLabelSize(0.035);
-   mc_stack_20->GetZaxis()->SetTitleSize(0.035);
-   mc_stack_20->GetZaxis()->SetTitleFont(42);
-   mc->SetHistogram(mc_stack_20);
+   mc_stack_7->SetLineColor(ci);
+   mc_stack_7->GetXaxis()->SetLabelFont(42);
+   mc_stack_7->GetXaxis()->SetLabelSize(0.035);
+   mc_stack_7->GetXaxis()->SetTitleSize(0.035);
+   mc_stack_7->GetXaxis()->SetTitleFont(42);
+   mc_stack_7->GetYaxis()->SetLabelFont(42);
+   mc_stack_7->GetYaxis()->SetLabelSize(0.035);
+   mc_stack_7->GetYaxis()->SetTitleSize(0.035);
+   mc_stack_7->GetYaxis()->SetTitleFont(42);
+   mc_stack_7->GetZaxis()->SetLabelFont(42);
+   mc_stack_7->GetZaxis()->SetLabelSize(0.035);
+   mc_stack_7->GetZaxis()->SetTitleSize(0.035);
+   mc_stack_7->GetZaxis()->SetTitleFont(42);
+   mc->SetHistogram(mc_stack_7);
    
    
-   TH1F *lepton_pt_t#bar{t}__135 = new TH1F("lepton_pt_t#bar{t}__135","t#bar{t}",50,0,350);
-   lepton_pt_t#bar{t}__135->SetBinContent(3,1936.724);
-   lepton_pt_t#bar{t}__135->SetBinContent(4,27671.9);
-   lepton_pt_t#bar{t}__135->SetBinContent(5,34863.24);
-   lepton_pt_t#bar{t}__135->SetBinContent(6,33414.25);
-   lepton_pt_t#bar{t}__135->SetBinContent(7,29964.42);
-   lepton_pt_t#bar{t}__135->SetBinContent(8,26140.53);
-   lepton_pt_t#bar{t}__135->SetBinContent(9,21937.24);
-   lepton_pt_t#bar{t}__135->SetBinContent(10,18084.28);
-   lepton_pt_t#bar{t}__135->SetBinContent(11,15053.06);
-   lepton_pt_t#bar{t}__135->SetBinContent(12,12095.9);
-   lepton_pt_t#bar{t}__135->SetBinContent(13,9999.555);
-   lepton_pt_t#bar{t}__135->SetBinContent(14,8075.868);
-   lepton_pt_t#bar{t}__135->SetBinContent(15,6415.118);
-   lepton_pt_t#bar{t}__135->SetBinContent(16,5286.22);
-   lepton_pt_t#bar{t}__135->SetBinContent(17,4298.925);
-   lepton_pt_t#bar{t}__135->SetBinContent(18,3535.971);
-   lepton_pt_t#bar{t}__135->SetBinContent(19,2827.309);
-   lepton_pt_t#bar{t}__135->SetBinContent(20,2314.734);
-   lepton_pt_t#bar{t}__135->SetBinContent(21,1885.785);
-   lepton_pt_t#bar{t}__135->SetBinContent(22,1551.925);
-   lepton_pt_t#bar{t}__135->SetBinContent(23,1328.827);
-   lepton_pt_t#bar{t}__135->SetBinContent(24,1081.368);
-   lepton_pt_t#bar{t}__135->SetBinContent(25,913.2267);
-   lepton_pt_t#bar{t}__135->SetBinContent(26,726.9597);
-   lepton_pt_t#bar{t}__135->SetBinContent(27,639.8408);
-   lepton_pt_t#bar{t}__135->SetBinContent(28,520.0355);
-   lepton_pt_t#bar{t}__135->SetBinContent(29,444.6629);
-   lepton_pt_t#bar{t}__135->SetBinContent(30,357.3169);
-   lepton_pt_t#bar{t}__135->SetBinContent(31,322.1717);
-   lepton_pt_t#bar{t}__135->SetBinContent(32,255.9575);
-   lepton_pt_t#bar{t}__135->SetBinContent(33,205.8815);
-   lepton_pt_t#bar{t}__135->SetBinContent(34,193.5654);
-   lepton_pt_t#bar{t}__135->SetBinContent(35,156.1933);
-   lepton_pt_t#bar{t}__135->SetBinContent(36,139.4573);
-   lepton_pt_t#bar{t}__135->SetBinContent(37,119.7677);
-   lepton_pt_t#bar{t}__135->SetBinContent(38,100.1422);
-   lepton_pt_t#bar{t}__135->SetBinContent(39,86.74693);
-   lepton_pt_t#bar{t}__135->SetBinContent(40,72.78233);
-   lepton_pt_t#bar{t}__135->SetBinContent(41,65.34995);
-   lepton_pt_t#bar{t}__135->SetBinContent(42,49.08939);
-   lepton_pt_t#bar{t}__135->SetBinContent(43,46.09423);
-   lepton_pt_t#bar{t}__135->SetBinContent(44,47.0534);
-   lepton_pt_t#bar{t}__135->SetBinContent(45,38.77661);
-   lepton_pt_t#bar{t}__135->SetBinContent(46,31.34332);
-   lepton_pt_t#bar{t}__135->SetBinContent(47,28.07109);
-   lepton_pt_t#bar{t}__135->SetBinContent(48,23.39073);
-   lepton_pt_t#bar{t}__135->SetBinContent(49,25.59558);
-   lepton_pt_t#bar{t}__135->SetBinContent(50,21.66514);
-   lepton_pt_t#bar{t}__135->SetBinContent(51,139.0422);
-   lepton_pt_t#bar{t}__135->SetBinError(3,28.22693);
-   lepton_pt_t#bar{t}__135->SetBinError(4,106.5956);
-   lepton_pt_t#bar{t}__135->SetBinError(5,119.6681);
-   lepton_pt_t#bar{t}__135->SetBinError(6,117.1337);
-   lepton_pt_t#bar{t}__135->SetBinError(7,110.933);
-   lepton_pt_t#bar{t}__135->SetBinError(8,103.625);
-   lepton_pt_t#bar{t}__135->SetBinError(9,94.92166);
-   lepton_pt_t#bar{t}__135->SetBinError(10,86.22288);
-   lepton_pt_t#bar{t}__135->SetBinError(11,78.67272);
-   lepton_pt_t#bar{t}__135->SetBinError(12,70.47206);
-   lepton_pt_t#bar{t}__135->SetBinError(13,64.05134);
-   lepton_pt_t#bar{t}__135->SetBinError(14,57.55423);
-   lepton_pt_t#bar{t}__135->SetBinError(15,51.32422);
-   lepton_pt_t#bar{t}__135->SetBinError(16,46.56842);
-   lepton_pt_t#bar{t}__135->SetBinError(17,42.02972);
-   lepton_pt_t#bar{t}__135->SetBinError(18,38.14945);
-   lepton_pt_t#bar{t}__135->SetBinError(19,34.07383);
-   lepton_pt_t#bar{t}__135->SetBinError(20,30.82567);
-   lepton_pt_t#bar{t}__135->SetBinError(21,27.89085);
-   lepton_pt_t#bar{t}__135->SetBinError(22,25.25004);
-   lepton_pt_t#bar{t}__135->SetBinError(23,23.37464);
-   lepton_pt_t#bar{t}__135->SetBinError(24,21.09696);
-   lepton_pt_t#bar{t}__135->SetBinError(25,19.38605);
-   lepton_pt_t#bar{t}__135->SetBinError(26,17.30275);
-   lepton_pt_t#bar{t}__135->SetBinError(27,16.20018);
-   lepton_pt_t#bar{t}__135->SetBinError(28,14.6558);
-   lepton_pt_t#bar{t}__135->SetBinError(29,13.52459);
-   lepton_pt_t#bar{t}__135->SetBinError(30,12.09714);
-   lepton_pt_t#bar{t}__135->SetBinError(31,11.53367);
-   lepton_pt_t#bar{t}__135->SetBinError(32,10.25184);
-   lepton_pt_t#bar{t}__135->SetBinError(33,9.16895);
-   lepton_pt_t#bar{t}__135->SetBinError(34,8.899054);
-   lepton_pt_t#bar{t}__135->SetBinError(35,8.003423);
-   lepton_pt_t#bar{t}__135->SetBinError(36,7.603187);
-   lepton_pt_t#bar{t}__135->SetBinError(37,7.067317);
-   lepton_pt_t#bar{t}__135->SetBinError(38,6.37723);
-   lepton_pt_t#bar{t}__135->SetBinError(39,5.97931);
-   lepton_pt_t#bar{t}__135->SetBinError(40,5.452841);
-   lepton_pt_t#bar{t}__135->SetBinError(41,5.174686);
-   lepton_pt_t#bar{t}__135->SetBinError(42,4.474407);
-   lepton_pt_t#bar{t}__135->SetBinError(43,4.327184);
-   lepton_pt_t#bar{t}__135->SetBinError(44,4.4016);
-   lepton_pt_t#bar{t}__135->SetBinError(45,3.981699);
-   lepton_pt_t#bar{t}__135->SetBinError(46,3.559601);
-   lepton_pt_t#bar{t}__135->SetBinError(47,3.37943);
-   lepton_pt_t#bar{t}__135->SetBinError(48,3.047123);
-   lepton_pt_t#bar{t}__135->SetBinError(49,3.24237);
-   lepton_pt_t#bar{t}__135->SetBinError(50,2.959005);
-   lepton_pt_t#bar{t}__135->SetBinError(51,7.525609);
-   lepton_pt_t#bar{t}__135->SetEntries(720514);
-   lepton_pt_t#bar{t}__135->SetDirectory(0);
+   TH1F *lepton_pt_t#bar{t}__44 = new TH1F("lepton_pt_t#bar{t}__44","t#bar{t}",50,0,350);
+   lepton_pt_t#bar{t}__44->SetBinContent(3,1936.724);
+   lepton_pt_t#bar{t}__44->SetBinContent(4,27671.9);
+   lepton_pt_t#bar{t}__44->SetBinContent(5,34863.24);
+   lepton_pt_t#bar{t}__44->SetBinContent(6,33414.25);
+   lepton_pt_t#bar{t}__44->SetBinContent(7,29964.42);
+   lepton_pt_t#bar{t}__44->SetBinContent(8,26140.53);
+   lepton_pt_t#bar{t}__44->SetBinContent(9,21937.24);
+   lepton_pt_t#bar{t}__44->SetBinContent(10,18084.28);
+   lepton_pt_t#bar{t}__44->SetBinContent(11,15053.06);
+   lepton_pt_t#bar{t}__44->SetBinContent(12,12095.9);
+   lepton_pt_t#bar{t}__44->SetBinContent(13,9999.555);
+   lepton_pt_t#bar{t}__44->SetBinContent(14,8075.868);
+   lepton_pt_t#bar{t}__44->SetBinContent(15,6415.118);
+   lepton_pt_t#bar{t}__44->SetBinContent(16,5286.22);
+   lepton_pt_t#bar{t}__44->SetBinContent(17,4298.925);
+   lepton_pt_t#bar{t}__44->SetBinContent(18,3535.971);
+   lepton_pt_t#bar{t}__44->SetBinContent(19,2827.309);
+   lepton_pt_t#bar{t}__44->SetBinContent(20,2314.734);
+   lepton_pt_t#bar{t}__44->SetBinContent(21,1885.785);
+   lepton_pt_t#bar{t}__44->SetBinContent(22,1551.925);
+   lepton_pt_t#bar{t}__44->SetBinContent(23,1328.827);
+   lepton_pt_t#bar{t}__44->SetBinContent(24,1081.368);
+   lepton_pt_t#bar{t}__44->SetBinContent(25,913.2267);
+   lepton_pt_t#bar{t}__44->SetBinContent(26,726.9597);
+   lepton_pt_t#bar{t}__44->SetBinContent(27,639.8408);
+   lepton_pt_t#bar{t}__44->SetBinContent(28,520.0355);
+   lepton_pt_t#bar{t}__44->SetBinContent(29,444.6629);
+   lepton_pt_t#bar{t}__44->SetBinContent(30,357.3169);
+   lepton_pt_t#bar{t}__44->SetBinContent(31,322.1717);
+   lepton_pt_t#bar{t}__44->SetBinContent(32,255.9575);
+   lepton_pt_t#bar{t}__44->SetBinContent(33,205.8815);
+   lepton_pt_t#bar{t}__44->SetBinContent(34,193.5654);
+   lepton_pt_t#bar{t}__44->SetBinContent(35,156.1933);
+   lepton_pt_t#bar{t}__44->SetBinContent(36,139.4573);
+   lepton_pt_t#bar{t}__44->SetBinContent(37,119.7677);
+   lepton_pt_t#bar{t}__44->SetBinContent(38,100.1422);
+   lepton_pt_t#bar{t}__44->SetBinContent(39,86.74693);
+   lepton_pt_t#bar{t}__44->SetBinContent(40,72.78233);
+   lepton_pt_t#bar{t}__44->SetBinContent(41,65.34995);
+   lepton_pt_t#bar{t}__44->SetBinContent(42,49.08939);
+   lepton_pt_t#bar{t}__44->SetBinContent(43,46.09423);
+   lepton_pt_t#bar{t}__44->SetBinContent(44,47.0534);
+   lepton_pt_t#bar{t}__44->SetBinContent(45,38.77661);
+   lepton_pt_t#bar{t}__44->SetBinContent(46,31.34332);
+   lepton_pt_t#bar{t}__44->SetBinContent(47,28.07109);
+   lepton_pt_t#bar{t}__44->SetBinContent(48,23.39073);
+   lepton_pt_t#bar{t}__44->SetBinContent(49,25.59558);
+   lepton_pt_t#bar{t}__44->SetBinContent(50,21.66514);
+   lepton_pt_t#bar{t}__44->SetBinContent(51,139.0422);
+   lepton_pt_t#bar{t}__44->SetBinError(3,28.22693);
+   lepton_pt_t#bar{t}__44->SetBinError(4,106.5956);
+   lepton_pt_t#bar{t}__44->SetBinError(5,119.6681);
+   lepton_pt_t#bar{t}__44->SetBinError(6,117.1337);
+   lepton_pt_t#bar{t}__44->SetBinError(7,110.933);
+   lepton_pt_t#bar{t}__44->SetBinError(8,103.625);
+   lepton_pt_t#bar{t}__44->SetBinError(9,94.92166);
+   lepton_pt_t#bar{t}__44->SetBinError(10,86.22288);
+   lepton_pt_t#bar{t}__44->SetBinError(11,78.67272);
+   lepton_pt_t#bar{t}__44->SetBinError(12,70.47206);
+   lepton_pt_t#bar{t}__44->SetBinError(13,64.05134);
+   lepton_pt_t#bar{t}__44->SetBinError(14,57.55423);
+   lepton_pt_t#bar{t}__44->SetBinError(15,51.32422);
+   lepton_pt_t#bar{t}__44->SetBinError(16,46.56842);
+   lepton_pt_t#bar{t}__44->SetBinError(17,42.02972);
+   lepton_pt_t#bar{t}__44->SetBinError(18,38.14945);
+   lepton_pt_t#bar{t}__44->SetBinError(19,34.07383);
+   lepton_pt_t#bar{t}__44->SetBinError(20,30.82567);
+   lepton_pt_t#bar{t}__44->SetBinError(21,27.89085);
+   lepton_pt_t#bar{t}__44->SetBinError(22,25.25004);
+   lepton_pt_t#bar{t}__44->SetBinError(23,23.37464);
+   lepton_pt_t#bar{t}__44->SetBinError(24,21.09696);
+   lepton_pt_t#bar{t}__44->SetBinError(25,19.38605);
+   lepton_pt_t#bar{t}__44->SetBinError(26,17.30275);
+   lepton_pt_t#bar{t}__44->SetBinError(27,16.20018);
+   lepton_pt_t#bar{t}__44->SetBinError(28,14.6558);
+   lepton_pt_t#bar{t}__44->SetBinError(29,13.52459);
+   lepton_pt_t#bar{t}__44->SetBinError(30,12.09714);
+   lepton_pt_t#bar{t}__44->SetBinError(31,11.53367);
+   lepton_pt_t#bar{t}__44->SetBinError(32,10.25184);
+   lepton_pt_t#bar{t}__44->SetBinError(33,9.16895);
+   lepton_pt_t#bar{t}__44->SetBinError(34,8.899054);
+   lepton_pt_t#bar{t}__44->SetBinError(35,8.003423);
+   lepton_pt_t#bar{t}__44->SetBinError(36,7.603187);
+   lepton_pt_t#bar{t}__44->SetBinError(37,7.067317);
+   lepton_pt_t#bar{t}__44->SetBinError(38,6.37723);
+   lepton_pt_t#bar{t}__44->SetBinError(39,5.97931);
+   lepton_pt_t#bar{t}__44->SetBinError(40,5.452841);
+   lepton_pt_t#bar{t}__44->SetBinError(41,5.174686);
+   lepton_pt_t#bar{t}__44->SetBinError(42,4.474407);
+   lepton_pt_t#bar{t}__44->SetBinError(43,4.327184);
+   lepton_pt_t#bar{t}__44->SetBinError(44,4.4016);
+   lepton_pt_t#bar{t}__44->SetBinError(45,3.981699);
+   lepton_pt_t#bar{t}__44->SetBinError(46,3.559601);
+   lepton_pt_t#bar{t}__44->SetBinError(47,3.37943);
+   lepton_pt_t#bar{t}__44->SetBinError(48,3.047123);
+   lepton_pt_t#bar{t}__44->SetBinError(49,3.24237);
+   lepton_pt_t#bar{t}__44->SetBinError(50,2.959005);
+   lepton_pt_t#bar{t}__44->SetBinError(51,7.525609);
+   lepton_pt_t#bar{t}__44->SetEntries(720514);
+   lepton_pt_t#bar{t}__44->SetDirectory(0);
 
    ci = TColor::GetColor("#cc0000");
-   lepton_pt_t#bar{t}__135->SetFillColor(ci);
+   lepton_pt_t#bar{t}__44->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   lepton_pt_t#bar{t}__135->SetMarkerColor(ci);
-   lepton_pt_t#bar{t}__135->GetXaxis()->SetTitle("pt [GeV]");
-   lepton_pt_t#bar{t}__135->GetXaxis()->SetLabelFont(42);
-   lepton_pt_t#bar{t}__135->GetXaxis()->SetLabelSize(0.035);
-   lepton_pt_t#bar{t}__135->GetXaxis()->SetTitleSize(0.035);
-   lepton_pt_t#bar{t}__135->GetXaxis()->SetTitleFont(42);
-   lepton_pt_t#bar{t}__135->GetYaxis()->SetTitle(" Events");
-   lepton_pt_t#bar{t}__135->GetYaxis()->SetLabelFont(42);
-   lepton_pt_t#bar{t}__135->GetYaxis()->SetLabelSize(0.035);
-   lepton_pt_t#bar{t}__135->GetYaxis()->SetTitleSize(0.035);
-   lepton_pt_t#bar{t}__135->GetYaxis()->SetTitleFont(42);
-   lepton_pt_t#bar{t}__135->GetZaxis()->SetLabelFont(42);
-   lepton_pt_t#bar{t}__135->GetZaxis()->SetLabelSize(0.035);
-   lepton_pt_t#bar{t}__135->GetZaxis()->SetTitleSize(0.035);
-   lepton_pt_t#bar{t}__135->GetZaxis()->SetTitleFont(42);
+   lepton_pt_t#bar{t}__44->SetMarkerColor(ci);
+   lepton_pt_t#bar{t}__44->GetXaxis()->SetTitle("pt [GeV]");
+   lepton_pt_t#bar{t}__44->GetXaxis()->SetLabelFont(42);
+   lepton_pt_t#bar{t}__44->GetXaxis()->SetLabelSize(0.035);
+   lepton_pt_t#bar{t}__44->GetXaxis()->SetTitleSize(0.035);
+   lepton_pt_t#bar{t}__44->GetXaxis()->SetTitleFont(42);
+   lepton_pt_t#bar{t}__44->GetYaxis()->SetTitle(" Events");
+   lepton_pt_t#bar{t}__44->GetYaxis()->SetLabelFont(42);
+   lepton_pt_t#bar{t}__44->GetYaxis()->SetLabelSize(0.035);
+   lepton_pt_t#bar{t}__44->GetYaxis()->SetTitleSize(0.035);
+   lepton_pt_t#bar{t}__44->GetYaxis()->SetTitleFont(42);
+   lepton_pt_t#bar{t}__44->GetZaxis()->SetLabelFont(42);
+   lepton_pt_t#bar{t}__44->GetZaxis()->SetLabelSize(0.035);
+   lepton_pt_t#bar{t}__44->GetZaxis()->SetTitleSize(0.035);
+   lepton_pt_t#bar{t}__44->GetZaxis()->SetTitleFont(42);
    mc->Add(lepton_pt_t#bar{t},"hist");
    
-   TH1F *lepton_pt_Diboson__136 = new TH1F("lepton_pt_Diboson__136","Diboson",50,0,350);
-   lepton_pt_Diboson__136->SetBinContent(3,3.654805);
-   lepton_pt_Diboson__136->SetBinContent(4,26.34563);
-   lepton_pt_Diboson__136->SetBinContent(5,39.23138);
-   lepton_pt_Diboson__136->SetBinContent(6,37.52382);
-   lepton_pt_Diboson__136->SetBinContent(7,32.83004);
-   lepton_pt_Diboson__136->SetBinContent(8,23.26699);
-   lepton_pt_Diboson__136->SetBinContent(9,20.85664);
-   lepton_pt_Diboson__136->SetBinContent(10,22.14182);
-   lepton_pt_Diboson__136->SetBinContent(11,17.6539);
-   lepton_pt_Diboson__136->SetBinContent(12,19.70443);
-   lepton_pt_Diboson__136->SetBinContent(13,15.13365);
-   lepton_pt_Diboson__136->SetBinContent(14,12.15836);
-   lepton_pt_Diboson__136->SetBinContent(15,9.180049);
-   lepton_pt_Diboson__136->SetBinContent(16,7.075958);
-   lepton_pt_Diboson__136->SetBinContent(17,9.641189);
-   lepton_pt_Diboson__136->SetBinContent(18,5.695692);
-   lepton_pt_Diboson__136->SetBinContent(19,4.855708);
-   lepton_pt_Diboson__136->SetBinContent(20,4.19733);
-   lepton_pt_Diboson__136->SetBinContent(21,4.553759);
-   lepton_pt_Diboson__136->SetBinContent(22,3.921758);
-   lepton_pt_Diboson__136->SetBinContent(23,3.054468);
-   lepton_pt_Diboson__136->SetBinContent(24,2.971132);
-   lepton_pt_Diboson__136->SetBinContent(25,2.570303);
-   lepton_pt_Diboson__136->SetBinContent(26,1.530951);
-   lepton_pt_Diboson__136->SetBinContent(27,3.766935);
-   lepton_pt_Diboson__136->SetBinContent(28,2.625777);
-   lepton_pt_Diboson__136->SetBinContent(29,1.566745);
-   lepton_pt_Diboson__136->SetBinContent(30,1.61998);
-   lepton_pt_Diboson__136->SetBinContent(31,2.668808);
-   lepton_pt_Diboson__136->SetBinContent(33,2.340385);
-   lepton_pt_Diboson__136->SetBinContent(34,1.625672);
-   lepton_pt_Diboson__136->SetBinContent(35,1.466966);
-   lepton_pt_Diboson__136->SetBinContent(36,0.4209393);
-   lepton_pt_Diboson__136->SetBinContent(37,1.215584);
-   lepton_pt_Diboson__136->SetBinContent(38,0.8823496);
-   lepton_pt_Diboson__136->SetBinContent(39,0.7584509);
-   lepton_pt_Diboson__136->SetBinContent(40,0.811637);
-   lepton_pt_Diboson__136->SetBinContent(41,1.217365);
-   lepton_pt_Diboson__136->SetBinContent(42,0.5239129);
-   lepton_pt_Diboson__136->SetBinContent(43,0.7335166);
-   lepton_pt_Diboson__136->SetBinContent(44,0.3766464);
-   lepton_pt_Diboson__136->SetBinContent(45,0.3817545);
-   lepton_pt_Diboson__136->SetBinContent(47,0.3942811);
-   lepton_pt_Diboson__136->SetBinContent(48,1.100875);
-   lepton_pt_Diboson__136->SetBinContent(49,0.4163072);
-   lepton_pt_Diboson__136->SetBinContent(51,5.553264);
-   lepton_pt_Diboson__136->SetBinError(3,1.214725);
-   lepton_pt_Diboson__136->SetBinError(4,3.196053);
-   lepton_pt_Diboson__136->SetBinError(5,3.919117);
-   lepton_pt_Diboson__136->SetBinError(6,3.816258);
-   lepton_pt_Diboson__136->SetBinError(7,3.563119);
-   lepton_pt_Diboson__136->SetBinError(8,2.983083);
-   lepton_pt_Diboson__136->SetBinError(9,2.818028);
-   lepton_pt_Diboson__136->SetBinError(10,2.990406);
-   lepton_pt_Diboson__136->SetBinError(11,2.612945);
-   lepton_pt_Diboson__136->SetBinError(12,2.811905);
-   lepton_pt_Diboson__136->SetBinError(13,2.412847);
-   lepton_pt_Diboson__136->SetBinError(14,2.196117);
-   lepton_pt_Diboson__136->SetBinError(15,1.902881);
-   lepton_pt_Diboson__136->SetBinError(16,1.647112);
-   lepton_pt_Diboson__136->SetBinError(17,1.913655);
-   lepton_pt_Diboson__136->SetBinError(18,1.478584);
-   lepton_pt_Diboson__136->SetBinError(19,1.347873);
-   lepton_pt_Diboson__136->SetBinError(20,1.234516);
-   lepton_pt_Diboson__136->SetBinError(21,1.335669);
-   lepton_pt_Diboson__136->SetBinError(22,1.204974);
-   lepton_pt_Diboson__136->SetBinError(23,1.088705);
-   lepton_pt_Diboson__136->SetBinError(24,1.030357);
-   lepton_pt_Diboson__136->SetBinError(25,0.9878596);
-   lepton_pt_Diboson__136->SetBinError(26,0.7334649);
-   lepton_pt_Diboson__136->SetBinError(27,1.208842);
-   lepton_pt_Diboson__136->SetBinError(28,0.9947715);
-   lepton_pt_Diboson__136->SetBinError(29,0.7839865);
-   lepton_pt_Diboson__136->SetBinError(30,0.8115463);
-   lepton_pt_Diboson__136->SetBinError(31,1.016724);
-   lepton_pt_Diboson__136->SetBinError(33,0.9579885);
-   lepton_pt_Diboson__136->SetBinError(34,0.8184968);
-   lepton_pt_Diboson__136->SetBinError(35,0.740324);
-   lepton_pt_Diboson__136->SetBinError(36,0.3739646);
-   lepton_pt_Diboson__136->SetBinError(37,0.7031349);
-   lepton_pt_Diboson__136->SetBinError(38,0.5947444);
-   lepton_pt_Diboson__136->SetBinError(39,0.5363141);
-   lepton_pt_Diboson__136->SetBinError(40,0.5749543);
-   lepton_pt_Diboson__136->SetBinError(41,0.7045806);
-   lepton_pt_Diboson__136->SetBinError(42,0.405935);
-   lepton_pt_Diboson__136->SetBinError(43,0.5189429);
-   lepton_pt_Diboson__136->SetBinError(44,0.3766464);
-   lepton_pt_Diboson__136->SetBinError(45,0.3817545);
-   lepton_pt_Diboson__136->SetBinError(47,0.3942812);
-   lepton_pt_Diboson__136->SetBinError(48,0.6361007);
-   lepton_pt_Diboson__136->SetBinError(49,0.4163072);
-   lepton_pt_Diboson__136->SetBinError(51,1.445634);
-   lepton_pt_Diboson__136->SetEntries(1022);
-   lepton_pt_Diboson__136->SetDirectory(0);
+   TH1F *lepton_pt_Diboson__45 = new TH1F("lepton_pt_Diboson__45","Diboson",50,0,350);
+   lepton_pt_Diboson__45->SetBinContent(3,3.654805);
+   lepton_pt_Diboson__45->SetBinContent(4,26.34563);
+   lepton_pt_Diboson__45->SetBinContent(5,39.23138);
+   lepton_pt_Diboson__45->SetBinContent(6,37.52382);
+   lepton_pt_Diboson__45->SetBinContent(7,32.83004);
+   lepton_pt_Diboson__45->SetBinContent(8,23.26699);
+   lepton_pt_Diboson__45->SetBinContent(9,20.85664);
+   lepton_pt_Diboson__45->SetBinContent(10,22.14182);
+   lepton_pt_Diboson__45->SetBinContent(11,17.6539);
+   lepton_pt_Diboson__45->SetBinContent(12,19.70443);
+   lepton_pt_Diboson__45->SetBinContent(13,15.13365);
+   lepton_pt_Diboson__45->SetBinContent(14,12.15836);
+   lepton_pt_Diboson__45->SetBinContent(15,9.180049);
+   lepton_pt_Diboson__45->SetBinContent(16,7.075958);
+   lepton_pt_Diboson__45->SetBinContent(17,9.641189);
+   lepton_pt_Diboson__45->SetBinContent(18,5.695692);
+   lepton_pt_Diboson__45->SetBinContent(19,4.855708);
+   lepton_pt_Diboson__45->SetBinContent(20,4.19733);
+   lepton_pt_Diboson__45->SetBinContent(21,4.553759);
+   lepton_pt_Diboson__45->SetBinContent(22,3.921758);
+   lepton_pt_Diboson__45->SetBinContent(23,3.054468);
+   lepton_pt_Diboson__45->SetBinContent(24,2.971132);
+   lepton_pt_Diboson__45->SetBinContent(25,2.570303);
+   lepton_pt_Diboson__45->SetBinContent(26,1.530951);
+   lepton_pt_Diboson__45->SetBinContent(27,3.766935);
+   lepton_pt_Diboson__45->SetBinContent(28,2.625777);
+   lepton_pt_Diboson__45->SetBinContent(29,1.566745);
+   lepton_pt_Diboson__45->SetBinContent(30,1.61998);
+   lepton_pt_Diboson__45->SetBinContent(31,2.668808);
+   lepton_pt_Diboson__45->SetBinContent(33,2.340385);
+   lepton_pt_Diboson__45->SetBinContent(34,1.625672);
+   lepton_pt_Diboson__45->SetBinContent(35,1.466966);
+   lepton_pt_Diboson__45->SetBinContent(36,0.4209393);
+   lepton_pt_Diboson__45->SetBinContent(37,1.215584);
+   lepton_pt_Diboson__45->SetBinContent(38,0.8823496);
+   lepton_pt_Diboson__45->SetBinContent(39,0.7584509);
+   lepton_pt_Diboson__45->SetBinContent(40,0.811637);
+   lepton_pt_Diboson__45->SetBinContent(41,1.217365);
+   lepton_pt_Diboson__45->SetBinContent(42,0.5239129);
+   lepton_pt_Diboson__45->SetBinContent(43,0.7335166);
+   lepton_pt_Diboson__45->SetBinContent(44,0.3766464);
+   lepton_pt_Diboson__45->SetBinContent(45,0.3817545);
+   lepton_pt_Diboson__45->SetBinContent(47,0.3942811);
+   lepton_pt_Diboson__45->SetBinContent(48,1.100875);
+   lepton_pt_Diboson__45->SetBinContent(49,0.4163072);
+   lepton_pt_Diboson__45->SetBinContent(51,5.553264);
+   lepton_pt_Diboson__45->SetBinError(3,1.214725);
+   lepton_pt_Diboson__45->SetBinError(4,3.196053);
+   lepton_pt_Diboson__45->SetBinError(5,3.919117);
+   lepton_pt_Diboson__45->SetBinError(6,3.816258);
+   lepton_pt_Diboson__45->SetBinError(7,3.563119);
+   lepton_pt_Diboson__45->SetBinError(8,2.983083);
+   lepton_pt_Diboson__45->SetBinError(9,2.818028);
+   lepton_pt_Diboson__45->SetBinError(10,2.990406);
+   lepton_pt_Diboson__45->SetBinError(11,2.612945);
+   lepton_pt_Diboson__45->SetBinError(12,2.811905);
+   lepton_pt_Diboson__45->SetBinError(13,2.412847);
+   lepton_pt_Diboson__45->SetBinError(14,2.196117);
+   lepton_pt_Diboson__45->SetBinError(15,1.902881);
+   lepton_pt_Diboson__45->SetBinError(16,1.647112);
+   lepton_pt_Diboson__45->SetBinError(17,1.913655);
+   lepton_pt_Diboson__45->SetBinError(18,1.478584);
+   lepton_pt_Diboson__45->SetBinError(19,1.347873);
+   lepton_pt_Diboson__45->SetBinError(20,1.234516);
+   lepton_pt_Diboson__45->SetBinError(21,1.335669);
+   lepton_pt_Diboson__45->SetBinError(22,1.204974);
+   lepton_pt_Diboson__45->SetBinError(23,1.088705);
+   lepton_pt_Diboson__45->SetBinError(24,1.030357);
+   lepton_pt_Diboson__45->SetBinError(25,0.9878596);
+   lepton_pt_Diboson__45->SetBinError(26,0.7334649);
+   lepton_pt_Diboson__45->SetBinError(27,1.208842);
+   lepton_pt_Diboson__45->SetBinError(28,0.9947715);
+   lepton_pt_Diboson__45->SetBinError(29,0.7839865);
+   lepton_pt_Diboson__45->SetBinError(30,0.8115463);
+   lepton_pt_Diboson__45->SetBinError(31,1.016724);
+   lepton_pt_Diboson__45->SetBinError(33,0.9579885);
+   lepton_pt_Diboson__45->SetBinError(34,0.8184968);
+   lepton_pt_Diboson__45->SetBinError(35,0.740324);
+   lepton_pt_Diboson__45->SetBinError(36,0.3739646);
+   lepton_pt_Diboson__45->SetBinError(37,0.7031349);
+   lepton_pt_Diboson__45->SetBinError(38,0.5947444);
+   lepton_pt_Diboson__45->SetBinError(39,0.5363141);
+   lepton_pt_Diboson__45->SetBinError(40,0.5749543);
+   lepton_pt_Diboson__45->SetBinError(41,0.7045806);
+   lepton_pt_Diboson__45->SetBinError(42,0.405935);
+   lepton_pt_Diboson__45->SetBinError(43,0.5189429);
+   lepton_pt_Diboson__45->SetBinError(44,0.3766464);
+   lepton_pt_Diboson__45->SetBinError(45,0.3817545);
+   lepton_pt_Diboson__45->SetBinError(47,0.3942812);
+   lepton_pt_Diboson__45->SetBinError(48,0.6361007);
+   lepton_pt_Diboson__45->SetBinError(49,0.4163072);
+   lepton_pt_Diboson__45->SetBinError(51,1.445634);
+   lepton_pt_Diboson__45->SetEntries(1022);
+   lepton_pt_Diboson__45->SetDirectory(0);
 
    ci = TColor::GetColor("#ffff00");
-   lepton_pt_Diboson__136->SetFillColor(ci);
+   lepton_pt_Diboson__45->SetFillColor(ci);
 
    ci = TColor::GetColor("#ffff00");
-   lepton_pt_Diboson__136->SetMarkerColor(ci);
-   lepton_pt_Diboson__136->GetXaxis()->SetTitle("pt [GeV]");
-   lepton_pt_Diboson__136->GetXaxis()->SetLabelFont(42);
-   lepton_pt_Diboson__136->GetXaxis()->SetLabelSize(0.035);
-   lepton_pt_Diboson__136->GetXaxis()->SetTitleSize(0.035);
-   lepton_pt_Diboson__136->GetXaxis()->SetTitleFont(42);
-   lepton_pt_Diboson__136->GetYaxis()->SetTitle(" Events");
-   lepton_pt_Diboson__136->GetYaxis()->SetLabelFont(42);
-   lepton_pt_Diboson__136->GetYaxis()->SetLabelSize(0.035);
-   lepton_pt_Diboson__136->GetYaxis()->SetTitleSize(0.035);
-   lepton_pt_Diboson__136->GetYaxis()->SetTitleFont(42);
-   lepton_pt_Diboson__136->GetZaxis()->SetLabelFont(42);
-   lepton_pt_Diboson__136->GetZaxis()->SetLabelSize(0.035);
-   lepton_pt_Diboson__136->GetZaxis()->SetTitleSize(0.035);
-   lepton_pt_Diboson__136->GetZaxis()->SetTitleFont(42);
+   lepton_pt_Diboson__45->SetMarkerColor(ci);
+   lepton_pt_Diboson__45->GetXaxis()->SetTitle("pt [GeV]");
+   lepton_pt_Diboson__45->GetXaxis()->SetLabelFont(42);
+   lepton_pt_Diboson__45->GetXaxis()->SetLabelSize(0.035);
+   lepton_pt_Diboson__45->GetXaxis()->SetTitleSize(0.035);
+   lepton_pt_Diboson__45->GetXaxis()->SetTitleFont(42);
+   lepton_pt_Diboson__45->GetYaxis()->SetTitle(" Events");
+   lepton_pt_Diboson__45->GetYaxis()->SetLabelFont(42);
+   lepton_pt_Diboson__45->GetYaxis()->SetLabelSize(0.035);
+   lepton_pt_Diboson__45->GetYaxis()->SetTitleSize(0.035);
+   lepton_pt_Diboson__45->GetYaxis()->SetTitleFont(42);
+   lepton_pt_Diboson__45->GetZaxis()->SetLabelFont(42);
+   lepton_pt_Diboson__45->GetZaxis()->SetLabelSize(0.035);
+   lepton_pt_Diboson__45->GetZaxis()->SetTitleSize(0.035);
+   lepton_pt_Diboson__45->GetZaxis()->SetTitleFont(42);
    mc->Add(lepton_pt_Diboson,"hist");
    
-   TH1F *lepton_pt_DY__137 = new TH1F("lepton_pt_DY__137","DY",50,0,350);
-   lepton_pt_DY__137->SetBinContent(3,51.82911);
-   lepton_pt_DY__137->SetBinContent(4,196.8569);
-   lepton_pt_DY__137->SetBinContent(5,137.9271);
-   lepton_pt_DY__137->SetBinContent(6,75.00964);
-   lepton_pt_DY__137->SetBinContent(7,35.35948);
-   lepton_pt_DY__137->SetBinContent(8,45.72123);
-   lepton_pt_DY__137->SetBinContent(9,35.15467);
-   lepton_pt_DY__137->SetBinContent(11,19.95711);
-   lepton_pt_DY__137->SetBinContent(14,30.86011);
-   lepton_pt_DY__137->SetBinContent(23,15.61073);
-   lepton_pt_DY__137->SetBinContent(27,19.12663);
-   lepton_pt_DY__137->SetBinError(3,30.10732);
-   lepton_pt_DY__137->SetBinError(4,58.42041);
-   lepton_pt_DY__137->SetBinError(5,48.53262);
-   lepton_pt_DY__137->SetBinError(6,36.87176);
-   lepton_pt_DY__137->SetBinError(7,25.12031);
-   lepton_pt_DY__137->SetBinError(8,26.41153);
-   lepton_pt_DY__137->SetBinError(9,24.95448);
-   lepton_pt_DY__137->SetBinError(11,19.95711);
-   lepton_pt_DY__137->SetBinError(14,21.87);
-   lepton_pt_DY__137->SetBinError(23,15.61073);
-   lepton_pt_DY__137->SetBinError(27,19.12663);
-   lepton_pt_DY__137->SetEntries(42);
-   lepton_pt_DY__137->SetDirectory(0);
+   TH1F *lepton_pt_DY__46 = new TH1F("lepton_pt_DY__46","DY",50,0,350);
+   lepton_pt_DY__46->SetBinContent(3,51.82911);
+   lepton_pt_DY__46->SetBinContent(4,196.8569);
+   lepton_pt_DY__46->SetBinContent(5,137.9271);
+   lepton_pt_DY__46->SetBinContent(6,75.00964);
+   lepton_pt_DY__46->SetBinContent(7,35.35948);
+   lepton_pt_DY__46->SetBinContent(8,45.72123);
+   lepton_pt_DY__46->SetBinContent(9,35.15467);
+   lepton_pt_DY__46->SetBinContent(11,19.95711);
+   lepton_pt_DY__46->SetBinContent(14,30.86011);
+   lepton_pt_DY__46->SetBinContent(23,15.61073);
+   lepton_pt_DY__46->SetBinContent(27,19.12663);
+   lepton_pt_DY__46->SetBinError(3,30.10732);
+   lepton_pt_DY__46->SetBinError(4,58.42041);
+   lepton_pt_DY__46->SetBinError(5,48.53262);
+   lepton_pt_DY__46->SetBinError(6,36.87176);
+   lepton_pt_DY__46->SetBinError(7,25.12031);
+   lepton_pt_DY__46->SetBinError(8,26.41153);
+   lepton_pt_DY__46->SetBinError(9,24.95448);
+   lepton_pt_DY__46->SetBinError(11,19.95711);
+   lepton_pt_DY__46->SetBinError(14,21.87);
+   lepton_pt_DY__46->SetBinError(23,15.61073);
+   lepton_pt_DY__46->SetBinError(27,19.12663);
+   lepton_pt_DY__46->SetEntries(42);
+   lepton_pt_DY__46->SetDirectory(0);
 
    ci = TColor::GetColor("#33ccff");
-   lepton_pt_DY__137->SetFillColor(ci);
+   lepton_pt_DY__46->SetFillColor(ci);
 
    ci = TColor::GetColor("#33ccff");
-   lepton_pt_DY__137->SetMarkerColor(ci);
-   lepton_pt_DY__137->GetXaxis()->SetTitle("pt [GeV]");
-   lepton_pt_DY__137->GetXaxis()->SetLabelFont(42);
-   lepton_pt_DY__137->GetXaxis()->SetLabelSize(0.035);
-   lepton_pt_DY__137->GetXaxis()->SetTitleSize(0.035);
-   lepton_pt_DY__137->GetXaxis()->SetTitleFont(42);
-   lepton_pt_DY__137->GetYaxis()->SetTitle(" Events");
-   lepton_pt_DY__137->GetYaxis()->SetLabelFont(42);
-   lepton_pt_DY__137->GetYaxis()->SetLabelSize(0.035);
-   lepton_pt_DY__137->GetYaxis()->SetTitleSize(0.035);
-   lepton_pt_DY__137->GetYaxis()->SetTitleFont(42);
-   lepton_pt_DY__137->GetZaxis()->SetLabelFont(42);
-   lepton_pt_DY__137->GetZaxis()->SetLabelSize(0.035);
-   lepton_pt_DY__137->GetZaxis()->SetTitleSize(0.035);
-   lepton_pt_DY__137->GetZaxis()->SetTitleFont(42);
+   lepton_pt_DY__46->SetMarkerColor(ci);
+   lepton_pt_DY__46->GetXaxis()->SetTitle("pt [GeV]");
+   lepton_pt_DY__46->GetXaxis()->SetLabelFont(42);
+   lepton_pt_DY__46->GetXaxis()->SetLabelSize(0.035);
+   lepton_pt_DY__46->GetXaxis()->SetTitleSize(0.035);
+   lepton_pt_DY__46->GetXaxis()->SetTitleFont(42);
+   lepton_pt_DY__46->GetYaxis()->SetTitle(" Events");
+   lepton_pt_DY__46->GetYaxis()->SetLabelFont(42);
+   lepton_pt_DY__46->GetYaxis()->SetLabelSize(0.035);
+   lepton_pt_DY__46->GetYaxis()->SetTitleSize(0.035);
+   lepton_pt_DY__46->GetYaxis()->SetTitleFont(42);
+   lepton_pt_DY__46->GetZaxis()->SetLabelFont(42);
+   lepton_pt_DY__46->GetZaxis()->SetLabelSize(0.035);
+   lepton_pt_DY__46->GetZaxis()->SetTitleSize(0.035);
+   lepton_pt_DY__46->GetZaxis()->SetTitleFont(42);
    mc->Add(lepton_pt_DY,"hist");
    
-   TH1F *lepton_pt_W__138 = new TH1F("lepton_pt_W__138","W",50,0,350);
-   lepton_pt_W__138->SetDirectory(0);
+   TH1F *lepton_pt_W__47 = new TH1F("lepton_pt_W__47","W",50,0,350);
+   lepton_pt_W__47->SetDirectory(0);
 
    ci = TColor::GetColor("#3366ff");
-   lepton_pt_W__138->SetFillColor(ci);
+   lepton_pt_W__47->SetFillColor(ci);
 
    ci = TColor::GetColor("#3366ff");
-   lepton_pt_W__138->SetMarkerColor(ci);
-   lepton_pt_W__138->GetXaxis()->SetTitle("pt [GeV]");
-   lepton_pt_W__138->GetXaxis()->SetLabelFont(42);
-   lepton_pt_W__138->GetXaxis()->SetLabelSize(0.035);
-   lepton_pt_W__138->GetXaxis()->SetTitleSize(0.035);
-   lepton_pt_W__138->GetXaxis()->SetTitleFont(42);
-   lepton_pt_W__138->GetYaxis()->SetTitle(" Events");
-   lepton_pt_W__138->GetYaxis()->SetLabelFont(42);
-   lepton_pt_W__138->GetYaxis()->SetLabelSize(0.035);
-   lepton_pt_W__138->GetYaxis()->SetTitleSize(0.035);
-   lepton_pt_W__138->GetYaxis()->SetTitleFont(42);
-   lepton_pt_W__138->GetZaxis()->SetLabelFont(42);
-   lepton_pt_W__138->GetZaxis()->SetLabelSize(0.035);
-   lepton_pt_W__138->GetZaxis()->SetTitleSize(0.035);
-   lepton_pt_W__138->GetZaxis()->SetTitleFont(42);
+   lepton_pt_W__47->SetMarkerColor(ci);
+   lepton_pt_W__47->GetXaxis()->SetTitle("pt [GeV]");
+   lepton_pt_W__47->GetXaxis()->SetLabelFont(42);
+   lepton_pt_W__47->GetXaxis()->SetLabelSize(0.035);
+   lepton_pt_W__47->GetXaxis()->SetTitleSize(0.035);
+   lepton_pt_W__47->GetXaxis()->SetTitleFont(42);
+   lepton_pt_W__47->GetYaxis()->SetTitle(" Events");
+   lepton_pt_W__47->GetYaxis()->SetLabelFont(42);
+   lepton_pt_W__47->GetYaxis()->SetLabelSize(0.035);
+   lepton_pt_W__47->GetYaxis()->SetTitleSize(0.035);
+   lepton_pt_W__47->GetYaxis()->SetTitleFont(42);
+   lepton_pt_W__47->GetZaxis()->SetLabelFont(42);
+   lepton_pt_W__47->GetZaxis()->SetLabelSize(0.035);
+   lepton_pt_W__47->GetZaxis()->SetTitleSize(0.035);
+   lepton_pt_W__47->GetZaxis()->SetTitleFont(42);
    mc->Add(lepton_pt_W,"hist");
    
-   TH1F *lepton_pt_SinglesPtop__139 = new TH1F("lepton_pt_SinglesPtop__139","Single top",50,0,350);
-   lepton_pt_SinglesPtop__139->SetBinContent(3,86.17592);
-   lepton_pt_SinglesPtop__139->SetBinContent(4,1134.361);
-   lepton_pt_SinglesPtop__139->SetBinContent(5,1372.812);
-   lepton_pt_SinglesPtop__139->SetBinContent(6,1336.714);
-   lepton_pt_SinglesPtop__139->SetBinContent(7,1238.669);
-   lepton_pt_SinglesPtop__139->SetBinContent(8,1107.407);
-   lepton_pt_SinglesPtop__139->SetBinContent(9,930.9829);
-   lepton_pt_SinglesPtop__139->SetBinContent(10,799.9883);
-   lepton_pt_SinglesPtop__139->SetBinContent(11,673.9247);
-   lepton_pt_SinglesPtop__139->SetBinContent(12,560.0673);
-   lepton_pt_SinglesPtop__139->SetBinContent(13,474.4601);
-   lepton_pt_SinglesPtop__139->SetBinContent(14,392.3938);
-   lepton_pt_SinglesPtop__139->SetBinContent(15,352.9199);
-   lepton_pt_SinglesPtop__139->SetBinContent(16,282.7184);
-   lepton_pt_SinglesPtop__139->SetBinContent(17,236.3465);
-   lepton_pt_SinglesPtop__139->SetBinContent(18,229.1226);
-   lepton_pt_SinglesPtop__139->SetBinContent(19,189.6979);
-   lepton_pt_SinglesPtop__139->SetBinContent(20,181.2617);
-   lepton_pt_SinglesPtop__139->SetBinContent(21,170.2689);
-   lepton_pt_SinglesPtop__139->SetBinContent(22,118.6602);
-   lepton_pt_SinglesPtop__139->SetBinContent(23,106.2703);
-   lepton_pt_SinglesPtop__139->SetBinContent(24,95.25087);
-   lepton_pt_SinglesPtop__139->SetBinContent(25,88.05151);
-   lepton_pt_SinglesPtop__139->SetBinContent(26,56.03866);
-   lepton_pt_SinglesPtop__139->SetBinContent(27,62.65725);
-   lepton_pt_SinglesPtop__139->SetBinContent(28,42.74572);
-   lepton_pt_SinglesPtop__139->SetBinContent(29,36.52152);
-   lepton_pt_SinglesPtop__139->SetBinContent(30,40.79641);
-   lepton_pt_SinglesPtop__139->SetBinContent(31,35.1548);
-   lepton_pt_SinglesPtop__139->SetBinContent(32,41.7557);
-   lepton_pt_SinglesPtop__139->SetBinContent(33,25.1534);
-   lepton_pt_SinglesPtop__139->SetBinContent(34,37.47657);
-   lepton_pt_SinglesPtop__139->SetBinContent(35,28.64702);
-   lepton_pt_SinglesPtop__139->SetBinContent(36,29.79686);
-   lepton_pt_SinglesPtop__139->SetBinContent(37,8.3135);
-   lepton_pt_SinglesPtop__139->SetBinContent(38,12.52772);
-   lepton_pt_SinglesPtop__139->SetBinContent(39,24.39431);
-   lepton_pt_SinglesPtop__139->SetBinContent(40,11.88957);
-   lepton_pt_SinglesPtop__139->SetBinContent(41,18.00314);
-   lepton_pt_SinglesPtop__139->SetBinContent(42,12.10602);
-   lepton_pt_SinglesPtop__139->SetBinContent(43,9.53439);
-   lepton_pt_SinglesPtop__139->SetBinContent(44,6.805182);
-   lepton_pt_SinglesPtop__139->SetBinContent(45,12.50929);
-   lepton_pt_SinglesPtop__139->SetBinContent(46,10.91923);
-   lepton_pt_SinglesPtop__139->SetBinContent(47,8.700246);
-   lepton_pt_SinglesPtop__139->SetBinContent(48,4.671527);
-   lepton_pt_SinglesPtop__139->SetBinContent(49,7.679237);
-   lepton_pt_SinglesPtop__139->SetBinContent(50,1.32008);
-   lepton_pt_SinglesPtop__139->SetBinContent(51,49.24731);
-   lepton_pt_SinglesPtop__139->SetBinError(3,10.86692);
-   lepton_pt_SinglesPtop__139->SetBinError(4,38.88441);
-   lepton_pt_SinglesPtop__139->SetBinError(5,42.78616);
-   lepton_pt_SinglesPtop__139->SetBinError(6,42.2465);
-   lepton_pt_SinglesPtop__139->SetBinError(7,40.74649);
-   lepton_pt_SinglesPtop__139->SetBinError(8,38.6194);
-   lepton_pt_SinglesPtop__139->SetBinError(9,35.30056);
-   lepton_pt_SinglesPtop__139->SetBinError(10,32.62903);
-   lepton_pt_SinglesPtop__139->SetBinError(11,30.24334);
-   lepton_pt_SinglesPtop__139->SetBinError(12,27.29429);
-   lepton_pt_SinglesPtop__139->SetBinError(13,25.22229);
-   lepton_pt_SinglesPtop__139->SetBinError(14,22.98255);
-   lepton_pt_SinglesPtop__139->SetBinError(15,21.81816);
-   lepton_pt_SinglesPtop__139->SetBinError(16,19.39786);
-   lepton_pt_SinglesPtop__139->SetBinError(17,17.64114);
-   lepton_pt_SinglesPtop__139->SetBinError(18,17.53279);
-   lepton_pt_SinglesPtop__139->SetBinError(19,15.9184);
-   lepton_pt_SinglesPtop__139->SetBinError(20,15.58601);
-   lepton_pt_SinglesPtop__139->SetBinError(21,15.21071);
-   lepton_pt_SinglesPtop__139->SetBinError(22,12.6727);
-   lepton_pt_SinglesPtop__139->SetBinError(23,11.80768);
-   lepton_pt_SinglesPtop__139->SetBinError(24,11.19923);
-   lepton_pt_SinglesPtop__139->SetBinError(25,10.85794);
-   lepton_pt_SinglesPtop__139->SetBinError(26,8.576138);
-   lepton_pt_SinglesPtop__139->SetBinError(27,9.012934);
-   lepton_pt_SinglesPtop__139->SetBinError(28,7.666061);
-   lepton_pt_SinglesPtop__139->SetBinError(29,6.954697);
-   lepton_pt_SinglesPtop__139->SetBinError(30,7.386767);
-   lepton_pt_SinglesPtop__139->SetBinError(31,6.861262);
-   lepton_pt_SinglesPtop__139->SetBinError(32,7.490674);
-   lepton_pt_SinglesPtop__139->SetBinError(33,5.599636);
-   lepton_pt_SinglesPtop__139->SetBinError(34,7.042507);
-   lepton_pt_SinglesPtop__139->SetBinError(35,6.293478);
-   lepton_pt_SinglesPtop__139->SetBinError(36,6.326154);
-   lepton_pt_SinglesPtop__139->SetBinError(37,3.28642);
-   lepton_pt_SinglesPtop__139->SetBinError(38,4.02239);
-   lepton_pt_SinglesPtop__139->SetBinError(39,5.580862);
-   lepton_pt_SinglesPtop__139->SetBinError(40,3.951067);
-   lepton_pt_SinglesPtop__139->SetBinError(41,4.843102);
-   lepton_pt_SinglesPtop__139->SetBinError(42,4.048186);
-   lepton_pt_SinglesPtop__139->SetBinError(43,3.60705);
-   lepton_pt_SinglesPtop__139->SetBinError(44,3.048085);
-   lepton_pt_SinglesPtop__139->SetBinError(45,3.993042);
-   lepton_pt_SinglesPtop__139->SetBinError(46,3.868224);
-   lepton_pt_SinglesPtop__139->SetBinError(47,3.561808);
-   lepton_pt_SinglesPtop__139->SetBinError(48,2.375437);
-   lepton_pt_SinglesPtop__139->SetBinError(49,3.213345);
-   lepton_pt_SinglesPtop__139->SetBinError(50,1.32008);
-   lepton_pt_SinglesPtop__139->SetBinError(51,7.969394);
-   lepton_pt_SinglesPtop__139->SetEntries(10312);
-   lepton_pt_SinglesPtop__139->SetDirectory(0);
+   TH1F *lepton_pt_SinglesPtop__48 = new TH1F("lepton_pt_SinglesPtop__48","Single top",50,0,350);
+   lepton_pt_SinglesPtop__48->SetBinContent(3,86.17592);
+   lepton_pt_SinglesPtop__48->SetBinContent(4,1134.361);
+   lepton_pt_SinglesPtop__48->SetBinContent(5,1372.812);
+   lepton_pt_SinglesPtop__48->SetBinContent(6,1336.714);
+   lepton_pt_SinglesPtop__48->SetBinContent(7,1238.669);
+   lepton_pt_SinglesPtop__48->SetBinContent(8,1107.407);
+   lepton_pt_SinglesPtop__48->SetBinContent(9,930.9829);
+   lepton_pt_SinglesPtop__48->SetBinContent(10,799.9883);
+   lepton_pt_SinglesPtop__48->SetBinContent(11,673.9247);
+   lepton_pt_SinglesPtop__48->SetBinContent(12,560.0673);
+   lepton_pt_SinglesPtop__48->SetBinContent(13,474.4601);
+   lepton_pt_SinglesPtop__48->SetBinContent(14,392.3938);
+   lepton_pt_SinglesPtop__48->SetBinContent(15,352.9199);
+   lepton_pt_SinglesPtop__48->SetBinContent(16,282.7184);
+   lepton_pt_SinglesPtop__48->SetBinContent(17,236.3465);
+   lepton_pt_SinglesPtop__48->SetBinContent(18,229.1226);
+   lepton_pt_SinglesPtop__48->SetBinContent(19,189.6979);
+   lepton_pt_SinglesPtop__48->SetBinContent(20,181.2617);
+   lepton_pt_SinglesPtop__48->SetBinContent(21,170.2689);
+   lepton_pt_SinglesPtop__48->SetBinContent(22,118.6602);
+   lepton_pt_SinglesPtop__48->SetBinContent(23,106.2703);
+   lepton_pt_SinglesPtop__48->SetBinContent(24,95.25087);
+   lepton_pt_SinglesPtop__48->SetBinContent(25,88.05151);
+   lepton_pt_SinglesPtop__48->SetBinContent(26,56.03866);
+   lepton_pt_SinglesPtop__48->SetBinContent(27,62.65725);
+   lepton_pt_SinglesPtop__48->SetBinContent(28,42.74572);
+   lepton_pt_SinglesPtop__48->SetBinContent(29,36.52152);
+   lepton_pt_SinglesPtop__48->SetBinContent(30,40.79641);
+   lepton_pt_SinglesPtop__48->SetBinContent(31,35.1548);
+   lepton_pt_SinglesPtop__48->SetBinContent(32,41.7557);
+   lepton_pt_SinglesPtop__48->SetBinContent(33,25.1534);
+   lepton_pt_SinglesPtop__48->SetBinContent(34,37.47657);
+   lepton_pt_SinglesPtop__48->SetBinContent(35,28.64702);
+   lepton_pt_SinglesPtop__48->SetBinContent(36,29.79686);
+   lepton_pt_SinglesPtop__48->SetBinContent(37,8.3135);
+   lepton_pt_SinglesPtop__48->SetBinContent(38,12.52772);
+   lepton_pt_SinglesPtop__48->SetBinContent(39,24.39431);
+   lepton_pt_SinglesPtop__48->SetBinContent(40,11.88957);
+   lepton_pt_SinglesPtop__48->SetBinContent(41,18.00314);
+   lepton_pt_SinglesPtop__48->SetBinContent(42,12.10602);
+   lepton_pt_SinglesPtop__48->SetBinContent(43,9.53439);
+   lepton_pt_SinglesPtop__48->SetBinContent(44,6.805182);
+   lepton_pt_SinglesPtop__48->SetBinContent(45,12.50929);
+   lepton_pt_SinglesPtop__48->SetBinContent(46,10.91923);
+   lepton_pt_SinglesPtop__48->SetBinContent(47,8.700246);
+   lepton_pt_SinglesPtop__48->SetBinContent(48,4.671527);
+   lepton_pt_SinglesPtop__48->SetBinContent(49,7.679237);
+   lepton_pt_SinglesPtop__48->SetBinContent(50,1.32008);
+   lepton_pt_SinglesPtop__48->SetBinContent(51,49.24731);
+   lepton_pt_SinglesPtop__48->SetBinError(3,10.86692);
+   lepton_pt_SinglesPtop__48->SetBinError(4,38.88441);
+   lepton_pt_SinglesPtop__48->SetBinError(5,42.78616);
+   lepton_pt_SinglesPtop__48->SetBinError(6,42.2465);
+   lepton_pt_SinglesPtop__48->SetBinError(7,40.74649);
+   lepton_pt_SinglesPtop__48->SetBinError(8,38.6194);
+   lepton_pt_SinglesPtop__48->SetBinError(9,35.30056);
+   lepton_pt_SinglesPtop__48->SetBinError(10,32.62903);
+   lepton_pt_SinglesPtop__48->SetBinError(11,30.24334);
+   lepton_pt_SinglesPtop__48->SetBinError(12,27.29429);
+   lepton_pt_SinglesPtop__48->SetBinError(13,25.22229);
+   lepton_pt_SinglesPtop__48->SetBinError(14,22.98255);
+   lepton_pt_SinglesPtop__48->SetBinError(15,21.81816);
+   lepton_pt_SinglesPtop__48->SetBinError(16,19.39786);
+   lepton_pt_SinglesPtop__48->SetBinError(17,17.64114);
+   lepton_pt_SinglesPtop__48->SetBinError(18,17.53279);
+   lepton_pt_SinglesPtop__48->SetBinError(19,15.9184);
+   lepton_pt_SinglesPtop__48->SetBinError(20,15.58601);
+   lepton_pt_SinglesPtop__48->SetBinError(21,15.21071);
+   lepton_pt_SinglesPtop__48->SetBinError(22,12.6727);
+   lepton_pt_SinglesPtop__48->SetBinError(23,11.80768);
+   lepton_pt_SinglesPtop__48->SetBinError(24,11.19923);
+   lepton_pt_SinglesPtop__48->SetBinError(25,10.85794);
+   lepton_pt_SinglesPtop__48->SetBinError(26,8.576138);
+   lepton_pt_SinglesPtop__48->SetBinError(27,9.012934);
+   lepton_pt_SinglesPtop__48->SetBinError(28,7.666061);
+   lepton_pt_SinglesPtop__48->SetBinError(29,6.954697);
+   lepton_pt_SinglesPtop__48->SetBinError(30,7.386767);
+   lepton_pt_SinglesPtop__48->SetBinError(31,6.861262);
+   lepton_pt_SinglesPtop__48->SetBinError(32,7.490674);
+   lepton_pt_SinglesPtop__48->SetBinError(33,5.599636);
+   lepton_pt_SinglesPtop__48->SetBinError(34,7.042507);
+   lepton_pt_SinglesPtop__48->SetBinError(35,6.293478);
+   lepton_pt_SinglesPtop__48->SetBinError(36,6.326154);
+   lepton_pt_SinglesPtop__48->SetBinError(37,3.28642);
+   lepton_pt_SinglesPtop__48->SetBinError(38,4.02239);
+   lepton_pt_SinglesPtop__48->SetBinError(39,5.580862);
+   lepton_pt_SinglesPtop__48->SetBinError(40,3.951067);
+   lepton_pt_SinglesPtop__48->SetBinError(41,4.843102);
+   lepton_pt_SinglesPtop__48->SetBinError(42,4.048186);
+   lepton_pt_SinglesPtop__48->SetBinError(43,3.60705);
+   lepton_pt_SinglesPtop__48->SetBinError(44,3.048085);
+   lepton_pt_SinglesPtop__48->SetBinError(45,3.993042);
+   lepton_pt_SinglesPtop__48->SetBinError(46,3.868224);
+   lepton_pt_SinglesPtop__48->SetBinError(47,3.561808);
+   lepton_pt_SinglesPtop__48->SetBinError(48,2.375437);
+   lepton_pt_SinglesPtop__48->SetBinError(49,3.213345);
+   lepton_pt_SinglesPtop__48->SetBinError(50,1.32008);
+   lepton_pt_SinglesPtop__48->SetBinError(51,7.969394);
+   lepton_pt_SinglesPtop__48->SetEntries(10312);
+   lepton_pt_SinglesPtop__48->SetDirectory(0);
 
    ci = TColor::GetColor("#990099");
-   lepton_pt_SinglesPtop__139->SetFillColor(ci);
+   lepton_pt_SinglesPtop__48->SetFillColor(ci);
 
    ci = TColor::GetColor("#990099");
-   lepton_pt_SinglesPtop__139->SetMarkerColor(ci);
-   lepton_pt_SinglesPtop__139->GetXaxis()->SetTitle("pt [GeV]");
-   lepton_pt_SinglesPtop__139->GetXaxis()->SetLabelFont(42);
-   lepton_pt_SinglesPtop__139->GetXaxis()->SetLabelSize(0.035);
-   lepton_pt_SinglesPtop__139->GetXaxis()->SetTitleSize(0.035);
-   lepton_pt_SinglesPtop__139->GetXaxis()->SetTitleFont(42);
-   lepton_pt_SinglesPtop__139->GetYaxis()->SetTitle(" Events");
-   lepton_pt_SinglesPtop__139->GetYaxis()->SetLabelFont(42);
-   lepton_pt_SinglesPtop__139->GetYaxis()->SetLabelSize(0.035);
-   lepton_pt_SinglesPtop__139->GetYaxis()->SetTitleSize(0.035);
-   lepton_pt_SinglesPtop__139->GetYaxis()->SetTitleFont(42);
-   lepton_pt_SinglesPtop__139->GetZaxis()->SetLabelFont(42);
-   lepton_pt_SinglesPtop__139->GetZaxis()->SetLabelSize(0.035);
-   lepton_pt_SinglesPtop__139->GetZaxis()->SetTitleSize(0.035);
-   lepton_pt_SinglesPtop__139->GetZaxis()->SetTitleFont(42);
+   lepton_pt_SinglesPtop__48->SetMarkerColor(ci);
+   lepton_pt_SinglesPtop__48->GetXaxis()->SetTitle("pt [GeV]");
+   lepton_pt_SinglesPtop__48->GetXaxis()->SetLabelFont(42);
+   lepton_pt_SinglesPtop__48->GetXaxis()->SetLabelSize(0.035);
+   lepton_pt_SinglesPtop__48->GetXaxis()->SetTitleSize(0.035);
+   lepton_pt_SinglesPtop__48->GetXaxis()->SetTitleFont(42);
+   lepton_pt_SinglesPtop__48->GetYaxis()->SetTitle(" Events");
+   lepton_pt_SinglesPtop__48->GetYaxis()->SetLabelFont(42);
+   lepton_pt_SinglesPtop__48->GetYaxis()->SetLabelSize(0.035);
+   lepton_pt_SinglesPtop__48->GetYaxis()->SetTitleSize(0.035);
+   lepton_pt_SinglesPtop__48->GetYaxis()->SetTitleFont(42);
+   lepton_pt_SinglesPtop__48->GetZaxis()->SetLabelFont(42);
+   lepton_pt_SinglesPtop__48->GetZaxis()->SetLabelSize(0.035);
+   lepton_pt_SinglesPtop__48->GetZaxis()->SetTitleSize(0.035);
+   lepton_pt_SinglesPtop__48->GetZaxis()->SetTitleFont(42);
    mc->Add(lepton_pt_Single top,"hist");
    mc->Draw("hist same");
    
-   Double_t Graph_from_lepton_pt_fx3039[51] = {
+   Double_t Graph_from_lepton_pt_fx3013[51] = {
    3.5,
    10.5,
    17.5,
@@ -576,7 +576,7 @@ void lepton_pt()
    339.5,
    346.5,
    0};
-   Double_t Graph_from_lepton_pt_fy3039[51] = {
+   Double_t Graph_from_lepton_pt_fy3013[51] = {
    0,
    0,
    1865,
@@ -628,7 +628,7 @@ void lepton_pt()
    20,
    15,
    0};
-   Double_t Graph_from_lepton_pt_felx3039[51] = {
+   Double_t Graph_from_lepton_pt_felx3013[51] = {
    3.5,
    3.5,
    3.5,
@@ -680,7 +680,7 @@ void lepton_pt()
    3.5,
    3.5,
    0};
-   Double_t Graph_from_lepton_pt_fely3039[51] = {
+   Double_t Graph_from_lepton_pt_fely3013[51] = {
    0,
    0,
    43.18565,
@@ -732,7 +732,7 @@ void lepton_pt()
    4.43453,
    3.829449,
    0};
-   Double_t Graph_from_lepton_pt_fehx3039[51] = {
+   Double_t Graph_from_lepton_pt_fehx3013[51] = {
    3.5,
    3.5,
    3.5,
@@ -784,7 +784,7 @@ void lepton_pt()
    3.5,
    3.5,
    0};
-   Double_t Graph_from_lepton_pt_fehy3039[51] = {
+   Double_t Graph_from_lepton_pt_fehy3013[51] = {
    1.841055,
    1.841055,
    43.18565,
@@ -836,7 +836,7 @@ void lepton_pt()
    5.546633,
    4.958839,
    1.841055};
-   TGraphAsymmErrors *grae = new TGraphAsymmErrors(51,Graph_from_lepton_pt_fx3039,Graph_from_lepton_pt_fy3039,Graph_from_lepton_pt_felx3039,Graph_from_lepton_pt_fehx3039,Graph_from_lepton_pt_fely3039,Graph_from_lepton_pt_fehy3039);
+   TGraphAsymmErrors *grae = new TGraphAsymmErrors(51,Graph_from_lepton_pt_fx3013,Graph_from_lepton_pt_fy3013,Graph_from_lepton_pt_felx3013,Graph_from_lepton_pt_fehx3013,Graph_from_lepton_pt_fely3013,Graph_from_lepton_pt_fehy3013);
    grae->SetName("Graph_from_lepton_pt");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -844,27 +844,27 @@ void lepton_pt()
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_lepton_pt3039 = new TH1F("Graph_Graph_from_lepton_pt3039","Data",100,0,385);
-   Graph_Graph_from_lepton_pt3039->SetMinimum(0);
-   Graph_Graph_from_lepton_pt3039->SetMaximum(37258.7);
-   Graph_Graph_from_lepton_pt3039->SetDirectory(0);
-   Graph_Graph_from_lepton_pt3039->SetStats(0);
+   TH1F *Graph_Graph_from_lepton_pt3013 = new TH1F("Graph_Graph_from_lepton_pt3013","Data",100,0,385);
+   Graph_Graph_from_lepton_pt3013->SetMinimum(0);
+   Graph_Graph_from_lepton_pt3013->SetMaximum(37258.7);
+   Graph_Graph_from_lepton_pt3013->SetDirectory(0);
+   Graph_Graph_from_lepton_pt3013->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_lepton_pt3039->SetLineColor(ci);
-   Graph_Graph_from_lepton_pt3039->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_lepton_pt3039->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_lepton_pt3039->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_lepton_pt3039->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_lepton_pt3039->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_lepton_pt3039->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_lepton_pt3039->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_lepton_pt3039->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_lepton_pt3039->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_lepton_pt3039->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_lepton_pt3039->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_lepton_pt3039->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_lepton_pt3039);
+   Graph_Graph_from_lepton_pt3013->SetLineColor(ci);
+   Graph_Graph_from_lepton_pt3013->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_lepton_pt3013->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_lepton_pt3013->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_lepton_pt3013->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_lepton_pt3013->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_lepton_pt3013->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_lepton_pt3013->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_lepton_pt3013->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_lepton_pt3013->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_lepton_pt3013->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_lepton_pt3013->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_lepton_pt3013->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_lepton_pt3013);
    
    grae->Draw("p");
    
@@ -973,37 +973,37 @@ tex->SetNDC();
    p2->SetFrameBorderMode(0);
    p2->SetFrameBorderMode(0);
    
-   TH1F *ratioframe__140 = new TH1F("ratioframe__140","t#bar{t}",50,0,350);
-   ratioframe__140->SetMinimum(0.46);
-   ratioframe__140->SetMaximum(1.54);
-   ratioframe__140->SetEntries(731890);
+   TH1F *ratioframe__49 = new TH1F("ratioframe__49","t#bar{t}",50,0,350);
+   ratioframe__49->SetMinimum(0.46);
+   ratioframe__49->SetMaximum(1.54);
+   ratioframe__49->SetEntries(731890);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__140->SetFillColor(ci);
+   ratioframe__49->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__140->SetMarkerColor(ci);
-   ratioframe__140->GetXaxis()->SetTitle("pt [GeV]");
-   ratioframe__140->GetXaxis()->SetLabelFont(42);
-   ratioframe__140->GetXaxis()->SetLabelSize(0);
-   ratioframe__140->GetXaxis()->SetTitleSize(0);
-   ratioframe__140->GetXaxis()->SetTitleOffset(0);
-   ratioframe__140->GetXaxis()->SetTitleFont(42);
-   ratioframe__140->GetYaxis()->SetTitle("Data/MC");
-   ratioframe__140->GetYaxis()->SetNoExponent();
-   ratioframe__140->GetYaxis()->SetNdivisions(5);
-   ratioframe__140->GetYaxis()->SetLabelFont(42);
-   ratioframe__140->GetYaxis()->SetLabelSize(0.18);
-   ratioframe__140->GetYaxis()->SetTitleSize(0.2);
-   ratioframe__140->GetYaxis()->SetTitleOffset(0.2);
-   ratioframe__140->GetYaxis()->SetTitleFont(42);
-   ratioframe__140->GetZaxis()->SetLabelFont(42);
-   ratioframe__140->GetZaxis()->SetLabelSize(0.035);
-   ratioframe__140->GetZaxis()->SetTitleSize(0.035);
-   ratioframe__140->GetZaxis()->SetTitleFont(42);
-   ratioframe__140->Draw("");
+   ratioframe__49->SetMarkerColor(ci);
+   ratioframe__49->GetXaxis()->SetTitle("pt [GeV]");
+   ratioframe__49->GetXaxis()->SetLabelFont(42);
+   ratioframe__49->GetXaxis()->SetLabelSize(0);
+   ratioframe__49->GetXaxis()->SetTitleSize(0);
+   ratioframe__49->GetXaxis()->SetTitleOffset(0);
+   ratioframe__49->GetXaxis()->SetTitleFont(42);
+   ratioframe__49->GetYaxis()->SetTitle("Data/MC");
+   ratioframe__49->GetYaxis()->SetNoExponent();
+   ratioframe__49->GetYaxis()->SetNdivisions(5);
+   ratioframe__49->GetYaxis()->SetLabelFont(42);
+   ratioframe__49->GetYaxis()->SetLabelSize(0.18);
+   ratioframe__49->GetYaxis()->SetTitleSize(0.2);
+   ratioframe__49->GetYaxis()->SetTitleOffset(0.2);
+   ratioframe__49->GetYaxis()->SetTitleFont(42);
+   ratioframe__49->GetZaxis()->SetLabelFont(42);
+   ratioframe__49->GetZaxis()->SetLabelSize(0.035);
+   ratioframe__49->GetZaxis()->SetTitleSize(0.035);
+   ratioframe__49->GetZaxis()->SetTitleFont(42);
+   ratioframe__49->Draw("");
    
-   Double_t Graph_from_ratio_fx3040[50] = {
+   Double_t Graph_from_ratio_fx3014[50] = {
    3.5,
    10.5,
    17.5,
@@ -1054,7 +1054,7 @@ tex->SetNDC();
    332.5,
    339.5,
    346.5};
-   Double_t Graph_from_ratio_fy3040[50] = {
+   Double_t Graph_from_ratio_fy3014[50] = {
    0,
    0,
    0.897332,
@@ -1105,7 +1105,7 @@ tex->SetNDC();
    0.6172177,
    0.593628,
    0.6525933};
-   Double_t Graph_from_ratio_felx3040[50] = {
+   Double_t Graph_from_ratio_felx3014[50] = {
    3.5,
    3.5,
    3.5,
@@ -1156,7 +1156,7 @@ tex->SetNDC();
    3.5,
    3.5,
    3.5};
-   Double_t Graph_from_ratio_fely3040[50] = {
+   Double_t Graph_from_ratio_fely3014[50] = {
    0,
    0,
    0.0277762,
@@ -1207,7 +1207,7 @@ tex->SetNDC();
    0.1674278,
    0.15538,
    0.1919754};
-   Double_t Graph_from_ratio_fehx3040[50] = {
+   Double_t Graph_from_ratio_fehx3014[50] = {
    3.5,
    3.5,
    3.5,
@@ -1258,7 +1258,7 @@ tex->SetNDC();
    3.5,
    3.5,
    3.5};
-   Double_t Graph_from_ratio_fehy3040[50] = {
+   Double_t Graph_from_ratio_fehy3014[50] = {
    0,
    0,
    0.0277762,
@@ -1309,7 +1309,7 @@ tex->SetNDC();
    0.1674278,
    0.15538,
    0.1919754};
-   grae = new TGraphAsymmErrors(50,Graph_from_ratio_fx3040,Graph_from_ratio_fy3040,Graph_from_ratio_felx3040,Graph_from_ratio_fehx3040,Graph_from_ratio_fely3040,Graph_from_ratio_fehy3040);
+   grae = new TGraphAsymmErrors(50,Graph_from_ratio_fx3014,Graph_from_ratio_fy3014,Graph_from_ratio_felx3014,Graph_from_ratio_fehx3014,Graph_from_ratio_fely3014,Graph_from_ratio_fehy3014);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -1317,27 +1317,27 @@ tex->SetNDC();
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_ratio3040 = new TH1F("Graph_Graph_from_ratio3040","Data",100,0,385);
-   Graph_Graph_from_ratio3040->SetMinimum(0);
-   Graph_Graph_from_ratio3040->SetMaximum(1.100156);
-   Graph_Graph_from_ratio3040->SetDirectory(0);
-   Graph_Graph_from_ratio3040->SetStats(0);
+   TH1F *Graph_Graph_from_ratio3014 = new TH1F("Graph_Graph_from_ratio3014","Data",100,0,385);
+   Graph_Graph_from_ratio3014->SetMinimum(0);
+   Graph_Graph_from_ratio3014->SetMaximum(1.100156);
+   Graph_Graph_from_ratio3014->SetDirectory(0);
+   Graph_Graph_from_ratio3014->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_ratio3040->SetLineColor(ci);
-   Graph_Graph_from_ratio3040->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3040->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3040->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3040->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3040->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3040->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3040->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3040->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3040->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3040->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3040->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3040->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_ratio3040);
+   Graph_Graph_from_ratio3014->SetLineColor(ci);
+   Graph_Graph_from_ratio3014->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3014->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3014->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3014->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3014->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3014->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3014->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3014->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3014->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3014->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3014->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3014->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_ratio3014);
    
    grae->Draw("p");
    p2->Modified();

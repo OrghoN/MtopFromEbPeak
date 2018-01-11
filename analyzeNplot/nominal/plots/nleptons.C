@@ -1,7 +1,7 @@
 void nleptons()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 10:19:40 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 10:49:17 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -32,197 +32,197 @@ void nleptons()
    p1->SetFrameBorderMode(0);
    p1->SetFrameBorderMode(0);
    
-   TH1F *frame__29 = new TH1F("frame__29","t#bar{t}",10,0,4);
-   frame__29->SetMinimum(0.1);
-   frame__29->SetMaximum(188080.3);
-   frame__29->SetEntries(365945);
-   frame__29->SetDirectory(0);
+   TH1F *frame__120 = new TH1F("frame__120","t#bar{t}",10,0,4);
+   frame__120->SetMinimum(0.1);
+   frame__120->SetMaximum(188080.3);
+   frame__120->SetEntries(365945);
+   frame__120->SetDirectory(0);
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
    ci = TColor::GetColor("#cc0000");
-   frame__29->SetFillColor(ci);
+   frame__120->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   frame__29->SetMarkerColor(ci);
-   frame__29->GetXaxis()->SetTitle("Number of leptons");
-   frame__29->GetXaxis()->SetLabelFont(42);
-   frame__29->GetXaxis()->SetLabelSize(0.035);
-   frame__29->GetXaxis()->SetTitleSize(0.035);
-   frame__29->GetXaxis()->SetTitleFont(42);
-   frame__29->GetYaxis()->SetTitle(" Events");
-   frame__29->GetYaxis()->SetNoExponent();
-   frame__29->GetYaxis()->SetLabelFont(42);
-   frame__29->GetYaxis()->SetTitleSize(0.045);
-   frame__29->GetYaxis()->SetTitleOffset(1.3);
-   frame__29->GetYaxis()->SetTitleFont(42);
-   frame__29->GetZaxis()->SetLabelFont(42);
-   frame__29->GetZaxis()->SetLabelSize(0.035);
-   frame__29->GetZaxis()->SetTitleSize(0.035);
-   frame__29->GetZaxis()->SetTitleFont(42);
-   frame__29->Draw("");
+   frame__120->SetMarkerColor(ci);
+   frame__120->GetXaxis()->SetTitle("Number of leptons");
+   frame__120->GetXaxis()->SetLabelFont(42);
+   frame__120->GetXaxis()->SetLabelSize(0.035);
+   frame__120->GetXaxis()->SetTitleSize(0.035);
+   frame__120->GetXaxis()->SetTitleFont(42);
+   frame__120->GetYaxis()->SetTitle(" Events");
+   frame__120->GetYaxis()->SetNoExponent();
+   frame__120->GetYaxis()->SetLabelFont(42);
+   frame__120->GetYaxis()->SetTitleSize(0.045);
+   frame__120->GetYaxis()->SetTitleOffset(1.3);
+   frame__120->GetYaxis()->SetTitleFont(42);
+   frame__120->GetZaxis()->SetLabelFont(42);
+   frame__120->GetZaxis()->SetLabelSize(0.035);
+   frame__120->GetZaxis()->SetTitleSize(0.035);
+   frame__120->GetZaxis()->SetTitleFont(42);
+   frame__120->Draw("");
    
    THStack *mc = new THStack();
    mc->SetName("mc");
    mc->SetTitle("mc");
    
-   TH1F *mc_stack_5 = new TH1F("mc_stack_5","mc",10,0,4);
-   mc_stack_5->SetMinimum(0);
-   mc_stack_5->SetMaximum(151911);
-   mc_stack_5->SetDirectory(0);
-   mc_stack_5->SetStats(0);
+   TH1F *mc_stack_18 = new TH1F("mc_stack_18","mc",10,0,4);
+   mc_stack_18->SetMinimum(0);
+   mc_stack_18->SetMaximum(151911);
+   mc_stack_18->SetDirectory(0);
+   mc_stack_18->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   mc_stack_5->SetLineColor(ci);
-   mc_stack_5->GetXaxis()->SetLabelFont(42);
-   mc_stack_5->GetXaxis()->SetLabelSize(0.035);
-   mc_stack_5->GetXaxis()->SetTitleSize(0.035);
-   mc_stack_5->GetXaxis()->SetTitleFont(42);
-   mc_stack_5->GetYaxis()->SetLabelFont(42);
-   mc_stack_5->GetYaxis()->SetLabelSize(0.035);
-   mc_stack_5->GetYaxis()->SetTitleSize(0.035);
-   mc_stack_5->GetYaxis()->SetTitleFont(42);
-   mc_stack_5->GetZaxis()->SetLabelFont(42);
-   mc_stack_5->GetZaxis()->SetLabelSize(0.035);
-   mc_stack_5->GetZaxis()->SetTitleSize(0.035);
-   mc_stack_5->GetZaxis()->SetTitleFont(42);
-   mc->SetHistogram(mc_stack_5);
+   mc_stack_18->SetLineColor(ci);
+   mc_stack_18->GetXaxis()->SetLabelFont(42);
+   mc_stack_18->GetXaxis()->SetLabelSize(0.035);
+   mc_stack_18->GetXaxis()->SetTitleSize(0.035);
+   mc_stack_18->GetXaxis()->SetTitleFont(42);
+   mc_stack_18->GetYaxis()->SetLabelFont(42);
+   mc_stack_18->GetYaxis()->SetLabelSize(0.035);
+   mc_stack_18->GetYaxis()->SetTitleSize(0.035);
+   mc_stack_18->GetYaxis()->SetTitleFont(42);
+   mc_stack_18->GetZaxis()->SetLabelFont(42);
+   mc_stack_18->GetZaxis()->SetLabelSize(0.035);
+   mc_stack_18->GetZaxis()->SetTitleSize(0.035);
+   mc_stack_18->GetZaxis()->SetTitleFont(42);
+   mc->SetHistogram(mc_stack_18);
    
    
-   TH1F *nleptons_t#bar{t}__30 = new TH1F("nleptons_t#bar{t}__30","t#bar{t}",10,0,4);
-   nleptons_t#bar{t}__30->SetBinContent(6,137767.4);
-   nleptons_t#bar{t}__30->SetBinError(6,237.8798);
-   nleptons_t#bar{t}__30->SetEntries(360257);
-   nleptons_t#bar{t}__30->SetDirectory(0);
+   TH1F *nleptons_t#bar{t}__121 = new TH1F("nleptons_t#bar{t}__121","t#bar{t}",10,0,4);
+   nleptons_t#bar{t}__121->SetBinContent(6,137767.4);
+   nleptons_t#bar{t}__121->SetBinError(6,237.8798);
+   nleptons_t#bar{t}__121->SetEntries(360257);
+   nleptons_t#bar{t}__121->SetDirectory(0);
 
    ci = TColor::GetColor("#cc0000");
-   nleptons_t#bar{t}__30->SetFillColor(ci);
+   nleptons_t#bar{t}__121->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   nleptons_t#bar{t}__30->SetMarkerColor(ci);
-   nleptons_t#bar{t}__30->GetXaxis()->SetTitle("Number of leptons");
-   nleptons_t#bar{t}__30->GetXaxis()->SetLabelFont(42);
-   nleptons_t#bar{t}__30->GetXaxis()->SetLabelSize(0.035);
-   nleptons_t#bar{t}__30->GetXaxis()->SetTitleSize(0.035);
-   nleptons_t#bar{t}__30->GetXaxis()->SetTitleFont(42);
-   nleptons_t#bar{t}__30->GetYaxis()->SetTitle(" Events");
-   nleptons_t#bar{t}__30->GetYaxis()->SetLabelFont(42);
-   nleptons_t#bar{t}__30->GetYaxis()->SetLabelSize(0.035);
-   nleptons_t#bar{t}__30->GetYaxis()->SetTitleSize(0.035);
-   nleptons_t#bar{t}__30->GetYaxis()->SetTitleFont(42);
-   nleptons_t#bar{t}__30->GetZaxis()->SetLabelFont(42);
-   nleptons_t#bar{t}__30->GetZaxis()->SetLabelSize(0.035);
-   nleptons_t#bar{t}__30->GetZaxis()->SetTitleSize(0.035);
-   nleptons_t#bar{t}__30->GetZaxis()->SetTitleFont(42);
+   nleptons_t#bar{t}__121->SetMarkerColor(ci);
+   nleptons_t#bar{t}__121->GetXaxis()->SetTitle("Number of leptons");
+   nleptons_t#bar{t}__121->GetXaxis()->SetLabelFont(42);
+   nleptons_t#bar{t}__121->GetXaxis()->SetLabelSize(0.035);
+   nleptons_t#bar{t}__121->GetXaxis()->SetTitleSize(0.035);
+   nleptons_t#bar{t}__121->GetXaxis()->SetTitleFont(42);
+   nleptons_t#bar{t}__121->GetYaxis()->SetTitle(" Events");
+   nleptons_t#bar{t}__121->GetYaxis()->SetLabelFont(42);
+   nleptons_t#bar{t}__121->GetYaxis()->SetLabelSize(0.035);
+   nleptons_t#bar{t}__121->GetYaxis()->SetTitleSize(0.035);
+   nleptons_t#bar{t}__121->GetYaxis()->SetTitleFont(42);
+   nleptons_t#bar{t}__121->GetZaxis()->SetLabelFont(42);
+   nleptons_t#bar{t}__121->GetZaxis()->SetLabelSize(0.035);
+   nleptons_t#bar{t}__121->GetZaxis()->SetTitleSize(0.035);
+   nleptons_t#bar{t}__121->GetZaxis()->SetTitleFont(42);
    mc->Add(nleptons_t#bar{t},"hist");
    
-   TH1F *nleptons_Diboson__31 = new TH1F("nleptons_Diboson__31","Diboson",10,0,4);
-   nleptons_Diboson__31->SetBinContent(6,181.1088);
-   nleptons_Diboson__31->SetBinError(6,8.38248);
-   nleptons_Diboson__31->SetEntries(511);
-   nleptons_Diboson__31->SetDirectory(0);
+   TH1F *nleptons_Diboson__122 = new TH1F("nleptons_Diboson__122","Diboson",10,0,4);
+   nleptons_Diboson__122->SetBinContent(6,181.1088);
+   nleptons_Diboson__122->SetBinError(6,8.38248);
+   nleptons_Diboson__122->SetEntries(511);
+   nleptons_Diboson__122->SetDirectory(0);
 
    ci = TColor::GetColor("#ffff00");
-   nleptons_Diboson__31->SetFillColor(ci);
+   nleptons_Diboson__122->SetFillColor(ci);
 
    ci = TColor::GetColor("#ffff00");
-   nleptons_Diboson__31->SetMarkerColor(ci);
-   nleptons_Diboson__31->GetXaxis()->SetTitle("Number of leptons");
-   nleptons_Diboson__31->GetXaxis()->SetLabelFont(42);
-   nleptons_Diboson__31->GetXaxis()->SetLabelSize(0.035);
-   nleptons_Diboson__31->GetXaxis()->SetTitleSize(0.035);
-   nleptons_Diboson__31->GetXaxis()->SetTitleFont(42);
-   nleptons_Diboson__31->GetYaxis()->SetTitle(" Events");
-   nleptons_Diboson__31->GetYaxis()->SetLabelFont(42);
-   nleptons_Diboson__31->GetYaxis()->SetLabelSize(0.035);
-   nleptons_Diboson__31->GetYaxis()->SetTitleSize(0.035);
-   nleptons_Diboson__31->GetYaxis()->SetTitleFont(42);
-   nleptons_Diboson__31->GetZaxis()->SetLabelFont(42);
-   nleptons_Diboson__31->GetZaxis()->SetLabelSize(0.035);
-   nleptons_Diboson__31->GetZaxis()->SetTitleSize(0.035);
-   nleptons_Diboson__31->GetZaxis()->SetTitleFont(42);
+   nleptons_Diboson__122->SetMarkerColor(ci);
+   nleptons_Diboson__122->GetXaxis()->SetTitle("Number of leptons");
+   nleptons_Diboson__122->GetXaxis()->SetLabelFont(42);
+   nleptons_Diboson__122->GetXaxis()->SetLabelSize(0.035);
+   nleptons_Diboson__122->GetXaxis()->SetTitleSize(0.035);
+   nleptons_Diboson__122->GetXaxis()->SetTitleFont(42);
+   nleptons_Diboson__122->GetYaxis()->SetTitle(" Events");
+   nleptons_Diboson__122->GetYaxis()->SetLabelFont(42);
+   nleptons_Diboson__122->GetYaxis()->SetLabelSize(0.035);
+   nleptons_Diboson__122->GetYaxis()->SetTitleSize(0.035);
+   nleptons_Diboson__122->GetYaxis()->SetTitleFont(42);
+   nleptons_Diboson__122->GetZaxis()->SetLabelFont(42);
+   nleptons_Diboson__122->GetZaxis()->SetLabelSize(0.035);
+   nleptons_Diboson__122->GetZaxis()->SetTitleSize(0.035);
+   nleptons_Diboson__122->GetZaxis()->SetTitleFont(42);
    mc->Add(nleptons_Diboson,"hist");
    
-   TH1F *nleptons_DY__32 = new TH1F("nleptons_DY__32","DY",10,0,4);
-   nleptons_DY__32->SetBinContent(6,331.7063);
-   nleptons_DY__32->SetBinError(6,75.73561);
-   nleptons_DY__32->SetEntries(21);
-   nleptons_DY__32->SetDirectory(0);
+   TH1F *nleptons_DY__123 = new TH1F("nleptons_DY__123","DY",10,0,4);
+   nleptons_DY__123->SetBinContent(6,331.7063);
+   nleptons_DY__123->SetBinError(6,75.73561);
+   nleptons_DY__123->SetEntries(21);
+   nleptons_DY__123->SetDirectory(0);
 
    ci = TColor::GetColor("#33ccff");
-   nleptons_DY__32->SetFillColor(ci);
+   nleptons_DY__123->SetFillColor(ci);
 
    ci = TColor::GetColor("#33ccff");
-   nleptons_DY__32->SetMarkerColor(ci);
-   nleptons_DY__32->GetXaxis()->SetTitle("Number of leptons");
-   nleptons_DY__32->GetXaxis()->SetLabelFont(42);
-   nleptons_DY__32->GetXaxis()->SetLabelSize(0.035);
-   nleptons_DY__32->GetXaxis()->SetTitleSize(0.035);
-   nleptons_DY__32->GetXaxis()->SetTitleFont(42);
-   nleptons_DY__32->GetYaxis()->SetTitle(" Events");
-   nleptons_DY__32->GetYaxis()->SetLabelFont(42);
-   nleptons_DY__32->GetYaxis()->SetLabelSize(0.035);
-   nleptons_DY__32->GetYaxis()->SetTitleSize(0.035);
-   nleptons_DY__32->GetYaxis()->SetTitleFont(42);
-   nleptons_DY__32->GetZaxis()->SetLabelFont(42);
-   nleptons_DY__32->GetZaxis()->SetLabelSize(0.035);
-   nleptons_DY__32->GetZaxis()->SetTitleSize(0.035);
-   nleptons_DY__32->GetZaxis()->SetTitleFont(42);
+   nleptons_DY__123->SetMarkerColor(ci);
+   nleptons_DY__123->GetXaxis()->SetTitle("Number of leptons");
+   nleptons_DY__123->GetXaxis()->SetLabelFont(42);
+   nleptons_DY__123->GetXaxis()->SetLabelSize(0.035);
+   nleptons_DY__123->GetXaxis()->SetTitleSize(0.035);
+   nleptons_DY__123->GetXaxis()->SetTitleFont(42);
+   nleptons_DY__123->GetYaxis()->SetTitle(" Events");
+   nleptons_DY__123->GetYaxis()->SetLabelFont(42);
+   nleptons_DY__123->GetYaxis()->SetLabelSize(0.035);
+   nleptons_DY__123->GetYaxis()->SetTitleSize(0.035);
+   nleptons_DY__123->GetYaxis()->SetTitleFont(42);
+   nleptons_DY__123->GetZaxis()->SetLabelFont(42);
+   nleptons_DY__123->GetZaxis()->SetLabelSize(0.035);
+   nleptons_DY__123->GetZaxis()->SetTitleSize(0.035);
+   nleptons_DY__123->GetZaxis()->SetTitleFont(42);
    mc->Add(nleptons_DY,"hist");
    
-   TH1F *nleptons_W__33 = new TH1F("nleptons_W__33","W",10,0,4);
-   nleptons_W__33->SetDirectory(0);
+   TH1F *nleptons_W__124 = new TH1F("nleptons_W__124","W",10,0,4);
+   nleptons_W__124->SetDirectory(0);
 
    ci = TColor::GetColor("#3366ff");
-   nleptons_W__33->SetFillColor(ci);
+   nleptons_W__124->SetFillColor(ci);
 
    ci = TColor::GetColor("#3366ff");
-   nleptons_W__33->SetMarkerColor(ci);
-   nleptons_W__33->GetXaxis()->SetTitle("Number of leptons");
-   nleptons_W__33->GetXaxis()->SetLabelFont(42);
-   nleptons_W__33->GetXaxis()->SetLabelSize(0.035);
-   nleptons_W__33->GetXaxis()->SetTitleSize(0.035);
-   nleptons_W__33->GetXaxis()->SetTitleFont(42);
-   nleptons_W__33->GetYaxis()->SetTitle(" Events");
-   nleptons_W__33->GetYaxis()->SetLabelFont(42);
-   nleptons_W__33->GetYaxis()->SetLabelSize(0.035);
-   nleptons_W__33->GetYaxis()->SetTitleSize(0.035);
-   nleptons_W__33->GetYaxis()->SetTitleFont(42);
-   nleptons_W__33->GetZaxis()->SetLabelFont(42);
-   nleptons_W__33->GetZaxis()->SetLabelSize(0.035);
-   nleptons_W__33->GetZaxis()->SetTitleSize(0.035);
-   nleptons_W__33->GetZaxis()->SetTitleFont(42);
+   nleptons_W__124->SetMarkerColor(ci);
+   nleptons_W__124->GetXaxis()->SetTitle("Number of leptons");
+   nleptons_W__124->GetXaxis()->SetLabelFont(42);
+   nleptons_W__124->GetXaxis()->SetLabelSize(0.035);
+   nleptons_W__124->GetXaxis()->SetTitleSize(0.035);
+   nleptons_W__124->GetXaxis()->SetTitleFont(42);
+   nleptons_W__124->GetYaxis()->SetTitle(" Events");
+   nleptons_W__124->GetYaxis()->SetLabelFont(42);
+   nleptons_W__124->GetYaxis()->SetLabelSize(0.035);
+   nleptons_W__124->GetYaxis()->SetTitleSize(0.035);
+   nleptons_W__124->GetYaxis()->SetTitleFont(42);
+   nleptons_W__124->GetZaxis()->SetLabelFont(42);
+   nleptons_W__124->GetZaxis()->SetLabelSize(0.035);
+   nleptons_W__124->GetZaxis()->SetTitleSize(0.035);
+   nleptons_W__124->GetZaxis()->SetTitleFont(42);
    mc->Add(nleptons_W,"hist");
    
-   TH1F *nleptons_SinglesPtop__34 = new TH1F("nleptons_SinglesPtop__34","Single top",10,0,4);
-   nleptons_SinglesPtop__34->SetBinContent(6,6396.946);
-   nleptons_SinglesPtop__34->SetBinError(6,92.50653);
-   nleptons_SinglesPtop__34->SetEntries(5156);
-   nleptons_SinglesPtop__34->SetDirectory(0);
+   TH1F *nleptons_SinglesPtop__125 = new TH1F("nleptons_SinglesPtop__125","Single top",10,0,4);
+   nleptons_SinglesPtop__125->SetBinContent(6,6396.946);
+   nleptons_SinglesPtop__125->SetBinError(6,92.50653);
+   nleptons_SinglesPtop__125->SetEntries(5156);
+   nleptons_SinglesPtop__125->SetDirectory(0);
 
    ci = TColor::GetColor("#990099");
-   nleptons_SinglesPtop__34->SetFillColor(ci);
+   nleptons_SinglesPtop__125->SetFillColor(ci);
 
    ci = TColor::GetColor("#990099");
-   nleptons_SinglesPtop__34->SetMarkerColor(ci);
-   nleptons_SinglesPtop__34->GetXaxis()->SetTitle("Number of leptons");
-   nleptons_SinglesPtop__34->GetXaxis()->SetLabelFont(42);
-   nleptons_SinglesPtop__34->GetXaxis()->SetLabelSize(0.035);
-   nleptons_SinglesPtop__34->GetXaxis()->SetTitleSize(0.035);
-   nleptons_SinglesPtop__34->GetXaxis()->SetTitleFont(42);
-   nleptons_SinglesPtop__34->GetYaxis()->SetTitle(" Events");
-   nleptons_SinglesPtop__34->GetYaxis()->SetLabelFont(42);
-   nleptons_SinglesPtop__34->GetYaxis()->SetLabelSize(0.035);
-   nleptons_SinglesPtop__34->GetYaxis()->SetTitleSize(0.035);
-   nleptons_SinglesPtop__34->GetYaxis()->SetTitleFont(42);
-   nleptons_SinglesPtop__34->GetZaxis()->SetLabelFont(42);
-   nleptons_SinglesPtop__34->GetZaxis()->SetLabelSize(0.035);
-   nleptons_SinglesPtop__34->GetZaxis()->SetTitleSize(0.035);
-   nleptons_SinglesPtop__34->GetZaxis()->SetTitleFont(42);
+   nleptons_SinglesPtop__125->SetMarkerColor(ci);
+   nleptons_SinglesPtop__125->GetXaxis()->SetTitle("Number of leptons");
+   nleptons_SinglesPtop__125->GetXaxis()->SetLabelFont(42);
+   nleptons_SinglesPtop__125->GetXaxis()->SetLabelSize(0.035);
+   nleptons_SinglesPtop__125->GetXaxis()->SetTitleSize(0.035);
+   nleptons_SinglesPtop__125->GetXaxis()->SetTitleFont(42);
+   nleptons_SinglesPtop__125->GetYaxis()->SetTitle(" Events");
+   nleptons_SinglesPtop__125->GetYaxis()->SetLabelFont(42);
+   nleptons_SinglesPtop__125->GetYaxis()->SetLabelSize(0.035);
+   nleptons_SinglesPtop__125->GetYaxis()->SetTitleSize(0.035);
+   nleptons_SinglesPtop__125->GetYaxis()->SetTitleFont(42);
+   nleptons_SinglesPtop__125->GetZaxis()->SetLabelFont(42);
+   nleptons_SinglesPtop__125->GetZaxis()->SetLabelSize(0.035);
+   nleptons_SinglesPtop__125->GetZaxis()->SetTitleSize(0.035);
+   nleptons_SinglesPtop__125->GetZaxis()->SetTitleFont(42);
    mc->Add(nleptons_Single top,"hist");
    mc->Draw("hist same");
    
-   Double_t Graph_from_nleptons_fx3009[11] = {
+   Double_t Graph_from_nleptons_fx3035[11] = {
    0.2,
    0.6,
    1,
@@ -234,7 +234,7 @@ void nleptons()
    3.4,
    3.8,
    0};
-   Double_t Graph_from_nleptons_fy3009[11] = {
+   Double_t Graph_from_nleptons_fy3035[11] = {
    0,
    0,
    0,
@@ -246,7 +246,7 @@ void nleptons()
    0,
    0,
    0};
-   Double_t Graph_from_nleptons_felx3009[11] = {
+   Double_t Graph_from_nleptons_felx3035[11] = {
    0.2,
    0.2,
    0.2,
@@ -258,7 +258,7 @@ void nleptons()
    0.2,
    0.2,
    0};
-   Double_t Graph_from_nleptons_fely3009[11] = {
+   Double_t Graph_from_nleptons_fely3035[11] = {
    0,
    0,
    0,
@@ -270,7 +270,7 @@ void nleptons()
    0,
    0,
    0};
-   Double_t Graph_from_nleptons_fehx3009[11] = {
+   Double_t Graph_from_nleptons_fehx3035[11] = {
    0.2,
    0.2,
    0.2,
@@ -282,7 +282,7 @@ void nleptons()
    0.2,
    0.2,
    0};
-   Double_t Graph_from_nleptons_fehy3009[11] = {
+   Double_t Graph_from_nleptons_fehy3035[11] = {
    1.841055,
    1.841055,
    1.841055,
@@ -294,7 +294,7 @@ void nleptons()
    1.841055,
    1.841055,
    1.841055};
-   TGraphAsymmErrors *grae = new TGraphAsymmErrors(11,Graph_from_nleptons_fx3009,Graph_from_nleptons_fy3009,Graph_from_nleptons_felx3009,Graph_from_nleptons_fehx3009,Graph_from_nleptons_fely3009,Graph_from_nleptons_fehy3009);
+   TGraphAsymmErrors *grae = new TGraphAsymmErrors(11,Graph_from_nleptons_fx3035,Graph_from_nleptons_fy3035,Graph_from_nleptons_felx3035,Graph_from_nleptons_fehx3035,Graph_from_nleptons_fely3035,Graph_from_nleptons_fehy3035);
    grae->SetName("Graph_from_nleptons");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -302,27 +302,27 @@ void nleptons()
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_nleptons3009 = new TH1F("Graph_Graph_from_nleptons3009","Data",100,0,4.4);
-   Graph_Graph_from_nleptons3009->SetMinimum(0);
-   Graph_Graph_from_nleptons3009->SetMaximum(144630.3);
-   Graph_Graph_from_nleptons3009->SetDirectory(0);
-   Graph_Graph_from_nleptons3009->SetStats(0);
+   TH1F *Graph_Graph_from_nleptons3035 = new TH1F("Graph_Graph_from_nleptons3035","Data",100,0,4.4);
+   Graph_Graph_from_nleptons3035->SetMinimum(0);
+   Graph_Graph_from_nleptons3035->SetMaximum(144630.3);
+   Graph_Graph_from_nleptons3035->SetDirectory(0);
+   Graph_Graph_from_nleptons3035->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_nleptons3009->SetLineColor(ci);
-   Graph_Graph_from_nleptons3009->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_nleptons3009->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_nleptons3009->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_nleptons3009->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_nleptons3009->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_nleptons3009->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_nleptons3009->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_nleptons3009->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_nleptons3009->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_nleptons3009->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_nleptons3009->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_nleptons3009->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_nleptons3009);
+   Graph_Graph_from_nleptons3035->SetLineColor(ci);
+   Graph_Graph_from_nleptons3035->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_nleptons3035->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_nleptons3035->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_nleptons3035->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_nleptons3035->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_nleptons3035->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_nleptons3035->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_nleptons3035->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_nleptons3035->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_nleptons3035->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_nleptons3035->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_nleptons3035->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_nleptons3035);
    
    grae->Draw("p");
    
@@ -431,37 +431,37 @@ tex->SetNDC();
    p2->SetFrameBorderMode(0);
    p2->SetFrameBorderMode(0);
    
-   TH1F *ratioframe__35 = new TH1F("ratioframe__35","t#bar{t}",10,0,4);
-   ratioframe__35->SetMinimum(0.46);
-   ratioframe__35->SetMaximum(1.54);
-   ratioframe__35->SetEntries(365945);
+   TH1F *ratioframe__126 = new TH1F("ratioframe__126","t#bar{t}",10,0,4);
+   ratioframe__126->SetMinimum(0.46);
+   ratioframe__126->SetMaximum(1.54);
+   ratioframe__126->SetEntries(365945);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__35->SetFillColor(ci);
+   ratioframe__126->SetFillColor(ci);
 
    ci = TColor::GetColor("#cc0000");
-   ratioframe__35->SetMarkerColor(ci);
-   ratioframe__35->GetXaxis()->SetTitle("Number of leptons");
-   ratioframe__35->GetXaxis()->SetLabelFont(42);
-   ratioframe__35->GetXaxis()->SetLabelSize(0);
-   ratioframe__35->GetXaxis()->SetTitleSize(0);
-   ratioframe__35->GetXaxis()->SetTitleOffset(0);
-   ratioframe__35->GetXaxis()->SetTitleFont(42);
-   ratioframe__35->GetYaxis()->SetTitle("Data/MC");
-   ratioframe__35->GetYaxis()->SetNoExponent();
-   ratioframe__35->GetYaxis()->SetNdivisions(5);
-   ratioframe__35->GetYaxis()->SetLabelFont(42);
-   ratioframe__35->GetYaxis()->SetLabelSize(0.18);
-   ratioframe__35->GetYaxis()->SetTitleSize(0.2);
-   ratioframe__35->GetYaxis()->SetTitleOffset(0.2);
-   ratioframe__35->GetYaxis()->SetTitleFont(42);
-   ratioframe__35->GetZaxis()->SetLabelFont(42);
-   ratioframe__35->GetZaxis()->SetLabelSize(0.035);
-   ratioframe__35->GetZaxis()->SetTitleSize(0.035);
-   ratioframe__35->GetZaxis()->SetTitleFont(42);
-   ratioframe__35->Draw("");
+   ratioframe__126->SetMarkerColor(ci);
+   ratioframe__126->GetXaxis()->SetTitle("Number of leptons");
+   ratioframe__126->GetXaxis()->SetLabelFont(42);
+   ratioframe__126->GetXaxis()->SetLabelSize(0);
+   ratioframe__126->GetXaxis()->SetTitleSize(0);
+   ratioframe__126->GetXaxis()->SetTitleOffset(0);
+   ratioframe__126->GetXaxis()->SetTitleFont(42);
+   ratioframe__126->GetYaxis()->SetTitle("Data/MC");
+   ratioframe__126->GetYaxis()->SetNoExponent();
+   ratioframe__126->GetYaxis()->SetNdivisions(5);
+   ratioframe__126->GetYaxis()->SetLabelFont(42);
+   ratioframe__126->GetYaxis()->SetLabelSize(0.18);
+   ratioframe__126->GetYaxis()->SetTitleSize(0.2);
+   ratioframe__126->GetYaxis()->SetTitleOffset(0.2);
+   ratioframe__126->GetYaxis()->SetTitleFont(42);
+   ratioframe__126->GetZaxis()->SetLabelFont(42);
+   ratioframe__126->GetZaxis()->SetLabelSize(0.035);
+   ratioframe__126->GetZaxis()->SetTitleSize(0.035);
+   ratioframe__126->GetZaxis()->SetTitleFont(42);
+   ratioframe__126->Draw("");
    
-   Double_t Graph_from_ratio_fx3010[10] = {
+   Double_t Graph_from_ratio_fx3036[10] = {
    0.2,
    0.6,
    1,
@@ -472,7 +472,7 @@ tex->SetNDC();
    3,
    3.4,
    3.8};
-   Double_t Graph_from_ratio_fy3010[10] = {
+   Double_t Graph_from_ratio_fy3036[10] = {
    0,
    0,
    0,
@@ -483,7 +483,7 @@ tex->SetNDC();
    0,
    0,
    0};
-   Double_t Graph_from_ratio_felx3010[10] = {
+   Double_t Graph_from_ratio_felx3036[10] = {
    0.2,
    0.2,
    0.2,
@@ -494,7 +494,7 @@ tex->SetNDC();
    0.2,
    0.2,
    0.2};
-   Double_t Graph_from_ratio_fely3010[10] = {
+   Double_t Graph_from_ratio_fely3036[10] = {
    0,
    0,
    0,
@@ -505,7 +505,7 @@ tex->SetNDC();
    0,
    0,
    0};
-   Double_t Graph_from_ratio_fehx3010[10] = {
+   Double_t Graph_from_ratio_fehx3036[10] = {
    0.2,
    0.2,
    0.2,
@@ -516,7 +516,7 @@ tex->SetNDC();
    0.2,
    0.2,
    0.2};
-   Double_t Graph_from_ratio_fehy3010[10] = {
+   Double_t Graph_from_ratio_fehy3036[10] = {
    0,
    0,
    0,
@@ -527,7 +527,7 @@ tex->SetNDC();
    0,
    0,
    0};
-   grae = new TGraphAsymmErrors(10,Graph_from_ratio_fx3010,Graph_from_ratio_fy3010,Graph_from_ratio_felx3010,Graph_from_ratio_fehx3010,Graph_from_ratio_fely3010,Graph_from_ratio_fehy3010);
+   grae = new TGraphAsymmErrors(10,Graph_from_ratio_fx3036,Graph_from_ratio_fy3036,Graph_from_ratio_felx3036,Graph_from_ratio_fehx3036,Graph_from_ratio_fely3036,Graph_from_ratio_fehy3036);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
    grae->SetFillStyle(0);
@@ -535,27 +535,27 @@ tex->SetNDC();
    grae->SetMarkerStyle(20);
    grae->SetMarkerSize(1.4);
    
-   TH1F *Graph_Graph_from_ratio3010 = new TH1F("Graph_Graph_from_ratio3010","Data",100,0,4.4);
-   Graph_Graph_from_ratio3010->SetMinimum(0);
-   Graph_Graph_from_ratio3010->SetMaximum(1.000232);
-   Graph_Graph_from_ratio3010->SetDirectory(0);
-   Graph_Graph_from_ratio3010->SetStats(0);
+   TH1F *Graph_Graph_from_ratio3036 = new TH1F("Graph_Graph_from_ratio3036","Data",100,0,4.4);
+   Graph_Graph_from_ratio3036->SetMinimum(0);
+   Graph_Graph_from_ratio3036->SetMaximum(1.000232);
+   Graph_Graph_from_ratio3036->SetDirectory(0);
+   Graph_Graph_from_ratio3036->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph_from_ratio3010->SetLineColor(ci);
-   Graph_Graph_from_ratio3010->GetXaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3010->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3010->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3010->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3010->GetYaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3010->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3010->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3010->GetYaxis()->SetTitleFont(42);
-   Graph_Graph_from_ratio3010->GetZaxis()->SetLabelFont(42);
-   Graph_Graph_from_ratio3010->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph_from_ratio3010->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph_from_ratio3010->GetZaxis()->SetTitleFont(42);
-   grae->SetHistogram(Graph_Graph_from_ratio3010);
+   Graph_Graph_from_ratio3036->SetLineColor(ci);
+   Graph_Graph_from_ratio3036->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3036->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3036->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3036->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3036->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3036->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3036->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3036->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_from_ratio3036->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_from_ratio3036->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_from_ratio3036->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_from_ratio3036->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_from_ratio3036);
    
    grae->Draw("p");
    p2->Modified();
