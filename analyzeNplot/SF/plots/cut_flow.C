@@ -1,7 +1,7 @@
 void cut_flow()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 16:36:56 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 16:38:01 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -35,7 +35,7 @@ void cut_flow()
    TH1F *frame__148 = new TH1F("frame__148","t#bar{t}",4,0.5,4.5);
    frame__148->SetMinimum(0.1);
    frame__148->SetMaximum(306886.3);
-   frame__148->SetEntries(1781055);
+   frame__148->SetEntries(1762726);
    frame__148->SetDirectory(0);
 
    Int_t ci;      // for color index setting
@@ -92,13 +92,13 @@ void cut_flow()
    TH1F *cut_flow_t#bar{t}__149 = new TH1F("cut_flow_t#bar{t}__149","t#bar{t}",4,0.5,4.5);
    cut_flow_t#bar{t}__149->SetBinContent(1,208869.5);
    cut_flow_t#bar{t}__149->SetBinContent(2,173497.6);
-   cut_flow_t#bar{t}__149->SetBinContent(3,139291.8);
-   cut_flow_t#bar{t}__149->SetBinContent(4,139199);
+   cut_flow_t#bar{t}__149->SetBinContent(3,135849.9);
+   cut_flow_t#bar{t}__149->SetBinContent(4,135760.7);
    cut_flow_t#bar{t}__149->SetBinError(1,292.9197);
    cut_flow_t#bar{t}__149->SetBinError(2,266.9722);
-   cut_flow_t#bar{t}__149->SetBinError(3,239.1931);
-   cut_flow_t#bar{t}__149->SetBinError(4,239.1142);
-   cut_flow_t#bar{t}__149->SetEntries(1728220);
+   cut_flow_t#bar{t}__149->SetBinError(3,236.2217);
+   cut_flow_t#bar{t}__149->SetBinError(4,236.1449);
+   cut_flow_t#bar{t}__149->SetEntries(1710249);
    cut_flow_t#bar{t}__149->SetDirectory(0);
 
    ci = TColor::GetColor("#cc0000");
@@ -125,13 +125,13 @@ void cut_flow()
    TH1F *cut_flow_Diboson__150 = new TH1F("cut_flow_Diboson__150","Diboson",4,0.5,4.5);
    cut_flow_Diboson__150->SetBinContent(1,5347.222);
    cut_flow_Diboson__150->SetBinContent(2,2579.448);
-   cut_flow_Diboson__150->SetBinContent(3,181.1088);
-   cut_flow_Diboson__150->SetBinContent(4,181.1088);
+   cut_flow_Diboson__150->SetBinContent(3,176.0617);
+   cut_flow_Diboson__150->SetBinContent(4,176.0617);
    cut_flow_Diboson__150->SetBinError(1,45.58919);
    cut_flow_Diboson__150->SetBinError(2,31.66543);
-   cut_flow_Diboson__150->SetBinError(3,8.38248);
-   cut_flow_Diboson__150->SetBinError(4,8.38248);
-   cut_flow_Diboson__150->SetEntries(23289);
+   cut_flow_Diboson__150->SetBinError(3,8.258263);
+   cut_flow_Diboson__150->SetBinError(4,8.258263);
+   cut_flow_Diboson__150->SetEntries(23263);
    cut_flow_Diboson__150->SetDirectory(0);
 
    ci = TColor::GetColor("#ffff00");
@@ -220,13 +220,13 @@ void cut_flow()
    TH1F *cut_flow_SinglesPtop__153 = new TH1F("cut_flow_SinglesPtop__153","Single top",4,0.5,4.5);
    cut_flow_SinglesPtop__153->SetBinContent(1,13788.83);
    cut_flow_SinglesPtop__153->SetBinContent(2,9081.609);
-   cut_flow_SinglesPtop__153->SetBinContent(3,6438.272);
-   cut_flow_SinglesPtop__153->SetBinContent(4,6432.842);
+   cut_flow_SinglesPtop__153->SetBinContent(3,6231.372);
+   cut_flow_SinglesPtop__153->SetBinContent(4,6225.942);
    cut_flow_SinglesPtop__153->SetBinError(1,135.785);
    cut_flow_SinglesPtop__153->SetBinError(2,110.2191);
-   cut_flow_SinglesPtop__153->SetBinError(3,92.80571);
-   cut_flow_SinglesPtop__153->SetBinError(4,92.76592);
-   cut_flow_SinglesPtop__153->SetEntries(28827);
+   cut_flow_SinglesPtop__153->SetBinError(3,91.28846);
+   cut_flow_SinglesPtop__153->SetBinError(4,91.24801);
+   cut_flow_SinglesPtop__153->SetEntries(28495);
    cut_flow_SinglesPtop__153->SetDirectory(0);
 
    ci = TColor::GetColor("#990099");
@@ -260,8 +260,8 @@ void cut_flow()
    Double_t Graph_from_cut_flow_fy3043[5] = {
    222631,
    176629,
-   132635,
-   132580,
+   132659,
+   132604,
    0};
    Double_t Graph_from_cut_flow_felx3043[5] = {
    0.5,
@@ -272,8 +272,8 @@ void cut_flow()
    Double_t Graph_from_cut_flow_fely3043[5] = {
    471.8379,
    420.2725,
-   364.1909,
-   364.1154,
+   364.2238,
+   364.1483,
    0};
    Double_t Graph_from_cut_flow_fehx3043[5] = {
    0.5,
@@ -284,8 +284,8 @@ void cut_flow()
    Double_t Graph_from_cut_flow_fehy3043[5] = {
    471.8379,
    420.2725,
-   364.1909,
-   364.1154,
+   364.2238,
+   364.1483,
    1.841055};
    TGraphAsymmErrors *grae = new TGraphAsymmErrors(5,Graph_from_cut_flow_fx3043,Graph_from_cut_flow_fy3043,Graph_from_cut_flow_felx3043,Graph_from_cut_flow_fehx3043,Graph_from_cut_flow_fely3043,Graph_from_cut_flow_fehy3043);
    grae->SetName("Graph_from_cut_flow");
@@ -427,7 +427,7 @@ tex->SetNDC();
    TH1F *ratioframe__154 = new TH1F("ratioframe__154","t#bar{t}",4,0.5,4.5);
    ratioframe__154->SetMinimum(0.46);
    ratioframe__154->SetMaximum(1.54);
-   ratioframe__154->SetEntries(1781055);
+   ratioframe__154->SetEntries(1762726);
 
    ci = TColor::GetColor("#cc0000");
    ratioframe__154->SetFillColor(ci);
@@ -462,8 +462,8 @@ tex->SetNDC();
    Double_t Graph_from_ratio_fy3044[4] = {
    0.9430863,
    0.9355787,
-   0.9069499,
-   0.9071835};
+   0.9303589,
+   0.9305912};
    Double_t Graph_from_ratio_felx3044[4] = {
    0.5,
    0.5,
@@ -472,8 +472,8 @@ tex->SetNDC();
    Double_t Graph_from_ratio_fely3044[4] = {
    0.002987491,
    0.00309559,
-   0.002992774,
-   0.002994304};
+   0.003082564,
+   0.003084114};
    Double_t Graph_from_ratio_fehx3044[4] = {
    0.5,
    0.5,
@@ -482,8 +482,8 @@ tex->SetNDC();
    Double_t Graph_from_ratio_fehy3044[4] = {
    0.002987491,
    0.00309559,
-   0.002992774,
-   0.002994304};
+   0.003082564,
+   0.003084114};
    grae = new TGraphAsymmErrors(4,Graph_from_ratio_fx3044,Graph_from_ratio_fy3044,Graph_from_ratio_felx3044,Graph_from_ratio_fehx3044,Graph_from_ratio_fely3044,Graph_from_ratio_fehy3044);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
@@ -493,8 +493,8 @@ tex->SetNDC();
    grae->SetMarkerSize(1.4);
    
    TH1F *Graph_Graph_from_ratio3044 = new TH1F("Graph_Graph_from_ratio3044","Data",100,0.1,4.9);
-   Graph_Graph_from_ratio3044->SetMinimum(0.8997454);
-   Graph_Graph_from_ratio3044->SetMaximum(0.9502854);
+   Graph_Graph_from_ratio3044->SetMinimum(0.9253966);
+   Graph_Graph_from_ratio3044->SetMaximum(0.9479535);
    Graph_Graph_from_ratio3044->SetDirectory(0);
    Graph_Graph_from_ratio3044->SetStats(0);
 

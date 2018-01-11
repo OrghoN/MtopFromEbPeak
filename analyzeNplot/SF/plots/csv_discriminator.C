@@ -1,7 +1,7 @@
 void csv_discriminator()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 16:36:55 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 16:38:01 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -20,7 +20,7 @@ void csv_discriminator()
    TPad *p1 = new TPad("p1", "p1",0,0,1,0.85);
    p1->Draw();
    p1->cd();
-   p1->Range(-0.1445783,-36293.93,1.060241,266156.3);
+   p1->Range(-0.1445783,-35243.26,1.060241,258451.4);
    p1->SetFillColor(0);
    p1->SetBorderMode(0);
    p1->SetBorderSize(2);
@@ -35,8 +35,8 @@ void csv_discriminator()
    
    TH1F *frame__113 = new TH1F("frame__113","t#bar{t}",4, xAxis1);
    frame__113->SetMinimum(0.1);
-   frame__113->SetMaximum(263131.8);
-   frame__113->SetEntries(1211295);
+   frame__113->SetMaximum(255514.5);
+   frame__113->SetEntries(1181249);
    frame__113->SetDirectory(0);
 
    Int_t ci;      // for color index setting
@@ -70,7 +70,7 @@ void csv_discriminator()
    
    TH1F *mc_stack_17 = new TH1F("mc_stack_17","mc",4, xAxis2);
    mc_stack_17->SetMinimum(0);
-   mc_stack_17->SetMaximum(212529.6);
+   mc_stack_17->SetMaximum(206377.1);
    mc_stack_17->SetDirectory(0);
    mc_stack_17->SetStats(0);
 
@@ -93,19 +93,19 @@ void csv_discriminator()
    Double_t xAxis3[5] = {0, 0.5426, 0.8484, 0.9535, 1}; 
    
    TH1F *csv_discriminator_t#bar{t}__114 = new TH1F("csv_discriminator_t#bar{t}__114","t#bar{t}",4, xAxis3);
-   csv_discriminator_t#bar{t}__114->SetBinContent(0,6428.298);
-   csv_discriminator_t#bar{t}__114->SetBinContent(1,193216.8);
-   csv_discriminator_t#bar{t}__114->SetBinContent(2,55505.46);
-   csv_discriminator_t#bar{t}__114->SetBinContent(3,69356.94);
-   csv_discriminator_t#bar{t}__114->SetBinContent(4,132064.7);
+   csv_discriminator_t#bar{t}__114->SetBinContent(0,6259.624);
+   csv_discriminator_t#bar{t}__114->SetBinContent(1,187657.1);
+   csv_discriminator_t#bar{t}__114->SetBinContent(2,53698.59);
+   csv_discriminator_t#bar{t}__114->SetBinContent(3,68039.84);
+   csv_discriminator_t#bar{t}__114->SetBinContent(4,129634.5);
    csv_discriminator_t#bar{t}__114->SetBinContent(5,0.815666);
-   csv_discriminator_t#bar{t}__114->SetBinError(0,51.38427);
-   csv_discriminator_t#bar{t}__114->SetBinError(1,281.7098);
-   csv_discriminator_t#bar{t}__114->SetBinError(2,150.9772);
-   csv_discriminator_t#bar{t}__114->SetBinError(3,168.7639);
-   csv_discriminator_t#bar{t}__114->SetBinError(4,232.9177);
+   csv_discriminator_t#bar{t}__114->SetBinError(0,50.70551);
+   csv_discriminator_t#bar{t}__114->SetBinError(1,277.6281);
+   csv_discriminator_t#bar{t}__114->SetBinError(2,148.5043);
+   csv_discriminator_t#bar{t}__114->SetBinError(3,167.1525);
+   csv_discriminator_t#bar{t}__114->SetBinError(4,230.7686);
    csv_discriminator_t#bar{t}__114->SetBinError(5,0.509084);
-   csv_discriminator_t#bar{t}__114->SetEntries(1194249);
+   csv_discriminator_t#bar{t}__114->SetEntries(1164738);
    csv_discriminator_t#bar{t}__114->SetDirectory(0);
 
    ci = TColor::GetColor("#cc0000");
@@ -131,17 +131,17 @@ void csv_discriminator()
    Double_t xAxis4[5] = {0, 0.5426, 0.8484, 0.9535, 1}; 
    
    TH1F *csv_discriminator_Diboson__115 = new TH1F("csv_discriminator_Diboson__115","Diboson",4, xAxis4);
-   csv_discriminator_Diboson__115->SetBinContent(0,12.31027);
-   csv_discriminator_Diboson__115->SetBinContent(1,279.3778);
-   csv_discriminator_Diboson__115->SetBinContent(2,58.9299);
-   csv_discriminator_Diboson__115->SetBinContent(3,129.5679);
-   csv_discriminator_Diboson__115->SetBinContent(4,66.73421);
-   csv_discriminator_Diboson__115->SetBinError(0,2.18606);
-   csv_discriminator_Diboson__115->SetBinError(1,10.40676);
-   csv_discriminator_Diboson__115->SetBinError(2,4.797228);
-   csv_discriminator_Diboson__115->SetBinError(3,7.080239);
-   csv_discriminator_Diboson__115->SetBinError(4,5.096629);
-   csv_discriminator_Diboson__115->SetEntries(1539);
+   csv_discriminator_Diboson__115->SetBinContent(0,11.48745);
+   csv_discriminator_Diboson__115->SetBinContent(1,272.9491);
+   csv_discriminator_Diboson__115->SetBinContent(2,56.78534);
+   csv_discriminator_Diboson__115->SetBinContent(3,127.0984);
+   csv_discriminator_Diboson__115->SetBinContent(4,63.36184);
+   csv_discriminator_Diboson__115->SetBinError(0,2.107042);
+   csv_discriminator_Diboson__115->SetBinError(1,10.27382);
+   csv_discriminator_Diboson__115->SetBinError(2,4.706831);
+   csv_discriminator_Diboson__115->SetBinError(3,7.011926);
+   csv_discriminator_Diboson__115->SetBinError(4,4.954855);
+   csv_discriminator_Diboson__115->SetEntries(1501);
    csv_discriminator_Diboson__115->SetDirectory(0);
 
    ci = TColor::GetColor("#ffff00");
@@ -228,17 +228,17 @@ void csv_discriminator()
    Double_t xAxis7[5] = {0, 0.5426, 0.8484, 0.9535, 1}; 
    
    TH1F *csv_discriminator_SinglesPtop__118 = new TH1F("csv_discriminator_SinglesPtop__118","Single top",4, xAxis7);
-   csv_discriminator_SinglesPtop__118->SetBinContent(0,284.4315);
-   csv_discriminator_SinglesPtop__118->SetBinContent(1,8507.016);
-   csv_discriminator_SinglesPtop__118->SetBinContent(2,2174.454);
-   csv_discriminator_SinglesPtop__118->SetBinContent(3,2909.43);
-   csv_discriminator_SinglesPtop__118->SetBinContent(4,5284.162);
-   csv_discriminator_SinglesPtop__118->SetBinError(0,19.70751);
-   csv_discriminator_SinglesPtop__118->SetBinError(1,106.6369);
-   csv_discriminator_SinglesPtop__118->SetBinError(2,53.95152);
-   csv_discriminator_SinglesPtop__118->SetBinError(3,62.46981);
-   csv_discriminator_SinglesPtop__118->SetBinError(4,84.06218);
-   csv_discriminator_SinglesPtop__118->SetEntries(15448);
+   csv_discriminator_SinglesPtop__118->SetBinContent(0,263.7758);
+   csv_discriminator_SinglesPtop__118->SetBinContent(1,8213.59);
+   csv_discriminator_SinglesPtop__118->SetBinContent(2,2081.278);
+   csv_discriminator_SinglesPtop__118->SetBinContent(3,2836.214);
+   csv_discriminator_SinglesPtop__118->SetBinContent(4,5142.455);
+   csv_discriminator_SinglesPtop__118->SetBinError(0,18.96949);
+   csv_discriminator_SinglesPtop__118->SetBinError(1,104.7516);
+   csv_discriminator_SinglesPtop__118->SetBinError(2,52.76972);
+   csv_discriminator_SinglesPtop__118->SetBinError(3,61.67115);
+   csv_discriminator_SinglesPtop__118->SetBinError(4,82.91933);
+   csv_discriminator_SinglesPtop__118->SetEntries(14951);
    csv_discriminator_SinglesPtop__118->SetDirectory(0);
 
    ci = TColor::GetColor("#990099");
@@ -270,8 +270,8 @@ void csv_discriminator()
    0.97675,
    0};
    Double_t Graph_from_csv_discriminator_fy3033[5] = {
-   183940,
-   53191,
+   183985,
+   53230,
    66445,
    122349,
    0};
@@ -282,8 +282,8 @@ void csv_discriminator()
    0.02325,
    0};
    Double_t Graph_from_csv_discriminator_fely3033[5] = {
-   428.8823,
-   230.6317,
+   428.9347,
+   230.7163,
    257.7693,
    349.7842,
    0};
@@ -294,8 +294,8 @@ void csv_discriminator()
    0.02325,
    0};
    Double_t Graph_from_csv_discriminator_fehy3033[5] = {
-   428.8823,
-   230.6317,
+   428.9347,
+   230.7163,
    257.7693,
    349.7842,
    1.841055};
@@ -309,7 +309,7 @@ void csv_discriminator()
    
    TH1F *Graph_Graph_from_csv_discriminator3033 = new TH1F("Graph_Graph_from_csv_discriminator3033","Data",100,0,1.1);
    Graph_Graph_from_csv_discriminator3033->SetMinimum(0);
-   Graph_Graph_from_csv_discriminator3033->SetMaximum(202805.8);
+   Graph_Graph_from_csv_discriminator3033->SetMaximum(202855.3);
    Graph_Graph_from_csv_discriminator3033->SetDirectory(0);
    Graph_Graph_from_csv_discriminator3033->SetStats(0);
 
@@ -440,7 +440,7 @@ tex->SetNDC();
    TH1F *ratioframe__119 = new TH1F("ratioframe__119","t#bar{t}",4, xAxis8);
    ratioframe__119->SetMinimum(0.46);
    ratioframe__119->SetMaximum(1.54);
-   ratioframe__119->SetEntries(1211295);
+   ratioframe__119->SetEntries(1181249);
 
    ci = TColor::GetColor("#cc0000");
    ratioframe__119->SetFillColor(ci);
@@ -473,30 +473,30 @@ tex->SetNDC();
    0.90095,
    0.97675};
    Double_t Graph_from_ratio_fy3034[4] = {
-   0.9087536,
-   0.920437,
-   0.9145041,
-   0.8892956};
+   0.9360742,
+   0.9524635,
+   0.9323772,
+   0.9062593};
    Double_t Graph_from_ratio_felx3034[4] = {
    0.2713,
    0.1529,
    0.05255,
    0.02325};
    Double_t Graph_from_ratio_fely3034[4] = {
-   0.002542011,
-   0.004760966,
-   0.004294594,
-   0.003024886};
+   0.002630735,
+   0.004950427,
+   0.004393406,
+   0.003091313};
    Double_t Graph_from_ratio_fehx3034[4] = {
    0.2713,
    0.1529,
    0.05255,
    0.02325};
    Double_t Graph_from_ratio_fehy3034[4] = {
-   0.002542011,
-   0.004760966,
-   0.004294594,
-   0.003024886};
+   0.002630735,
+   0.004950427,
+   0.004393406,
+   0.003091313};
    grae = new TGraphAsymmErrors(4,Graph_from_ratio_fx3034,Graph_from_ratio_fy3034,Graph_from_ratio_felx3034,Graph_from_ratio_fehx3034,Graph_from_ratio_fely3034,Graph_from_ratio_fehy3034);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
@@ -506,8 +506,8 @@ tex->SetNDC();
    grae->SetMarkerSize(1.4);
    
    TH1F *Graph_Graph_from_ratio3034 = new TH1F("Graph_Graph_from_ratio3034","Data",100,0,1.1);
-   Graph_Graph_from_ratio3034->SetMinimum(0.882378);
-   Graph_Graph_from_ratio3034->SetMaximum(0.9290907);
+   Graph_Graph_from_ratio3034->SetMinimum(0.8977434);
+   Graph_Graph_from_ratio3034->SetMaximum(0.9628385);
    Graph_Graph_from_ratio3034->SetDirectory(0);
    Graph_Graph_from_ratio3034->SetStats(0);
 

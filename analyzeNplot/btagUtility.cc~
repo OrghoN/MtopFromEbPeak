@@ -1,0 +1,131 @@
+bool applySF(bool& isTagged, float tag_SF, float tag_eff){
+  
+  bool newTag = isTagged;
+  if (tag_SF == 1) return newTag; //no correction needed 
+
+  //throw die
+  TRandom3 Rand;
+  float coin = Rand.Uniform(1.);    
+
+  if(tag_SF > 1){  // use this if SF>1
+
+    if( !isTagged ) {
+
+      //fraction of jets that need to be upgraded
+      float mistagPercent = (1.0 - tag_SF) / (1.0 - (tag_SF/tag_eff) );
+
+      //upgrade to tagged
+      if( coin < mistagPercent ) {newTag = true;}
+    }
+
+  }else{  // use this if SF<1
+      
+    //downgrade tagged to untagged
+    if( isTagged && coin > tag_SF ) {newTag = false;}
+
+  }
+
+  return newTag;
+};
+
+enum shift:char{ central, uncert };
+
+double GetBtagSF2016Medium_comb(shift Shift, double pt, double eta){
+    if(pt > 1000.) pt = 1000.;
+    if(fabs(eta) > 2.4 or pt<20.) return 1.0; 
+    switch(Shift){
+	case uncert:
+	    if(pt<30) return 0.040213499218225479;
+	    else if(pt<50) return 0.014046305790543556;
+	    else if(pt<70) return 0.012372690252959728;
+	    else if(pt<100) return 0.012274007312953472;
+	    else if(pt<140) return 0.011465910822153091;
+	    else if(pt<200) return 0.012079551815986633;
+	    else if(pt<300) return 0.014995276927947998;
+	    else if(pt<600) return 0.021414462476968765;
+	    else  return 0.032377112656831741;
+	case central:
+	default:
+	    return    0.561694*((1.+(0.31439*pt))/(1.+(0.17756*pt)));
+    }//end switch on shift
+};
+
+double GetCtagSF2016Medium_comb(shift Shift, double pt, double eta){
+  // SFs are identical with 3x uncertainty as B tag
+  if(pt > 1000.) pt = 1000.;
+  if(fabs(eta) > 2.4 or pt<20.) return 1.0; 
+  switch(Shift){
+  case uncert: return 3.0 * GetBtagSF2016Medium_comb(uncert, pt, eta);
+  case central:
+  default: return GetBtagSF2016Medium_comb(central, pt, eta);
+  }//end switch on shift
+}
+
+double GetLFSF2016Medium( shift Shift, double pt, double eta){
+    if(pt > 1000.) pt = 1000.;
+    if(fabs(eta) > 2.4 or pt<20.) return 1.;
+    switch(Shift){
+	case uncert:
+	    return  (1.0589+0.000382569*pt+-2.4252e-07*pt*pt+2.20966e-10*pt*pt*pt)*((0.100485+3.95509e-05*pt+-4.90326e-08*pt*pt));
+	case central:
+	default:
+	    return  1.0589+0.000382569*pt+-2.4252e-07*pt*pt+2.20966e-10*pt*pt*pt;
+    }//end switch Shift
+}//end GetLFSF2016
+
+double GetBtagEfficiency(double pt){
+  // Efficiencies from TT powheg sample for Moriond17.
+  // See distribution in /uscms_data/d3/jmanagan/EffsAndNewWeights/TagEffsM17/BEff.png
+  // Uses hadronFlavour() rather than partonFlavour() as recommended in BTV physics plenary CMS Week 10/2015
+  if(pt < 30) return 0.331971;
+  else if(pt < 50) return 0.550937;
+  else if(pt < 70) return 0.599929;
+  else if(pt < 100) return 0.624677;
+  else if(pt < 140) return 0.635101;
+  else if(pt < 200) return 0.632463;
+  else if(pt < 300) return 0.598059;
+  else if(pt < 400) return 0.558359;
+  else if(pt < 500) return 0.514297;
+  else if(pt < 600) return 0.494422;
+  else if(pt < 800) return 0.474555;
+  else if(pt < 1000) return 0.451810;
+  else if(pt < 1200) return 0.427328;
+  else return 0.414162;
+}
+
+double GetCtagEfficiency(double pt){
+  if(pt < 30) return 0.057985;
+  else if(pt < 50) return 0.111536;
+  else if(pt < 70) return 0.112216;
+  else if(pt < 100) return 0.120075;
+  else if(pt < 140) return 0.128499;
+  else if(pt < 200) return 0.132918;
+  else if(pt < 300) return 0.126724;
+  else if(pt < 400) return 0.126281;
+  else if(pt < 500) return 0.123026;
+  else if(pt < 600) return 0.124840;
+  else if(pt < 800) return 0.130060;
+  else if(pt < 1000) return 0.128022;
+  else if(pt < 1200) return 0.134100;
+  else return 0.125348;
+}
+
+double GetMistagRate(double pt){
+  // Mistag rates from TT powheg sample for Moriond17.
+  // See distribution in /uscms_data/d3/jmanagan/EffsAndNewWeights/TagEffsM17/BEff.png
+  // Uses hadronFlavour() rather than partonFlavour() as recommended in BTV physics plenary CMS Week 10/2015
+  if(pt < 30)    return 0.003385;
+  else if(pt < 50)   return 0.009673;
+  else if(pt < 70)   return 0.008316;
+  else if(pt < 100)  return 0.008524;
+  else if(pt < 140)  return 0.009092;
+  else if(pt < 200)  return 0.011431;
+  else if(pt < 300)  return 0.013666;
+  else if(pt < 400)  return 0.020405;
+  else if(pt < 500)  return 0.023609;
+  else if(pt < 600)  return 0.025348;
+  else if(pt < 800)  return 0.028858;
+  else if(pt < 1000) return 0.030427;
+  else if(pt < 1200) return 0.034091;
+  else return 0.047619;
+}

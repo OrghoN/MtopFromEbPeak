@@ -1,7 +1,7 @@
 void dilepton_mass()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 16:36:54 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 16:37:59 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -20,7 +20,7 @@ void dilepton_mass()
    TPad *p1 = new TPad("p1", "p1",0,0,1,0.85);
    p1->Draw();
    p1->cd();
-   p1->Range(-28.91566,-395.5336,212.0482,2901.413);
+   p1->Range(-28.91566,-385.5937,212.0482,2828.52);
    p1->SetFillColor(0);
    p1->SetBorderMode(0);
    p1->SetBorderSize(2);
@@ -34,8 +34,8 @@ void dilepton_mass()
    
    TH1F *frame__43 = new TH1F("frame__43","t#bar{t}",100,0,200);
    frame__43->SetMinimum(0.1);
-   frame__43->SetMaximum(2868.444);
-   frame__43->SetEntries(369734);
+   frame__43->SetMaximum(2796.379);
+   frame__43->SetEntries(360574);
    frame__43->SetDirectory(0);
 
    Int_t ci;      // for color index setting
@@ -68,7 +68,7 @@ void dilepton_mass()
    
    TH1F *mc_stack_7 = new TH1F("mc_stack_7","mc",100,0,200);
    mc_stack_7->SetMinimum(-1.768051e-06);
-   mc_stack_7->SetMaximum(2316.82);
+   mc_stack_7->SetMaximum(2258.614);
    mc_stack_7->SetDirectory(0);
    mc_stack_7->SetStats(0);
 
@@ -90,197 +90,197 @@ void dilepton_mass()
    
    
    TH1F *dilepton_mass_t#bar{t}__44 = new TH1F("dilepton_mass_t#bar{t}__44","t#bar{t}",100,0,200);
-   dilepton_mass_t#bar{t}__44->SetBinContent(7,285.5721);
-   dilepton_mass_t#bar{t}__44->SetBinContent(8,419.0556);
-   dilepton_mass_t#bar{t}__44->SetBinContent(9,504.5935);
-   dilepton_mass_t#bar{t}__44->SetBinContent(10,602.3542);
-   dilepton_mass_t#bar{t}__44->SetBinContent(11,663.7969);
-   dilepton_mass_t#bar{t}__44->SetBinContent(12,688.8536);
-   dilepton_mass_t#bar{t}__44->SetBinContent(13,779.4442);
-   dilepton_mass_t#bar{t}__44->SetBinContent(14,818.7584);
-   dilepton_mass_t#bar{t}__44->SetBinContent(15,904.4716);
-   dilepton_mass_t#bar{t}__44->SetBinContent(16,963.137);
-   dilepton_mass_t#bar{t}__44->SetBinContent(17,985.3054);
-   dilepton_mass_t#bar{t}__44->SetBinContent(18,1043.268);
-   dilepton_mass_t#bar{t}__44->SetBinContent(19,1129.522);
-   dilepton_mass_t#bar{t}__44->SetBinContent(20,1182.689);
-   dilepton_mass_t#bar{t}__44->SetBinContent(21,1204.925);
-   dilepton_mass_t#bar{t}__44->SetBinContent(22,1283.125);
-   dilepton_mass_t#bar{t}__44->SetBinContent(23,1346.883);
-   dilepton_mass_t#bar{t}__44->SetBinContent(24,1410.14);
-   dilepton_mass_t#bar{t}__44->SetBinContent(25,1476.291);
-   dilepton_mass_t#bar{t}__44->SetBinContent(26,1533.358);
-   dilepton_mass_t#bar{t}__44->SetBinContent(27,1549.985);
-   dilepton_mass_t#bar{t}__44->SetBinContent(28,1693.798);
-   dilepton_mass_t#bar{t}__44->SetBinContent(29,1761.284);
-   dilepton_mass_t#bar{t}__44->SetBinContent(30,1809.994);
-   dilepton_mass_t#bar{t}__44->SetBinContent(31,1864.83);
-   dilepton_mass_t#bar{t}__44->SetBinContent(32,1886.88);
-   dilepton_mass_t#bar{t}__44->SetBinContent(33,1990.791);
-   dilepton_mass_t#bar{t}__44->SetBinContent(34,1982.607);
-   dilepton_mass_t#bar{t}__44->SetBinContent(35,2014.228);
-   dilepton_mass_t#bar{t}__44->SetBinContent(36,2042.148);
-   dilepton_mass_t#bar{t}__44->SetBinContent(37,2021.091);
-   dilepton_mass_t#bar{t}__44->SetBinContent(38,2030.211);
-   dilepton_mass_t#bar{t}__44->SetBinContent(39,2035.705);
-   dilepton_mass_t#bar{t}__44->SetBinContent(40,2033.353);
-   dilepton_mass_t#bar{t}__44->SetBinContent(41,2060.174);
-   dilepton_mass_t#bar{t}__44->SetBinContent(42,2091.575);
-   dilepton_mass_t#bar{t}__44->SetBinContent(43,2080.461);
-   dilepton_mass_t#bar{t}__44->SetBinContent(44,2058.177);
-   dilepton_mass_t#bar{t}__44->SetBinContent(45,1984.653);
-   dilepton_mass_t#bar{t}__44->SetBinContent(46,2018.315);
-   dilepton_mass_t#bar{t}__44->SetBinContent(47,1952.988);
-   dilepton_mass_t#bar{t}__44->SetBinContent(48,1962.455);
-   dilepton_mass_t#bar{t}__44->SetBinContent(49,1961.21);
-   dilepton_mass_t#bar{t}__44->SetBinContent(50,1926.159);
-   dilepton_mass_t#bar{t}__44->SetBinContent(51,1840.547);
-   dilepton_mass_t#bar{t}__44->SetBinContent(52,1812.086);
-   dilepton_mass_t#bar{t}__44->SetBinContent(53,1778.91);
-   dilepton_mass_t#bar{t}__44->SetBinContent(54,1811.492);
-   dilepton_mass_t#bar{t}__44->SetBinContent(55,1771.99);
-   dilepton_mass_t#bar{t}__44->SetBinContent(56,1738.164);
-   dilepton_mass_t#bar{t}__44->SetBinContent(57,1695.424);
-   dilepton_mass_t#bar{t}__44->SetBinContent(58,1616.603);
-   dilepton_mass_t#bar{t}__44->SetBinContent(59,1621.367);
-   dilepton_mass_t#bar{t}__44->SetBinContent(60,1589.148);
-   dilepton_mass_t#bar{t}__44->SetBinContent(61,1501.349);
-   dilepton_mass_t#bar{t}__44->SetBinContent(62,1519.846);
-   dilepton_mass_t#bar{t}__44->SetBinContent(63,1422.66);
-   dilepton_mass_t#bar{t}__44->SetBinContent(64,1412.863);
-   dilepton_mass_t#bar{t}__44->SetBinContent(65,1375.684);
-   dilepton_mass_t#bar{t}__44->SetBinContent(66,1376.686);
-   dilepton_mass_t#bar{t}__44->SetBinContent(67,1339.044);
-   dilepton_mass_t#bar{t}__44->SetBinContent(68,1280.006);
-   dilepton_mass_t#bar{t}__44->SetBinContent(69,1281.906);
-   dilepton_mass_t#bar{t}__44->SetBinContent(70,1208.32);
-   dilepton_mass_t#bar{t}__44->SetBinContent(71,1189.629);
-   dilepton_mass_t#bar{t}__44->SetBinContent(72,1184.956);
-   dilepton_mass_t#bar{t}__44->SetBinContent(73,1088.331);
-   dilepton_mass_t#bar{t}__44->SetBinContent(74,1155.022);
-   dilepton_mass_t#bar{t}__44->SetBinContent(75,1066.67);
-   dilepton_mass_t#bar{t}__44->SetBinContent(76,1015.072);
-   dilepton_mass_t#bar{t}__44->SetBinContent(77,964.8568);
-   dilepton_mass_t#bar{t}__44->SetBinContent(78,946.9241);
-   dilepton_mass_t#bar{t}__44->SetBinContent(79,971.2274);
-   dilepton_mass_t#bar{t}__44->SetBinContent(80,925.5392);
-   dilepton_mass_t#bar{t}__44->SetBinContent(81,873.7679);
-   dilepton_mass_t#bar{t}__44->SetBinContent(82,878.7194);
-   dilepton_mass_t#bar{t}__44->SetBinContent(83,854.1049);
-   dilepton_mass_t#bar{t}__44->SetBinContent(84,799.91);
-   dilepton_mass_t#bar{t}__44->SetBinContent(85,837.8069);
-   dilepton_mass_t#bar{t}__44->SetBinContent(86,768.719);
-   dilepton_mass_t#bar{t}__44->SetBinContent(87,763.5577);
-   dilepton_mass_t#bar{t}__44->SetBinContent(88,721.5078);
-   dilepton_mass_t#bar{t}__44->SetBinContent(89,732.9819);
-   dilepton_mass_t#bar{t}__44->SetBinContent(90,660.1274);
-   dilepton_mass_t#bar{t}__44->SetBinContent(91,672.8989);
-   dilepton_mass_t#bar{t}__44->SetBinContent(92,659.8901);
-   dilepton_mass_t#bar{t}__44->SetBinContent(93,646.8821);
-   dilepton_mass_t#bar{t}__44->SetBinContent(94,587.3827);
-   dilepton_mass_t#bar{t}__44->SetBinContent(95,607.6238);
-   dilepton_mass_t#bar{t}__44->SetBinContent(96,580.1741);
-   dilepton_mass_t#bar{t}__44->SetBinContent(97,590.1905);
-   dilepton_mass_t#bar{t}__44->SetBinContent(98,531.8384);
-   dilepton_mass_t#bar{t}__44->SetBinContent(99,523.4825);
-   dilepton_mass_t#bar{t}__44->SetBinContent(100,483.2592);
-   dilepton_mass_t#bar{t}__44->SetBinContent(101,17882.8);
-   dilepton_mass_t#bar{t}__44->SetBinError(7,10.81823);
-   dilepton_mass_t#bar{t}__44->SetBinError(8,13.09953);
-   dilepton_mass_t#bar{t}__44->SetBinError(9,14.41082);
-   dilepton_mass_t#bar{t}__44->SetBinError(10,15.7256);
-   dilepton_mass_t#bar{t}__44->SetBinError(11,16.54524);
-   dilepton_mass_t#bar{t}__44->SetBinError(12,16.77339);
-   dilepton_mass_t#bar{t}__44->SetBinError(13,17.91246);
-   dilepton_mass_t#bar{t}__44->SetBinError(14,18.36722);
-   dilepton_mass_t#bar{t}__44->SetBinError(15,19.23349);
-   dilepton_mass_t#bar{t}__44->SetBinError(16,19.88354);
-   dilepton_mass_t#bar{t}__44->SetBinError(17,20.1216);
-   dilepton_mass_t#bar{t}__44->SetBinError(18,20.71469);
-   dilepton_mass_t#bar{t}__44->SetBinError(19,21.55338);
-   dilepton_mass_t#bar{t}__44->SetBinError(20,22.03423);
-   dilepton_mass_t#bar{t}__44->SetBinError(21,22.23463);
-   dilepton_mass_t#bar{t}__44->SetBinError(22,22.96795);
-   dilepton_mass_t#bar{t}__44->SetBinError(23,23.54084);
-   dilepton_mass_t#bar{t}__44->SetBinError(24,24.04819);
-   dilepton_mass_t#bar{t}__44->SetBinError(25,24.59858);
-   dilepton_mass_t#bar{t}__44->SetBinError(26,25.09804);
-   dilepton_mass_t#bar{t}__44->SetBinError(27,25.24091);
-   dilepton_mass_t#bar{t}__44->SetBinError(28,26.38099);
-   dilepton_mass_t#bar{t}__44->SetBinError(29,26.88706);
-   dilepton_mass_t#bar{t}__44->SetBinError(30,27.27249);
-   dilepton_mass_t#bar{t}__44->SetBinError(31,27.64577);
-   dilepton_mass_t#bar{t}__44->SetBinError(32,27.87532);
-   dilepton_mass_t#bar{t}__44->SetBinError(33,28.65077);
-   dilepton_mass_t#bar{t}__44->SetBinError(34,28.55762);
-   dilepton_mass_t#bar{t}__44->SetBinError(35,28.76795);
-   dilepton_mass_t#bar{t}__44->SetBinError(36,28.96735);
-   dilepton_mass_t#bar{t}__44->SetBinError(37,28.77934);
-   dilepton_mass_t#bar{t}__44->SetBinError(38,28.85772);
-   dilepton_mass_t#bar{t}__44->SetBinError(39,28.90775);
-   dilepton_mass_t#bar{t}__44->SetBinError(40,28.91044);
-   dilepton_mass_t#bar{t}__44->SetBinError(41,29.08133);
-   dilepton_mass_t#bar{t}__44->SetBinError(42,29.29227);
-   dilepton_mass_t#bar{t}__44->SetBinError(43,29.25622);
-   dilepton_mass_t#bar{t}__44->SetBinError(44,29.05026);
-   dilepton_mass_t#bar{t}__44->SetBinError(45,28.51836);
-   dilepton_mass_t#bar{t}__44->SetBinError(46,28.78146);
-   dilepton_mass_t#bar{t}__44->SetBinError(47,28.32116);
-   dilepton_mass_t#bar{t}__44->SetBinError(48,28.39374);
-   dilepton_mass_t#bar{t}__44->SetBinError(49,28.37537);
-   dilepton_mass_t#bar{t}__44->SetBinError(50,28.1628);
-   dilepton_mass_t#bar{t}__44->SetBinError(51,27.50932);
-   dilepton_mass_t#bar{t}__44->SetBinError(52,27.2792);
-   dilepton_mass_t#bar{t}__44->SetBinError(53,27.06082);
-   dilepton_mass_t#bar{t}__44->SetBinError(54,27.24905);
-   dilepton_mass_t#bar{t}__44->SetBinError(55,27.00469);
-   dilepton_mass_t#bar{t}__44->SetBinError(56,26.71297);
-   dilepton_mass_t#bar{t}__44->SetBinError(57,26.37992);
-   dilepton_mass_t#bar{t}__44->SetBinError(58,25.75681);
-   dilepton_mass_t#bar{t}__44->SetBinError(59,25.79577);
-   dilepton_mass_t#bar{t}__44->SetBinError(60,25.53672);
-   dilepton_mass_t#bar{t}__44->SetBinError(61,24.86307);
-   dilepton_mass_t#bar{t}__44->SetBinError(62,24.98607);
-   dilepton_mass_t#bar{t}__44->SetBinError(63,24.16979);
-   dilepton_mass_t#bar{t}__44->SetBinError(64,24.04912);
-   dilepton_mass_t#bar{t}__44->SetBinError(65,23.74366);
-   dilepton_mass_t#bar{t}__44->SetBinError(66,23.77676);
-   dilepton_mass_t#bar{t}__44->SetBinError(67,23.46344);
-   dilepton_mass_t#bar{t}__44->SetBinError(68,22.91342);
-   dilepton_mass_t#bar{t}__44->SetBinError(69,22.96813);
-   dilepton_mass_t#bar{t}__44->SetBinError(70,22.31185);
-   dilepton_mass_t#bar{t}__44->SetBinError(71,22.11161);
-   dilepton_mass_t#bar{t}__44->SetBinError(72,22.04574);
-   dilepton_mass_t#bar{t}__44->SetBinError(73,21.16198);
-   dilepton_mass_t#bar{t}__44->SetBinError(74,21.79093);
-   dilepton_mass_t#bar{t}__44->SetBinError(75,20.92054);
-   dilepton_mass_t#bar{t}__44->SetBinError(76,20.45321);
-   dilepton_mass_t#bar{t}__44->SetBinError(77,19.90701);
-   dilepton_mass_t#bar{t}__44->SetBinError(78,19.7599);
-   dilepton_mass_t#bar{t}__44->SetBinError(79,19.95035);
-   dilepton_mass_t#bar{t}__44->SetBinError(80,19.47928);
-   dilepton_mass_t#bar{t}__44->SetBinError(81,18.90034);
-   dilepton_mass_t#bar{t}__44->SetBinError(82,19.01278);
-   dilepton_mass_t#bar{t}__44->SetBinError(83,18.71981);
-   dilepton_mass_t#bar{t}__44->SetBinError(84,18.14994);
-   dilepton_mass_t#bar{t}__44->SetBinError(85,18.56259);
-   dilepton_mass_t#bar{t}__44->SetBinError(86,17.715);
-   dilepton_mass_t#bar{t}__44->SetBinError(87,17.73057);
-   dilepton_mass_t#bar{t}__44->SetBinError(88,17.25277);
-   dilepton_mass_t#bar{t}__44->SetBinError(89,17.33271);
-   dilepton_mass_t#bar{t}__44->SetBinError(90,16.43422);
-   dilepton_mass_t#bar{t}__44->SetBinError(91,16.61597);
-   dilepton_mass_t#bar{t}__44->SetBinError(92,16.46821);
-   dilepton_mass_t#bar{t}__44->SetBinError(93,16.29659);
-   dilepton_mass_t#bar{t}__44->SetBinError(94,15.49067);
-   dilepton_mass_t#bar{t}__44->SetBinError(95,15.79995);
-   dilepton_mass_t#bar{t}__44->SetBinError(96,15.44862);
-   dilepton_mass_t#bar{t}__44->SetBinError(97,15.60568);
-   dilepton_mass_t#bar{t}__44->SetBinError(98,14.77031);
-   dilepton_mass_t#bar{t}__44->SetBinError(99,14.67513);
-   dilepton_mass_t#bar{t}__44->SetBinError(100,14.10684);
-   dilepton_mass_t#bar{t}__44->SetBinError(101,85.71185);
-   dilepton_mass_t#bar{t}__44->SetEntries(364017);
+   dilepton_mass_t#bar{t}__44->SetBinContent(7,275.7818);
+   dilepton_mass_t#bar{t}__44->SetBinContent(8,412.5828);
+   dilepton_mass_t#bar{t}__44->SetBinContent(9,496.2978);
+   dilepton_mass_t#bar{t}__44->SetBinContent(10,583.7033);
+   dilepton_mass_t#bar{t}__44->SetBinContent(11,643.4169);
+   dilepton_mass_t#bar{t}__44->SetBinContent(12,669.2012);
+   dilepton_mass_t#bar{t}__44->SetBinContent(13,759.7219);
+   dilepton_mass_t#bar{t}__44->SetBinContent(14,794.7175);
+   dilepton_mass_t#bar{t}__44->SetBinContent(15,882.704);
+   dilepton_mass_t#bar{t}__44->SetBinContent(16,937.7662);
+   dilepton_mass_t#bar{t}__44->SetBinContent(17,963.2788);
+   dilepton_mass_t#bar{t}__44->SetBinContent(18,1019.521);
+   dilepton_mass_t#bar{t}__44->SetBinContent(19,1096.423);
+   dilepton_mass_t#bar{t}__44->SetBinContent(20,1156.923);
+   dilepton_mass_t#bar{t}__44->SetBinContent(21,1177.669);
+   dilepton_mass_t#bar{t}__44->SetBinContent(22,1254.12);
+   dilepton_mass_t#bar{t}__44->SetBinContent(23,1310.683);
+   dilepton_mass_t#bar{t}__44->SetBinContent(24,1375.623);
+   dilepton_mass_t#bar{t}__44->SetBinContent(25,1442.686);
+   dilepton_mass_t#bar{t}__44->SetBinContent(26,1493.097);
+   dilepton_mass_t#bar{t}__44->SetBinContent(27,1507.837);
+   dilepton_mass_t#bar{t}__44->SetBinContent(28,1656.367);
+   dilepton_mass_t#bar{t}__44->SetBinContent(29,1713.705);
+   dilepton_mass_t#bar{t}__44->SetBinContent(30,1765.498);
+   dilepton_mass_t#bar{t}__44->SetBinContent(31,1822.633);
+   dilepton_mass_t#bar{t}__44->SetBinContent(32,1842.49);
+   dilepton_mass_t#bar{t}__44->SetBinContent(33,1945.758);
+   dilepton_mass_t#bar{t}__44->SetBinContent(34,1937.035);
+   dilepton_mass_t#bar{t}__44->SetBinContent(35,1960.755);
+   dilepton_mass_t#bar{t}__44->SetBinContent(36,1994.502);
+   dilepton_mass_t#bar{t}__44->SetBinContent(37,1973.398);
+   dilepton_mass_t#bar{t}__44->SetBinContent(38,1974.301);
+   dilepton_mass_t#bar{t}__44->SetBinContent(39,1989.27);
+   dilepton_mass_t#bar{t}__44->SetBinContent(40,1986.363);
+   dilepton_mass_t#bar{t}__44->SetBinContent(41,2010.153);
+   dilepton_mass_t#bar{t}__44->SetBinContent(42,2042.678);
+   dilepton_mass_t#bar{t}__44->SetBinContent(43,2025.982);
+   dilepton_mass_t#bar{t}__44->SetBinContent(44,2002.59);
+   dilepton_mass_t#bar{t}__44->SetBinContent(45,1942.498);
+   dilepton_mass_t#bar{t}__44->SetBinContent(46,1976.62);
+   dilepton_mass_t#bar{t}__44->SetBinContent(47,1905.695);
+   dilepton_mass_t#bar{t}__44->SetBinContent(48,1917.354);
+   dilepton_mass_t#bar{t}__44->SetBinContent(49,1910.666);
+   dilepton_mass_t#bar{t}__44->SetBinContent(50,1877.857);
+   dilepton_mass_t#bar{t}__44->SetBinContent(51,1791.123);
+   dilepton_mass_t#bar{t}__44->SetBinContent(52,1767.696);
+   dilepton_mass_t#bar{t}__44->SetBinContent(53,1727.897);
+   dilepton_mass_t#bar{t}__44->SetBinContent(54,1767.121);
+   dilepton_mass_t#bar{t}__44->SetBinContent(55,1734.021);
+   dilepton_mass_t#bar{t}__44->SetBinContent(56,1697.573);
+   dilepton_mass_t#bar{t}__44->SetBinContent(57,1652.635);
+   dilepton_mass_t#bar{t}__44->SetBinContent(58,1573.038);
+   dilepton_mass_t#bar{t}__44->SetBinContent(59,1581.41);
+   dilepton_mass_t#bar{t}__44->SetBinContent(60,1544.809);
+   dilepton_mass_t#bar{t}__44->SetBinContent(61,1459.674);
+   dilepton_mass_t#bar{t}__44->SetBinContent(62,1487.428);
+   dilepton_mass_t#bar{t}__44->SetBinContent(63,1379.457);
+   dilepton_mass_t#bar{t}__44->SetBinContent(64,1377.843);
+   dilepton_mass_t#bar{t}__44->SetBinContent(65,1343.647);
+   dilepton_mass_t#bar{t}__44->SetBinContent(66,1342.693);
+   dilepton_mass_t#bar{t}__44->SetBinContent(67,1309.143);
+   dilepton_mass_t#bar{t}__44->SetBinContent(68,1252.8);
+   dilepton_mass_t#bar{t}__44->SetBinContent(69,1254);
+   dilepton_mass_t#bar{t}__44->SetBinContent(70,1175.391);
+   dilepton_mass_t#bar{t}__44->SetBinContent(71,1157.488);
+   dilepton_mass_t#bar{t}__44->SetBinContent(72,1150.813);
+   dilepton_mass_t#bar{t}__44->SetBinContent(73,1068.07);
+   dilepton_mass_t#bar{t}__44->SetBinContent(74,1125.608);
+   dilepton_mass_t#bar{t}__44->SetBinContent(75,1041.562);
+   dilepton_mass_t#bar{t}__44->SetBinContent(76,989.1859);
+   dilepton_mass_t#bar{t}__44->SetBinContent(77,944.0272);
+   dilepton_mass_t#bar{t}__44->SetBinContent(78,919.3294);
+   dilepton_mass_t#bar{t}__44->SetBinContent(79,944.4888);
+   dilepton_mass_t#bar{t}__44->SetBinContent(80,905.0547);
+   dilepton_mass_t#bar{t}__44->SetBinContent(81,854.1249);
+   dilepton_mass_t#bar{t}__44->SetBinContent(82,854.6231);
+   dilepton_mass_t#bar{t}__44->SetBinContent(83,835.4943);
+   dilepton_mass_t#bar{t}__44->SetBinContent(84,784.5726);
+   dilepton_mass_t#bar{t}__44->SetBinContent(85,810.0793);
+   dilepton_mass_t#bar{t}__44->SetBinContent(86,747.9942);
+   dilepton_mass_t#bar{t}__44->SetBinContent(87,742.2801);
+   dilepton_mass_t#bar{t}__44->SetBinContent(88,702.8513);
+   dilepton_mass_t#bar{t}__44->SetBinContent(89,714.3564);
+   dilepton_mass_t#bar{t}__44->SetBinContent(90,642.2997);
+   dilepton_mass_t#bar{t}__44->SetBinContent(91,658.8617);
+   dilepton_mass_t#bar{t}__44->SetBinContent(92,640.9592);
+   dilepton_mass_t#bar{t}__44->SetBinContent(93,632.5052);
+   dilepton_mass_t#bar{t}__44->SetBinContent(94,575.3748);
+   dilepton_mass_t#bar{t}__44->SetBinContent(95,595.2652);
+   dilepton_mass_t#bar{t}__44->SetBinContent(96,567.7588);
+   dilepton_mass_t#bar{t}__44->SetBinContent(97,577.1244);
+   dilepton_mass_t#bar{t}__44->SetBinContent(98,515.4152);
+   dilepton_mass_t#bar{t}__44->SetBinContent(99,510.5146);
+   dilepton_mass_t#bar{t}__44->SetBinContent(100,470.261);
+   dilepton_mass_t#bar{t}__44->SetBinContent(101,17434.43);
+   dilepton_mass_t#bar{t}__44->SetBinError(7,10.63358);
+   dilepton_mass_t#bar{t}__44->SetBinError(8,12.99616);
+   dilepton_mass_t#bar{t}__44->SetBinError(9,14.29282);
+   dilepton_mass_t#bar{t}__44->SetBinError(10,15.47894);
+   dilepton_mass_t#bar{t}__44->SetBinError(11,16.28593);
+   dilepton_mass_t#bar{t}__44->SetBinError(12,16.5315);
+   dilepton_mass_t#bar{t}__44->SetBinError(13,17.68075);
+   dilepton_mass_t#bar{t}__44->SetBinError(14,18.10238);
+   dilepton_mass_t#bar{t}__44->SetBinError(15,19.00726);
+   dilepton_mass_t#bar{t}__44->SetBinError(16,19.6222);
+   dilepton_mass_t#bar{t}__44->SetBinError(17,19.89131);
+   dilepton_mass_t#bar{t}__44->SetBinError(18,20.47726);
+   dilepton_mass_t#bar{t}__44->SetBinError(19,21.23958);
+   dilepton_mass_t#bar{t}__44->SetBinError(20,21.79545);
+   dilepton_mass_t#bar{t}__44->SetBinError(21,21.98289);
+   dilepton_mass_t#bar{t}__44->SetBinError(22,22.70423);
+   dilepton_mass_t#bar{t}__44->SetBinError(23,23.21778);
+   dilepton_mass_t#bar{t}__44->SetBinError(24,23.75398);
+   dilepton_mass_t#bar{t}__44->SetBinError(25,24.31482);
+   dilepton_mass_t#bar{t}__44->SetBinError(26,24.76288);
+   dilepton_mass_t#bar{t}__44->SetBinError(27,24.90048);
+   dilepton_mass_t#bar{t}__44->SetBinError(28,26.08886);
+   dilepton_mass_t#bar{t}__44->SetBinError(29,26.52659);
+   dilepton_mass_t#bar{t}__44->SetBinError(30,26.92666);
+   dilepton_mass_t#bar{t}__44->SetBinError(31,27.33472);
+   dilepton_mass_t#bar{t}__44->SetBinError(32,27.5444);
+   dilepton_mass_t#bar{t}__44->SetBinError(33,28.32963);
+   dilepton_mass_t#bar{t}__44->SetBinError(34,28.22576);
+   dilepton_mass_t#bar{t}__44->SetBinError(35,28.38333);
+   dilepton_mass_t#bar{t}__44->SetBinError(36,28.63104);
+   dilepton_mass_t#bar{t}__44->SetBinError(37,28.43593);
+   dilepton_mass_t#bar{t}__44->SetBinError(38,28.45771);
+   dilepton_mass_t#bar{t}__44->SetBinError(39,28.57805);
+   dilepton_mass_t#bar{t}__44->SetBinError(40,28.57608);
+   dilepton_mass_t#bar{t}__44->SetBinError(41,28.72915);
+   dilepton_mass_t#bar{t}__44->SetBinError(42,28.94606);
+   dilepton_mass_t#bar{t}__44->SetBinError(43,28.86919);
+   dilepton_mass_t#bar{t}__44->SetBinError(44,28.65449);
+   dilepton_mass_t#bar{t}__44->SetBinError(45,28.21082);
+   dilepton_mass_t#bar{t}__44->SetBinError(46,28.4776);
+   dilepton_mass_t#bar{t}__44->SetBinError(47,27.97779);
+   dilepton_mass_t#bar{t}__44->SetBinError(48,28.06282);
+   dilepton_mass_t#bar{t}__44->SetBinError(49,28.01405);
+   dilepton_mass_t#bar{t}__44->SetBinError(50,27.80453);
+   dilepton_mass_t#bar{t}__44->SetBinError(51,27.13381);
+   dilepton_mass_t#bar{t}__44->SetBinError(52,26.93908);
+   dilepton_mass_t#bar{t}__44->SetBinError(53,26.66991);
+   dilepton_mass_t#bar{t}__44->SetBinError(54,26.91136);
+   dilepton_mass_t#bar{t}__44->SetBinError(55,26.71413);
+   dilepton_mass_t#bar{t}__44->SetBinError(56,26.40306);
+   dilepton_mass_t#bar{t}__44->SetBinError(57,26.04769);
+   dilepton_mass_t#bar{t}__44->SetBinError(58,25.40831);
+   dilepton_mass_t#bar{t}__44->SetBinError(59,25.47311);
+   dilepton_mass_t#bar{t}__44->SetBinError(60,25.18292);
+   dilepton_mass_t#bar{t}__44->SetBinError(61,24.50991);
+   dilepton_mass_t#bar{t}__44->SetBinError(62,24.72197);
+   dilepton_mass_t#bar{t}__44->SetBinError(63,23.7861);
+   dilepton_mass_t#bar{t}__44->SetBinError(64,23.75779);
+   dilepton_mass_t#bar{t}__44->SetBinError(65,23.46726);
+   dilepton_mass_t#bar{t}__44->SetBinError(66,23.48697);
+   dilepton_mass_t#bar{t}__44->SetBinError(67,23.20019);
+   dilepton_mass_t#bar{t}__44->SetBinError(68,22.66939);
+   dilepton_mass_t#bar{t}__44->SetBinError(69,22.71593);
+   dilepton_mass_t#bar{t}__44->SetBinError(70,22.01097);
+   dilepton_mass_t#bar{t}__44->SetBinError(71,21.81087);
+   dilepton_mass_t#bar{t}__44->SetBinError(72,21.72415);
+   dilepton_mass_t#bar{t}__44->SetBinError(73,20.9648);
+   dilepton_mass_t#bar{t}__44->SetBinError(74,21.51083);
+   dilepton_mass_t#bar{t}__44->SetBinError(75,20.67595);
+   dilepton_mass_t#bar{t}__44->SetBinError(76,20.19098);
+   dilepton_mass_t#bar{t}__44->SetBinError(77,19.69453);
+   dilepton_mass_t#bar{t}__44->SetBinError(78,19.46448);
+   dilepton_mass_t#bar{t}__44->SetBinError(79,19.67429);
+   dilepton_mass_t#bar{t}__44->SetBinError(80,19.2596);
+   dilepton_mass_t#bar{t}__44->SetBinError(81,18.69282);
+   dilepton_mass_t#bar{t}__44->SetBinError(82,18.75237);
+   dilepton_mass_t#bar{t}__44->SetBinError(83,18.51409);
+   dilepton_mass_t#bar{t}__44->SetBinError(84,17.97689);
+   dilepton_mass_t#bar{t}__44->SetBinError(85,18.24475);
+   dilepton_mass_t#bar{t}__44->SetBinError(86,17.48283);
+   dilepton_mass_t#bar{t}__44->SetBinError(87,17.483);
+   dilepton_mass_t#bar{t}__44->SetBinError(88,17.03084);
+   dilepton_mass_t#bar{t}__44->SetBinError(89,17.11116);
+   dilepton_mass_t#bar{t}__44->SetBinError(90,16.2081);
+   dilepton_mass_t#bar{t}__44->SetBinError(91,16.43616);
+   dilepton_mass_t#bar{t}__44->SetBinError(92,16.23146);
+   dilepton_mass_t#bar{t}__44->SetBinError(93,16.11587);
+   dilepton_mass_t#bar{t}__44->SetBinError(94,15.3368);
+   dilepton_mass_t#bar{t}__44->SetBinError(95,15.64049);
+   dilepton_mass_t#bar{t}__44->SetBinError(96,15.28858);
+   dilepton_mass_t#bar{t}__44->SetBinError(97,15.43332);
+   dilepton_mass_t#bar{t}__44->SetBinError(98,14.54338);
+   dilepton_mass_t#bar{t}__44->SetBinError(99,14.49345);
+   dilepton_mass_t#bar{t}__44->SetBinError(100,13.91697);
+   dilepton_mass_t#bar{t}__44->SetBinError(101,84.62937);
+   dilepton_mass_t#bar{t}__44->SetEntries(355036);
    dilepton_mass_t#bar{t}__44->SetDirectory(0);
 
    ci = TColor::GetColor("#cc0000");
@@ -314,32 +314,32 @@ void dilepton_mass()
    dilepton_mass_Diboson__45->SetBinContent(14,0.4175971);
    dilepton_mass_Diboson__45->SetBinContent(15,0.7924417);
    dilepton_mass_Diboson__45->SetBinContent(16,1.611248);
-   dilepton_mass_Diboson__45->SetBinContent(17,1.588626);
+   dilepton_mass_Diboson__45->SetBinContent(17,1.508833);
    dilepton_mass_Diboson__45->SetBinContent(18,0.8344402);
    dilepton_mass_Diboson__45->SetBinContent(19,1.120268);
    dilepton_mass_Diboson__45->SetBinContent(20,1.22148);
    dilepton_mass_Diboson__45->SetBinContent(21,0.915934);
    dilepton_mass_Diboson__45->SetBinContent(22,2.006142);
    dilepton_mass_Diboson__45->SetBinContent(23,2.121125);
-   dilepton_mass_Diboson__45->SetBinContent(24,1.163339);
-   dilepton_mass_Diboson__45->SetBinContent(25,1.995911);
+   dilepton_mass_Diboson__45->SetBinContent(24,0.7153746);
+   dilepton_mass_Diboson__45->SetBinContent(25,1.573224);
    dilepton_mass_Diboson__45->SetBinContent(26,1.960264);
    dilepton_mass_Diboson__45->SetBinContent(27,0.3796456);
    dilepton_mass_Diboson__45->SetBinContent(28,2.292701);
    dilepton_mass_Diboson__45->SetBinContent(29,1.596807);
    dilepton_mass_Diboson__45->SetBinContent(30,3.582704);
-   dilepton_mass_Diboson__45->SetBinContent(31,2.011166);
+   dilepton_mass_Diboson__45->SetBinContent(31,1.577462);
    dilepton_mass_Diboson__45->SetBinContent(32,3.558893);
    dilepton_mass_Diboson__45->SetBinContent(33,1.220695);
    dilepton_mass_Diboson__45->SetBinContent(34,2.461578);
    dilepton_mass_Diboson__45->SetBinContent(35,1.179784);
    dilepton_mass_Diboson__45->SetBinContent(36,2.718913);
    dilepton_mass_Diboson__45->SetBinContent(37,2.441687);
-   dilepton_mass_Diboson__45->SetBinContent(38,3.05178);
+   dilepton_mass_Diboson__45->SetBinContent(38,2.659267);
    dilepton_mass_Diboson__45->SetBinContent(39,1.223091);
    dilepton_mass_Diboson__45->SetBinContent(40,2.645666);
    dilepton_mass_Diboson__45->SetBinContent(41,4.456139);
-   dilepton_mass_Diboson__45->SetBinContent(42,4.039425);
+   dilepton_mass_Diboson__45->SetBinContent(42,3.658368);
    dilepton_mass_Diboson__45->SetBinContent(43,0.8120028);
    dilepton_mass_Diboson__45->SetBinContent(44,2.008929);
    dilepton_mass_Diboson__45->SetBinContent(45,1.722283);
@@ -350,7 +350,7 @@ void dilepton_mass()
    dilepton_mass_Diboson__45->SetBinContent(50,1.255963);
    dilepton_mass_Diboson__45->SetBinContent(51,1.498248);
    dilepton_mass_Diboson__45->SetBinContent(52,2.051481);
-   dilepton_mass_Diboson__45->SetBinContent(53,3.466183);
+   dilepton_mass_Diboson__45->SetBinContent(53,3.08802);
    dilepton_mass_Diboson__45->SetBinContent(54,2.327186);
    dilepton_mass_Diboson__45->SetBinContent(55,2.340231);
    dilepton_mass_Diboson__45->SetBinContent(56,0.8247848);
@@ -359,7 +359,7 @@ void dilepton_mass()
    dilepton_mass_Diboson__45->SetBinContent(59,1.624089);
    dilepton_mass_Diboson__45->SetBinContent(60,1.369785);
    dilepton_mass_Diboson__45->SetBinContent(61,2.86232);
-   dilepton_mass_Diboson__45->SetBinContent(62,2.676129);
+   dilepton_mass_Diboson__45->SetBinContent(62,2.306604);
    dilepton_mass_Diboson__45->SetBinContent(63,1.442095);
    dilepton_mass_Diboson__45->SetBinContent(64,2.78624);
    dilepton_mass_Diboson__45->SetBinContent(65,1.939517);
@@ -390,14 +390,14 @@ void dilepton_mass()
    dilepton_mass_Diboson__45->SetBinContent(90,0.4431019);
    dilepton_mass_Diboson__45->SetBinContent(91,1.373541);
    dilepton_mass_Diboson__45->SetBinContent(93,0.7451811);
-   dilepton_mass_Diboson__45->SetBinContent(94,1.499228);
+   dilepton_mass_Diboson__45->SetBinContent(94,1.108393);
    dilepton_mass_Diboson__45->SetBinContent(95,1.136612);
    dilepton_mass_Diboson__45->SetBinContent(96,1.643377);
    dilepton_mass_Diboson__45->SetBinContent(97,0.3893607);
    dilepton_mass_Diboson__45->SetBinContent(98,1.923541);
    dilepton_mass_Diboson__45->SetBinContent(99,0.3977126);
    dilepton_mass_Diboson__45->SetBinContent(100,0.7628265);
-   dilepton_mass_Diboson__45->SetBinContent(101,37.52716);
+   dilepton_mass_Diboson__45->SetBinContent(101,35.77622);
    dilepton_mass_Diboson__45->SetBinError(8,0.383029);
    dilepton_mass_Diboson__45->SetBinError(9,0.02571062);
    dilepton_mass_Diboson__45->SetBinError(10,0.4175193);
@@ -407,32 +407,32 @@ void dilepton_mass()
    dilepton_mass_Diboson__45->SetBinError(14,0.4068844);
    dilepton_mass_Diboson__45->SetBinError(15,0.5656925);
    dilepton_mass_Diboson__45->SetBinError(16,0.8073284);
-   dilepton_mass_Diboson__45->SetBinError(17,0.7617528);
+   dilepton_mass_Diboson__45->SetBinError(17,0.7575621);
    dilepton_mass_Diboson__45->SetBinError(18,0.5907568);
    dilepton_mass_Diboson__45->SetBinError(19,0.6470002);
    dilepton_mass_Diboson__45->SetBinError(20,0.707358);
    dilepton_mass_Diboson__45->SetBinError(21,0.5766473);
    dilepton_mass_Diboson__45->SetBinError(22,0.8998503);
    dilepton_mass_Diboson__45->SetBinError(23,0.8924581);
-   dilepton_mass_Diboson__45->SetBinError(24,0.6148436);
-   dilepton_mass_Diboson__45->SetBinError(25,0.8534937);
+   dilepton_mass_Diboson__45->SetBinError(24,0.4211421);
+   dilepton_mass_Diboson__45->SetBinError(25,0.7414762);
    dilepton_mass_Diboson__45->SetBinError(26,0.8770268);
    dilepton_mass_Diboson__45->SetBinError(27,0.3796456);
    dilepton_mass_Diboson__45->SetBinError(28,0.9397129);
    dilepton_mass_Diboson__45->SetBinError(29,0.7991461);
    dilepton_mass_Diboson__45->SetBinError(30,1.198619);
-   dilepton_mass_Diboson__45->SetBinError(31,0.8999051);
+   dilepton_mass_Diboson__45->SetBinError(31,0.7884986);
    dilepton_mass_Diboson__45->SetBinError(32,1.196585);
    dilepton_mass_Diboson__45->SetBinError(33,0.7070811);
    dilepton_mass_Diboson__45->SetBinError(34,1.006693);
    dilepton_mass_Diboson__45->SetBinError(35,0.6811661);
    dilepton_mass_Diboson__45->SetBinError(36,1.034586);
    dilepton_mass_Diboson__45->SetBinError(37,0.9815573);
-   dilepton_mass_Diboson__45->SetBinError(38,1.087782);
+   dilepton_mass_Diboson__45->SetBinError(38,1.014496);
    dilepton_mass_Diboson__45->SetBinError(39,0.7081241);
    dilepton_mass_Diboson__45->SetBinError(40,1.000422);
    dilepton_mass_Diboson__45->SetBinError(41,1.319852);
-   dilepton_mass_Diboson__45->SetBinError(42,1.226761);
+   dilepton_mass_Diboson__45->SetBinError(42,1.166078);
    dilepton_mass_Diboson__45->SetBinError(43,0.5502816);
    dilepton_mass_Diboson__45->SetBinError(44,0.8967312);
    dilepton_mass_Diboson__45->SetBinError(45,0.8613361);
@@ -443,7 +443,7 @@ void dilepton_mass()
    dilepton_mass_Diboson__45->SetBinError(50,0.7271566);
    dilepton_mass_Diboson__45->SetBinError(51,0.7626482);
    dilepton_mass_Diboson__45->SetBinError(52,0.9118773);
-   dilepton_mass_Diboson__45->SetBinError(53,1.168752);
+   dilepton_mass_Diboson__45->SetBinError(53,1.105882);
    dilepton_mass_Diboson__45->SetBinError(54,0.9508506);
    dilepton_mass_Diboson__45->SetBinError(55,0.9504544);
    dilepton_mass_Diboson__45->SetBinError(56,0.5850861);
@@ -452,7 +452,7 @@ void dilepton_mass()
    dilepton_mass_Diboson__45->SetBinError(59,0.7815124);
    dilepton_mass_Diboson__45->SetBinError(60,0.701681);
    dilepton_mass_Diboson__45->SetBinError(61,1.031828);
-   dilepton_mass_Diboson__45->SetBinError(62,1.019408);
+   dilepton_mass_Diboson__45->SetBinError(62,0.9500761);
    dilepton_mass_Diboson__45->SetBinError(63,0.7283419);
    dilepton_mass_Diboson__45->SetBinError(64,1.023804);
    dilepton_mass_Diboson__45->SetBinError(65,0.8690851);
@@ -483,15 +483,15 @@ void dilepton_mass()
    dilepton_mass_Diboson__45->SetBinError(90,0.4431019);
    dilepton_mass_Diboson__45->SetBinError(91,0.701516);
    dilepton_mass_Diboson__45->SetBinError(93,0.527243);
-   dilepton_mass_Diboson__45->SetBinError(94,0.7505526);
+   dilepton_mass_Diboson__45->SetBinError(94,0.6407626);
    dilepton_mass_Diboson__45->SetBinError(95,0.6574294);
    dilepton_mass_Diboson__45->SetBinError(96,0.8240707);
    dilepton_mass_Diboson__45->SetBinError(97,0.3893607);
    dilepton_mass_Diboson__45->SetBinError(98,0.8637289);
    dilepton_mass_Diboson__45->SetBinError(99,0.3977126);
    dilepton_mass_Diboson__45->SetBinError(100,0.5394359);
-   dilepton_mass_Diboson__45->SetBinError(101,3.772655);
-   dilepton_mass_Diboson__45->SetEntries(511);
+   dilepton_mass_Diboson__45->SetBinError(101,3.670319);
+   dilepton_mass_Diboson__45->SetEntries(498);
    dilepton_mass_Diboson__45->SetDirectory(0);
 
    ci = TColor::GetColor("#ffff00");
@@ -594,196 +594,196 @@ void dilepton_mass()
    
    TH1F *dilepton_mass_SinglesPtop__48 = new TH1F("dilepton_mass_SinglesPtop__48","Single top",100,0,200);
    dilepton_mass_SinglesPtop__48->SetBinContent(7,2.849151);
-   dilepton_mass_SinglesPtop__48->SetBinContent(8,18.70477);
+   dilepton_mass_SinglesPtop__48->SetBinContent(8,15.01193);
    dilepton_mass_SinglesPtop__48->SetBinContent(9,20.93772);
-   dilepton_mass_SinglesPtop__48->SetBinContent(10,17.10756);
-   dilepton_mass_SinglesPtop__48->SetBinContent(11,27.60016);
+   dilepton_mass_SinglesPtop__48->SetBinContent(10,15.73434);
+   dilepton_mass_SinglesPtop__48->SetBinContent(11,26.23779);
    dilepton_mass_SinglesPtop__48->SetBinContent(12,29.72505);
-   dilepton_mass_SinglesPtop__48->SetBinContent(13,28.70873);
+   dilepton_mass_SinglesPtop__48->SetBinContent(13,25.87749);
    dilepton_mass_SinglesPtop__48->SetBinContent(14,35.16188);
-   dilepton_mass_SinglesPtop__48->SetBinContent(15,44.159);
-   dilepton_mass_SinglesPtop__48->SetBinContent(16,36.10852);
-   dilepton_mass_SinglesPtop__48->SetBinContent(17,44.25172);
-   dilepton_mass_SinglesPtop__48->SetBinContent(18,42.74661);
-   dilepton_mass_SinglesPtop__48->SetBinContent(19,49.25697);
-   dilepton_mass_SinglesPtop__48->SetBinContent(20,53.42948);
-   dilepton_mass_SinglesPtop__48->SetBinContent(21,43.83722);
+   dilepton_mass_SinglesPtop__48->SetBinContent(15,40.05601);
+   dilepton_mass_SinglesPtop__48->SetBinContent(16,34.76306);
+   dilepton_mass_SinglesPtop__48->SetBinContent(17,41.39132);
+   dilepton_mass_SinglesPtop__48->SetBinContent(18,41.24895);
+   dilepton_mass_SinglesPtop__48->SetBinContent(19,47.64013);
+   dilepton_mass_SinglesPtop__48->SetBinContent(20,52.11335);
+   dilepton_mass_SinglesPtop__48->SetBinContent(21,42.28304);
    dilepton_mass_SinglesPtop__48->SetBinContent(22,55.48969);
-   dilepton_mass_SinglesPtop__48->SetBinContent(23,61.95973);
-   dilepton_mass_SinglesPtop__48->SetBinContent(24,57.46305);
-   dilepton_mass_SinglesPtop__48->SetBinContent(25,58.09502);
-   dilepton_mass_SinglesPtop__48->SetBinContent(26,57.86083);
-   dilepton_mass_SinglesPtop__48->SetBinContent(27,57.51157);
-   dilepton_mass_SinglesPtop__48->SetBinContent(28,85.01569);
-   dilepton_mass_SinglesPtop__48->SetBinContent(29,81.51669);
+   dilepton_mass_SinglesPtop__48->SetBinContent(23,56.63197);
+   dilepton_mass_SinglesPtop__48->SetBinContent(24,54.62728);
+   dilepton_mass_SinglesPtop__48->SetBinContent(25,56.67979);
+   dilepton_mass_SinglesPtop__48->SetBinContent(26,55.27998);
+   dilepton_mass_SinglesPtop__48->SetBinContent(27,56.8882);
+   dilepton_mass_SinglesPtop__48->SetBinContent(28,75.30459);
+   dilepton_mass_SinglesPtop__48->SetBinContent(29,77.81506);
    dilepton_mass_SinglesPtop__48->SetBinContent(30,82.1963);
-   dilepton_mass_SinglesPtop__48->SetBinContent(31,73.38025);
-   dilepton_mass_SinglesPtop__48->SetBinContent(32,77.20948);
-   dilepton_mass_SinglesPtop__48->SetBinContent(33,103.1706);
-   dilepton_mass_SinglesPtop__48->SetBinContent(34,65.51198);
-   dilepton_mass_SinglesPtop__48->SetBinContent(35,59.85443);
-   dilepton_mass_SinglesPtop__48->SetBinContent(36,77.72982);
-   dilepton_mass_SinglesPtop__48->SetBinContent(37,70.09785);
+   dilepton_mass_SinglesPtop__48->SetBinContent(31,72.08271);
+   dilepton_mass_SinglesPtop__48->SetBinContent(32,76.89777);
+   dilepton_mass_SinglesPtop__48->SetBinContent(33,96.35227);
+   dilepton_mass_SinglesPtop__48->SetBinContent(34,64.19863);
+   dilepton_mass_SinglesPtop__48->SetBinContent(35,58.44627);
+   dilepton_mass_SinglesPtop__48->SetBinContent(36,70.96451);
+   dilepton_mass_SinglesPtop__48->SetBinContent(37,67.48401);
    dilepton_mass_SinglesPtop__48->SetBinContent(38,68.94025);
    dilepton_mass_SinglesPtop__48->SetBinContent(39,61.28628);
-   dilepton_mass_SinglesPtop__48->SetBinContent(40,62.84905);
-   dilepton_mass_SinglesPtop__48->SetBinContent(41,70.23889);
-   dilepton_mass_SinglesPtop__48->SetBinContent(42,110.8804);
-   dilepton_mass_SinglesPtop__48->SetBinContent(43,87.23305);
-   dilepton_mass_SinglesPtop__48->SetBinContent(44,77.79474);
-   dilepton_mass_SinglesPtop__48->SetBinContent(45,88.93172);
-   dilepton_mass_SinglesPtop__48->SetBinContent(46,96.96159);
-   dilepton_mass_SinglesPtop__48->SetBinContent(47,83.74946);
-   dilepton_mass_SinglesPtop__48->SetBinContent(48,92.02541);
-   dilepton_mass_SinglesPtop__48->SetBinContent(49,88.64012);
-   dilepton_mass_SinglesPtop__48->SetBinContent(50,61.23495);
-   dilepton_mass_SinglesPtop__48->SetBinContent(51,70.21824);
+   dilepton_mass_SinglesPtop__48->SetBinContent(40,61.31091);
+   dilepton_mass_SinglesPtop__48->SetBinContent(41,65.15878);
+   dilepton_mass_SinglesPtop__48->SetBinContent(42,104.7243);
+   dilepton_mass_SinglesPtop__48->SetBinContent(43,82.73402);
+   dilepton_mass_SinglesPtop__48->SetBinContent(44,74.04365);
+   dilepton_mass_SinglesPtop__48->SetBinContent(45,83.27097);
+   dilepton_mass_SinglesPtop__48->SetBinContent(46,95.62608);
+   dilepton_mass_SinglesPtop__48->SetBinContent(47,82.44028);
+   dilepton_mass_SinglesPtop__48->SetBinContent(48,87.36475);
+   dilepton_mass_SinglesPtop__48->SetBinContent(49,85.88169);
+   dilepton_mass_SinglesPtop__48->SetBinContent(50,55.79502);
+   dilepton_mass_SinglesPtop__48->SetBinContent(51,67.61098);
    dilepton_mass_SinglesPtop__48->SetBinContent(52,79.76446);
-   dilepton_mass_SinglesPtop__48->SetBinContent(53,61.55844);
+   dilepton_mass_SinglesPtop__48->SetBinContent(53,60.22509);
    dilepton_mass_SinglesPtop__48->SetBinContent(54,40.83892);
-   dilepton_mass_SinglesPtop__48->SetBinContent(55,102.3861);
-   dilepton_mass_SinglesPtop__48->SetBinContent(56,74.33096);
-   dilepton_mass_SinglesPtop__48->SetBinContent(57,74.56351);
-   dilepton_mass_SinglesPtop__48->SetBinContent(58,68.18648);
-   dilepton_mass_SinglesPtop__48->SetBinContent(59,92.59623);
+   dilepton_mass_SinglesPtop__48->SetBinContent(55,101.0881);
+   dilepton_mass_SinglesPtop__48->SetBinContent(56,72.98351);
+   dilepton_mass_SinglesPtop__48->SetBinContent(57,71.75622);
+   dilepton_mass_SinglesPtop__48->SetBinContent(58,66.82899);
+   dilepton_mass_SinglesPtop__48->SetBinContent(59,88.99576);
    dilepton_mass_SinglesPtop__48->SetBinContent(60,65.2122);
-   dilepton_mass_SinglesPtop__48->SetBinContent(61,75.54036);
-   dilepton_mass_SinglesPtop__48->SetBinContent(62,70.81029);
-   dilepton_mass_SinglesPtop__48->SetBinContent(63,49.49276);
+   dilepton_mass_SinglesPtop__48->SetBinContent(61,72.91674);
+   dilepton_mass_SinglesPtop__48->SetBinContent(62,66.82119);
+   dilepton_mass_SinglesPtop__48->SetBinContent(63,48.09893);
    dilepton_mass_SinglesPtop__48->SetBinContent(64,57.84948);
-   dilepton_mass_SinglesPtop__48->SetBinContent(65,69.88935);
-   dilepton_mass_SinglesPtop__48->SetBinContent(66,54.99563);
-   dilepton_mass_SinglesPtop__48->SetBinContent(67,55.72973);
-   dilepton_mass_SinglesPtop__48->SetBinContent(68,64.88166);
+   dilepton_mass_SinglesPtop__48->SetBinContent(65,68.70692);
+   dilepton_mass_SinglesPtop__48->SetBinContent(66,52.17384);
+   dilepton_mass_SinglesPtop__48->SetBinContent(67,54.54202);
+   dilepton_mass_SinglesPtop__48->SetBinContent(68,63.67213);
    dilepton_mass_SinglesPtop__48->SetBinContent(69,53.07533);
    dilepton_mass_SinglesPtop__48->SetBinContent(70,65.68335);
-   dilepton_mass_SinglesPtop__48->SetBinContent(71,43.47871);
-   dilepton_mass_SinglesPtop__48->SetBinContent(72,65.74944);
-   dilepton_mass_SinglesPtop__48->SetBinContent(73,53.42296);
-   dilepton_mass_SinglesPtop__48->SetBinContent(74,59.19939);
-   dilepton_mass_SinglesPtop__48->SetBinContent(75,54.51862);
-   dilepton_mass_SinglesPtop__48->SetBinContent(76,53.42372);
+   dilepton_mass_SinglesPtop__48->SetBinContent(71,42.11743);
+   dilepton_mass_SinglesPtop__48->SetBinContent(72,62.26486);
+   dilepton_mass_SinglesPtop__48->SetBinContent(73,52.10703);
+   dilepton_mass_SinglesPtop__48->SetBinContent(74,57.63831);
+   dilepton_mass_SinglesPtop__48->SetBinContent(75,53.21276);
+   dilepton_mass_SinglesPtop__48->SetBinContent(76,52.06186);
    dilepton_mass_SinglesPtop__48->SetBinContent(77,44.57409);
-   dilepton_mass_SinglesPtop__48->SetBinContent(78,44.19148);
+   dilepton_mass_SinglesPtop__48->SetBinContent(78,44.18948);
    dilepton_mass_SinglesPtop__48->SetBinContent(79,48.91583);
-   dilepton_mass_SinglesPtop__48->SetBinContent(80,51.31141);
-   dilepton_mass_SinglesPtop__48->SetBinContent(81,51.24427);
+   dilepton_mass_SinglesPtop__48->SetBinContent(80,49.78726);
+   dilepton_mass_SinglesPtop__48->SetBinContent(81,47.76942);
    dilepton_mass_SinglesPtop__48->SetBinContent(82,50.12547);
-   dilepton_mass_SinglesPtop__48->SetBinContent(83,45.81733);
+   dilepton_mass_SinglesPtop__48->SetBinContent(83,42.83894);
    dilepton_mass_SinglesPtop__48->SetBinContent(84,39.04126);
-   dilepton_mass_SinglesPtop__48->SetBinContent(85,42.44596);
+   dilepton_mass_SinglesPtop__48->SetBinContent(85,39.45086);
    dilepton_mass_SinglesPtop__48->SetBinContent(86,47.8675);
-   dilepton_mass_SinglesPtop__48->SetBinContent(87,38.42258);
-   dilepton_mass_SinglesPtop__48->SetBinContent(88,46.62086);
-   dilepton_mass_SinglesPtop__48->SetBinContent(89,37.30705);
-   dilepton_mass_SinglesPtop__48->SetBinContent(90,40.12617);
-   dilepton_mass_SinglesPtop__48->SetBinContent(91,24.17583);
-   dilepton_mass_SinglesPtop__48->SetBinContent(92,31.91986);
+   dilepton_mass_SinglesPtop__48->SetBinContent(87,36.99829);
+   dilepton_mass_SinglesPtop__48->SetBinContent(88,45.28887);
+   dilepton_mass_SinglesPtop__48->SetBinContent(89,35.90003);
+   dilepton_mass_SinglesPtop__48->SetBinContent(90,38.77142);
+   dilepton_mass_SinglesPtop__48->SetBinContent(91,22.71084);
+   dilepton_mass_SinglesPtop__48->SetBinContent(92,29.03725);
    dilepton_mass_SinglesPtop__48->SetBinContent(93,38.65953);
-   dilepton_mass_SinglesPtop__48->SetBinContent(94,28.42201);
-   dilepton_mass_SinglesPtop__48->SetBinContent(95,21.46574);
+   dilepton_mass_SinglesPtop__48->SetBinContent(94,27.12033);
+   dilepton_mass_SinglesPtop__48->SetBinContent(95,20.14665);
    dilepton_mass_SinglesPtop__48->SetBinContent(96,30.68748);
    dilepton_mass_SinglesPtop__48->SetBinContent(97,34.58278);
    dilepton_mass_SinglesPtop__48->SetBinContent(98,34.02363);
    dilepton_mass_SinglesPtop__48->SetBinContent(99,32.87181);
    dilepton_mass_SinglesPtop__48->SetBinContent(100,22.04719);
-   dilepton_mass_SinglesPtop__48->SetBinContent(101,1159.164);
+   dilepton_mass_SinglesPtop__48->SetBinContent(101,1127.34);
    dilepton_mass_SinglesPtop__48->SetBinError(7,2.019294);
-   dilepton_mass_SinglesPtop__48->SetBinError(8,5.024778);
+   dilepton_mass_SinglesPtop__48->SetBinError(8,4.536502);
    dilepton_mass_SinglesPtop__48->SetBinError(9,5.271581);
-   dilepton_mass_SinglesPtop__48->SetBinError(10,4.841301);
-   dilepton_mass_SinglesPtop__48->SetBinError(11,6.011635);
+   dilepton_mass_SinglesPtop__48->SetBinError(10,4.64694);
+   dilepton_mass_SinglesPtop__48->SetBinError(11,5.855226);
    dilepton_mass_SinglesPtop__48->SetBinError(12,6.23567);
-   dilepton_mass_SinglesPtop__48->SetBinError(13,6.227332);
+   dilepton_mass_SinglesPtop__48->SetBinError(13,5.896734);
    dilepton_mass_SinglesPtop__48->SetBinError(14,6.854561);
-   dilepton_mass_SinglesPtop__48->SetBinError(15,7.8046);
-   dilepton_mass_SinglesPtop__48->SetBinError(16,6.900213);
-   dilepton_mass_SinglesPtop__48->SetBinError(17,7.743294);
-   dilepton_mass_SinglesPtop__48->SetBinError(18,7.581543);
-   dilepton_mass_SinglesPtop__48->SetBinError(19,7.978634);
-   dilepton_mass_SinglesPtop__48->SetBinError(20,8.453858);
-   dilepton_mass_SinglesPtop__48->SetBinError(21,7.611523);
+   dilepton_mass_SinglesPtop__48->SetBinError(15,7.435598);
+   dilepton_mass_SinglesPtop__48->SetBinError(16,6.767769);
+   dilepton_mass_SinglesPtop__48->SetBinError(17,7.472258);
+   dilepton_mass_SinglesPtop__48->SetBinError(18,7.432147);
+   dilepton_mass_SinglesPtop__48->SetBinError(19,7.813092);
+   dilepton_mass_SinglesPtop__48->SetBinError(20,8.35078);
+   dilepton_mass_SinglesPtop__48->SetBinError(21,7.451161);
    dilepton_mass_SinglesPtop__48->SetBinError(22,8.68882);
-   dilepton_mass_SinglesPtop__48->SetBinError(23,9.082528);
-   dilepton_mass_SinglesPtop__48->SetBinError(24,8.788251);
-   dilepton_mass_SinglesPtop__48->SetBinError(25,8.876754);
-   dilepton_mass_SinglesPtop__48->SetBinError(26,8.811363);
-   dilepton_mass_SinglesPtop__48->SetBinError(27,8.687131);
-   dilepton_mass_SinglesPtop__48->SetBinError(28,10.71898);
-   dilepton_mass_SinglesPtop__48->SetBinError(29,10.47857);
+   dilepton_mass_SinglesPtop__48->SetBinError(23,8.682275);
+   dilepton_mass_SinglesPtop__48->SetBinError(24,8.554307);
+   dilepton_mass_SinglesPtop__48->SetBinError(25,8.763212);
+   dilepton_mass_SinglesPtop__48->SetBinError(26,8.614908);
+   dilepton_mass_SinglesPtop__48->SetBinError(27,8.675392);
+   dilepton_mass_SinglesPtop__48->SetBinError(28,10.06629);
+   dilepton_mass_SinglesPtop__48->SetBinError(29,10.27217);
    dilepton_mass_SinglesPtop__48->SetBinError(30,10.50583);
-   dilepton_mass_SinglesPtop__48->SetBinError(31,9.942622);
-   dilepton_mass_SinglesPtop__48->SetBinError(32,10.05094);
-   dilepton_mass_SinglesPtop__48->SetBinError(33,11.75346);
-   dilepton_mass_SinglesPtop__48->SetBinError(34,9.310397);
-   dilepton_mass_SinglesPtop__48->SetBinError(35,9.021222);
-   dilepton_mass_SinglesPtop__48->SetBinError(36,10.1655);
-   dilepton_mass_SinglesPtop__48->SetBinError(37,9.755583);
+   dilepton_mass_SinglesPtop__48->SetBinError(31,9.857593);
+   dilepton_mass_SinglesPtop__48->SetBinError(32,10.0461);
+   dilepton_mass_SinglesPtop__48->SetBinError(33,11.34935);
+   dilepton_mass_SinglesPtop__48->SetBinError(34,9.2173);
+   dilepton_mass_SinglesPtop__48->SetBinError(35,8.910641);
+   dilepton_mass_SinglesPtop__48->SetBinError(36,9.700549);
+   dilepton_mass_SinglesPtop__48->SetBinError(37,9.578865);
    dilepton_mass_SinglesPtop__48->SetBinError(38,9.553686);
    dilepton_mass_SinglesPtop__48->SetBinError(39,8.966744);
-   dilepton_mass_SinglesPtop__48->SetBinError(40,9.257531);
-   dilepton_mass_SinglesPtop__48->SetBinError(41,9.646284);
-   dilepton_mass_SinglesPtop__48->SetBinError(42,12.13448);
-   dilepton_mass_SinglesPtop__48->SetBinError(43,10.80912);
-   dilepton_mass_SinglesPtop__48->SetBinError(44,10.32985);
-   dilepton_mass_SinglesPtop__48->SetBinError(45,10.94686);
-   dilepton_mass_SinglesPtop__48->SetBinError(46,11.43106);
-   dilepton_mass_SinglesPtop__48->SetBinError(47,10.53508);
-   dilepton_mass_SinglesPtop__48->SetBinError(48,11.01748);
-   dilepton_mass_SinglesPtop__48->SetBinError(49,10.9023);
-   dilepton_mass_SinglesPtop__48->SetBinError(50,9.041597);
-   dilepton_mass_SinglesPtop__48->SetBinError(51,9.746683);
+   dilepton_mass_SinglesPtop__48->SetBinError(40,9.128855);
+   dilepton_mass_SinglesPtop__48->SetBinError(41,9.29647);
+   dilepton_mass_SinglesPtop__48->SetBinError(42,11.79406);
+   dilepton_mass_SinglesPtop__48->SetBinError(43,10.50403);
+   dilepton_mass_SinglesPtop__48->SetBinError(44,10.09025);
+   dilepton_mass_SinglesPtop__48->SetBinError(45,10.57248);
+   dilepton_mass_SinglesPtop__48->SetBinError(46,11.35278);
+   dilepton_mass_SinglesPtop__48->SetBinError(47,10.45342);
+   dilepton_mass_SinglesPtop__48->SetBinError(48,10.76496);
+   dilepton_mass_SinglesPtop__48->SetBinError(49,10.72546);
+   dilepton_mass_SinglesPtop__48->SetBinError(50,8.610869);
+   dilepton_mass_SinglesPtop__48->SetBinError(51,9.569865);
    dilepton_mass_SinglesPtop__48->SetBinError(52,10.36839);
-   dilepton_mass_SinglesPtop__48->SetBinError(53,8.948991);
+   dilepton_mass_SinglesPtop__48->SetBinError(53,8.849102);
    dilepton_mass_SinglesPtop__48->SetBinError(54,7.306044);
-   dilepton_mass_SinglesPtop__48->SetBinError(55,11.73804);
-   dilepton_mass_SinglesPtop__48->SetBinError(56,9.934663);
-   dilepton_mass_SinglesPtop__48->SetBinError(57,9.87586);
-   dilepton_mass_SinglesPtop__48->SetBinError(58,9.722276);
-   dilepton_mass_SinglesPtop__48->SetBinError(59,11.21211);
+   dilepton_mass_SinglesPtop__48->SetBinError(55,11.66606);
+   dilepton_mass_SinglesPtop__48->SetBinError(56,9.842861);
+   dilepton_mass_SinglesPtop__48->SetBinError(57,9.67223);
+   dilepton_mass_SinglesPtop__48->SetBinError(58,9.62704);
+   dilepton_mass_SinglesPtop__48->SetBinError(59,11.00464);
    dilepton_mass_SinglesPtop__48->SetBinError(60,9.301557);
-   dilepton_mass_SinglesPtop__48->SetBinError(61,10.04902);
-   dilepton_mass_SinglesPtop__48->SetBinError(62,9.672313);
-   dilepton_mass_SinglesPtop__48->SetBinError(63,8.120932);
+   dilepton_mass_SinglesPtop__48->SetBinError(61,9.872963);
+   dilepton_mass_SinglesPtop__48->SetBinError(62,9.387852);
+   dilepton_mass_SinglesPtop__48->SetBinError(63,8.000424);
    dilepton_mass_SinglesPtop__48->SetBinError(64,8.712259);
-   dilepton_mass_SinglesPtop__48->SetBinError(65,9.822249);
-   dilepton_mass_SinglesPtop__48->SetBinError(66,8.460997);
-   dilepton_mass_SinglesPtop__48->SetBinError(67,8.694123);
-   dilepton_mass_SinglesPtop__48->SetBinError(68,9.448556);
+   dilepton_mass_SinglesPtop__48->SetBinError(65,9.750816);
+   dilepton_mass_SinglesPtop__48->SetBinError(66,8.222361);
+   dilepton_mass_SinglesPtop__48->SetBinError(67,8.612613);
+   dilepton_mass_SinglesPtop__48->SetBinError(68,9.37082);
    dilepton_mass_SinglesPtop__48->SetBinError(69,8.444011);
    dilepton_mass_SinglesPtop__48->SetBinError(70,9.4199);
-   dilepton_mass_SinglesPtop__48->SetBinError(71,7.517404);
-   dilepton_mass_SinglesPtop__48->SetBinError(72,9.188147);
-   dilepton_mass_SinglesPtop__48->SetBinError(73,8.613916);
-   dilepton_mass_SinglesPtop__48->SetBinError(74,8.975358);
-   dilepton_mass_SinglesPtop__48->SetBinError(75,8.526346);
-   dilepton_mass_SinglesPtop__48->SetBinError(76,8.50131);
+   dilepton_mass_SinglesPtop__48->SetBinError(71,7.393125);
+   dilepton_mass_SinglesPtop__48->SetBinError(72,8.955007);
+   dilepton_mass_SinglesPtop__48->SetBinError(73,8.512807);
+   dilepton_mass_SinglesPtop__48->SetBinError(74,8.838556);
+   dilepton_mass_SinglesPtop__48->SetBinError(75,8.425753);
+   dilepton_mass_SinglesPtop__48->SetBinError(76,8.391519);
    dilepton_mass_SinglesPtop__48->SetBinError(77,7.679774);
    dilepton_mass_SinglesPtop__48->SetBinError(78,7.703996);
    dilepton_mass_SinglesPtop__48->SetBinError(79,7.940751);
-   dilepton_mass_SinglesPtop__48->SetBinError(80,8.314511);
-   dilepton_mass_SinglesPtop__48->SetBinError(81,8.266585);
+   dilepton_mass_SinglesPtop__48->SetBinError(80,8.17362);
+   dilepton_mass_SinglesPtop__48->SetBinError(81,7.995617);
    dilepton_mass_SinglesPtop__48->SetBinError(82,8.222632);
-   dilepton_mass_SinglesPtop__48->SetBinError(83,7.907641);
+   dilepton_mass_SinglesPtop__48->SetBinError(83,7.622027);
    dilepton_mass_SinglesPtop__48->SetBinError(84,7.129629);
-   dilepton_mass_SinglesPtop__48->SetBinError(85,7.474617);
+   dilepton_mass_SinglesPtop__48->SetBinError(85,7.167116);
    dilepton_mass_SinglesPtop__48->SetBinError(86,7.966185);
-   dilepton_mass_SinglesPtop__48->SetBinError(87,7.185201);
-   dilepton_mass_SinglesPtop__48->SetBinError(88,8.050059);
-   dilepton_mass_SinglesPtop__48->SetBinError(89,7.061787);
-   dilepton_mass_SinglesPtop__48->SetBinError(90,7.331195);
-   dilepton_mass_SinglesPtop__48->SetBinError(91,5.717508);
-   dilepton_mass_SinglesPtop__48->SetBinError(92,6.460771);
+   dilepton_mass_SinglesPtop__48->SetBinError(87,7.042621);
+   dilepton_mass_SinglesPtop__48->SetBinError(88,7.939097);
+   dilepton_mass_SinglesPtop__48->SetBinError(89,6.920197);
+   dilepton_mass_SinglesPtop__48->SetBinError(90,7.230453);
+   dilepton_mass_SinglesPtop__48->SetBinError(91,5.526638);
+   dilepton_mass_SinglesPtop__48->SetBinError(92,6.128822);
    dilepton_mass_SinglesPtop__48->SetBinError(93,7.133986);
-   dilepton_mass_SinglesPtop__48->SetBinError(94,6.109556);
-   dilepton_mass_SinglesPtop__48->SetBinError(95,5.388731);
+   dilepton_mass_SinglesPtop__48->SetBinError(94,5.969279);
+   dilepton_mass_SinglesPtop__48->SetBinError(95,5.22479);
    dilepton_mass_SinglesPtop__48->SetBinError(96,6.557478);
    dilepton_mass_SinglesPtop__48->SetBinError(97,6.81813);
    dilepton_mass_SinglesPtop__48->SetBinError(98,6.784816);
    dilepton_mass_SinglesPtop__48->SetBinError(99,6.649548);
    dilepton_mass_SinglesPtop__48->SetBinError(100,5.34067);
-   dilepton_mass_SinglesPtop__48->SetBinError(101,39.34158);
-   dilepton_mass_SinglesPtop__48->SetEntries(5185);
+   dilepton_mass_SinglesPtop__48->SetBinError(101,38.79773);
+   dilepton_mass_SinglesPtop__48->SetEntries(5019);
    dilepton_mass_SinglesPtop__48->SetDirectory(0);
 
    ci = TColor::GetColor("#990099");
@@ -927,9 +927,9 @@ void dilepton_mass()
    799,
    890,
    1015,
-   952,
+   953,
    1030,
-   1118,
+   1121,
    1205,
    1192,
    1244,
@@ -940,23 +940,23 @@ void dilepton_mass()
    1593,
    1692,
    1691,
-   1651,
-   1822,
+   1652,
+   1823,
    1856,
-   1842,
-   1941,
+   1843,
+   1942,
    1936,
-   2035,
-   1928,
-   1941,
+   2037,
+   1929,
+   1942,
    1960,
    2005,
    2034,
    1951,
-   1874,
+   1875,
    1917,
    1951,
-   1873,
+   1874,
    1923,
    1803,
    1844,
@@ -965,7 +965,7 @@ void dilepton_mass()
    1748,
    1693,
    1659,
-   1741,
+   1743,
    1573,
    1553,
    1490,
@@ -973,10 +973,10 @@ void dilepton_mass()
    1536,
    1394,
    1452,
-   1434,
+   1436,
    1333,
-   1312,
-   1309,
+   1313,
+   1310,
    1231,
    1209,
    1207,
@@ -1131,9 +1131,9 @@ void dilepton_mass()
    28.26659,
    29.83287,
    31.85906,
-   30.8545,
+   30.8707,
    32.09361,
-   33.43651,
+   33.48134,
    34.71311,
    34.52535,
    35.27038,
@@ -1144,23 +1144,23 @@ void dilepton_mass()
    39.9124,
    41.13393,
    41.12177,
-   40.6325,
-   42.68489,
+   40.6448,
+   42.6966,
    43.08132,
-   42.91853,
-   44.05678,
+   42.93018,
+   44.06813,
    44,
-   45.11097,
-   43.909,
-   44.05678,
+   45.13314,
+   43.92038,
+   44.06813,
    44.27189,
    44.77723,
    45.09989,
    44.17013,
-   43.28972,
+   43.30127,
    43.78356,
    44.17013,
-   43.27817,
+   43.28972,
    43.85202,
    42.46175,
    42.94182,
@@ -1169,7 +1169,7 @@ void dilepton_mass()
    41.80909,
    41.14608,
    40.73082,
-   41.72529,
+   41.74925,
    39.66106,
    39.40812,
    38.60052,
@@ -1177,10 +1177,10 @@ void dilepton_mass()
    39.19184,
    37.33631,
    38.10512,
-   37.86819,
+   37.89459,
    36.51027,
-   36.22154,
-   36.18011,
+   36.23534,
+   36.19392,
    35.08561,
    34.77068,
    34.74191,
@@ -1335,9 +1335,9 @@ void dilepton_mass()
    28.26659,
    29.83287,
    31.85906,
-   30.8545,
+   30.8707,
    32.09361,
-   33.43651,
+   33.48134,
    34.71311,
    34.52535,
    35.27038,
@@ -1348,23 +1348,23 @@ void dilepton_mass()
    39.9124,
    41.13393,
    41.12177,
-   40.6325,
-   42.68489,
+   40.6448,
+   42.6966,
    43.08132,
-   42.91853,
-   44.05678,
+   42.93018,
+   44.06813,
    44,
-   45.11097,
-   43.909,
-   44.05678,
+   45.13314,
+   43.92038,
+   44.06813,
    44.27189,
    44.77723,
    45.09989,
    44.17013,
-   43.28972,
+   43.30127,
    43.78356,
    44.17013,
-   43.27817,
+   43.28972,
    43.85202,
    42.46175,
    42.94182,
@@ -1373,7 +1373,7 @@ void dilepton_mass()
    41.80909,
    41.14608,
    40.73082,
-   41.72529,
+   41.74925,
    39.66106,
    39.40812,
    38.60052,
@@ -1381,10 +1381,10 @@ void dilepton_mass()
    39.19184,
    37.33631,
    38.10512,
-   37.86819,
+   37.89459,
    36.51027,
-   36.22154,
-   36.18011,
+   36.23534,
+   36.19392,
    35.08561,
    34.77068,
    34.74191,
@@ -1430,7 +1430,7 @@ void dilepton_mass()
    
    TH1F *Graph_Graph_from_dilepton_mass3013 = new TH1F("Graph_Graph_from_dilepton_mass3013","Data",101,0,220);
    Graph_Graph_from_dilepton_mass3013->SetMinimum(0);
-   Graph_Graph_from_dilepton_mass3013->SetMaximum(2288.122);
+   Graph_Graph_from_dilepton_mass3013->SetMaximum(2290.346);
    Graph_Graph_from_dilepton_mass3013->SetDirectory(0);
    Graph_Graph_from_dilepton_mass3013->SetStats(0);
 
@@ -1560,7 +1560,7 @@ tex->SetNDC();
    TH1F *ratioframe__49 = new TH1F("ratioframe__49","t#bar{t}",100,0,200);
    ratioframe__49->SetMinimum(0.46);
    ratioframe__49->SetMaximum(1.54);
-   ratioframe__49->SetEntries(369734);
+   ratioframe__49->SetEntries(360574);
 
    ci = TColor::GetColor("#cc0000");
    ratioframe__49->SetFillColor(ci);
@@ -1695,100 +1695,100 @@ tex->SetNDC();
    0,
    0,
    0,
-   0.9812036,
-   0.9197902,
-   0.9761074,
-   0.9677085,
-   0.9698973,
-   1.05793,
-   0.9726521,
-   0.9330541,
-   0.9374114,
-   1.014131,
-   0.9232448,
-   0.9476938,
-   0.9475383,
-   0.9738633,
-   0.9419948,
-   0.916788,
-   0.9695497,
-   0.9456403,
-   0.9038292,
-   0.9440246,
-   0.9689157,
-   0.940483,
-   0.8994989,
-   0.8553255,
-   0.9228193,
-   0.9341772,
-   0.8791596,
-   0.9465613,
-   0.9328941,
-   0.9513537,
-   0.9208883,
-   0.9151732,
-   0.9341275,
-   0.955286,
-   0.9527518,
-   0.8842077,
-   0.8580127,
-   0.8966405,
-   0.9401017,
-   0.8839396,
-   0.9434949,
-   0.8768357,
-   0.8986121,
-   0.9513992,
-   0.920898,
-   0.9229624,
-   0.9181455,
-   0.8945045,
-   0.9276841,
-   0.8674697,
-   0.8763505,
-   0.8836133,
-   0.8795823,
-   0.9276877,
-   0.8824171,
-   0.9112974,
-   0.9731302,
-   0.9046496,
-   0.9063821,
-   0.9131216,
-   0.8818297,
-   0.8984437,
-   0.9028885,
-   0.8863744,
-   0.9195468,
-   0.8099195,
-   0.9271817,
-   0.8469288,
-   0.8814548,
-   0.8625969,
-   0.9060342,
-   0.9339321,
-   0.8942495,
-   0.8935531,
-   0.904391,
-   0.8663012,
-   0.8851059,
-   0.9474577,
-   0.8954546,
-   0.8511481,
-   0.91133,
-   0.9230735,
-   0.8075764,
-   0.9048138,
-   0.9177487,
-   0.8672903,
-   0.8524133,
-   0.92823,
-   0.8695291,
-   0.9273394,
-   0.8429807,
-   0.8964652,
-   0.8747162,
-   0.9366308};
+   1.01568,
+   0.9416378,
+   0.991762,
+   1.000005,
+   1.001368,
+   1.087644,
+   1.000541,
+   0.9600058,
+   0.9636702,
+   1.041944,
+   0.9471476,
+   0.97023,
+   0.9788823,
+   0.9956555,
+   0.9639421,
+   0.9368128,
+   0.9989514,
+   0.9703275,
+   0.9244516,
+   0.9701113,
+   0.9947958,
+   0.9657897,
+   0.9247234,
+   0.8760382,
+   0.9443361,
+   0.9556795,
+   0.9019587,
+   0.9692093,
+   0.9582351,
+   0.9771442,
+   0.9440503,
+   0.9406145,
+   0.9552682,
+   0.9778965,
+   0.9779939,
+   0.9069943,
+   0.8822952,
+   0.9222366,
+   0.9622729,
+   0.9027442,
+   0.9665433,
+   0.8985817,
+   0.922576,
+   0.977824,
+   0.9466562,
+   0.9451142,
+   0.9451713,
+   0.9164292,
+   0.9485975,
+   0.8880077,
+   0.8994942,
+   0.9077975,
+   0.9024958,
+   0.9532137,
+   0.9078751,
+   0.9328288,
+   1.0049,
+   0.9266735,
+   0.9283789,
+   0.937906,
+   0.9019155,
+   0.9178251,
+   0.9221373,
+   0.9098762,
+   0.945202,
+   0.8350151,
+   0.9450008,
+   0.869086,
+   0.9027064,
+   0.885137,
+   0.9250938,
+   0.9606705,
+   0.9182992,
+   0.9141218,
+   0.9275607,
+   0.8893635,
+   0.9068202,
+   0.9650759,
+   0.9278052,
+   0.8732811,
+   0.9378366,
+   0.9477015,
+   0.8291063,
+   0.9302814,
+   0.9385808,
+   0.8955271,
+   0.8706524,
+   0.9492986,
+   0.888819,
+   0.9465252,
+   0.8609754,
+   0.9231678,
+   0.8955759,
+   0.961322};
    Double_t Graph_from_ratio_felx3014[100] = {
    1,
    1,
@@ -1897,100 +1897,100 @@ tex->SetNDC();
    0,
    0,
    0,
-   0.06930846,
-   0.05447423,
-   0.05166727,
-   0.04712424,
-   0.04484816,
-   0.04651868,
-   0.0415002,
-   0.03938013,
-   0.03751888,
-   0.038324,
-   0.03561556,
-   0.03524466,
-   0.03382286,
-   0.03365114,
-   0.03415492,
-   0.03274811,
-   0.03143486,
-   0.03192547,
-   0.03303212,
-   0.02900408,
-   0.03265746,
-   0.02885879,
-   0.02856606,
-   0.02699092,
-   0.02800185,
-   0.0273042,
-   0.02426012,
-   0.02557476,
-   0.02516562,
-   0.02617215,
-   0.02487354,
-   0.02586371,
-   0.02503732,
-   0.02542156,
-   0.02517143,
-   0.02371505,
-   0.02409603,
-   0.02422248,
-   0.02538952,
-   0.02417274,
-   0.02566497,
-   0.02439692,
-   0.02480449,
-   0.02605344,
-   0.02606233,
-   0.02626395,
-   0.02645145,
-   0.02583888,
-   0.02657797,
-   0.02577519,
-   0.02624458,
-   0.02706077,
-   0.02684809,
-   0.02814821,
-   0.02798743,
-   0.02840968,
-   0.0307267,
-   0.02934201,
-   0.02975448,
-   0.02992773,
-   0.02969411,
-   0.03068598,
-   0.03080406,
-   0.03128887,
-   0.03237254,
-   0.02976339,
-   0.03396462,
-   0.03109805,
-   0.03317826,
-   0.03354648,
-   0.03552906,
-   0.03662173,
-   0.03506946,
-   0.03589312,
-   0.0371995,
-   0.03612957,
-   0.03715364,
-   0.04014844,
-   0.03781846,
-   0.03808025,
-   0.04008003,
-   0.04150464,
-   0.03783118,
-   0.04279732,
-   0.04298786,
-   0.04177907,
-   0.04160199,
-   0.04617275,
-   0.04371523,
-   0.04648869,
-   0.04331311,
-   0.0473217,
-   0.04703431,
-   0.05129492};
+   0.07212444,
+   0.05584053,
+   0.05263535,
+   0.04891535,
+   0.04651541,
+   0.04805759,
+   0.04283265,
+   0.04071169,
+   0.0386953,
+   0.03953789,
+   0.03663215,
+   0.0362022,
+   0.0350614,
+   0.03452138,
+   0.03513055,
+   0.03364672,
+   0.03250911,
+   0.03295811,
+   0.03407357,
+   0.02991995,
+   0.03383502,
+   0.02978767,
+   0.0296091,
+   0.02782426,
+   0.02883663,
+   0.02809247,
+   0.02495977,
+   0.0262723,
+   0.02595127,
+   0.02700518,
+   0.02558149,
+   0.02674847,
+   0.02569339,
+   0.02611305,
+   0.02592776,
+   0.02440463,
+   0.02489781,
+   0.02500996,
+   0.02606203,
+   0.02475662,
+   0.02639053,
+   0.02508287,
+   0.02556292,
+   0.02686762,
+   0.02689656,
+   0.02699632,
+   0.02734711,
+   0.02656584,
+   0.02725754,
+   0.02647518,
+   0.027033,
+   0.02791234,
+   0.02764536,
+   0.02905016,
+   0.02890927,
+   0.02916796,
+   0.03185784,
+   0.03017246,
+   0.03057809,
+   0.03083901,
+   0.03047024,
+   0.0314492,
+   0.0315651,
+   0.03225682,
+   0.03340739,
+   0.03080478,
+   0.03471444,
+   0.03202462,
+   0.03409669,
+   0.03455035,
+   0.0363987,
+   0.03784267,
+   0.03616523,
+   0.03683304,
+   0.03827415,
+   0.03724904,
+   0.03816929,
+   0.0410207,
+   0.03935544,
+   0.03923501,
+   0.04141483,
+   0.04278494,
+   0.03897069,
+   0.0441847,
+   0.04408136,
+   0.04329438,
+   0.04263563,
+   0.04736736,
+   0.04480648,
+   0.04761826,
+   0.04438621,
+   0.04897379,
+   0.04834313,
+   0.05287163};
    Double_t Graph_from_ratio_fehx3014[100] = {
    1,
    1,
@@ -2099,100 +2099,100 @@ tex->SetNDC();
    0,
    0,
    0,
-   0.06930846,
-   0.05447423,
-   0.05166727,
-   0.04712424,
-   0.04484816,
-   0.04651868,
-   0.0415002,
-   0.03938013,
-   0.03751888,
-   0.038324,
-   0.03561556,
-   0.03524466,
-   0.03382286,
-   0.03365114,
-   0.03415492,
-   0.03274811,
-   0.03143486,
-   0.03192547,
-   0.03303212,
-   0.02900408,
-   0.03265746,
-   0.02885879,
-   0.02856606,
-   0.02699092,
-   0.02800185,
-   0.0273042,
-   0.02426012,
-   0.02557476,
-   0.02516562,
-   0.02617215,
-   0.02487354,
-   0.02586371,
-   0.02503732,
-   0.02542156,
-   0.02517143,
-   0.02371505,
-   0.02409603,
-   0.02422248,
-   0.02538952,
-   0.02417274,
-   0.02566497,
-   0.02439692,
-   0.02480449,
-   0.02605344,
-   0.02606233,
-   0.02626395,
-   0.02645145,
-   0.02583888,
-   0.02657797,
-   0.02577519,
-   0.02624458,
-   0.02706077,
-   0.02684809,
-   0.02814821,
-   0.02798743,
-   0.02840968,
-   0.0307267,
-   0.02934201,
-   0.02975448,
-   0.02992773,
-   0.02969411,
-   0.03068598,
-   0.03080406,
-   0.03128887,
-   0.03237254,
-   0.02976339,
-   0.03396462,
-   0.03109805,
-   0.03317826,
-   0.03354648,
-   0.03552906,
-   0.03662173,
-   0.03506946,
-   0.03589312,
-   0.0371995,
-   0.03612957,
-   0.03715364,
-   0.04014844,
-   0.03781846,
-   0.03808025,
-   0.04008003,
-   0.04150464,
-   0.03783118,
-   0.04279732,
-   0.04298786,
-   0.04177907,
-   0.04160199,
-   0.04617275,
-   0.04371523,
-   0.04648869,
-   0.04331311,
-   0.0473217,
-   0.04703431,
-   0.05129492};
+   0.07212444,
+   0.05584053,
+   0.05263535,
+   0.04891535,
+   0.04651541,
+   0.04805759,
+   0.04283265,
+   0.04071169,
+   0.0386953,
+   0.03953789,
+   0.03663215,
+   0.0362022,
+   0.0350614,
+   0.03452138,
+   0.03513055,
+   0.03364672,
+   0.03250911,
+   0.03295811,
+   0.03407357,
+   0.02991995,
+   0.03383502,
+   0.02978767,
+   0.0296091,
+   0.02782426,
+   0.02883663,
+   0.02809247,
+   0.02495977,
+   0.0262723,
+   0.02595127,
+   0.02700518,
+   0.02558149,
+   0.02674847,
+   0.02569339,
+   0.02611305,
+   0.02592776,
+   0.02440463,
+   0.02489781,
+   0.02500996,
+   0.02606203,
+   0.02475662,
+   0.02639053,
+   0.02508287,
+   0.02556292,
+   0.02686762,
+   0.02689656,
+   0.02699632,
+   0.02734711,
+   0.02656584,
+   0.02725754,
+   0.02647518,
+   0.027033,
+   0.02791234,
+   0.02764536,
+   0.02905016,
+   0.02890927,
+   0.02916796,
+   0.03185784,
+   0.03017246,
+   0.03057809,
+   0.03083901,
+   0.03047024,
+   0.0314492,
+   0.0315651,
+   0.03225682,
+   0.03340739,
+   0.03080478,
+   0.03471444,
+   0.03202462,
+   0.03409669,
+   0.03455035,
+   0.0363987,
+   0.03784267,
+   0.03616523,
+   0.03683304,
+   0.03827415,
+   0.03724904,
+   0.03816929,
+   0.0410207,
+   0.03935544,
+   0.03923501,
+   0.04141483,
+   0.04278494,
+   0.03897069,
+   0.0441847,
+   0.04408136,
+   0.04329438,
+   0.04263563,
+   0.04736736,
+   0.04480648,
+   0.04761826,
+   0.04438621,
+   0.04897379,
+   0.04834313,
+   0.05287163};
    grae = new TGraphAsymmErrors(100,Graph_from_ratio_fx3014,Graph_from_ratio_fy3014,Graph_from_ratio_felx3014,Graph_from_ratio_fehx3014,Graph_from_ratio_fely3014,Graph_from_ratio_fehy3014);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
@@ -2203,7 +2203,7 @@ tex->SetNDC();
    
    TH1F *Graph_Graph_from_ratio3014 = new TH1F("Graph_Graph_from_ratio3014","Data",100,0,220);
    Graph_Graph_from_ratio3014->SetMinimum(0);
-   Graph_Graph_from_ratio3014->SetMaximum(1.214893);
+   Graph_Graph_from_ratio3014->SetMaximum(1.249272);
    Graph_Graph_from_ratio3014->SetDirectory(0);
    Graph_Graph_from_ratio3014->SetStats(0);
 

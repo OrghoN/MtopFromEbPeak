@@ -1,7 +1,7 @@
 void lepton_pt()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 16:36:55 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 16:38:01 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -20,7 +20,7 @@ void lepton_pt()
    TPad *p1 = new TPad("p1", "p1",0,0,1,0.85);
    p1->Draw();
    p1->cd();
-   p1->Range(-50.60241,-6587.095,371.0843,48306.19);
+   p1->Range(-50.60241,-6428.572,371.0843,47143.7);
    p1->SetFillColor(0);
    p1->SetBorderMode(0);
    p1->SetBorderSize(2);
@@ -34,8 +34,8 @@ void lepton_pt()
    
    TH1F *frame__134 = new TH1F("frame__134","t#bar{t}",50,0,350);
    frame__134->SetMinimum(0.1);
-   frame__134->SetMaximum(47757.26);
-   frame__134->SetEntries(739468);
+   frame__134->SetMaximum(46607.98);
+   frame__134->SetEntries(721148);
    frame__134->SetDirectory(0);
 
    Int_t ci;      // for color index setting
@@ -68,7 +68,7 @@ void lepton_pt()
    
    TH1F *mc_stack_20 = new TH1F("mc_stack_20","mc",50,0,350);
    mc_stack_20->SetMinimum(-3.71988e-07);
-   mc_stack_20->SetMaximum(38573.17);
+   mc_stack_20->SetMaximum(37644.9);
    mc_stack_20->SetDirectory(0);
    mc_stack_20->SetStats(0);
 
@@ -90,105 +90,105 @@ void lepton_pt()
    
    
    TH1F *lepton_pt_t#bar{t}__135 = new TH1F("lepton_pt_t#bar{t}__135","t#bar{t}",50,0,350);
-   lepton_pt_t#bar{t}__135->SetBinContent(3,1954.397);
-   lepton_pt_t#bar{t}__135->SetBinContent(4,27934.51);
-   lepton_pt_t#bar{t}__135->SetBinContent(5,35179.09);
-   lepton_pt_t#bar{t}__135->SetBinContent(6,33743.94);
-   lepton_pt_t#bar{t}__135->SetBinContent(7,30273.31);
-   lepton_pt_t#bar{t}__135->SetBinContent(8,26398.28);
-   lepton_pt_t#bar{t}__135->SetBinContent(9,22163.41);
-   lepton_pt_t#bar{t}__135->SetBinContent(10,18266.18);
-   lepton_pt_t#bar{t}__135->SetBinContent(11,15212.8);
-   lepton_pt_t#bar{t}__135->SetBinContent(12,12219.24);
-   lepton_pt_t#bar{t}__135->SetBinContent(13,10113.68);
-   lepton_pt_t#bar{t}__135->SetBinContent(14,8164.119);
-   lepton_pt_t#bar{t}__135->SetBinContent(15,6496.698);
-   lepton_pt_t#bar{t}__135->SetBinContent(16,5352.936);
-   lepton_pt_t#bar{t}__135->SetBinContent(17,4354.449);
-   lepton_pt_t#bar{t}__135->SetBinContent(18,3582.472);
-   lepton_pt_t#bar{t}__135->SetBinContent(19,2858.248);
-   lepton_pt_t#bar{t}__135->SetBinContent(20,2344.101);
-   lepton_pt_t#bar{t}__135->SetBinContent(21,1908.854);
-   lepton_pt_t#bar{t}__135->SetBinContent(22,1571.827);
-   lepton_pt_t#bar{t}__135->SetBinContent(23,1346.042);
-   lepton_pt_t#bar{t}__135->SetBinContent(24,1098.796);
-   lepton_pt_t#bar{t}__135->SetBinContent(25,923.8297);
-   lepton_pt_t#bar{t}__135->SetBinContent(26,734.9225);
-   lepton_pt_t#bar{t}__135->SetBinContent(27,650.8339);
-   lepton_pt_t#bar{t}__135->SetBinContent(28,528.0187);
-   lepton_pt_t#bar{t}__135->SetBinContent(29,451.2869);
-   lepton_pt_t#bar{t}__135->SetBinContent(30,361.232);
-   lepton_pt_t#bar{t}__135->SetBinContent(31,328.5555);
-   lepton_pt_t#bar{t}__135->SetBinContent(32,260.0937);
-   lepton_pt_t#bar{t}__135->SetBinContent(33,209.9995);
-   lepton_pt_t#bar{t}__135->SetBinContent(34,197.6426);
-   lepton_pt_t#bar{t}__135->SetBinContent(35,157.5742);
-   lepton_pt_t#bar{t}__135->SetBinContent(36,143.0232);
-   lepton_pt_t#bar{t}__135->SetBinContent(37,122.475);
-   lepton_pt_t#bar{t}__135->SetBinContent(38,102.9503);
-   lepton_pt_t#bar{t}__135->SetBinContent(39,88.03674);
-   lepton_pt_t#bar{t}__135->SetBinContent(40,73.65415);
-   lepton_pt_t#bar{t}__135->SetBinContent(41,66.62994);
-   lepton_pt_t#bar{t}__135->SetBinContent(42,50.29429);
-   lepton_pt_t#bar{t}__135->SetBinContent(43,46.46313);
-   lepton_pt_t#bar{t}__135->SetBinContent(44,47.47557);
-   lepton_pt_t#bar{t}__135->SetBinContent(45,40.15758);
-   lepton_pt_t#bar{t}__135->SetBinContent(46,32.15841);
-   lepton_pt_t#bar{t}__135->SetBinContent(47,28.5442);
+   lepton_pt_t#bar{t}__135->SetBinContent(3,1907.023);
+   lepton_pt_t#bar{t}__135->SetBinContent(4,27265.89);
+   lepton_pt_t#bar{t}__135->SetBinContent(5,34351.91);
+   lepton_pt_t#bar{t}__135->SetBinContent(6,32896.36);
+   lepton_pt_t#bar{t}__135->SetBinContent(7,29521.58);
+   lepton_pt_t#bar{t}__135->SetBinContent(8,25750.47);
+   lepton_pt_t#bar{t}__135->SetBinContent(9,21593.29);
+   lepton_pt_t#bar{t}__135->SetBinContent(10,17797.44);
+   lepton_pt_t#bar{t}__135->SetBinContent(11,14810.98);
+   lepton_pt_t#bar{t}__135->SetBinContent(12,11917.72);
+   lepton_pt_t#bar{t}__135->SetBinContent(13,9861.447);
+   lepton_pt_t#bar{t}__135->SetBinContent(14,7954.847);
+   lepton_pt_t#bar{t}__135->SetBinContent(15,6341.503);
+   lepton_pt_t#bar{t}__135->SetBinContent(16,5218.466);
+   lepton_pt_t#bar{t}__135->SetBinContent(17,4247.788);
+   lepton_pt_t#bar{t}__135->SetBinContent(18,3492.819);
+   lepton_pt_t#bar{t}__135->SetBinContent(19,2790.22);
+   lepton_pt_t#bar{t}__135->SetBinContent(20,2285.123);
+   lepton_pt_t#bar{t}__135->SetBinContent(21,1865.382);
+   lepton_pt_t#bar{t}__135->SetBinContent(22,1530.769);
+   lepton_pt_t#bar{t}__135->SetBinContent(23,1312.674);
+   lepton_pt_t#bar{t}__135->SetBinContent(24,1073.606);
+   lepton_pt_t#bar{t}__135->SetBinContent(25,898.7642);
+   lepton_pt_t#bar{t}__135->SetBinContent(26,723.4125);
+   lepton_pt_t#bar{t}__135->SetBinContent(27,633.8647);
+   lepton_pt_t#bar{t}__135->SetBinContent(28,519.3197);
+   lepton_pt_t#bar{t}__135->SetBinContent(29,439.3021);
+   lepton_pt_t#bar{t}__135->SetBinContent(30,353.8275);
+   lepton_pt_t#bar{t}__135->SetBinContent(31,321.7901);
+   lepton_pt_t#bar{t}__135->SetBinContent(32,254.0748);
+   lepton_pt_t#bar{t}__135->SetBinContent(33,205.9591);
+   lepton_pt_t#bar{t}__135->SetBinContent(34,193.1042);
+   lepton_pt_t#bar{t}__135->SetBinContent(35,153.9189);
+   lepton_pt_t#bar{t}__135->SetBinContent(36,140.3354);
+   lepton_pt_t#bar{t}__135->SetBinContent(37,120.0775);
+   lepton_pt_t#bar{t}__135->SetBinContent(38,101.8464);
+   lepton_pt_t#bar{t}__135->SetBinContent(39,84.55632);
+   lepton_pt_t#bar{t}__135->SetBinContent(40,72.77675);
+   lepton_pt_t#bar{t}__135->SetBinContent(41,65.03118);
+   lepton_pt_t#bar{t}__135->SetBinContent(42,49.01836);
+   lepton_pt_t#bar{t}__135->SetBinContent(43,46.00892);
+   lepton_pt_t#bar{t}__135->SetBinContent(44,47.00356);
+   lepton_pt_t#bar{t}__135->SetBinContent(45,38.95226);
+   lepton_pt_t#bar{t}__135->SetBinContent(46,30.71467);
+   lepton_pt_t#bar{t}__135->SetBinContent(47,27.72377);
    lepton_pt_t#bar{t}__135->SetBinContent(48,23.39073);
-   lepton_pt_t#bar{t}__135->SetBinContent(49,26.09083);
+   lepton_pt_t#bar{t}__135->SetBinContent(49,25.66679);
    lepton_pt_t#bar{t}__135->SetBinContent(50,21.66514);
-   lepton_pt_t#bar{t}__135->SetBinContent(51,142.7304);
-   lepton_pt_t#bar{t}__135->SetBinError(3,28.35614);
-   lepton_pt_t#bar{t}__135->SetBinError(4,107.1021);
-   lepton_pt_t#bar{t}__135->SetBinError(5,120.2079);
-   lepton_pt_t#bar{t}__135->SetBinError(6,117.7111);
-   lepton_pt_t#bar{t}__135->SetBinError(7,111.5018);
-   lepton_pt_t#bar{t}__135->SetBinError(8,104.135);
-   lepton_pt_t#bar{t}__135->SetBinError(9,95.40848);
-   lepton_pt_t#bar{t}__135->SetBinError(10,86.65598);
-   lepton_pt_t#bar{t}__135->SetBinError(11,79.08554);
-   lepton_pt_t#bar{t}__135->SetBinError(12,70.83218);
-   lepton_pt_t#bar{t}__135->SetBinError(13,64.41901);
-   lepton_pt_t#bar{t}__135->SetBinError(14,57.86938);
-   lepton_pt_t#bar{t}__135->SetBinError(15,51.65291);
-   lepton_pt_t#bar{t}__135->SetBinError(16,46.86517);
-   lepton_pt_t#bar{t}__135->SetBinError(17,42.3026);
-   lepton_pt_t#bar{t}__135->SetBinError(18,38.39947);
-   lepton_pt_t#bar{t}__135->SetBinError(19,34.26165);
-   lepton_pt_t#bar{t}__135->SetBinError(20,31.01743);
-   lepton_pt_t#bar{t}__135->SetBinError(21,28.06039);
-   lepton_pt_t#bar{t}__135->SetBinError(22,25.41121);
-   lepton_pt_t#bar{t}__135->SetBinError(23,23.52528);
-   lepton_pt_t#bar{t}__135->SetBinError(24,21.26103);
-   lepton_pt_t#bar{t}__135->SetBinError(25,19.50242);
-   lepton_pt_t#bar{t}__135->SetBinError(26,17.39364);
-   lepton_pt_t#bar{t}__135->SetBinError(27,16.34016);
-   lepton_pt_t#bar{t}__135->SetBinError(28,14.76681);
-   lepton_pt_t#bar{t}__135->SetBinError(29,13.6278);
-   lepton_pt_t#bar{t}__135->SetBinError(30,12.16755);
-   lepton_pt_t#bar{t}__135->SetBinError(31,11.65195);
-   lepton_pt_t#bar{t}__135->SetBinError(32,10.33618);
-   lepton_pt_t#bar{t}__135->SetBinError(33,9.261588);
-   lepton_pt_t#bar{t}__135->SetBinError(34,8.992861);
-   lepton_pt_t#bar{t}__135->SetBinError(35,8.035238);
-   lepton_pt_t#bar{t}__135->SetBinError(36,7.69987);
-   lepton_pt_t#bar{t}__135->SetBinError(37,7.144259);
-   lepton_pt_t#bar{t}__135->SetBinError(38,6.465013);
-   lepton_pt_t#bar{t}__135->SetBinError(39,6.025955);
-   lepton_pt_t#bar{t}__135->SetBinError(40,5.487599);
-   lepton_pt_t#bar{t}__135->SetBinError(41,5.227396);
-   lepton_pt_t#bar{t}__135->SetBinError(42,4.528163);
-   lepton_pt_t#bar{t}__135->SetBinError(43,4.342879);
-   lepton_pt_t#bar{t}__135->SetBinError(44,4.4218);
-   lepton_pt_t#bar{t}__135->SetBinError(45,4.056335);
-   lepton_pt_t#bar{t}__135->SetBinError(46,3.606111);
-   lepton_pt_t#bar{t}__135->SetBinError(47,3.412386);
+   lepton_pt_t#bar{t}__135->SetBinContent(51,140.8047);
+   lepton_pt_t#bar{t}__135->SetBinError(3,28.00789);
+   lepton_pt_t#bar{t}__135->SetBinError(4,105.8173);
+   lepton_pt_t#bar{t}__135->SetBinError(5,118.7844);
+   lepton_pt_t#bar{t}__135->SetBinError(6,116.2221);
+   lepton_pt_t#bar{t}__135->SetBinError(7,110.1137);
+   lepton_pt_t#bar{t}__135->SetBinError(8,102.8492);
+   lepton_pt_t#bar{t}__135->SetBinError(9,94.18513);
+   lepton_pt_t#bar{t}__135->SetBinError(10,85.53559);
+   lepton_pt_t#bar{t}__135->SetBinError(11,78.03529);
+   lepton_pt_t#bar{t}__135->SetBinError(12,69.95469);
+   lepton_pt_t#bar{t}__135->SetBinError(13,63.61035);
+   lepton_pt_t#bar{t}__135->SetBinError(14,57.11775);
+   lepton_pt_t#bar{t}__135->SetBinError(15,51.03068);
+   lepton_pt_t#bar{t}__135->SetBinError(16,46.26843);
+   lepton_pt_t#bar{t}__135->SetBinError(17,41.77672);
+   lepton_pt_t#bar{t}__135->SetBinError(18,37.91869);
+   lepton_pt_t#bar{t}__135->SetBinError(19,33.85134);
+   lepton_pt_t#bar{t}__135->SetBinError(20,30.62632);
+   lepton_pt_t#bar{t}__135->SetBinError(21,27.73368);
+   lepton_pt_t#bar{t}__135->SetBinError(22,25.07931);
+   lepton_pt_t#bar{t}__135->SetBinError(23,23.23485);
+   lepton_pt_t#bar{t}__135->SetBinError(24,21.01897);
+   lepton_pt_t#bar{t}__135->SetBinError(25,19.23425);
+   lepton_pt_t#bar{t}__135->SetBinError(26,17.2595);
+   lepton_pt_t#bar{t}__135->SetBinError(27,16.12523);
+   lepton_pt_t#bar{t}__135->SetBinError(28,14.64842);
+   lepton_pt_t#bar{t}__135->SetBinError(29,13.44498);
+   lepton_pt_t#bar{t}__135->SetBinError(30,12.03845);
+   lepton_pt_t#bar{t}__135->SetBinError(31,11.52764);
+   lepton_pt_t#bar{t}__135->SetBinError(32,10.21438);
+   lepton_pt_t#bar{t}__135->SetBinError(33,9.168898);
+   lepton_pt_t#bar{t}__135->SetBinError(34,8.890465);
+   lepton_pt_t#bar{t}__135->SetBinError(35,7.938221);
+   lepton_pt_t#bar{t}__135->SetBinError(36,7.630622);
+   lepton_pt_t#bar{t}__135->SetBinError(37,7.075028);
+   lepton_pt_t#bar{t}__135->SetBinError(38,6.42929);
+   lepton_pt_t#bar{t}__135->SetBinError(39,5.898391);
+   lepton_pt_t#bar{t}__135->SetBinError(40,5.456344);
+   lepton_pt_t#bar{t}__135->SetBinError(41,5.165906);
+   lepton_pt_t#bar{t}__135->SetBinError(42,4.467747);
+   lepton_pt_t#bar{t}__135->SetBinError(43,4.319062);
+   lepton_pt_t#bar{t}__135->SetBinError(44,4.396535);
+   lepton_pt_t#bar{t}__135->SetBinError(45,3.996184);
+   lepton_pt_t#bar{t}__135->SetBinError(46,3.53035);
+   lepton_pt_t#bar{t}__135->SetBinError(47,3.362659);
    lepton_pt_t#bar{t}__135->SetBinError(48,3.047123);
-   lepton_pt_t#bar{t}__135->SetBinError(49,3.279974);
+   lepton_pt_t#bar{t}__135->SetBinError(49,3.252448);
    lepton_pt_t#bar{t}__135->SetBinError(50,2.959005);
-   lepton_pt_t#bar{t}__135->SetBinError(51,7.626048);
-   lepton_pt_t#bar{t}__135->SetEntries(728034);
+   lepton_pt_t#bar{t}__135->SetBinError(51,7.575464);
+   lepton_pt_t#bar{t}__135->SetEntries(710072);
    lepton_pt_t#bar{t}__135->SetDirectory(0);
 
    ci = TColor::GetColor("#cc0000");
@@ -213,37 +213,37 @@ void lepton_pt()
    mc->Add(lepton_pt_t#bar{t},"hist");
    
    TH1F *lepton_pt_Diboson__136 = new TH1F("lepton_pt_Diboson__136","Diboson",50,0,350);
-   lepton_pt_Diboson__136->SetBinContent(3,3.654805);
-   lepton_pt_Diboson__136->SetBinContent(4,26.34563);
-   lepton_pt_Diboson__136->SetBinContent(5,39.23138);
-   lepton_pt_Diboson__136->SetBinContent(6,37.52382);
-   lepton_pt_Diboson__136->SetBinContent(7,32.83004);
-   lepton_pt_Diboson__136->SetBinContent(8,23.26699);
+   lepton_pt_Diboson__136->SetBinContent(3,3.206841);
+   lepton_pt_Diboson__136->SetBinContent(4,25.96457);
+   lepton_pt_Diboson__136->SetBinContent(5,38.33972);
+   lepton_pt_Diboson__136->SetBinContent(6,36.70752);
+   lepton_pt_Diboson__136->SetBinContent(7,31.98956);
+   lepton_pt_Diboson__136->SetBinContent(8,22.8014);
    lepton_pt_Diboson__136->SetBinContent(9,20.85664);
-   lepton_pt_Diboson__136->SetBinContent(10,22.14182);
-   lepton_pt_Diboson__136->SetBinContent(11,17.6539);
-   lepton_pt_Diboson__136->SetBinContent(12,19.70443);
-   lepton_pt_Diboson__136->SetBinContent(13,15.13365);
-   lepton_pt_Diboson__136->SetBinContent(14,12.15836);
+   lepton_pt_Diboson__136->SetBinContent(10,21.71913);
+   lepton_pt_Diboson__136->SetBinContent(11,16.05512);
+   lepton_pt_Diboson__136->SetBinContent(12,18.53032);
+   lepton_pt_Diboson__136->SetBinContent(13,14.71645);
+   lepton_pt_Diboson__136->SetBinContent(14,11.74116);
    lepton_pt_Diboson__136->SetBinContent(15,9.180049);
-   lepton_pt_Diboson__136->SetBinContent(16,7.075958);
+   lepton_pt_Diboson__136->SetBinContent(16,6.267488);
    lepton_pt_Diboson__136->SetBinContent(17,9.641189);
    lepton_pt_Diboson__136->SetBinContent(18,5.695692);
    lepton_pt_Diboson__136->SetBinContent(19,4.855708);
    lepton_pt_Diboson__136->SetBinContent(20,4.19733);
    lepton_pt_Diboson__136->SetBinContent(21,4.553759);
-   lepton_pt_Diboson__136->SetBinContent(22,3.921758);
+   lepton_pt_Diboson__136->SetBinContent(22,3.841966);
    lepton_pt_Diboson__136->SetBinContent(23,3.054468);
-   lepton_pt_Diboson__136->SetBinContent(24,2.971132);
+   lepton_pt_Diboson__136->SetBinContent(24,2.580296);
    lepton_pt_Diboson__136->SetBinContent(25,2.570303);
    lepton_pt_Diboson__136->SetBinContent(26,1.530951);
-   lepton_pt_Diboson__136->SetBinContent(27,3.766935);
+   lepton_pt_Diboson__136->SetBinContent(27,3.353857);
    lepton_pt_Diboson__136->SetBinContent(28,2.625777);
    lepton_pt_Diboson__136->SetBinContent(29,1.566745);
-   lepton_pt_Diboson__136->SetBinContent(30,1.61998);
+   lepton_pt_Diboson__136->SetBinContent(30,1.17321);
    lepton_pt_Diboson__136->SetBinContent(31,2.668808);
    lepton_pt_Diboson__136->SetBinContent(33,2.340385);
-   lepton_pt_Diboson__136->SetBinContent(34,1.625672);
+   lepton_pt_Diboson__136->SetBinContent(34,1.195364);
    lepton_pt_Diboson__136->SetBinContent(35,1.466966);
    lepton_pt_Diboson__136->SetBinContent(36,0.4209393);
    lepton_pt_Diboson__136->SetBinContent(37,1.215584);
@@ -258,38 +258,38 @@ void lepton_pt()
    lepton_pt_Diboson__136->SetBinContent(47,0.3942811);
    lepton_pt_Diboson__136->SetBinContent(48,1.100875);
    lepton_pt_Diboson__136->SetBinContent(49,0.4163072);
-   lepton_pt_Diboson__136->SetBinContent(51,5.553264);
-   lepton_pt_Diboson__136->SetBinError(3,1.214725);
-   lepton_pt_Diboson__136->SetBinError(4,3.196053);
-   lepton_pt_Diboson__136->SetBinError(5,3.919117);
-   lepton_pt_Diboson__136->SetBinError(6,3.816258);
-   lepton_pt_Diboson__136->SetBinError(7,3.563119);
-   lepton_pt_Diboson__136->SetBinError(8,2.983083);
+   lepton_pt_Diboson__136->SetBinContent(51,5.901194);
+   lepton_pt_Diboson__136->SetBinError(3,1.129108);
+   lepton_pt_Diboson__136->SetBinError(4,3.173256);
+   lepton_pt_Diboson__136->SetBinError(5,3.875823);
+   lepton_pt_Diboson__136->SetBinError(6,3.771959);
+   lepton_pt_Diboson__136->SetBinError(7,3.512987);
+   lepton_pt_Diboson__136->SetBinError(8,2.947613);
    lepton_pt_Diboson__136->SetBinError(9,2.818028);
-   lepton_pt_Diboson__136->SetBinError(10,2.990406);
-   lepton_pt_Diboson__136->SetBinError(11,2.612945);
-   lepton_pt_Diboson__136->SetBinError(12,2.811905);
-   lepton_pt_Diboson__136->SetBinError(13,2.412847);
-   lepton_pt_Diboson__136->SetBinError(14,2.196117);
+   lepton_pt_Diboson__136->SetBinError(10,2.960382);
+   lepton_pt_Diboson__136->SetBinError(11,2.487334);
+   lepton_pt_Diboson__136->SetBinError(12,2.7288);
+   lepton_pt_Diboson__136->SetBinError(13,2.376504);
+   lepton_pt_Diboson__136->SetBinError(14,2.156125);
    lepton_pt_Diboson__136->SetBinError(15,1.902881);
-   lepton_pt_Diboson__136->SetBinError(16,1.647112);
+   lepton_pt_Diboson__136->SetBinError(16,1.544281);
    lepton_pt_Diboson__136->SetBinError(17,1.913655);
    lepton_pt_Diboson__136->SetBinError(18,1.478584);
    lepton_pt_Diboson__136->SetBinError(19,1.347873);
    lepton_pt_Diboson__136->SetBinError(20,1.234516);
    lepton_pt_Diboson__136->SetBinError(21,1.335669);
-   lepton_pt_Diboson__136->SetBinError(22,1.204974);
+   lepton_pt_Diboson__136->SetBinError(22,1.202329);
    lepton_pt_Diboson__136->SetBinError(23,1.088705);
-   lepton_pt_Diboson__136->SetBinError(24,1.030357);
+   lepton_pt_Diboson__136->SetBinError(24,0.9533534);
    lepton_pt_Diboson__136->SetBinError(25,0.9878596);
    lepton_pt_Diboson__136->SetBinError(26,0.7334649);
-   lepton_pt_Diboson__136->SetBinError(27,1.208842);
+   lepton_pt_Diboson__136->SetBinError(27,1.136074);
    lepton_pt_Diboson__136->SetBinError(28,0.9947715);
    lepton_pt_Diboson__136->SetBinError(29,0.7839865);
-   lepton_pt_Diboson__136->SetBinError(30,0.8115463);
+   lepton_pt_Diboson__136->SetBinError(30,0.6774983);
    lepton_pt_Diboson__136->SetBinError(31,1.016724);
    lepton_pt_Diboson__136->SetBinError(33,0.9579885);
-   lepton_pt_Diboson__136->SetBinError(34,0.8184968);
+   lepton_pt_Diboson__136->SetBinError(34,0.6962561);
    lepton_pt_Diboson__136->SetBinError(35,0.740324);
    lepton_pt_Diboson__136->SetBinError(36,0.3739646);
    lepton_pt_Diboson__136->SetBinError(37,0.7031349);
@@ -304,8 +304,8 @@ void lepton_pt()
    lepton_pt_Diboson__136->SetBinError(47,0.3942812);
    lepton_pt_Diboson__136->SetBinError(48,0.6361007);
    lepton_pt_Diboson__136->SetBinError(49,0.4163072);
-   lepton_pt_Diboson__136->SetBinError(51,1.445634);
-   lepton_pt_Diboson__136->SetEntries(1022);
+   lepton_pt_Diboson__136->SetBinError(51,1.486914);
+   lepton_pt_Diboson__136->SetEntries(996);
    lepton_pt_Diboson__136->SetDirectory(0);
 
    ci = TColor::GetColor("#ffff00");
@@ -401,46 +401,46 @@ void lepton_pt()
    mc->Add(lepton_pt_W,"hist");
    
    TH1F *lepton_pt_SinglesPtop__139 = new TH1F("lepton_pt_SinglesPtop__139","Single top",50,0,350);
-   lepton_pt_SinglesPtop__139->SetBinContent(3,86.17592);
-   lepton_pt_SinglesPtop__139->SetBinContent(4,1143.027);
-   lepton_pt_SinglesPtop__139->SetBinContent(5,1380.105);
-   lepton_pt_SinglesPtop__139->SetBinContent(6,1340.806);
-   lepton_pt_SinglesPtop__139->SetBinContent(7,1241.281);
-   lepton_pt_SinglesPtop__139->SetBinContent(8,1108.426);
-   lepton_pt_SinglesPtop__139->SetBinContent(9,933.324);
-   lepton_pt_SinglesPtop__139->SetBinContent(10,805.7191);
-   lepton_pt_SinglesPtop__139->SetBinContent(11,682.5101);
-   lepton_pt_SinglesPtop__139->SetBinContent(12,565.7236);
-   lepton_pt_SinglesPtop__139->SetBinContent(13,476.7653);
-   lepton_pt_SinglesPtop__139->SetBinContent(14,392.5465);
-   lepton_pt_SinglesPtop__139->SetBinContent(15,354.3618);
-   lepton_pt_SinglesPtop__139->SetBinContent(16,282.7184);
-   lepton_pt_SinglesPtop__139->SetBinContent(17,237.9198);
-   lepton_pt_SinglesPtop__139->SetBinContent(18,231.8542);
-   lepton_pt_SinglesPtop__139->SetBinContent(19,189.6979);
-   lepton_pt_SinglesPtop__139->SetBinContent(20,181.2617);
-   lepton_pt_SinglesPtop__139->SetBinContent(21,171.6317);
-   lepton_pt_SinglesPtop__139->SetBinContent(22,119.9884);
-   lepton_pt_SinglesPtop__139->SetBinContent(23,109.624);
-   lepton_pt_SinglesPtop__139->SetBinContent(24,95.25087);
-   lepton_pt_SinglesPtop__139->SetBinContent(25,88.05151);
-   lepton_pt_SinglesPtop__139->SetBinContent(26,58.33688);
-   lepton_pt_SinglesPtop__139->SetBinContent(27,65.52687);
+   lepton_pt_SinglesPtop__139->SetBinContent(3,81.53215);
+   lepton_pt_SinglesPtop__139->SetBinContent(4,1101.191);
+   lepton_pt_SinglesPtop__139->SetBinContent(5,1324.109);
+   lepton_pt_SinglesPtop__139->SetBinContent(6,1299.034);
+   lepton_pt_SinglesPtop__139->SetBinContent(7,1191.546);
+   lepton_pt_SinglesPtop__139->SetBinContent(8,1075.187);
+   lepton_pt_SinglesPtop__139->SetBinContent(9,901.8616);
+   lepton_pt_SinglesPtop__139->SetBinContent(10,791.6757);
+   lepton_pt_SinglesPtop__139->SetBinContent(11,661.4863);
+   lepton_pt_SinglesPtop__139->SetBinContent(12,551.3262);
+   lepton_pt_SinglesPtop__139->SetBinContent(13,462.8869);
+   lepton_pt_SinglesPtop__139->SetBinContent(14,376.7082);
+   lepton_pt_SinglesPtop__139->SetBinContent(15,347.1772);
+   lepton_pt_SinglesPtop__139->SetBinContent(16,268.7697);
+   lepton_pt_SinglesPtop__139->SetBinContent(17,231.5706);
+   lepton_pt_SinglesPtop__139->SetBinContent(18,221.5557);
+   lepton_pt_SinglesPtop__139->SetBinContent(19,188.5285);
+   lepton_pt_SinglesPtop__139->SetBinContent(20,178.5716);
+   lepton_pt_SinglesPtop__139->SetBinContent(21,167.3756);
+   lepton_pt_SinglesPtop__139->SetBinContent(22,115.8915);
+   lepton_pt_SinglesPtop__139->SetBinContent(23,102.7894);
+   lepton_pt_SinglesPtop__139->SetBinContent(24,92.63326);
+   lepton_pt_SinglesPtop__139->SetBinContent(25,86.62722);
+   lepton_pt_SinglesPtop__139->SetBinContent(26,55.65807);
+   lepton_pt_SinglesPtop__139->SetBinContent(27,61.75185);
    lepton_pt_SinglesPtop__139->SetBinContent(28,42.74572);
-   lepton_pt_SinglesPtop__139->SetBinContent(29,39.07583);
+   lepton_pt_SinglesPtop__139->SetBinContent(29,37.79855);
    lepton_pt_SinglesPtop__139->SetBinContent(30,40.79641);
    lepton_pt_SinglesPtop__139->SetBinContent(31,35.1548);
-   lepton_pt_SinglesPtop__139->SetBinContent(32,41.7557);
-   lepton_pt_SinglesPtop__139->SetBinContent(33,25.1534);
-   lepton_pt_SinglesPtop__139->SetBinContent(34,38.43155);
-   lepton_pt_SinglesPtop__139->SetBinContent(35,28.79976);
+   lepton_pt_SinglesPtop__139->SetBinContent(32,40.25891);
+   lepton_pt_SinglesPtop__139->SetBinContent(33,25.02096);
+   lepton_pt_SinglesPtop__139->SetBinContent(34,36.94069);
+   lepton_pt_SinglesPtop__139->SetBinContent(35,27.28968);
    lepton_pt_SinglesPtop__139->SetBinContent(36,29.79686);
    lepton_pt_SinglesPtop__139->SetBinContent(37,8.3135);
    lepton_pt_SinglesPtop__139->SetBinContent(38,12.52772);
-   lepton_pt_SinglesPtop__139->SetBinContent(39,24.39431);
+   lepton_pt_SinglesPtop__139->SetBinContent(39,22.97918);
    lepton_pt_SinglesPtop__139->SetBinContent(40,11.88957);
    lepton_pt_SinglesPtop__139->SetBinContent(41,18.00314);
-   lepton_pt_SinglesPtop__139->SetBinContent(42,12.10602);
+   lepton_pt_SinglesPtop__139->SetBinContent(42,10.81596);
    lepton_pt_SinglesPtop__139->SetBinContent(43,9.53439);
    lepton_pt_SinglesPtop__139->SetBinContent(44,6.805182);
    lepton_pt_SinglesPtop__139->SetBinContent(45,12.50929);
@@ -450,46 +450,46 @@ void lepton_pt()
    lepton_pt_SinglesPtop__139->SetBinContent(49,7.679237);
    lepton_pt_SinglesPtop__139->SetBinContent(50,1.32008);
    lepton_pt_SinglesPtop__139->SetBinContent(51,51.96452);
-   lepton_pt_SinglesPtop__139->SetBinError(3,10.86692);
-   lepton_pt_SinglesPtop__139->SetBinError(4,39.03718);
-   lepton_pt_SinglesPtop__139->SetBinError(5,42.89022);
-   lepton_pt_SinglesPtop__139->SetBinError(6,42.31365);
-   lepton_pt_SinglesPtop__139->SetBinError(7,40.7883);
-   lepton_pt_SinglesPtop__139->SetBinError(8,38.63283);
-   lepton_pt_SinglesPtop__139->SetBinError(9,35.33946);
-   lepton_pt_SinglesPtop__139->SetBinError(10,32.75479);
-   lepton_pt_SinglesPtop__139->SetBinError(11,30.44704);
-   lepton_pt_SinglesPtop__139->SetBinError(12,27.44126);
-   lepton_pt_SinglesPtop__139->SetBinError(13,25.27882);
-   lepton_pt_SinglesPtop__139->SetBinError(14,22.98306);
-   lepton_pt_SinglesPtop__139->SetBinError(15,21.86575);
-   lepton_pt_SinglesPtop__139->SetBinError(16,19.39786);
-   lepton_pt_SinglesPtop__139->SetBinError(17,17.71116);
-   lepton_pt_SinglesPtop__139->SetBinError(18,17.63919);
-   lepton_pt_SinglesPtop__139->SetBinError(19,15.9184);
-   lepton_pt_SinglesPtop__139->SetBinError(20,15.58601);
-   lepton_pt_SinglesPtop__139->SetBinError(21,15.27164);
-   lepton_pt_SinglesPtop__139->SetBinError(22,12.74211);
-   lepton_pt_SinglesPtop__139->SetBinError(23,11.98143);
-   lepton_pt_SinglesPtop__139->SetBinError(24,11.19923);
-   lepton_pt_SinglesPtop__139->SetBinError(25,10.85794);
-   lepton_pt_SinglesPtop__139->SetBinError(26,8.733066);
-   lepton_pt_SinglesPtop__139->SetBinError(27,9.238924);
+   lepton_pt_SinglesPtop__139->SetBinError(3,10.59718);
+   lepton_pt_SinglesPtop__139->SetBinError(4,38.33127);
+   lepton_pt_SinglesPtop__139->SetBinError(5,41.99809);
+   lepton_pt_SinglesPtop__139->SetBinError(6,41.656);
+   lepton_pt_SinglesPtop__139->SetBinError(7,39.94805);
+   lepton_pt_SinglesPtop__139->SetBinError(8,38.01088);
+   lepton_pt_SinglesPtop__139->SetBinError(9,34.71726);
+   lepton_pt_SinglesPtop__139->SetBinError(10,32.47899);
+   lepton_pt_SinglesPtop__139->SetBinError(11,29.98018);
+   lepton_pt_SinglesPtop__139->SetBinError(12,27.06146);
+   lepton_pt_SinglesPtop__139->SetBinError(13,24.9021);
+   lepton_pt_SinglesPtop__139->SetBinError(14,22.5384);
+   lepton_pt_SinglesPtop__139->SetBinError(15,21.65879);
+   lepton_pt_SinglesPtop__139->SetBinError(16,18.88684);
+   lepton_pt_SinglesPtop__139->SetBinError(17,17.4909);
+   lepton_pt_SinglesPtop__139->SetBinError(18,17.24005);
+   lepton_pt_SinglesPtop__139->SetBinError(19,15.87538);
+   lepton_pt_SinglesPtop__139->SetBinError(20,15.46949);
+   lepton_pt_SinglesPtop__139->SetBinError(21,15.07196);
+   lepton_pt_SinglesPtop__139->SetBinError(22,12.52053);
+   lepton_pt_SinglesPtop__139->SetBinError(23,11.58288);
+   lepton_pt_SinglesPtop__139->SetBinError(24,11.04831);
+   lepton_pt_SinglesPtop__139->SetBinError(25,10.76411);
+   lepton_pt_SinglesPtop__139->SetBinError(26,8.525033);
+   lepton_pt_SinglesPtop__139->SetBinError(27,8.974786);
    lepton_pt_SinglesPtop__139->SetBinError(28,7.666061);
-   lepton_pt_SinglesPtop__139->SetBinError(29,7.194694);
+   lepton_pt_SinglesPtop__139->SetBinError(29,7.080407);
    lepton_pt_SinglesPtop__139->SetBinError(30,7.386767);
    lepton_pt_SinglesPtop__139->SetBinError(31,6.861262);
-   lepton_pt_SinglesPtop__139->SetBinError(32,7.490674);
-   lepton_pt_SinglesPtop__139->SetBinError(33,5.599636);
-   lepton_pt_SinglesPtop__139->SetBinError(34,7.106961);
-   lepton_pt_SinglesPtop__139->SetBinError(35,6.295331);
+   lepton_pt_SinglesPtop__139->SetBinError(32,7.339606);
+   lepton_pt_SinglesPtop__139->SetBinError(33,5.59807);
+   lepton_pt_SinglesPtop__139->SetBinError(34,6.948829);
+   lepton_pt_SinglesPtop__139->SetBinError(35,6.111535);
    lepton_pt_SinglesPtop__139->SetBinError(36,6.326154);
    lepton_pt_SinglesPtop__139->SetBinError(37,3.28642);
    lepton_pt_SinglesPtop__139->SetBinError(38,4.02239);
-   lepton_pt_SinglesPtop__139->SetBinError(39,5.580862);
+   lepton_pt_SinglesPtop__139->SetBinError(39,5.398465);
    lepton_pt_SinglesPtop__139->SetBinError(40,3.951067);
    lepton_pt_SinglesPtop__139->SetBinError(41,4.843102);
-   lepton_pt_SinglesPtop__139->SetBinError(42,4.048186);
+   lepton_pt_SinglesPtop__139->SetBinError(42,3.837128);
    lepton_pt_SinglesPtop__139->SetBinError(43,3.60705);
    lepton_pt_SinglesPtop__139->SetBinError(44,3.048085);
    lepton_pt_SinglesPtop__139->SetBinError(45,3.993042);
@@ -499,7 +499,7 @@ void lepton_pt()
    lepton_pt_SinglesPtop__139->SetBinError(49,3.213345);
    lepton_pt_SinglesPtop__139->SetBinError(50,1.32008);
    lepton_pt_SinglesPtop__139->SetBinError(51,8.197764);
-   lepton_pt_SinglesPtop__139->SetEntries(10370);
+   lepton_pt_SinglesPtop__139->SetEntries(10038);
    lepton_pt_SinglesPtop__139->SetDirectory(0);
 
    ci = TColor::GetColor("#990099");
@@ -579,31 +579,31 @@ void lepton_pt()
    Double_t Graph_from_lepton_pt_fy3039[51] = {
    0,
    0,
-   1880,
-   26806,
-   34056,
-   32562,
-   29168,
-   25262,
-   21091,
-   17643,
-   14138,
-   11452,
-   9373,
-   7638,
-   6229,
-   5085,
-   3950,
+   1881,
+   26809,
+   34064,
+   32569,
+   29171,
+   25265,
+   21095,
+   17645,
+   14143,
+   11453,
+   9374,
+   7640,
+   6231,
+   5086,
+   3951,
    3283,
    2623,
    2141,
-   1751,
+   1752,
    1471,
-   1244,
+   1245,
    981,
    864,
-   716,
-   564,
+   717,
+   565,
    452,
    398,
    340,
@@ -683,31 +683,31 @@ void lepton_pt()
    Double_t Graph_from_lepton_pt_fely3039[51] = {
    0,
    0,
-   43.35897,
-   163.7254,
-   184.5427,
-   180.4494,
-   170.7864,
-   158.9402,
-   145.2274,
-   132.827,
-   118.9033,
-   107.014,
-   96.81426,
-   87.39565,
-   78.92401,
-   71.30919,
-   62.84903,
+   43.3705,
+   163.7345,
+   184.5644,
+   180.4688,
+   170.7952,
+   158.9497,
+   145.2412,
+   132.8345,
+   118.9243,
+   107.0187,
+   96.81942,
+   87.40709,
+   78.93668,
+   71.3162,
+   62.85698,
    57.29747,
    51.21523,
    46.27094,
-   41.84495,
+   41.8569,
    38.35362,
-   35.27038,
+   35.28456,
    31.32092,
    29.39388,
-   26.75818,
-   23.74868,
+   26.77686,
+   23.76973,
    21.26029,
    19.94994,
    18.43909,
@@ -787,31 +787,31 @@ void lepton_pt()
    Double_t Graph_from_lepton_pt_fehy3039[51] = {
    1.841055,
    1.841055,
-   43.35897,
-   163.7254,
-   184.5427,
-   180.4494,
-   170.7864,
-   158.9402,
-   145.2274,
-   132.827,
-   118.9033,
-   107.014,
-   96.81426,
-   87.39565,
-   78.92401,
-   71.30919,
-   62.84903,
+   43.3705,
+   163.7345,
+   184.5644,
+   180.4688,
+   170.7952,
+   158.9497,
+   145.2412,
+   132.8345,
+   118.9243,
+   107.0187,
+   96.81942,
+   87.40709,
+   78.93668,
+   71.3162,
+   62.85698,
    57.29747,
    51.21523,
    46.27094,
-   41.84495,
+   41.8569,
    38.35362,
-   35.27038,
+   35.28456,
    31.32092,
    29.39388,
-   26.75818,
-   23.74868,
+   26.77686,
+   23.76973,
    21.26029,
    19.94994,
    18.43909,
@@ -846,7 +846,7 @@ void lepton_pt()
    
    TH1F *Graph_Graph_from_lepton_pt3039 = new TH1F("Graph_Graph_from_lepton_pt3039","Data",100,0,385);
    Graph_Graph_from_lepton_pt3039->SetMinimum(0);
-   Graph_Graph_from_lepton_pt3039->SetMaximum(37664.6);
+   Graph_Graph_from_lepton_pt3039->SetMaximum(37673.42);
    Graph_Graph_from_lepton_pt3039->SetDirectory(0);
    Graph_Graph_from_lepton_pt3039->SetStats(0);
 
@@ -976,7 +976,7 @@ tex->SetNDC();
    TH1F *ratioframe__140 = new TH1F("ratioframe__140","t#bar{t}",50,0,350);
    ratioframe__140->SetMinimum(0.46);
    ratioframe__140->SetMaximum(1.54);
-   ratioframe__140->SetEntries(739468);
+   ratioframe__140->SetEntries(721148);
 
    ci = TColor::GetColor("#cc0000");
    ratioframe__140->SetFillColor(ci);
@@ -1057,53 +1057,53 @@ tex->SetNDC();
    Double_t Graph_from_ratio_fy3040[50] = {
    0,
    0,
-   0.8969221,
-   0.9148573,
-   0.9270381,
-   0.9251285,
-   0.9235411,
-   0.9160966,
-   0.9109502,
-   0.9240054,
-   0.887345,
-   0.8943615,
-   0.8837798,
-   0.8881722,
-   0.9079857,
-   0.9011595,
-   0.8583207,
-   0.8594191,
-   0.8592107,
-   0.8463922,
-   0.8397923,
-   0.8674693,
-   0.8437727,
-   0.8195365,
-   0.8516918,
-   0.9008666,
-   0.762931,
-   0.7882938,
-   0.8090591,
-   0.8423172,
-   0.766965,
-   0.8216017,
-   0.7705482,
-   0.7656716,
-   0.8837265,
-   0.698449,
-   0.8484588,
-   0.6961135,
-   0.715614,
-   0.8800843,
-   0.7338343,
-   0.8104986,
-   0.7227085,
-   0.7684228,
-   0.6786228,
-   0.6267753,
-   0.6110728,
+   0.9204386,
+   0.9377086,
+   0.9501206,
+   0.9493369,
+   0.9477111,
+   0.9394226,
+   0.9354283,
+   0.9481037,
+   0.9119529,
+   0.9171519,
+   0.9066597,
+   0.9123306,
+   0.930297,
+   0.9258209,
+   0.8801516,
+   0.8825102,
+   0.879138,
+   0.8675421,
+   0.8599569,
+   0.8912436,
+   0.8681229,
+   0.8393085,
+   0.8745279,
+   0.9185224,
+   0.7868016,
+   0.8004375,
+   0.8314751,
+   0.859026,
+   0.781394,
+   0.842581,
+   0.784329,
+   0.7870601,
+   0.908715,
+   0.7094559,
+   0.8641533,
+   0.7027804,
+   0.7479642,
+   0.8891181,
+   0.7477595,
+   0.8449551,
+   0.7285414,
+   0.7751166,
+   0.6944002,
+   0.64851,
+   0.6246894,
    0.6515076,
-   0.5850285,
+   0.5923762,
    0.6525933};
    Double_t Graph_from_ratio_felx3040[50] = {
    3.5,
@@ -1159,53 +1159,53 @@ tex->SetNDC();
    Double_t Graph_from_ratio_fely3040[50] = {
    0,
    0,
-   0.02762263,
-   0.006872295,
-   0.006092435,
-   0.006167879,
-   0.006468848,
-   0.006900439,
-   0.007506424,
-   0.008277143,
-   0.008900774,
-   0.00990128,
-   0.01079937,
-   0.01223881,
-   0.01369422,
-   0.01501288,
-   0.01611828,
-   0.01776145,
-   0.01986586,
-   0.02167211,
-   0.0238459,
-   0.02689629,
-   0.02967841,
-   0.0309164,
-   0.03451717,
-   0.04025944,
-   0.04240886,
-   0.04358767,
-   0.0478403,
-   0.05451534,
-   0.05384378,
-   0.06268266,
-   0.0669866,
-   0.06775926,
-   0.08380359,
-   0.07515396,
-   0.094883,
-   0.08983296,
-   0.09502702,
-   0.1223722,
-   0.1108803,
-   0.1379442,
-   0.1339972,
-   0.1406693,
-   0.1346039,
-   0.1430753,
-   0.1506299,
+   0.02857379,
+   0.007078626,
+   0.00627007,
+   0.00635574,
+   0.006663815,
+   0.007103619,
+   0.007739671,
+   0.008525951,
+   0.009185135,
+   0.01018985,
+   0.01111849,
+   0.01262656,
+   0.01408022,
+   0.01547683,
+   0.01658506,
+   0.01830293,
+   0.02040065,
+   0.02229802,
+   0.02449363,
+   0.02774006,
+   0.03069268,
+   0.03176952,
+   0.03558954,
+   0.04111584,
+   0.0441051,
+   0.04436984,
+   0.0493521,
+   0.05578731,
+   0.05502203,
+   0.06449133,
+   0.06838204,
+   0.06988788,
+   0.08643865,
+   0.07656468,
+   0.09692733,
+   0.09082457,
+   0.09985206,
+   0.1238858,
+   0.1134203,
+   0.1443207,
+   0.1352685,
+   0.1420933,
+   0.1383686,
+   0.1491003,
+   0.154657,
    0.1731824,
-   0.1527681,
+   0.155029,
    0.1919754};
    Double_t Graph_from_ratio_fehx3040[50] = {
    3.5,
@@ -1261,53 +1261,53 @@ tex->SetNDC();
    Double_t Graph_from_ratio_fehy3040[50] = {
    0,
    0,
-   0.02762263,
-   0.006872295,
-   0.006092435,
-   0.006167879,
-   0.006468848,
-   0.006900439,
-   0.007506424,
-   0.008277143,
-   0.008900774,
-   0.00990128,
-   0.01079937,
-   0.01223881,
-   0.01369422,
-   0.01501288,
-   0.01611828,
-   0.01776145,
-   0.01986586,
-   0.02167211,
-   0.0238459,
-   0.02689629,
-   0.02967841,
-   0.0309164,
-   0.03451717,
-   0.04025944,
-   0.04240886,
-   0.04358767,
-   0.0478403,
-   0.05451534,
-   0.05384378,
-   0.06268266,
-   0.0669866,
-   0.06775926,
-   0.08380359,
-   0.07515396,
-   0.094883,
-   0.08983296,
-   0.09502702,
-   0.1223722,
-   0.1108803,
-   0.1379442,
-   0.1339972,
-   0.1406693,
-   0.1346039,
-   0.1430753,
-   0.1506299,
+   0.02857379,
+   0.007078626,
+   0.00627007,
+   0.00635574,
+   0.006663815,
+   0.007103619,
+   0.007739671,
+   0.008525951,
+   0.009185135,
+   0.01018985,
+   0.01111849,
+   0.01262656,
+   0.01408022,
+   0.01547683,
+   0.01658506,
+   0.01830293,
+   0.02040065,
+   0.02229802,
+   0.02449363,
+   0.02774006,
+   0.03069268,
+   0.03176952,
+   0.03558954,
+   0.04111584,
+   0.0441051,
+   0.04436984,
+   0.0493521,
+   0.05578731,
+   0.05502203,
+   0.06449133,
+   0.06838204,
+   0.06988788,
+   0.08643865,
+   0.07656468,
+   0.09692733,
+   0.09082457,
+   0.09985206,
+   0.1238858,
+   0.1134203,
+   0.1443207,
+   0.1352685,
+   0.1420933,
+   0.1383686,
+   0.1491003,
+   0.154657,
    0.1731824,
-   0.1527681,
+   0.155029,
    0.1919754};
    grae = new TGraphAsymmErrors(50,Graph_from_ratio_fx3040,Graph_from_ratio_fy3040,Graph_from_ratio_felx3040,Graph_from_ratio_fehx3040,Graph_from_ratio_fely3040,Graph_from_ratio_fehy3040);
    grae->SetName("Graph_from_ratio");
@@ -1319,7 +1319,7 @@ tex->SetNDC();
    
    TH1F *Graph_Graph_from_ratio3040 = new TH1F("Graph_Graph_from_ratio3040","Data",100,0,385);
    Graph_Graph_from_ratio3040->SetMinimum(0);
-   Graph_Graph_from_ratio3040->SetMaximum(1.102702);
+   Graph_Graph_from_ratio3040->SetMaximum(1.114304);
    Graph_Graph_from_ratio3040->SetDirectory(0);
    Graph_Graph_from_ratio3040->SetStats(0);
 

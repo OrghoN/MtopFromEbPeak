@@ -8,6 +8,8 @@ import ROOT
 from subprocess import Popen, PIPE
 from array import array
 
+from btagUtility import *
+
 """
 Perform the analysis on a single file
 """
@@ -85,16 +87,79 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
             nJets +=1
             JetsP4.append(jp4)
 
+
+             #save P4 for b-tagged jet
+            # if tree.Jet_CombIVF[ij]>0.8484: # medium cut
+            istagged = tree.Jet_CombIVF[ij]>0.8484   
+            heavySF = 1.0;
+            heavySFerr = 0.0;
+            heavySFup = 1.0;
+            heavySFdn = 1.0;
+            heavyEff = 1.0;
+            lightSF = 1.0;
+            lightSFerr = 0.0;
+            lightSFup = 1.0;
+            lightSFdn = 1.0;
+            lightEff = 1.0;
+            
+             #set the initial tagged/untagged state
+            ijetPt = jp4.Pt()
+            ijetEta= jp4.Eta()
+            
+            if tree.Jet_flavour[ij] == 5:
+                heavySF   = GetBtagSF2016Medium_comb('central', ijetPt, ijetEta);
+                heavySFerr= GetBtagSF2016Medium_comb('uncert', ijetPt, ijetEta);
+                if ijetPt>1000: heavySFerr *=2.0
+                heavySFup = heavySF + heavySFerr;
+                heavySFdn = heavySF - heavySFerr;
+                heavyEff  = GetBtagEfficiency(ijetPt);
+                
+                isBtagged = applySF(istagged,heavySF,heavyEff);
+                isBtagged_bSFup = applySF(istagged,heavySFup,heavyEff);
+                isBtagged_bSFdn = applySF(istagged,heavySFdn,heavyEff);
+                isBtagged_lSFup = applySF(istagged,heavySF,heavyEff);
+                isBtagged_lSFdn = applySF(istagged,heavySF,heavyEff);
+                
+            elif tree.Jet_flavour[ij] == 4: # c-quarks
+                heavySF   = GetCtagSF2016Medium_comb('central', ijetPt, ijetEta);
+                heavySFerr= GetCtagSF2016Medium_comb('uncert', ijetPt, ijetEta);
+                if ijetPt>1000: heavySFerr *=2.0;
+                heavySFup = heavySF + heavySFerr;
+                heavySFdn = heavySF - heavySFerr;
+                heavyEff  = GetCtagEfficiency(ijetPt);
+                
+                isBtagged = applySF(istagged,heavySF,heavyEff);
+                isBtagged_bSFup = applySF(istagged,heavySFup,heavyEff);
+                isBtagged_bSFdn = applySF(istagged,heavySFdn,heavyEff);
+                isBtagged_lSFup = applySF(istagged,heavySF,heavyEff);
+                isBtagged_lSFdn = applySF(istagged,heavySF,heavyEff);
+                
+            else: # udsg-quarks
+                lightSF   = GetLFSF2016Medium('central', ijetPt, ijetEta);
+                lightSFerr= GetLFSF2016Medium('uncert', ijetPt, ijetEta);
+                if ijetPt>1000: lightSFerr *=2.0;
+                lightSFup = lightSF + lightSFerr;
+                lightSFdn = lightSF - lightSFerr;
+                lightEff  = GetMistagRate(ijetPt);
+                
+                isBtagged = applySF(istagged,lightSF,lightEff);
+                isBtagged_bSFup = applySF(istagged,lightSF,lightEff);
+                isBtagged_bSFdn = applySF(istagged,lightSF,lightEff);
+                isBtagged_lSFup = applySF(istagged,lightSFup,lightEff);
+                isBtagged_lSFdn = applySF(istagged,lightSFdn,lightEff);
+	     
             # Take the Pt of bjets tagged as Loose cut
             if (tree.Jet_CombIVF[ij] > 0.5426):
                 LootagJetsP4.append(jp4)
                 btagID = 0
 
-                #save P4 for b-tagged jet
-                if tree.Jet_CombIVF[ij]>0.8484: # medium cut
+                if isBtagged == 1:
                     nBtags+=1
                     MedtaggedJetsP4.append(jp4)
                     btagID = 1
+
+                    
+
 
                     if tree.Jet_CombIVF[ij]>0.9535: # tight cut
                         TigtagJetsP4.append(jp4)
@@ -102,7 +167,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
         if nJets<2 : continue
         histos['cut_flow'].Fill(2,evWgt)
-        if nBtags!=1 and nBtags!=2 : continue
+        if nBtags < 1 : continue
         histos['cut_flow'].Fill(3,evWgt)
 
         # Create lepton four-vector which will be used to compute dilepton invariant mass

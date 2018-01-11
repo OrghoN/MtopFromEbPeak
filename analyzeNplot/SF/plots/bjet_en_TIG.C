@@ -1,7 +1,7 @@
 void bjet_en_TIG()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Jan 11 16:36:55 2018) by ROOT version6.08/07
+//=========  (Thu Jan 11 16:38:01 2018) by ROOT version6.08/07
    TCanvas *c = new TCanvas("c", "c",0,0,500,500);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -20,7 +20,7 @@ void bjet_en_TIG()
    TPad *p1 = new TPad("p1", "p1",0,0,1,0.85);
    p1->Draw();
    p1->cd();
-   p1->Range(-57.83133,-1555.096,424.0964,11404.87);
+   p1->Range(-57.83133,-1484.76,424.0964,10889.07);
    p1->SetFillColor(0);
    p1->SetBorderMode(0);
    p1->SetBorderSize(2);
@@ -34,8 +34,8 @@ void bjet_en_TIG()
    
    TH1F *frame__127 = new TH1F("frame__127","t#bar{t}",50,0,400);
    frame__127->SetMinimum(0.1);
-   frame__127->SetMaximum(11275.27);
-   frame__127->SetEntries(339728);
+   frame__127->SetMaximum(10765.33);
+   frame__127->SetEntries(326514);
    frame__127->SetDirectory(0);
 
    Int_t ci;      // for color index setting
@@ -68,7 +68,7 @@ void bjet_en_TIG()
    
    TH1F *mc_stack_19 = new TH1F("mc_stack_19","mc",50,0,400);
    mc_stack_19->SetMinimum(-7.327249e-07);
-   mc_stack_19->SetMaximum(9106.952);
+   mc_stack_19->SetMaximum(8695.076);
    mc_stack_19->SetDirectory(0);
    mc_stack_19->SetStats(0);
 
@@ -90,103 +90,103 @@ void bjet_en_TIG()
    
    
    TH1F *bjet_en_TIG_t#bar{t}__128 = new TH1F("bjet_en_TIG_t#bar{t}__128","t#bar{t}",50,0,400);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(4,228.1326);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(5,4351.873);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(6,6663.013);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(7,7915.769);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(8,8255.669);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(9,8331.622);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(10,8045.644);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(11,7547.429);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(12,7119.999);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(13,6569.312);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(14,5966.841);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(15,5374.152);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(16,4913.026);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(17,4406.793);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(18,3912.879);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(19,3626.58);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(20,3265.784);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(21,2856.965);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(22,2636.616);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(23,2349.597);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(24,2108.794);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(25,1909.107);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(26,1680.935);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(27,1545.628);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(28,1362.467);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(29,1269.649);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(30,1165.842);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(31,1049.338);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(32,934.7364);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(33,861.2323);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(34,769.7354);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(35,719.9529);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(36,648.2231);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(37,600.0521);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(38,556.6289);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(39,504.782);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(40,480.1647);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(41,445.7476);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(42,376.7156);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(43,351.0898);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(44,331.6869);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(45,310.9475);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(46,263.6772);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(47,267.1048);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(48,245.6368);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(49,235.1101);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(50,214.7385);
-   bjet_en_TIG_t#bar{t}__128->SetBinContent(51,2733.363);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(4,9.656524);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(5,42.26543);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(6,52.31033);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(7,57.0487);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(8,58.21115);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(9,58.46367);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(10,57.48147);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(11,55.69451);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(12,54.08325);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(13,51.95625);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(14,49.53967);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(15,46.99787);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(16,44.94997);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(17,42.55878);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(18,40.09538);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(19,38.63059);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(20,36.63917);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(21,34.28539);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(22,32.97243);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(23,31.04863);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(24,29.41953);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(25,27.9629);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(26,26.24974);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(27,25.19175);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(28,23.59976);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(29,22.82623);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(30,21.88975);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(31,20.74087);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(32,19.59738);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(33,18.83748);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(34,17.80448);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(35,17.21359);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(36,16.31765);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(37,15.68871);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(38,15.09768);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(39,14.4005);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(40,14.04137);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(41,13.5439);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(42,12.42314);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(43,11.9733);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(44,11.66271);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(45,11.30681);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(46,10.40228);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(47,10.50195);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(48,10.01056);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(49,9.805834);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(50,9.369252);
-   bjet_en_TIG_t#bar{t}__128->SetBinError(51,33.48774);
-   bjet_en_TIG_t#bar{t}__128->SetEntries(335371);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(4,212.6172);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(5,4053.065);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(6,6293.965);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(7,7504.374);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(8,7844.934);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(9,7953.098);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(10,7718.313);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(11,7222.291);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(12,6872.149);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(13,6333.012);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(14,5755.284);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(15,5187.761);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(16,4750.728);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(17,4255.613);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(18,3787.825);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(19,3499.408);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(20,3167.288);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(21,2770.347);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(22,2556.012);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(23,2271.806);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(24,2051.371);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(25,1850.529);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(26,1632.437);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(27,1499.746);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(28,1328.387);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(29,1240.576);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(30,1137.223);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(31,1018.989);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(32,909.8144);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(33,831.7654);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(34,748.5312);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(35,707.1813);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(36,626.4404);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(37,583.439);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(38,536.0553);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(39,490.4665);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(40,466.6597);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(41,433.1415);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(42,366.398);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(43,343.6158);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(44,325.1326);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(45,300.4826);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(46,257.8226);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(47,262.385);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(48,239.1551);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(49,231.0412);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(50,209.0981);
+   bjet_en_TIG_t#bar{t}__128->SetBinContent(51,2663.23);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(4,9.322189);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(5,40.78511);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(6,50.84266);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(7,55.54769);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(8,56.73644);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(9,57.12383);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(10,56.30338);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(11,54.47691);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(12,53.13953);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(13,51.01185);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(14,48.64925);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(15,46.18249);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(16,44.20882);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(17,41.82505);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(18,39.44751);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(19,37.94721);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(20,36.08255);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(21,33.76235);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(22,32.46988);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(23,30.52858);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(24,29.01514);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(25,27.53423);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(26,25.86873);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(27,24.81386);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(28,23.30625);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(29,22.56429);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(30,21.61576);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(31,20.43847);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(32,19.33206);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(33,18.51268);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(34,17.55346);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(35,17.06712);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(36,16.03896);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(37,15.4661);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(38,14.808);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(39,14.19683);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(40,13.84069);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(41,13.34948);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(42,12.25788);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(43,11.84681);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(44,11.54698);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(45,11.11493);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(46,10.28397);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(47,10.41063);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(48,9.877222);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(49,9.724574);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(50,9.253221);
+   bjet_en_TIG_t#bar{t}__128->SetBinError(51,33.05628);
+   bjet_en_TIG_t#bar{t}__128->SetEntries(322345);
    bjet_en_TIG_t#bar{t}__128->SetDirectory(0);
 
    ci = TColor::GetColor("#cc0000");
@@ -212,23 +212,23 @@ void bjet_en_TIG()
    
    TH1F *bjet_en_TIG_Diboson__129 = new TH1F("bjet_en_TIG_Diboson__129","Diboson",50,0,400);
    bjet_en_TIG_Diboson__129->SetBinContent(4,0.8218468);
-   bjet_en_TIG_Diboson__129->SetBinContent(5,3.466633);
-   bjet_en_TIG_Diboson__129->SetBinContent(6,3.322516);
-   bjet_en_TIG_Diboson__129->SetBinContent(7,3.739981);
+   bjet_en_TIG_Diboson__129->SetBinContent(5,3.07412);
+   bjet_en_TIG_Diboson__129->SetBinContent(6,2.909437);
+   bjet_en_TIG_Diboson__129->SetBinContent(7,3.306277);
    bjet_en_TIG_Diboson__129->SetBinContent(8,3.461666);
    bjet_en_TIG_Diboson__129->SetBinContent(9,2.282029);
    bjet_en_TIG_Diboson__129->SetBinContent(10,4.894811);
-   bjet_en_TIG_Diboson__129->SetBinContent(11,3.458039);
+   bjet_en_TIG_Diboson__129->SetBinContent(11,3.010075);
    bjet_en_TIG_Diboson__129->SetBinContent(12,1.452015);
    bjet_en_TIG_Diboson__129->SetBinContent(13,1.598905);
    bjet_en_TIG_Diboson__129->SetBinContent(14,1.870811);
-   bjet_en_TIG_Diboson__129->SetBinContent(15,2.046748);
+   bjet_en_TIG_Diboson__129->SetBinContent(15,1.649202);
    bjet_en_TIG_Diboson__129->SetBinContent(16,1.176215);
    bjet_en_TIG_Diboson__129->SetBinContent(17,2.541805);
    bjet_en_TIG_Diboson__129->SetBinContent(18,1.281912);
-   bjet_en_TIG_Diboson__129->SetBinContent(19,1.876603);
-   bjet_en_TIG_Diboson__129->SetBinContent(20,1.161368);
-   bjet_en_TIG_Diboson__129->SetBinContent(21,2.400327);
+   bjet_en_TIG_Diboson__129->SetBinContent(19,1.459403);
+   bjet_en_TIG_Diboson__129->SetBinContent(20,0.7778371);
+   bjet_en_TIG_Diboson__129->SetBinContent(21,2.009492);
    bjet_en_TIG_Diboson__129->SetBinContent(22,0.3683522);
    bjet_en_TIG_Diboson__129->SetBinContent(23,0.3809738);
    bjet_en_TIG_Diboson__129->SetBinContent(24,0.7696521);
@@ -252,26 +252,25 @@ void bjet_en_TIG()
    bjet_en_TIG_Diboson__129->SetBinContent(46,0.3739505);
    bjet_en_TIG_Diboson__129->SetBinContent(48,0.3785551);
    bjet_en_TIG_Diboson__129->SetBinContent(49,0.2853125);
-   bjet_en_TIG_Diboson__129->SetBinContent(50,0.4303074);
-   bjet_en_TIG_Diboson__129->SetBinContent(51,6.078356);
+   bjet_en_TIG_Diboson__129->SetBinContent(51,5.631586);
    bjet_en_TIG_Diboson__129->SetBinError(4,0.5287828);
-   bjet_en_TIG_Diboson__129->SetBinError(5,1.155683);
-   bjet_en_TIG_Diboson__129->SetBinError(6,1.175927);
-   bjet_en_TIG_Diboson__129->SetBinError(7,1.23987);
+   bjet_en_TIG_Diboson__129->SetBinError(5,1.086985);
+   bjet_en_TIG_Diboson__129->SetBinError(6,1.100987);
+   bjet_en_TIG_Diboson__129->SetBinError(7,1.161541);
    bjet_en_TIG_Diboson__129->SetBinError(8,1.147633);
    bjet_en_TIG_Diboson__129->SetBinError(9,0.9489772);
    bjet_en_TIG_Diboson__129->SetBinError(10,1.369908);
-   bjet_en_TIG_Diboson__129->SetBinError(11,1.170743);
+   bjet_en_TIG_Diboson__129->SetBinError(11,1.081651);
    bjet_en_TIG_Diboson__129->SetBinError(12,0.7402137);
    bjet_en_TIG_Diboson__129->SetBinError(13,0.8007275);
    bjet_en_TIG_Diboson__129->SetBinError(14,0.8343805);
-   bjet_en_TIG_Diboson__129->SetBinError(15,0.9168256);
+   bjet_en_TIG_Diboson__129->SetBinError(15,0.8261516);
    bjet_en_TIG_Diboson__129->SetBinError(16,0.6790984);
    bjet_en_TIG_Diboson__129->SetBinError(17,1.039039);
    bjet_en_TIG_Diboson__129->SetBinError(18,0.6899421);
-   bjet_en_TIG_Diboson__129->SetBinError(19,0.8331758);
-   bjet_en_TIG_Diboson__129->SetBinError(20,0.6705739);
-   bjet_en_TIG_Diboson__129->SetBinError(21,0.9814451);
+   bjet_en_TIG_Diboson__129->SetBinError(19,0.7211974);
+   bjet_en_TIG_Diboson__129->SetBinError(20,0.5500667);
+   bjet_en_TIG_Diboson__129->SetBinError(21,0.9002677);
    bjet_en_TIG_Diboson__129->SetBinError(22,0.3683522);
    bjet_en_TIG_Diboson__129->SetBinError(23,0.3809738);
    bjet_en_TIG_Diboson__129->SetBinError(24,0.5445439);
@@ -295,9 +294,8 @@ void bjet_en_TIG()
    bjet_en_TIG_Diboson__129->SetBinError(46,0.3739505);
    bjet_en_TIG_Diboson__129->SetBinError(48,0.3785551);
    bjet_en_TIG_Diboson__129->SetBinError(49,0.2853125);
-   bjet_en_TIG_Diboson__129->SetBinError(50,0.4303074);
-   bjet_en_TIG_Diboson__129->SetBinError(51,1.525072);
-   bjet_en_TIG_Diboson__129->SetEntries(176);
+   bjet_en_TIG_Diboson__129->SetBinError(51,1.458164);
+   bjet_en_TIG_Diboson__129->SetEntries(166);
    bjet_en_TIG_Diboson__129->SetDirectory(0);
 
    ci = TColor::GetColor("#ffff00");
@@ -388,102 +386,102 @@ void bjet_en_TIG()
    
    TH1F *bjet_en_TIG_SinglesPtop__132 = new TH1F("bjet_en_TIG_SinglesPtop__132","Single top",50,0,400);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(4,9.929756);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(5,192.9962);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(6,280.8779);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(7,300.0682);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(8,318.3859);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(9,339.3839);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(10,329.8395);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(11,312.1476);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(12,251.1312);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(13,255.9403);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(14,212.3767);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(15,194.6308);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(16,171.859);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(17,160.5026);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(18,164.2012);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(19,148.4133);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(20,123.2245);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(21,100.398);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(22,102.3635);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(23,96.0819);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(24,83.52443);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(25,80.20557);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(26,64.35939);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(5,179.6405);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(6,264.5883);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(7,289.7908);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(8,300.3503);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(9,325.6441);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(10,307.6214);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(11,293.1976);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(12,236.0394);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(13,249.2445);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(14,210.8589);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(15,193.335);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(16,164.402);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(17,156.45);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(18,154.318);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(19,138.8502);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(20,113.7789);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(21,94.71216);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(22,99.73843);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(23,92.15588);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(24,81.08269);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(25,75.14495);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(26,57.45441);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(27,58.52306);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(28,46.85061);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(28,44.25957);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(29,55.60493);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(30,68.56168);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(31,29.97206);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(32,51.18097);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(33,41.92521);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(34,32.19001);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(35,32.62916);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(32,50.70024);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(33,39.90351);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(34,30.85802);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(35,31.0111);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(36,25.73565);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(37,31.84208);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(38,18.48041);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(39,32.56033);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(40,21.08326);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(40,19.57526);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(41,20.09508);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(42,17.4996);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(43,25.4841);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(42,16.15882);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(43,24.19361);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(44,22.31396);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(45,13.64619);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(46,9.578507);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(47,20.96131);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(47,18.30592);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(48,13.57896);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(49,6.899704);
    bjet_en_TIG_SinglesPtop__132->SetBinContent(50,9.308773);
-   bjet_en_TIG_SinglesPtop__132->SetBinContent(51,170.9457);
+   bjet_en_TIG_SinglesPtop__132->SetBinContent(51,170.7183);
    bjet_en_TIG_SinglesPtop__132->SetBinError(4,3.499541);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(5,15.97655);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(6,19.32986);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(7,19.99295);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(8,20.69113);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(9,21.19421);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(10,21.01938);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(11,20.37051);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(12,18.30234);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(13,18.59731);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(14,16.86875);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(15,16.1111);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(16,15.25007);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(17,14.71379);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(18,14.86011);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(19,14.11517);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(20,12.80512);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(21,11.47292);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(22,11.70708);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(23,11.41653);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(24,10.54523);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(25,10.29942);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(26,9.157714);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(5,15.34261);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(6,18.76036);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(7,19.65833);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(8,20.08683);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(9,20.74239);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(10,20.29697);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(11,19.75271);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(12,17.72474);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(13,18.35924);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(14,16.80169);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(15,16.0589);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(16,14.90987);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(17,14.5254);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(18,14.38184);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(19,13.67052);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(20,12.28959);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(21,11.18698);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(22,11.55808);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(23,11.18925);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(24,10.40262);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(25,9.976698);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(26,8.621025);
    bjet_en_TIG_SinglesPtop__132->SetBinError(27,8.930928);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(28,7.854669);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(28,7.637961);
    bjet_en_TIG_SinglesPtop__132->SetBinError(29,8.559222);
    bjet_en_TIG_SinglesPtop__132->SetBinError(30,9.685765);
    bjet_en_TIG_SinglesPtop__132->SetBinError(31,6.375124);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(32,8.218729);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(33,7.358641);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(34,6.712743);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(35,6.737126);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(32,8.204658);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(33,7.217881);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(34,6.579264);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(35,6.539936);
    bjet_en_TIG_SinglesPtop__132->SetBinError(36,6.002238);
    bjet_en_TIG_SinglesPtop__132->SetBinError(37,6.505341);
    bjet_en_TIG_SinglesPtop__132->SetBinError(38,4.917326);
    bjet_en_TIG_SinglesPtop__132->SetBinError(39,6.676781);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(40,5.25521);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(40,5.034202);
    bjet_en_TIG_SinglesPtop__132->SetBinError(41,5.19806);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(42,4.872407);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(43,6.037017);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(42,4.684298);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(43,5.897474);
    bjet_en_TIG_SinglesPtop__132->SetBinError(44,5.48069);
    bjet_en_TIG_SinglesPtop__132->SetBinError(45,4.209057);
    bjet_en_TIG_SinglesPtop__132->SetBinError(46,3.485758);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(47,5.456754);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(47,5.12351);
    bjet_en_TIG_SinglesPtop__132->SetBinError(48,4.205486);
    bjet_en_TIG_SinglesPtop__132->SetBinError(49,3.08852);
    bjet_en_TIG_SinglesPtop__132->SetBinError(50,3.50655);
-   bjet_en_TIG_SinglesPtop__132->SetBinError(51,15.02233);
-   bjet_en_TIG_SinglesPtop__132->SetEntries(4171);
+   bjet_en_TIG_SinglesPtop__132->SetBinError(51,15.02061);
+   bjet_en_TIG_SinglesPtop__132->SetEntries(3993);
    bjet_en_TIG_SinglesPtop__132->SetDirectory(0);
 
    ci = TColor::GetColor("#990099");
@@ -960,7 +958,7 @@ tex->SetNDC();
    TH1F *ratioframe__133 = new TH1F("ratioframe__133","t#bar{t}",50,0,400);
    ratioframe__133->SetMinimum(0.46);
    ratioframe__133->SetMaximum(1.54);
-   ratioframe__133->SetEntries(339728);
+   ratioframe__133->SetEntries(326514);
 
    ci = TColor::GetColor("#cc0000");
    ratioframe__133->SetFillColor(ci);
@@ -1042,53 +1040,53 @@ tex->SetNDC();
    0,
    0,
    0,
-   0.941879,
-   0.8381088,
-   0.8729253,
-   0.8842123,
-   0.8952703,
-   0.9079602,
-   0.8915176,
-   0.9203671,
-   0.8895119,
-   0.9052489,
-   0.9100338,
-   0.9079438,
-   0.9219314,
-   0.9057215,
-   0.89227,
-   0.8737394,
-   0.9108688,
-   0.9220331,
-   0.8932784,
-   0.8811783,
-   0.8478059,
-   0.814701,
-   0.8882521,
-   0.9079954,
-   0.9083573,
-   0.8838553,
-   0.8440703,
-   0.8854416,
-   0.8793668,
-   0.8110729,
-   0.8512354,
-   0.8831434,
-   0.9125187,
-   0.8656513,
-   0.9265783,
-   0.9318707,
-   0.9010044,
-   0.8135794,
-   0.9334891,
-   0.8702577,
-   0.831444,
-   0.779436,
-   0.8880616,
-   0.864385,
-   0.9052587,
-   0.9327467,
-   0.8553191};
+   1.007303,
+   0.8999524,
+   0.9241233,
+   0.9319592,
+   0.9421861,
+   0.9509693,
+   0.9302419,
+   0.9624327,
+   0.9224094,
+   0.9386597,
+   0.9425247,
+   0.9396693,
+   0.9537649,
+   0.9375697,
+   0.922802,
+   0.9066637,
+   0.9409343,
+   0.9518431,
+   0.9212688,
+   0.9113787,
+   0.8715758,
+   0.8416022,
+   0.917359,
+   0.9347032,
+   0.9325889,
+   0.9036688,
+   0.8640824,
+   0.911051,
+   0.9026229,
+   0.8403529,
+   0.8747038,
+   0.900349,
+   0.9429969,
+   0.8890246,
+   0.9609472,
+   0.9573625,
+   0.9288002,
+   0.8362078,
+   0.9619367,
+   0.8909767,
+   0.8470923,
+   0.8054021,
+   0.907478,
+   0.8870968,
+   0.9284405,
+   0.9486783,
+   0.8790933};
    Double_t Graph_from_ratio_felx3038[50] = {
    4,
    4,
@@ -1144,53 +1142,53 @@ tex->SetNDC();
    0,
    0,
    0,
-   0.07474751,
-   0.0159259,
-   0.01334502,
-   0.0124,
-   0.01229777,
-   0.01212743,
-   0.01230865,
-   0.01303856,
-   0.01296588,
-   0.01364399,
-   0.01437391,
-   0.01511858,
-   0.01597847,
-   0.01667006,
-   0.01750212,
-   0.01794173,
-   0.01942825,
-   0.0209396,
-   0.02136086,
-   0.02340797,
-   0.02307737,
-   0.02362235,
-   0.02662294,
-   0.02817983,
-   0.03000367,
-   0.03050773,
-   0.03083323,
-   0.03371705,
-   0.03537179,
-   0.03502894,
-   0.04597238,
-   0.04053471,
-   0.04368226,
-   0.04371816,
-   0.04759181,
-   0.04990488,
-   0.0502162,
-   0.0488712,
-   0.05802095,
-   0.05716797,
-   0.05707067,
-   0.05692608,
-   0.06719162,
-   0.06528245,
-   0.07016161,
-   0.07360146,
-   0.07256657};
+   0.08081855,
+   0.01726941,
+   0.01425854,
+   0.01318873,
+   0.01305973,
+   0.01278889,
+   0.01292829,
+   0.0137386,
+   0.01351186,
+   0.01422417,
+   0.01496724,
+   0.01573048,
+   0.01661148,
+   0.01734497,
+   0.01818177,
+   0.01871059,
+   0.02015371,
+   0.02171433,
+   0.02213075,
+   0.024391,
+   0.02381607,
+   0.02450205,
+   0.02759627,
+   0.02914074,
+   0.03091329,
+   0.0312996,
+   0.03168043,
+   0.03484025,
+   0.03645787,
+   0.03646996,
+   0.04779472,
+   0.04141961,
+   0.04537701,
+   0.04508496,
+   0.04963151,
+   0.05151162,
+   0.05195476,
+   0.05043361,
+   0.06002658,
+   0.05870847,
+   0.05831772,
+   0.05909746,
+   0.06888227,
+   0.06712022,
+   0.07225399,
+   0.07506335,
+   0.07490914};
    Double_t Graph_from_ratio_fehx3038[50] = {
    4,
    4,
@@ -1246,53 +1244,53 @@ tex->SetNDC();
    0,
    0,
    0,
-   0.07474751,
-   0.0159259,
-   0.01334502,
-   0.0124,
-   0.01229777,
-   0.01212743,
-   0.01230865,
-   0.01303856,
-   0.01296588,
-   0.01364399,
-   0.01437391,
-   0.01511858,
-   0.01597847,
-   0.01667006,
-   0.01750212,
-   0.01794173,
-   0.01942825,
-   0.0209396,
-   0.02136086,
-   0.02340797,
-   0.02307737,
-   0.02362235,
-   0.02662294,
-   0.02817983,
-   0.03000367,
-   0.03050773,
-   0.03083323,
-   0.03371705,
-   0.03537179,
-   0.03502894,
-   0.04597238,
-   0.04053471,
-   0.04368226,
-   0.04371816,
-   0.04759181,
-   0.04990488,
-   0.0502162,
-   0.0488712,
-   0.05802095,
-   0.05716797,
-   0.05707067,
-   0.05692608,
-   0.06719162,
-   0.06528245,
-   0.07016161,
-   0.07360146,
-   0.07256657};
+   0.08081855,
+   0.01726941,
+   0.01425854,
+   0.01318873,
+   0.01305973,
+   0.01278889,
+   0.01292829,
+   0.0137386,
+   0.01351186,
+   0.01422417,
+   0.01496724,
+   0.01573048,
+   0.01661148,
+   0.01734497,
+   0.01818177,
+   0.01871059,
+   0.02015371,
+   0.02171433,
+   0.02213075,
+   0.024391,
+   0.02381607,
+   0.02450205,
+   0.02759627,
+   0.02914074,
+   0.03091329,
+   0.0312996,
+   0.03168043,
+   0.03484025,
+   0.03645787,
+   0.03646996,
+   0.04779472,
+   0.04141961,
+   0.04537701,
+   0.04508496,
+   0.04963151,
+   0.05151162,
+   0.05195476,
+   0.05043361,
+   0.06002658,
+   0.05870847,
+   0.05831772,
+   0.05909746,
+   0.06888227,
+   0.06712022,
+   0.07225399,
+   0.07506335,
+   0.07490914};
    grae = new TGraphAsymmErrors(50,Graph_from_ratio_fx3038,Graph_from_ratio_fy3038,Graph_from_ratio_felx3038,Graph_from_ratio_fehx3038,Graph_from_ratio_fely3038,Graph_from_ratio_fehy3038);
    grae->SetName("Graph_from_ratio");
    grae->SetTitle("Data");
@@ -1303,7 +1301,7 @@ tex->SetNDC();
    
    TH1F *Graph_Graph_from_ratio3038 = new TH1F("Graph_Graph_from_ratio3038","Data",100,0,440);
    Graph_Graph_from_ratio3038->SetMinimum(0);
-   Graph_Graph_from_ratio3038->SetMaximum(1.118289);
+   Graph_Graph_from_ratio3038->SetMaximum(1.196933);
    Graph_Graph_from_ratio3038->SetDirectory(0);
    Graph_Graph_from_ratio3038->SetStats(0);
 

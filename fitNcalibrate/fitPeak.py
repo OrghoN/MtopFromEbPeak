@@ -198,17 +198,17 @@ def main():
            res = ROOT.TFile(fiName, "read")
 
            #Get the histogram 
-           hName = "bjetenls/"   
+           hName = "bjet_en_ls_LOO/"   
            if opt.isData is True:
-               hName = hName + "bjetenls"
+               hName = hName + "bjet_en_ls_LOO"
            else:
-               hName = hName + "bjetenls_" + samplesList[0]
+               hName = hName + "bjet_en_ls_LOO_" + samplesList[0]
            histo = res.Get(str(hName))
            histo.SetDirectory(0)
            if opt.isData is not True:
                for sampleInfo in samplesList:
                    if sampleInfo is not samplesList[0]: 
-                       histo.Add(res.Get(str("bjetenls/bjetenls_"+sampleInfo)).Clone());
+                       histo.Add(res.Get(str("bjet_en_ls_LOO/bjet_en_ls_LOO_"+sampleInfo)).Clone());
 
            # Create the output directory
            if not os.path.isdir(opt.inDir):
