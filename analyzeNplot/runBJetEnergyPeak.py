@@ -42,7 +42,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
         'vis_top_mass':ROOT.TH1F('vis_top_mass',';mass [GeV]; Events',50,0,200),
 ########################################################################################
         'csv_discriminator':ROOT.TH1F('csv_discriminator',';B-Tag Criterion; Events',4, array('d',csv_binedges)),
-        'cut_flow':ROOT.TH1F('cut_flow',';mass [GeV]; Events',5,0,5),
+        'cut_flow':ROOT.TH1F('cut_flow',';mass [GeV]; Events',5,0.5,5.5),
         'nleptons':ROOT.TH1F('nleptons',';Number of leptons; Events',10,0,4)
         }
     for key in histos:
@@ -55,7 +55,12 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
     totalEntries=tree.GetEntriesFast()
     for i in xrange(0,totalEntries):
 
-        histos['cut_flow'].Fill(1)
+        #generator level weight only for MC
+        evWgt=1.0
+        if xsec              : evWgt  = xsec*tree.LepSelEffWeights[0]*tree.PUWeights[0]
+        if tree.nGenWeight>0 : evWgt *= tree.GenWeights[0]
+
+        histos['cut_flow'].Fill(1, evWgt)
 
         tree.GetEntry(i)
         if i%100==0 : sys.stdout.write('\r [ %d/100 ] done' %(int(float(100.*i)/float(totalEntries))) )
@@ -96,9 +101,9 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
                         btagID = 2
 
         if nJets<2 : continue
-        histos['cut_flow'].Fill(2)
+        histos['cut_flow'].Fill(2,evWgt)
         if nBtags!=1 and nBtags!=2 : continue
-        histos['cut_flow'].Fill(3)
+        histos['cut_flow'].Fill(3,evWgt)
 
         # Create lepton four-vector which will be used to compute dilepton invariant mass
         leptons_p4 = []
@@ -117,7 +122,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
         if nLeptons<2 : continue
 
-        histos['cut_flow'].Fill(4)
+        histos['cut_flow'].Fill(4, evWgt)
 
         # dilepton invariant mass
         l2_mass = (leptons_p4[0]+leptons_p4[1]).M()
@@ -142,10 +147,7 @@ def runBJetEnergyPeak(inFileURL, outFileURL, xsec=None):
 
             vis_tmass = min(m11,m12)
 
-        #generator level weight only for MC
-        evWgt=1.0
-        if xsec              : evWgt  = xsec*tree.LepSelEffWeights[0]*tree.PUWeights[0]
-        if tree.nGenWeight>0 : evWgt *= tree.GenWeights[0]
+
 
         #ready to fill the histograms
         histos['nvtx'].Fill(tree.nPV,evWgt)
