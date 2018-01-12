@@ -295,6 +295,8 @@ def convertToPoissonErrorGr(h):
     #check https://twiki.cern.ch/twiki/bin/view/CMS/PoissonErrorBars
     alpha = 1 - 0.6827;
     grpois = ROOT.TGraphAsymmErrors(h);
+    if 'bjetenls' in h.GetName() or 'bjet_en_ls' in h.GetName(): return grpois
+    
     for i in xrange(0,grpois.GetN()+1) :
         N = 0
         try: N = grpois.GetY()[i]
