@@ -93,7 +93,7 @@ class Plot(object):
 
         #holds the main plot
         c.cd()
-        p1 = ROOT.TPad('p1','p1',0.0,0.85,1.0,0.0)
+        p1 = ROOT.TPad('p1','p1',0.0,0.15,1.0,0.99)
         p1.Draw()
         p1.SetRightMargin(0.05)
         p1.SetLeftMargin(0.12)
@@ -169,7 +169,7 @@ class Plot(object):
 
         #holds the ratio
         c.cd()
-        p2 = ROOT.TPad('p2','p2',0.0,0.85,1.0,1.0)
+        p2 = ROOT.TPad('p2','p2',0.0,0.03,1.0,0.17)
         p2.Draw()
         p2.SetBottomMargin(0.01)
         p2.SetRightMargin(0.05)
